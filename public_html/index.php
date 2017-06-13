@@ -52,7 +52,7 @@
     ?>
 
 
-<!---->
+<!-- -->
 <!--    include_once "html_elements/navBar.php";-->
 <!--    include_once "html_elements/header.php";-->
 <!--    include_once "html_elements/gallery.php";-->
