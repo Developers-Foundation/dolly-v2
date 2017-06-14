@@ -6,24 +6,34 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#page-top">Blank Bootstrap</a>
+            <!--<a class="navbar-brand" href="#page-top">Blank Bootstrap</a>-->
+            <a class="navbar-brand" href="#page-top"><img class="navbar-brand-star" /><p class="navbar-brand-text">Dolly Children Foundation</p></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+<div>
+<ul>
+<li><i />abc@gmail.com</li>
+<li><i />PhoneNumber</li>
+<li><i />Facebook</li>
+</ul>
+</div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#teamCarousel">Portfolio</a>
+                <li class="">
+                    <a href="#">About</a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#faq">FAQ</a>
+                <li class="">
+                    <a href="#">Impacts</a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#mailerForm">Contact</a>
+                <li class="">
+                    <a href="#">Blog</a>
                 </li>
+<li class="">
+<a href="">Donate</a>
+</li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
