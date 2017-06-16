@@ -39,12 +39,9 @@
     <!--=========================================== MAIN FILES ==========================================-->
     <?php
         $page = "index-page";
-        $hasGmap = true;
+        //$hasGmap = true;
         include_once "html_elements/navBar.php";
-        include "html_elements/carouselTitle.php";
-        include "html_elements/carouselTitle.php";
-        include "html_elements/carouselTitle.php";
-        include "html_elements/carouselTitle.php";
+        include_once "html_elements/home.php";
         include_once "html_elements/footer2.php";
     ?>
 
@@ -89,9 +86,9 @@
     <script src="assets/js/main.js" type="text/javascript"></script>
 
     <!-- Google Maps API File -->
-    <script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
+   <!-- <script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
         loadedGmap();
-    </script>
+    </script>-->
 </body>
 
 </html>
