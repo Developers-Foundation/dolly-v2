@@ -1,5 +1,5 @@
 // add Heroku app urls
-$sites = array('https://developers.foundation/');
+$sites = array('https://dolly-v2.herokuapp.com/');
 // ----------------------------------------------------------------- //
 $handles = array();
 foreach ($sites as $i => $url) {
