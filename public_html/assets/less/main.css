@@ -5,15 +5,15 @@
   margin: 0 !important;
 }
 .orange {
-  background: #fad85f;
+  background: #f9d246;
   /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, #f39c0b, #fad85f);
+  background: -webkit-radial-gradient(circle, #f39c0b, #f9d246);
   /* Safari */
-  background: -o-radial-gradient(circle, #f39c0b, #fad85f);
+  background: -o-radial-gradient(circle, #f39c0b, #f9d246);
   /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, #f39c0b, #fad85f);
+  background: -moz-radial-gradient(circle, #f39c0b, #f9d246);
   /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, #f39c0b, #fad85f);
+  background: radial-gradient(circle, #f39c0b, #f9d246);
   /* Standard syntax */
 }
 .white-text {
@@ -36,11 +36,24 @@
   color: white !important;
 }
 .navbar .nav-options {
-  font-size: 1.7em;
+  font-size: 1.24em;
+  font-weight: 800;
+}
+.navbar .nav-options li {
+  margin-right: 35px !important;
+}
+.navbar .li-wrapper {
+  padding-bottom: 8px !important;
+  border-bottom: 2px solid white !important;
+  margin-bottom: 15px;
 }
 .navbar .nav-contact-info i {
   padding-right: 10px;
   font-size: 1.2em;
+}
+.navbar .donate-button {
+  border-radius: 800px;
+  background-color: #da3400;
 }
 .spacer {
   height: 15px;
