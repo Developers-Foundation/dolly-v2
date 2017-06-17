@@ -62,6 +62,8 @@ body {
   border-radius: 800px;
   background-color: #da3400;
   padding: 15px;
+  margin: 15px 0;
+  display: inline-block;
 }
 a.button-red {
   color: #FFF;
@@ -141,4 +143,8 @@ a.button-red:hover {
 }
 #journey p {
   padding-bottom: 20px;
+}
+#who-we-are .highlight-box {
+  border-radius: 8px;
+  background-color: #fee12e;
 }

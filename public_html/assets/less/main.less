@@ -2,10 +2,11 @@
 @GREY: rgb(52, 52, 52);
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @RED: rgb(218, 52, 0);
-@FONT: 'Arial-MT', Helvetica;
+@YELLOW: #fee12e;
+@MAINFONT: 'Arial-MT', Helvetica;
 
 body {
-  font-family: @FONT;
+  font-family: @MAINFONT;
 }
 
 .grey {
@@ -79,6 +80,8 @@ body {
   border-radius: 800px;
   background-color: @RED;
   padding: 15px;
+  margin: 15px 0;
+  display: inline-block;
 
   a& {
     color: #FFF;
@@ -179,5 +182,12 @@ body {
 
   p {
     padding-bottom: 20px;
+  }
+}
+
+#who-we-are {
+  .highlight-box {
+    border-radius: 8px;
+    background-color: @YELLOW;
   }
 }

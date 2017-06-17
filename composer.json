@@ -1,12 +1,28 @@
 {
-  "name": "developersfoundation/blank",
-  "description": "blank project",
+  "name": "developersfoundation/dolly-v2",
+  "description": "Dolly Chldren Foundation Website v2",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
+      "name": "Susie Su",
+      "email": "susie@developersfoundation.ca"
+    },
+    {
       "name": "Harrison Chow",
       "email": "harrison@developersfoundation.ca"
+    },
+    {
+      "name": "Michael Park",
+      "email": "michael@developersfoundation.ca"
+    },
+    {
+      "name": "Paul",
+      "email": "paul@developersfoundation.ca"
+    },
+    {
+      "name": "Patrick",
+      "email": "patrick@developersfoundation.ca"
     }
   ],
 

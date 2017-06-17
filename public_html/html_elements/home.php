@@ -18,7 +18,7 @@
     <div id="who-we-are">
         <hr class="star-custom">
         <div class="row">
-            <div class="col-md-4">
+            <div class="highlight-box col-md-4">
                 <h2>
                     WE HAVE CONTRUCTED<br>
                     <strong>50 SCHOOLS</strong><br>
@@ -28,7 +28,7 @@
                 </h2>
                 <a class="button-red">Learn more</a>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-offset-1 col-md-7">
                 <h2>Who we are</h2>
                 <p>
                     Did you know that nearly half of the population of the developed countries like USA and Canada
@@ -36,9 +36,7 @@
                     a number of people which is far greater than the number of population suffering from diabetes,
                     asthma or depression.
                 </p>
-                <a>
-                    <button href>Learn more</button>
-                </a>
+                <a href class="button-red">Learn more</a>
             </div>
         </div>
     </div>
@@ -98,9 +96,7 @@
                 </p>
             </div>
         </div>
-        <a>
-            <button >Learn more</button>
-        </a>
+        <a href class="button-red">Learn more</a>
     </div>
 
     <!-- How to help -->
