@@ -53,7 +53,7 @@
                         <a href="#">Contact</a>
                     </li>
                     <li class="donate-button">
-                        <a href="">Donate</a>
+                        <a href="/donate">Donate</a>
                     </li>
                 </ul>
             </div>
