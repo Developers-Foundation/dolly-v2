@@ -247,3 +247,49 @@ SECTION SPECIFIC LESS
 .impacts-page .section p {
   padding-bottom: 20px;
 }
+.about-page .section h2 {
+  margin-bottom: 40px;
+}
+.about-page .section:not(.title) {
+  margin: 40px 0 50px;
+}
+.about-page .section:not(.title) h2 {
+  margin-top: 60px;
+}
+.about-page .title {
+  height: 482px;
+}
+.about-page .title img {
+  position: absolute;
+  z-index: -1;
+}
+.about-page .title .inner {
+  display: block;
+  position: relative;
+  z-index: 999;
+  padding-top: 250px;
+}
+.about-page .values .icon {
+  border-radius: 50%;
+  border-color: white;
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  margin: auto;
+  border: 2px solid #f5a623;
+  color: #f5a623;
+  text-align: center;
+}
+.about-page .values .icon:not(.first)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 0;
+  left: -25px;
+  top: 70px;
+  border-top: 4px solid #f5a623;
+}
+.about-page .vision {
+  margin-bottom: 100px !important;
+}

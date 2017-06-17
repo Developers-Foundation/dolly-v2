@@ -329,3 +329,66 @@ SECTION SPECIFIC LESS
     }
   }
 }
+
+.about-page {
+  .section {
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    &:not(.title) {
+      margin: 40px 0 50px;
+
+      h2 {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .title {
+    height: 482px;
+
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .inner {
+      display: block;
+      position: relative;
+      z-index: 999;
+      padding-top: 250px;
+    }
+  }
+
+  .values {
+    .icon {
+      border-radius: 50%;
+      border-color: white;
+
+      width: 150px;
+      height: 150px;
+      padding: 30px;
+      margin: auto;
+
+      border: 2px solid @ORANGE;
+      color: @ORANGE;
+      text-align: center;
+
+      &:not(.first)::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 0;
+        left: -25px;
+        top: 70px;
+        border-top: 4px solid @ORANGE;
+      }
+    }
+  }
+
+  .vision {
+    margin-bottom: 100px !important;
+  }
+}
