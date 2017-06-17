@@ -14,8 +14,8 @@
             <h2>Always Look On The Bright Side Of Life</h2>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
-                    <p>From this moment on, choose not to let your past dictate your future. What is gone is gone –
-                        forever. Now is the time to move on, to do and become what you.</p>
+                    <p>From this moment on, choose not to let your past dictate your future. <br>
+                        What is gone is gone forever. Now is the time to move on, to do and become what you.</p>
                 </div>
             </div>
         </div>
