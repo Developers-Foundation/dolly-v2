@@ -29,7 +29,7 @@
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 1%;
+  padding-top: 0.5%;
   padding-bottom: 1%;
 }
 .navbar a {
@@ -45,7 +45,7 @@
 .navbar .li-wrapper {
   padding-bottom: 8px !important;
   border-bottom: 2px solid white !important;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .navbar .nav-contact-info i {
   padding-right: 10px;
