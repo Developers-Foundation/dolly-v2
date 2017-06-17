@@ -1,88 +1,131 @@
 @SQUASH: darken(rgb(245, 166, 35), 5%);
 @GREY: rgb(52, 52, 52);
+@DARKGREY: rgb(74, 74, 74);
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @RED: rgb(218, 52, 0);
+@YELLOW: #fee12e;
+@MAINFONT: 'Arial-MT', Helvetica,Arial,sans-serif;
 
-.grey{
+/**
+1. GLOBAL LESS
+ */
+
+body {
+  font-family: @MAINFONT;
+  color: @DARKGREY;
+}
+
+h2 {
+  margin: 31px 0 25px 0;
+}
+
+.grey {
   background-color: @GREY;
 }
 
-.row{
+.row {
   margin: 0 !important;
 }
 
-.orange{
+.orange {
   //background-color: orange !important;
-    background: @LIGHTMUSTARD; /* For browsers that do not support gradients */
-    background: -webkit-radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Safari */
-    background: -o-radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Firefox 3.6 to 15 */
-    background: radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Standard syntax */
+  background: @LIGHTMUSTARD; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Safari */
+  background: -o-radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, @SQUASH, @LIGHTMUSTARD); /* Standard syntax */
 }
 
-.white-text{
+.white-text {
   color: white !important;
 }
 
-.orange-text{
+.orange-text {
   color: @SQUASH !important;
 }
 
-.centerer{
+.centerer {
   margin: 0 auto;
   display: table;
 }
 
-.navbar{
+.spacer {
+  height: 15px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.button-red {
+  background-color: @RED;
+  padding: 15px;
+  margin: 15px 0;
+  display: inline-block;
+
+  &.round {
+    border-radius: 800px;
+  }
+
+  a& {
+    color: #FFF;
+    text-decoration: none;
+
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+/**
+HEADER AND FOOTER LESS
+ */
+
+.navbar {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 0.5%;
   padding-bottom: 1%;
 
-
-  a{
+  a {
     color: white !important;
   }
 
-  .nav-options{
+  .nav-options {
     font-size: 1.24em;
     font-weight: 800;
-    li{
+    li {
       margin-right: 35px !important;
     }
   }
 
-  .li-wrapper{
+  .li-wrapper {
     padding-bottom: 8px !important;
     border-bottom: 2px solid white !important;
     margin-bottom: 5px;
   }
 
-  .nav-contact-info{
-    i{
+  .nav-contact-info {
+    i {
       padding-right: 10px;
       font-size: 1.2em;
     }
   }
 
-  .donate-button{
-    border-radius: 800px;
-    background-color: @RED;
+  .button-red {
+    padding: 0;
+    margin: 0;
   }
-}
-
-.spacer{
-  height: 15px;
 }
 
 .footer {
   border-top: solid white 3px !important;
 
-  li{
+  li {
     list-style: none;
   }
 
-  ul{
+  ul {
     margin-left: 0 !important;
     padding-left: 0 !important;
   }
@@ -91,7 +134,7 @@
     padding: 3%;
     padding-top: 2%;
 
-    img{
+    img {
       padding-top: 60px;
     }
 
@@ -101,8 +144,8 @@
       font-size: 1.2em;
     }
 
-    .footer-nav{
-      li{
+    .footer-nav {
+      li {
         padding-top: 10px !important;
       }
     }
@@ -120,7 +163,7 @@
       margin-right: 15px;
     }
 
-    .fa-chevron-right{
+    .fa-chevron-right {
       font-size: 0.6em;
       margin-left: 10px;
     }
@@ -138,6 +181,59 @@
     .white-text;
     a {
       .white-text
+    }
+  }
+}
+
+/**
+SECTION SPECIFIC LESS
+ */
+
+// Home.php section
+.index-page {
+  #journey {
+    height: 580px;
+
+    .journey-bg {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .journey-inner {
+      display: block;
+      position: relative;
+      z-index: 999;
+      padding-top: 300px;
+    }
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+
+  #who-we-are {
+
+    .highlight-box {
+      border-radius: 8px;
+      background-color: @YELLOW;
+    }
+  }
+
+  #what-we-do {
+
+    .card {
+      img {
+        border-radius: 9px;
+        box-shadow: 7.5px 7.5px 25px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  #how-to-help {
+
+    img {
+      border-radius: 11px;
+      box-shadow: 7.5px 7.5px 30px 0 rgba(0, 0, 0, 0.2);
     }
   }
 }
