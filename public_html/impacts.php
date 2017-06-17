@@ -38,11 +38,7 @@
 $page = "impacts-page";
 $hasGmap = false;
 include_once "html_elements/navBar.php";
-?>
-
-
-
-<?php
+include "html_elements/impacts.php";
 include_once "html_elements/footer2.php";
 ?>
 
