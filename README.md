@@ -46,17 +46,18 @@ Create your HTML pages as PHP files, if you've never used PHP don't worry, we wi
 
 Set up your page as you would normally, and when you want to use a module you can insert it into the
 page with:
-
-    <?php 
-        $page = "index-page";
-        $hasGmap = true;
-        include_once "html_elements/navBar.php";
-        include_once "html_elements/carouselTitle.php";
-        include_once "html_elements/events.php";
-        include_once "html_elements/footer2.php";
-    ?>
+```
+<?php 
+    $page = "index-page";
+    $hasGmap = true;
+    include_once "html_elements/navBar.php";
+    include_once "html_elements/carouselTitle.php";
+    include_once "html_elements/events.php";
+    include_once "html_elements/footer2.php";
+?>
+```
 
 #### Rendered page
-![](blankbootstrap.png)
+![](doc/blankbootstrap.png)
 
 
