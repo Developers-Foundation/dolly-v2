@@ -44,7 +44,7 @@
                         <a href="#">About</a>
                     </li>
                     <li class="">
-                        <a href="#">Impacts</a>
+                        <a href="/impacts">Impacts</a>
                     </li>
                     <li class="">
                         <a href="#">Blog</a>
