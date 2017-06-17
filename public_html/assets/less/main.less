@@ -1,9 +1,10 @@
+@ORANGE: rgb(245, 166, 35);
 @SQUASH: darken(rgb(245, 166, 35), 5%);
 @GREY: rgb(52, 52, 52);
 @DARKGREY: rgb(74, 74, 74);
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
+@YELLOW: rgb(250, 216, 95);
 @RED: rgb(218, 52, 0);
-@YELLOW: #fee12e;
 @MAINFONT: 'Arial-MT', Helvetica,Arial,sans-serif;
 
 /**
@@ -112,9 +113,9 @@ HEADER AND FOOTER LESS
     }
   }
 
-  .button-red {
-    padding: 0;
-    margin: 0;
+  .donate-button {
+    border-radius: 800px;
+    background-color: @RED;
   }
 }
 
@@ -185,6 +186,59 @@ HEADER AND FOOTER LESS
   }
 }
 
+.navtab {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1050;
+  margin-top: 8.1%;
+
+  .navtab-box {
+    background-image: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
+    padding: 1%;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+
+        div {
+          border-radius: 50%;
+          border-color: white;
+
+          width: 100%;
+          padding: 0 8px;
+
+          border: 2px solid white;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    margin: 0 auto;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 20px solid @ORANGE;
+  }
+}
+
 /**
 SECTION SPECIFIC LESS
  */
@@ -235,5 +289,106 @@ SECTION SPECIFIC LESS
       border-radius: 11px;
       box-shadow: 7.5px 7.5px 30px 0 rgba(0, 0, 0, 0.2);
     }
+  }
+}
+
+.impacts-page {
+  .section {
+    height: 540px;
+
+    &.first {
+      margin-top: 15%;
+    }
+
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1140px;
+      height: 540px;
+      background: radial-gradient(circle at 23% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    }
+
+    .alternate {
+      /* TODO: Add in img tag within each section + make it auto alternative so no need to change html (Y) */
+    }
+
+    .inner {
+      display: block;
+      position: relative;
+      z-index: 999;
+      padding-top: 300px;
+    }
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.about-page {
+  .section {
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    &:not(.title) {
+      margin: 40px 0 50px;
+
+      h2 {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .title {
+    height: 482px;
+
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .inner {
+      display: block;
+      position: relative;
+      z-index: 999;
+      padding-top: 250px;
+    }
+  }
+
+  .values {
+    .icon {
+      border-radius: 50%;
+      border-color: white;
+
+      width: 150px;
+      height: 150px;
+      padding: 30px;
+      margin: auto;
+
+      border: 2px solid @ORANGE;
+      color: @ORANGE;
+      text-align: center;
+
+      &:not(.first)::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 0;
+        left: -25px;
+        top: 70px;
+        border-top: 4px solid @ORANGE;
+      }
+    }
+  }
+
+  .vision {
+    margin-bottom: 100px !important;
   }
 }

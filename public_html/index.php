@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Blank Bootstrap</title>
+    <title>Dolly Children Foundation</title>
 
     <!--=========================================== CSS FILES ===========================================-->
     <!-- Bootstrap Core CSS -->
