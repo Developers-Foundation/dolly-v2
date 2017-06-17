@@ -231,5 +231,8 @@
   margin-bottom: 100px !important;
 }
 .donate-page .container {
-  margin-top: 12%;
+  padding-top: 12.8%;
+}
+.donate-page h2 {
+  margin: 100px 0 20px;
 }
