@@ -1,3 +1,6 @@
+body {
+  font-family: 'Arial-MT', Helvetica;
+}
 .grey {
   background-color: #343434;
 }
@@ -54,6 +57,18 @@
 .navbar .donate-button {
   border-radius: 800px;
   background-color: #da3400;
+}
+.button-red {
+  border-radius: 800px;
+  background-color: #da3400;
+  padding: 15px;
+}
+a.button-red {
+  color: #FFF;
+  text-decoration: none;
+}
+a.button-red:hover {
+  color: #FFF;
 }
 .spacer {
   height: 15px;
@@ -123,4 +138,7 @@
   position: relative;
   z-index: 999;
   padding-top: 300px;
+}
+#journey p {
+  padding-bottom: 20px;
 }

@@ -3,15 +3,13 @@
     <div id="journey">
         <img src="//via.placeholder.com/1140x580" class="journey-bg">
         <div class="row journey-inner">
-            <div class="col-md-offset-2 col-md-10 text-left">
+            <div class="col-md-offset-2 col-md-4 text-left">
                     <h1>Join our Journey!</h1>
                     <p>
                         Inspiring the African Child through educational aids and interventions centered on mental and
                         intellectual programs.
                     </p>
-                    <a>
-                        <button >Find out more</button>
-                    </a>
+                    <a href class="button-red">Find out more</a>
                 </div>
         </div>
     </div>
@@ -28,9 +26,7 @@
                     HELPS OVER<br>
                     <strong>5,000 CHILDREN</strong>
                 </h2>
-                <a>
-                    <button >Learn more</button>
-                </a>
+                <a class="button-red">Learn more</a>
             </div>
             <div class="col-md-8">
                 <h2>Who we are</h2>
@@ -41,7 +37,7 @@
                     asthma or depression.
                 </p>
                 <a>
-                    <button >Learn more</button>
+                    <button href>Learn more</button>
                 </a>
             </div>
         </div>
