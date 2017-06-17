@@ -68,9 +68,16 @@ include_once "html_elements/footer2.php";
 <script src="assets/js/main.js" type="text/javascript"></script>
 
 <!-- Google Maps API File -->
-<script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
-    loadedGmap();
-</script>
+<?php
+if ($hasGmap) {
+    ?>
+    <script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async
+            defer>
+        loadedGmap();
+    </script>
+    <?php
+}
+?>
 </body>
 
 </html>
