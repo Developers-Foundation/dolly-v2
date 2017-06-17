@@ -2,6 +2,7 @@
 @SQUASH: darken(rgb(245, 166, 35), 5%);
 @GREY: rgb(52, 52, 52);
 @DARKGREY: rgb(74, 74, 74);
+@LIGHTGREY: #9b9b9b;
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @YELLOW: rgb(250, 216, 95);
 @RED: rgb(218, 52, 0);
@@ -119,6 +120,59 @@ HEADER AND FOOTER LESS
   }
 }
 
+.navtab {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1050;
+  margin-top: 8.1%;
+
+  .navtab-box {
+    background-image: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
+    padding: 1%;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+
+        div {
+          border-radius: 50%;
+          border-color: white;
+
+          width: 100%;
+          padding: 0 8px;
+
+          border: 2px solid white;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    margin: 0 auto;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 20px solid @ORANGE;
+  }
+}
+
 .footer {
   border-top: solid white 3px !important;
 
@@ -183,59 +237,6 @@ HEADER AND FOOTER LESS
     a {
       .white-text
     }
-  }
-}
-
-.navtab {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1050;
-  margin-top: 8.1%;
-
-  .navtab-box {
-    background-image: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
-    padding: 1%;
-
-    h1 {
-      padding: 0;
-      margin: 0;
-      display: inline-flex;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      overflow: hidden;
-
-      li {
-        float: left;
-
-        div {
-          border-radius: 50%;
-          border-color: white;
-
-          width: 100%;
-          padding: 0 8px;
-
-          border: 2px solid white;
-          color: white;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  &::after {
-    content: "";
-    height: 0;
-    width: 0;
-    display: block;
-    margin: 0 auto;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-top: 20px solid @ORANGE;
   }
 }
 
@@ -390,5 +391,64 @@ SECTION SPECIFIC LESS
 
   .vision {
     margin-bottom: 100px !important;
+  }
+}
+
+.donate-page {
+  .container {
+    padding-top: 12.8%;
+  }
+
+  h2 {
+    margin: 100px 0 20px;
+  }
+
+  .card {
+    margin: 30px 16.666666666667% 100px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px 40px;
+
+    .donate-form {
+
+      .donate-amount {
+        .donate-amount-container {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .donate-amount-radio {
+          box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 7.5px;
+          padding: 5px;
+          width: 100px;
+          float: left;
+          text-align: center;
+
+          .stretch {
+            width: 100%;
+            display: inline-block;
+            font-size: 0;
+            line-height: 0
+          }
+
+          &.selected {
+            background-color: @ORANGE;
+            color: @GREY;
+          }
+
+          &:not(.selected) {
+            background-color: @LIGHTGREY;
+            color: white;
+          }
+        }
+      }
+
+      .donate-submit {
+        clear: both;
+        width: 100px;
+        margin: 30px auto 0;
+      }
+    }
   }
 }
