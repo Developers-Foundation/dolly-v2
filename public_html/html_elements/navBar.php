@@ -25,7 +25,7 @@
             <div class="row">
                 <ul class="list-inline text-right">
                     <li class="li-wrapper">
-                        <ul class="list-inline text-right  nav-contact-info">
+                        <ul class="list-inline text-right nav-contact-info">
                             <li><i class="fa fa-envelope-o"></i>dollychildrenfoundation@gmail.com</li>
                             <li><i class="fa fa-phone"></i>234-818-689-1611</li>
                             <li><i class="fa fa-facebook-square"></i>Facebook</li>
@@ -41,7 +41,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="">
-                        <a href="#">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li class="">
                         <a href="/impacts">Impacts</a>

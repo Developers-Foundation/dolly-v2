@@ -25,7 +25,7 @@
         <div class="row text-center">
             <h2>Values</h2>
             <div class="col-md-3 card">
-                <div class="icon">
+                <div class="icon first">
                     <img src="//via.placeholder.com/86x86" />
                 </div>
                 <h3>Integrity</h3>
@@ -76,7 +76,9 @@
         <hr class="star-custom">
         <div class="row text-center">
             <h2>Our Vision</h2>
+            <div class="col-md-offset-3 col-md-6">
             <p>Many people were hoping that if the Democrats won control of Congress they would reverse the online gambling ban, but experts doubt they will even try or that if they do that the will be successful. Once the bill was passed and signed into law by the president, it became much harder to reverse the law.</p>
+            </div>
         </div>
     </div>
 </div>

@@ -20,11 +20,11 @@
             <div class="footer-nav centerer">
                 <h3>Navigate</h3>
                 <ul>
-                    <li>About  <i class="fa fa-chevron-right"></i></li>
-                    <li>Impact  <i class="fa fa-chevron-right"></i></li>
-                    <li>Blog  <i class="fa fa-chevron-right"></i></li>
-                    <li>Contact  <i class="fa fa-chevron-right"></i></li>
-                    <li>Donate  <i class="fa fa-chevron-right"></i></li>
+                    <li><a href="/about">About  <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a href="/impacts">Impact  <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a>Blog  <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a>Contact  <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a>Donate  <i class="fa fa-chevron-right"></i></a></li>
                 </ul>
             </div>
         </div>
