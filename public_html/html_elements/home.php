@@ -1,9 +1,9 @@
 <div class="container">
     <!-- Join our journey -->
     <div id="journey">
-        <img src="//via.placeholder.com/960x580">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-10 text-center">
+        <img src="//via.placeholder.com/1140x580" class="journey-bg">
+        <div class="row journey-inner">
+            <div class="col-md-offset-2 col-md-10 text-left">
                     <h1>Join our Journey!</h1>
                     <p>
                         Inspiring the African Child through educational aids and interventions centered on mental and

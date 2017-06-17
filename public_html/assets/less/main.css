@@ -112,5 +112,15 @@
   color: white !important;
 }
 #journey {
-  background-image: url("../img/home/temp.png");
+  height: 580px;
+}
+#journey .journey-bg {
+  position: absolute;
+  z-index: -1;
+}
+#journey .journey-inner {
+  display: block;
+  position: relative;
+  z-index: 999;
+  padding-top: 300px;
 }
