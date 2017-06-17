@@ -49,8 +49,8 @@
                     <li class="">
                         <a href="#">Contact</a>
                     </li>
-                    <li class="button-red round">
-                        <a href="">Donate</a>
+                    <li class="donate-button">
+                        <a href="/donate">Donate</a>
                     </li>
                 </ul>
             </div>

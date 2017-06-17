@@ -293,3 +293,46 @@ SECTION SPECIFIC LESS
 .about-page .vision {
   margin-bottom: 100px !important;
 }
+.donate-page .container {
+  padding-top: 12.8%;
+}
+.donate-page h2 {
+  margin: 100px 0 20px;
+}
+.donate-page .card {
+  margin: 30px 16.666666666667% 100px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px 40px;
+}
+.donate-page .card .donate-form .donate-amount .donate-amount-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.donate-page .card .donate-form .donate-amount .donate-amount-radio {
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 7.5px;
+  padding: 5px;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+.donate-page .card .donate-form .donate-amount .donate-amount-radio .stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.donate-page .card .donate-form .donate-amount .donate-amount-radio.selected {
+  background-color: #f5a623;
+  color: #343434;
+}
+.donate-page .card .donate-form .donate-amount .donate-amount-radio:not(.selected) {
+  background-color: #9b9b9b;
+  color: white;
+}
+.donate-page .card .donate-form .donate-submit {
+  clear: both;
+  width: 100px;
+  margin: 30px auto 0;
+}

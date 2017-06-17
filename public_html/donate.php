@@ -32,15 +32,15 @@
 
 </head>
 
-<body class="about-page">
+<body class="donate-page">
 <!--=========================================== MAIN FILES ==========================================-->
 <?php
-$page = "about-page";
-$pageTitle = "About Us";
+$page = "donate-page";
+$pageTitle = "Donate";
 $hasGmap = false;
 include_once "html_elements/navBar.php";
 include_once "html_elements/navBarTab.php";
-include "html_elements/about.php";
+include "html_elements/donate.php";
 include_once "html_elements/footer2.php";
 ?>
 
