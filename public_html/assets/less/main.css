@@ -1,5 +1,12 @@
+/**
+1. GLOBAL LESS
+ */
 body {
-  font-family: 'Arial-MT', Helvetica;
+  font-family: 'Arial-MT', Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+}
+h2 {
+  margin: 31px 0 25px 0;
 }
 .grey {
   background-color: #343434;
@@ -29,6 +36,31 @@ body {
   margin: 0 auto;
   display: table;
 }
+.spacer {
+  height: 15px;
+}
+.section {
+  margin-bottom: 40px;
+}
+.button-red {
+  background-color: #da3400;
+  padding: 15px;
+  margin: 15px 0;
+  display: inline-block;
+}
+.button-red.round {
+  border-radius: 800px;
+}
+a.button-red {
+  color: #FFF;
+  text-decoration: none;
+}
+a.button-red:hover {
+  color: #FFF;
+}
+/**
+HEADER AND FOOTER LESS
+ */
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
@@ -54,26 +86,9 @@ body {
   padding-right: 10px;
   font-size: 1.2em;
 }
-.navbar .donate-button {
-  border-radius: 800px;
-  background-color: #da3400;
-}
-.button-red {
-  border-radius: 800px;
-  background-color: #da3400;
-  padding: 15px;
-  margin: 15px 0;
-  display: inline-block;
-}
-a.button-red {
-  color: #FFF;
-  text-decoration: none;
-}
-a.button-red:hover {
-  color: #FFF;
-}
-.spacer {
-  height: 15px;
+.navbar .button-red {
+  padding: 0;
+  margin: 0;
 }
 .footer {
   border-top: solid white 3px !important;
@@ -128,6 +143,9 @@ a.button-red:hover {
 .footer .madeWithLove a {
   color: white !important;
 }
+/**
+SECTION SPECIFIC LESS
+ */
 .index-page #journey {
   height: 580px;
 }

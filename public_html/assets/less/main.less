@@ -1,12 +1,22 @@
 @SQUASH: darken(rgb(245, 166, 35), 5%);
 @GREY: rgb(52, 52, 52);
+@DARKGREY: rgb(74, 74, 74);
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @RED: rgb(218, 52, 0);
 @YELLOW: #fee12e;
-@MAINFONT: 'Arial-MT', Helvetica;
+@MAINFONT: 'Arial-MT', Helvetica,Arial,sans-serif;
+
+/**
+1. GLOBAL LESS
+ */
 
 body {
   font-family: @MAINFONT;
+  color: @DARKGREY;
+}
+
+h2 {
+  margin: 31px 0 25px 0;
 }
 
 .grey {
@@ -39,6 +49,38 @@ body {
   display: table;
 }
 
+.spacer {
+  height: 15px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.button-red {
+  background-color: @RED;
+  padding: 15px;
+  margin: 15px 0;
+  display: inline-block;
+
+  &.round {
+    border-radius: 800px;
+  }
+
+  a& {
+    color: #FFF;
+    text-decoration: none;
+
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+/**
+HEADER AND FOOTER LESS
+ */
+
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
@@ -70,31 +112,10 @@ body {
     }
   }
 
-  .donate-button {
-    border-radius: 800px;
-    background-color: @RED;
+  .button-red {
+    padding: 0;
+    margin: 0;
   }
-}
-
-.button-red {
-  border-radius: 800px;
-  background-color: @RED;
-  padding: 15px;
-  margin: 15px 0;
-  display: inline-block;
-
-  a& {
-    color: #FFF;
-    text-decoration: none;
-
-    &:hover {
-      color: #FFF;
-    }
-  }
-}
-
-.spacer {
-  height: 15px;
 }
 
 .footer {
@@ -163,6 +184,10 @@ body {
     }
   }
 }
+
+/**
+SECTION SPECIFIC LESS
+ */
 
 // Home.php section
 .index-page {

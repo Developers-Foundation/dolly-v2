@@ -1,9 +1,6 @@
-
-
-
+<!-- START NAVBAR -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom grey white-text inset">
     <div class="row">
-
         <div class="col-sm-3">
             <div class="row">
 
@@ -50,7 +47,7 @@
                     <li class="">
                         <a href="#">Contact</a>
                     </li>
-                    <li class="donate-button">
+                    <li class="button-red round">
                         <a href="">Donate</a>
                     </li>
                 </ul>
@@ -58,3 +55,5 @@
         </div>
     </div>
 </nav>
+
+<!-- END NAV BAR -->
