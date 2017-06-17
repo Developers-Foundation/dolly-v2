@@ -1,6 +1,7 @@
 @ORANGE: rgb(245, 166, 35);
 @SQUASH: darken(rgb(245, 166, 35), 5%);
 @GREY: rgb(52, 52, 52);
+@LIGHTGREY: #9b9b9b;
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @YELLOW: rgb(250, 216, 95);
 @RED: rgb(218, 52, 0);
@@ -307,6 +308,51 @@
   }
 
   .card {
+    margin: 30px 16.666666666667% 100px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px 40px;
 
+    .donate-form {
+
+      .donate-amount {
+        .donate-amount-container {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .donate-amount-radio {
+          box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 7.5px;
+          padding: 5px;
+          width: 100px;
+          float: left;
+          text-align: center;
+
+          .stretch {
+            width: 100%;
+            display: inline-block;
+            font-size: 0;
+            line-height: 0
+          }
+
+          &.selected {
+            background-color: @ORANGE;
+            color: @GREY;
+          }
+
+          &:not(.selected) {
+            background-color: @LIGHTGREY;
+            color: white;
+          }
+        }
+      }
+
+      .donate-submit {
+        clear: both;
+        width: 100px;
+        margin: 30px auto 0;
+      }
+    }
   }
 }

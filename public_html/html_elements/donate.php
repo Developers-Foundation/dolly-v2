@@ -19,11 +19,35 @@
                 </div>
             </div>
         </div>
-        <div class="card">
-            <form class="donate-form" action="" method="post">
-
-                <button class="donate-button">Donate Now</button>
-            </form>
+        <div class="row">
+            <div class="card col-md-offset-2 col-md-8">
+                <form class="donate-form" action="" method="post">
+                    <div>
+                        <input type="text" placeholder="test input">
+                    </div>
+                    <div class="donate-amount">
+                        <p>Amount Of</p>
+                        <div class="donate-amount-container">
+                            <a>
+                                <div class="donate-amount-radio selected">$25</div>
+                            </a>
+                            <a>
+                                <div class="donate-amount-radio">$50</div>
+                            </a>
+                            <a>
+                                <div class="donate-amount-radio">$100</div>
+                            </a>
+                            <a>
+                                <div class="donate-amount-radio">other</div>
+                            </a>
+                            <span class="stretch"></span>
+                        </div>
+                    </div>
+                    <div class="donate-submit">
+                        <button class="button-red round">Donate Now</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
