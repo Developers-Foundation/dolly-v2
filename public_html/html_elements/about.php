@@ -8,18 +8,19 @@
 ?>
 
 <div class="container">
-    <!-- Reading Clubs -->
-    <div id="reading-clubs" class="section first">
-        <img src="//via.placeholder.com/1140x540" class="section-bg">
+    <!-- TITLE SECTION -->
+    <div class="section title">
+        <img src="//via.placeholder.com/1140x482" class="section-bg">
         <div class="row inner">
-            <div class="col-md-offset-2 col-md-4 text-left">
-                <h1>Reading Clubs</h1>
-                <p>
-                    Inspiring the African Child through educational aids and interventions centered on mental and
-                    intellectual programs.
-                </p>
-                <a href class="button-red round">Find out more</a>
+            <div class="col-md-offset-4 col-md-4 text-center">
+                <h1>Our Mission</h1>
+                <p>Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the best place to learn them.</p>
             </div>
         </div>
+    </div>
+
+    <!-- VALUES SECTION -->
+    <div class="section">
+
     </div>
 </div>

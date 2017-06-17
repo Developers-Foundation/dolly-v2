@@ -184,3 +184,16 @@
 .impacts-page .section p {
   padding-bottom: 20px;
 }
+.about-page .title {
+  height: 482px;
+}
+.about-page .title img {
+  position: absolute;
+  z-index: -1;
+}
+.about-page .title .inner {
+  display: block;
+  position: relative;
+  z-index: 999;
+  padding-top: 250px;
+}
