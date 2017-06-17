@@ -9,7 +9,7 @@
 
 <div class="container">
     <!-- Reading Clubs -->
-    <div id="reading-clubs" class="section">
+    <div id="reading-clubs" class="section first">
         <img src="//via.placeholder.com/1140x540" class="section-bg">
         <div class="row inner">
             <div class="col-md-offset-2 col-md-4 text-left">
@@ -55,7 +55,7 @@
 
     <!-- Training Programs for Teachers  -->
     <div id="training-programs-for-teachers" class="section alternate">
-        <img src="//via.placeholder.com/1140x540/f00" class="section-bg">
+        <img src="//via.placeholder.com/1140x540/00f" class="section-bg">
         <div class="row inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>Training Programs for Teachers</h1>
@@ -70,7 +70,7 @@
 
     <!-- After School and Summer Tutoring Programs  -->
     <div id="i give up lol" class="section">
-        <img src="//via.placeholder.com/1140x540/f00" class="section-bg">
+        <img src="//via.placeholder.com/1140x540/green" class="section-bg">
         <div class="row inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>After School and Summer Tutoring Programs</h1>
@@ -84,7 +84,7 @@
 
     <!-- School Building  -->
     <div id="too much to type" class="section alternate">
-        <img src="//via.placeholder.com/1140x540/f00" class="section-bg">
+        <img src="//via.placeholder.com/1140x540/pink" class="section-bg">
         <div class="row inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>School Building</h1>
