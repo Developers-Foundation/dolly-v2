@@ -36,8 +36,10 @@
 <!--=========================================== MAIN FILES ==========================================-->
 <?php
 $page = "impacts-page";
+$pageTitle = "Impacts";
 $hasGmap = false;
 include_once "html_elements/navBar.php";
+include_once "html_elements/navBarTab.php";
 include "html_elements/impacts.php";
 include_once "html_elements/footer2.php";
 ?>
