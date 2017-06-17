@@ -1,3 +1,13 @@
+/**
+1. GLOBAL LESS
+ */
+body {
+  font-family: 'Arial-MT', Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+}
+h2 {
+  margin: 31px 0 25px 0;
+}
 .grey {
   background-color: #343434;
 }
@@ -26,6 +36,31 @@
   margin: 0 auto;
   display: table;
 }
+.spacer {
+  height: 15px;
+}
+.section {
+  margin-bottom: 40px;
+}
+.button-red {
+  background-color: #da3400;
+  padding: 15px;
+  margin: 15px 0;
+  display: inline-block;
+}
+.button-red.round {
+  border-radius: 800px;
+}
+a.button-red {
+  color: #FFF;
+  text-decoration: none;
+}
+a.button-red:hover {
+  color: #FFF;
+}
+/**
+HEADER AND FOOTER LESS
+ */
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
@@ -54,9 +89,6 @@
 .navbar .donate-button {
   border-radius: 800px;
   background-color: #da3400;
-}
-.spacer {
-  height: 15px;
 }
 .footer {
   border-top: solid white 3px !important;
@@ -154,6 +186,37 @@
   border-right: 30px solid transparent;
   border-bottom: 10px solid transparent;
   border-top: 20px solid #f5a623;
+}
+/**
+SECTION SPECIFIC LESS
+ */
+.index-page #journey {
+  height: 580px;
+}
+.index-page #journey .journey-bg {
+  position: absolute;
+  z-index: -1;
+}
+.index-page #journey .journey-inner {
+  display: block;
+  position: relative;
+  z-index: 999;
+  padding-top: 300px;
+}
+.index-page #journey p {
+  padding-bottom: 20px;
+}
+.index-page #who-we-are .highlight-box {
+  border-radius: 8px;
+  background-color: #fad85f;
+}
+.index-page #what-we-do .card img {
+  border-radius: 9px;
+  box-shadow: 7.5px 7.5px 25px 0 rgba(0, 0, 0, 0.2);
+}
+.index-page #how-to-help img {
+  border-radius: 11px;
+  box-shadow: 7.5px 7.5px 30px 0 rgba(0, 0, 0, 0.2);
 }
 .impacts-page .section {
   height: 540px;

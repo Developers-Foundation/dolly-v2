@@ -49,7 +49,7 @@
                     <li class="">
                         <a href="#">Contact</a>
                     </li>
-                    <li class="button-red round">
+                    <li class="donate-button round">
                         <a href="">Donate</a>
                     </li>
                 </ul>
