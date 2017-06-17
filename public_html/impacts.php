@@ -32,63 +32,47 @@
 
 </head>
 
-<body>
-    <!--=========================================== MAIN FILES ==========================================-->
-    <?php
-        $page = "index-page";
-        $hasGmap = true;
-        include_once "html_elements/navBar.php";
-        include "html_elements/carouselTitle.php";
-        include "html_elements/carouselTitle.php";
-        include "html_elements/carouselTitle.php";
-        include "html_elements/carouselTitle.php";
-        include_once "html_elements/footer2.php";
-    ?>
+<body class="impacts-page">
+<!--=========================================== MAIN FILES ==========================================-->
+<?php
+$page = "impacts-page";
+$hasGmap = false;
+include_once "html_elements/navBar.php";
+?>
 
 
-<!-- -->
-<!--    include_once "html_elements/navBar.php";-->
-<!--    include_once "html_elements/header.php";-->
-<!--    include_once "html_elements/gallery.php";-->
-<!--    include_once "html_elements/carouselThree.php";-->
-<!--    include_once "html_elements/faq.php";-->
-<!--    include_once "html_elements/triangleGallery.php";-->
-<!--    include_once "html_elements/carouselTitle.php";-->
-<!--    include_once "html_elements/contactUs1.php";-->
-<!--    include_once "html_elements/googleMaps.php";-->
-<!--    include_once "html_elements/events.php";-->
-<!--    include_once "html_elements/footerTicker.php";-->
-<!--    include_once "html_elements/footer.php";-->
-<!--    include_once "html_elements/footer2.php";-->
-<!--    include_once "html_elements/contactUsModal.php";-->
 
-    <!--=========================================== JS SCRIPTS ==========================================-->
-    <!-- jQuery -->
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<?php
+include_once "html_elements/footer2.php";
+?>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<!--=========================================== JS SCRIPTS ==========================================-->
+<!-- jQuery -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-    <!-- Contact Form JavaScript -->
-    <!-- <script src="js/jqBootstrapValidation.js"></script>-->
-    <!-- <script src="js/contact_me.js"></script>-->
+<!-- Plugin JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="assets/js/freelancer.js"></script>
-    <script src="assets/js/material.min.js"></script>
-    <script src="assets/js/material-kit.js" type="text/javascript"></script>
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script>-->
+<!-- <script src="js/contact_me.js"></script>-->
 
-    <!-- Additional JS Files-->
-    <script src="assets/js/nob.js" type="text/javascript"></script>
-    <script src="assets/js/main.js" type="text/javascript"></script>
+<!-- Theme JavaScript -->
+<script src="assets/js/freelancer.js"></script>
+<script src="assets/js/material.min.js"></script>
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
 
-    <!-- Google Maps API File -->
-    <script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
-        loadedGmap();
-    </script>
+<!-- Additional JS Files-->
+<script src="assets/js/nob.js" type="text/javascript"></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
+
+<!-- Google Maps API File -->
+<script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
+    loadedGmap();
+</script>
 </body>
 
 </html>
