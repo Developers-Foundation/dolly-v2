@@ -12,7 +12,9 @@
                         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                     </button>
 
-                    <!--   TODO : How do we want this? Wouldn't a logo with the name like in the footer be better?         -->
+                    <!--   TODO : How do we want this? Wouldn't a logo with the name like in the footer be better?
+                             TODO: yes that would be better, but idk whether we have the non-square logo, if not then better to put text + logo
+                             -->
                     <a class="navbar-brand" href="#page-top"><img class="img img-responsive" src="//via.placeholder.com/300x75"/></a>
 
                 </div>
@@ -42,7 +44,7 @@
                         <a href="#">About</a>
                     </li>
                     <li class="">
-                        <a href="#">Impacts</a>
+                        <a href="/impacts">Impacts</a>
                     </li>
                     <li class="">
                         <a href="#">Blog</a>
