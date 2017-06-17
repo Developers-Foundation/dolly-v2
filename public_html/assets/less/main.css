@@ -148,3 +148,7 @@ a.button-red:hover {
   border-radius: 8px;
   background-color: #fee12e;
 }
+#what-we-do .card img {
+  border-radius: 9px;
+  box-shadow: 7.5px 7.5px 25px 0 rgba(0, 0, 0, 0.2);
+}

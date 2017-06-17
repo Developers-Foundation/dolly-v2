@@ -46,54 +46,38 @@
         <hr class="star-custom">
         <h2 class="text-center">What we do</h2>
         <div class="row">
-            <div class="col-md-4">
-                <img class="img-responsive" src="../assets/img/home/temp.png">
-                <h3>A Brief History of Anesthetics</h3>
-                <p>
-                    Hernia is an opening in the muscular structure of the wall of the abdomen. The weakness in the wall
-                    causes damages to the...
-                </p>
+            <div class="col-md-4 card">
+                <img class="img-responsive" src="//via.placeholder.com/262x117">
+                <h3>Reading Clubs</h3>
+                <p>Weekly reading clubs cultivate reading cultures amongst children as young as x years old.</p>
             </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="../assets/img/home/temp.png">
-                <h3>Treatment of Fibromyalgia</h3>
-                <p>
-                    Allergies and chemical sensitivities are a symptom of a compromised immune system.
-                </p>
+            <div class="col-md-4 card">
+                <img class="img-responsive" src="//via.placeholder.com/500x200">
+                <h3>Sponsorship Programmes</h3>
+                <p>Sponsorships allow children who lack financial resources to have a chance at education.</p>
             </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="../assets/img/home/temp.png">
-                <h3>Asperger S Syndrome Is There Real Cure For It</h3>
-                <p>
-                    Ulcer is a common type of digestive disorder that can affect different levels of the
-                    gastrointestinal system...
-                </p>
+            <div class="col-md-4 card">
+                <img class="img-responsive" src="//via.placeholder.com/123x234">
+                <h3>Back to School Initiatives</h3>
+                <p>Textbooks, uniforms, and transportation to schools are donated to children to alleviate financial stress on their families. </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <img class="img-responsive" src="../assets/img/home/temp.png">
-                <h3>Asperger S Syndrome Is There Real Cure For It</h3>
-                <p>
-                    Acne vulgaris (acne) is a condition, popular with teens and young adults, that is characterized by
-                    red, inflamed bumps and ...
+            <div class="col-md-4 card">
+                <img class="img-responsive" src="//via.placeholder.com/500x200">
+                <h3>Training Programs for Teachers</h3>
+                <p>Programs to ensure the education provided by primary schools in Nigeria are effective and up to global standards.  </p>
+            </div>
+            <div class="col-md-4 card">
+                <img class="img-responsive" src="//via.placeholder.com/234x123">
+                <h3>After school and Summer Tutoring Programs</h3>
+                <p>Additional education programs helps to alleviate child-care stress from working parents while enhances the children’s learning experience.</p>
                 </p>
             </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="../assets/img/home/temp.png">
-                <h3>Apricot Kernel Oil</h3>
-                <p>
-                    Most people are unaware that the use of Botox for  the prevention of migraine headaches came about
-                    purely by accident. It ...
-                </p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="../assets/img/home/temp.png">
-                <h3>How To Combat A Bout Of Chronic Headache</h3>
-                <p>
-                    If you know of a child who is having a greater degree of language impairment than other children or
-                    has diminished communication...
-                </p>
+            <div class="col-md-4 card">
+                <img class="img-responsive" src="//via.placeholder.com/456x123">
+                <h3>School Building</h3>
+                <p>New and upgraded school facilities provide more children with the necessary infrastructure and equipment to ensure a safe and effective learning environment. </p>
             </div>
         </div>
         <a href class="button-red">Learn more</a>
