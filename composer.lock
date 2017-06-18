@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8e159665ea99a8f8dbf3c612e7b238c0",
-    "content-hash": "796b047c492d5d6a75478175fc5ba2e7",
+    "content-hash": "97bf3689fa61b956fca2e995aa1a88b9",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -101,7 +100,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2015-03-18 18:23:50"
+            "time": "2015-03-18T18:23:50+00:00"
         },
         {
             "name": "sendgrid/sendgrid",
@@ -148,7 +147,7 @@
                 "send",
                 "sendgrid"
             ],
-            "time": "2016-02-18 21:40:14"
+            "time": "2016-02-18T21:40:14+00:00"
         },
         {
             "name": "sendgrid/smtpapi",
@@ -196,7 +195,7 @@
                 "smtpapi",
                 "xsmtp"
             ],
-            "time": "2015-04-14 02:37:45"
+            "time": "2015-04-14T02:37:45+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -256,7 +255,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02 07:47:27"
+            "time": "2017-06-02T07:47:27+00:00"
         }
     ],
     "packages-dev": [
@@ -302,7 +301,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2017-03-27 23:33:27"
+            "time": "2017-03-27T23:33:27+00:00"
         }
     ],
     "aliases": [],
