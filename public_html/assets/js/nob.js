@@ -8,36 +8,104 @@
 function loadedGmap() {
     // if ($('body').hasClass("index-page")) {
         // create a LatLng object containing the coordinate for the center of the map
-        var latlng = new google.maps.LatLng(-33.86455, 151.209);
+         var latlng = new google.maps.LatLng(6.593691, 3.352847);
 
         // Find your styles here :) https://snazzymaps.com/explore
-        var styleArr = [{
-            "featureType": "landscape",
-            "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
-        }, {
-            "featureType": "poi",
-            "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
-        }, {
-            "featureType": "road.highway",
-            "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
-        }, {
-            "featureType": "road.arterial",
-            "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
-        }, {
-            "featureType": "road.local",
-            "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
-        }, {
-            "featureType": "transit",
-            "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
-        }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
-            "featureType": "water",
-            "elementType": "labels",
-            "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
-        }, {
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
-        }];
+        var styleArr =
+            [
+                {
+                    "featureType": "landscape",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 60
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 40
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.province",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "lightness": 30
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ef8c25"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#b6c54c"
+                        },
+                        {
+                            "lightness": 40
+                        },
+                        {
+                            "saturation": -40
+                        }
+                    ]
+                },
+                {}
+            ];
 
         // prepare the map properties
         var options = {
@@ -46,7 +114,7 @@ function loadedGmap() {
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             navigationControl: true,
             mapTypeControl: false,
-            scrollwheel: false,
+            scrollwheel: true,
             styles: styleArr,
             disableDoubleClickZoom: true
         };
@@ -66,7 +134,7 @@ function loadedGmap() {
 
         // add information window
         var infowindow = new google.maps.InfoWindow({
-            content: '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
+            content: '<h5 class="info"><strong>This is our HQ </strong><br><br>You can find us at<br> 32846 Sydney</h5>'
         });
     // }
 }
@@ -139,7 +207,7 @@ $(document).ready(function () {
             // console.log(dir);
 
             $.ajax({
-                url: 'html_elements/mailer.php',
+                url: '../html_elements/mailer.php',
                 crossDomain: false,
                 data: sendData,
                 method: "POST",
