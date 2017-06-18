@@ -47,7 +47,7 @@
                         <a href="#">Blog</a>
                     </li>
                     <li class="">
-                        <a href="#">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                     <li class="donate-button">
                         <a href="/donate">Donate</a>
