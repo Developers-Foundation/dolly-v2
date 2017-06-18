@@ -74,9 +74,7 @@
                         </div>
                     </div>
                     <div class="donate-submit text-center">
-                        <a>
-                            <button class="button-red round">Payment Information</button>
-                        </a>
+                        <a href class="button-red round">Payment Information</a>
                     </div>
                 </form>
             </div>
