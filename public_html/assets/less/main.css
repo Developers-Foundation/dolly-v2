@@ -98,6 +98,10 @@ HEADER AND FOOTER LESS
   z-index: 1050;
   margin-top: 8.1%;
 }
+.navtab .line-behind {
+  background: linear-gradient(to top, #ffffff, #ffffff) repeat-x center;
+  background-size: 4px 4px;
+}
 .navtab .navtab-box {
   background-image: linear-gradient(to right, #fad85f, #f5a623 32%, #f5a623 81%, #fad85f);
   padding: 1%;
@@ -107,22 +111,31 @@ HEADER AND FOOTER LESS
   margin: 0;
   display: inline-flex;
 }
+.navtab .navtab-box .space-left {
+  margin-left: 40px !important;
+}
 .navtab .navtab-box ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
+  padding-left: 0 !important;
 }
 .navtab .navtab-box ul li {
   float: left;
+  margin-left: 10px;
 }
 .navtab .navtab-box ul li div {
   border-radius: 50%;
+  background-color: #f5a623;
+  border: 3px solid;
+  margin: auto;
   border-color: white;
   width: 100%;
   padding: 0 8px;
-  border: 3px solid;
-  color: white;
   text-align: center;
+}
+.navtab .navtab-box ul #li-impact-1 {
+  margin-left: 0 !important;
 }
 .navtab::after {
   content: "";

@@ -182,7 +182,6 @@ function scrollEvent() {
     }
 }
 
-// Whenever the window is scrolled we need to update the size of the nav
 $(function jQueryScroll (){
     if($('.impact-1').length > 0) {
         $(window).scroll(function () {

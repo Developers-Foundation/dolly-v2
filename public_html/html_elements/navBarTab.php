@@ -19,11 +19,11 @@ if (!isset($pageTitle)) {
             echo "<span>" . $pageTitle . "</span>";
 
             if ($pageTitle == "Impacts") {
-                echo '<ul class="navtab-numbers">';
+                echo '<div class="space-left"><ul class="line-behind">';
                 for($i = 1; $i < 7; $i++){
-                    echo '<li><div id="impact-' . $i .'">' . $i .'</div></li>';
+                    echo '<li id="li-impact-' .$i .'"><div class="impact-circle" id="impact-' . $i . '">' . $i .'</div></li>';
                 }
-                echo '</ul>';
+                echo '</ul></div>';
 
             }
             ?>

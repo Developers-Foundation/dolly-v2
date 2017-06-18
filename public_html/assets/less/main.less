@@ -128,6 +128,12 @@ HEADER AND FOOTER LESS
   z-index: 1050;
   margin-top: 8.1%;
 
+  .line-behind{
+    background:linear-gradient(to top,#ffffff,#ffffff) repeat-x center;
+    background-size:4px 4px;
+  }
+
+  //#li-impact
   .navtab-box {
     background-image: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
     padding: 1%;
@@ -138,27 +144,38 @@ HEADER AND FOOTER LESS
       display: inline-flex;
     }
 
+    .space-left{
+      margin-left: 40px !important;
+    }
+
     ul {
       list-style-type: none;
       margin: 0;
       overflow: hidden;
+      padding-left: 0 !important;
 
       li {
         float: left;
+        margin-left: 10px;
 
         div {
           border-radius: 50%;
+          //background-color: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
+          background-color: @ORANGE;
+          border:3px solid;
+          margin:auto;
           border-color: white;
-
           width: 100%;
           padding: 0 8px;
-
-          border: 3px solid;
-          color: white;
           text-align: center;
         }
       }
+
+      #li-impact-1{
+        margin-left: 0 !important;
+      }
     }
+
   }
 
   &::after {
