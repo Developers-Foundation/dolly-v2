@@ -119,3 +119,74 @@ $(function (){
 /* ----------------------------------------------------------- */
 /* End of resizing of triangle gallery.
  /* ----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var RESIZED = true;
+var TOPS = [];
+
+$(function jQueryResize (){
+    $(window).resize(function(){
+        RESIZED = true;
+    })
+});
+
+function bolden(num){
+    for(var i = 1; i < 7; i++){
+        if(i <= num){
+            $('#impact-' + i).css({
+                'border-color': 'rgb(74, 144, 226)',
+                'color': 'rgb(74, 144, 226)'
+            });
+        } else{
+            $('#impact-' + i).css({
+                'border-color': 'white',
+                'color': 'white'
+            });
+        }
+    }
+}
+
+function scrollEvent() {
+    if(RESIZED){
+        TOPS = [];
+        for(var i = 1; i < 7; i++){
+            TOPS.push($('.impact-' + i).offset().top);
+        }
+        RESIZED = false;
+    }
+
+    var scroll = $(window).scrollTop();
+    for(i = 1; i < 7; i++){
+        if(scroll < TOPS[i - 1]){
+            bolden(i);
+            break;
+        }
+    }
+}
+
+// Whenever the window is scrolled we need to update the size of the nav
+$(function jQueryScroll (){
+    if($('.impact-1').length > 0) {
+        $(window).scroll(function () {
+            scrollEvent();
+        });
+    }
+});
