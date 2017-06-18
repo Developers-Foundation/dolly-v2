@@ -207,7 +207,7 @@ $(document).ready(function () {
             // console.log(dir);
 
             $.ajax({
-                url: 'html_elements/mailer.php',
+                url: '../html_elements/mailer.php',
                 crossDomain: false,
                 data: sendData,
                 method: "POST",
