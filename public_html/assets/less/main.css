@@ -221,6 +221,7 @@ SECTION SPECIFIC LESS
 }
 .impacts-page .section {
   height: 540px;
+  margin-bottom: 0;
 }
 .impacts-page .section.first {
   margin-top: 15%;
@@ -243,7 +244,7 @@ SECTION SPECIFIC LESS
   display: block;
   position: relative;
   z-index: 999;
-  padding-top: 300px;
+  padding-top: 200px;
 }
 .impacts-page .section p {
   padding-bottom: 20px;
