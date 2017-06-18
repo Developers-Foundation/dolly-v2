@@ -23,8 +23,29 @@
         <div class="row">
             <div class="card col-md-offset-2 col-md-8">
                 <form class="donate-form" action="" method="post">
-                    <div>
-                        <input type="text" placeholder="test input">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Something...</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="donate-select">
+                                <option>The first option</option>
+                                <option>The second option</option>
+                                <option>The third option</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Something...</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="donate-select">
+                                <option>The first option</option>
+                                <option>The second option</option>
+                                <option>The third option</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="donate-amount">
                         <h3><strong>Amount Of</strong></h3>
