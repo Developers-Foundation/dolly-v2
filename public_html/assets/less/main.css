@@ -169,6 +169,7 @@ HEADER AND FOOTER LESS
   color: white !important;
   font-weight: 700;
   font-size: 1.2em;
+  margin: 25px 0 20px 0;
 }
 .footer .footerContainer .footer-nav li {
   padding-top: 10px !important;
