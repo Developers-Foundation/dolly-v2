@@ -49,7 +49,8 @@ h2 {
   display: inline-block;
 }
 .button-red.round {
-  border-radius: 800px;
+  border-radius: 50px;
+  color: #ffffff;
 }
 a.button-red {
   color: #FFF;
@@ -312,7 +313,7 @@ SECTION SPECIFIC LESS
 .donate-page .card .donate-form .donate-amount .donate-amount-radio {
   box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7.5px;
-  padding: 5px;
+  padding: 20px 10px 20px 10px;
   width: 100px;
   float: left;
   text-align: center;
@@ -333,6 +334,6 @@ SECTION SPECIFIC LESS
 }
 .donate-page .card .donate-form .donate-submit {
   clear: both;
-  width: 100px;
-  margin: 30px auto 0;
+  width: 100%;
+  margin: auto;
 }

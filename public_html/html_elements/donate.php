@@ -15,7 +15,8 @@
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
                     <p>From this moment on, choose not to let your past dictate your future. <br>
-                        What is gone is gone forever. Now is the time to move on, to do and become what you.</p>
+                        What is gone is gone forever. Now is the time to move on, to do and become what you.
+                    </p>
                 </div>
             </div>
         </div>
@@ -26,25 +27,35 @@
                         <input type="text" placeholder="test input">
                     </div>
                     <div class="donate-amount">
-                        <p>Amount Of</p>
-                        <div class="donate-amount-container">
-                            <a>
-                                <div class="donate-amount-radio selected">$25</div>
-                            </a>
-                            <a>
-                                <div class="donate-amount-radio">$50</div>
-                            </a>
-                            <a>
-                                <div class="donate-amount-radio">$100</div>
-                            </a>
-                            <a>
-                                <div class="donate-amount-radio">other</div>
-                            </a>
+                        <h3><strong>Amount Of</strong></h3>
+                        <div class="donate-amount-container row">
+                            <div class="col-md-3">
+                                <a>
+                                    <div class="donate-amount-radio selected"><strong>$25</strong></div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a>
+                                    <div class="donate-amount-radio"><strong>$50</strong></div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a>
+                                    <div class="donate-amount-radio"><strong>$100</strong></div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a>
+                                    <div class="donate-amount-radio"><strong>Other</strong></div>
+                                </a>
+                            </div>
                             <span class="stretch"></span>
                         </div>
                     </div>
-                    <div class="donate-submit">
-                        <button class="button-red round">Donate Now</button>
+                    <div class="donate-submit text-center">
+                        <a>
+                            <button class="button-red round">Payment Information</button>
+                        </a>
                     </div>
                 </form>
             </div>
