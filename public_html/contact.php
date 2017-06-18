@@ -32,13 +32,15 @@
 
 </head>
 
-<body class="about-page">
+<body class="contact-page">
 <!--=========================================== MAIN FILES ==========================================-->
 <?php
 $page = "contact-us";
-$pageTitle = "Contact Us";
+$pageTitle = "Contact";
 $hasGmap = true;
 include_once "html_elements/navBar.php";
+include_once "html_elements/navBarTab.php";
+
 include "html_elements/googleMaps.php";
 include "html_elements/contactUs2.php";
 

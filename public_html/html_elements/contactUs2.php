@@ -6,7 +6,8 @@ TODO: go into mailer.php and input your SendGrid API key
 TODO: go into public_html/assets/js/nob.js and modify who the message is being sent to.
 
 -->
-<div style="padding:30px"></div>
+
+
 <div class="" id="mailerForm">
     <div class="container contactUsContainer">
 
@@ -15,35 +16,51 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
 
             <!-- The form for the mailer -->
             <form class="form-email" action="" method="post" data-form-type="nob">
-                <div class="col-md-6 left">
+                <div class="col-md-5 left msg-info">
+                    <h3 class="msg-info">
+                        E: augustine_stark@gmail.com<br/>
+                        P: +289 393 3123
 
+                    </h3>
+
+                    <br/>
+                    <h3>
+                        LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology than we’ve ever had access to before.
+                    </h3>
+
+                </div>
+                <div class="col-md-1">
                 </div>
 
                 <!-- Message input -->
                 <div class="col-md-6 right">
                     <!-- Name input -->
-                    <div class="input-group">
-		                    <span class="input-group-addon">
-			                    <i class="fa fa-user contactIcon"></i>
-		                    </span>
-                        <input type="text" class="form-control form-input-name" placeholder="Your Name">
-                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="padding:0px;">
+                            <h4 class="msg-label"> Your Name</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-input-name">
+                            </div>
+                        </div>
 
-                    <!-- Email input -->
-                    <div class="input-group">
-		                    <span class="input-group-addon">
-			                    <i class="fa fa-envelope contactIcon"></i>
-		                    </span>
-                        <input type="text" class="form-control form-input-email" placeholder="Your Email">
+                        <!-- Email input -->
+                        <div class="col-md-6">
+                            <h4 class="msg-label"> Email Address</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-input-email">
+                            </div>
+                        </div>
                     </div>
+                    <br/>
+                    <h4 class="msg-label">  Message</h4>
+                    <textarea class="form-control form-input-message " rows="3"></textarea>
 
-                    <textarea class="form-control form-input-message" placeholder="Your Message"
-                                      rows="5"></textarea>
-                </div>
+
 
                 <!-- Submit button -->
-                <div class="col-md-12 text-center">
-                    <button class="btn btn-raised btn-success btn-lg">Send</button>
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-raised btn-grey btn-lg">SEND INQUIRY</button>
+                </div>
                 </div>
             </form>
         </div>

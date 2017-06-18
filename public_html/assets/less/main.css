@@ -336,3 +336,16 @@ SECTION SPECIFIC LESS
   width: 100px;
   margin: 30px auto 0;
 }
+.contact-page .container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.contact-page .msg-info {
+  text-align: left;
+  color: #4a4a4a;
+}
+.contact-page .msg-label {
+  font-size: 15px;
+  text-align: left;
+  color: #9b9b9b;
+}
