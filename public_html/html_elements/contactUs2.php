@@ -1,4 +1,3 @@
-
 <!--
 
 This creates a simple mailer module
@@ -25,15 +24,14 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
 
                     <br/>
                     <h3>
-                        LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology than we’ve ever had access to before.
+                        LCD screens are uniquely modern in style, and the liquid crystals that make them work have
+                        allowed humanity to create slimmer, more portable technology than we’ve ever had access to
+                        before.
                     </h3>
-
-                </div>
-                <div class="col-md-1">
                 </div>
 
                 <!-- Message input -->
-                <div class="col-md-6 right">
+                <div class="col-md-offset-1 col-md-6 right">
                     <!-- Name input -->
                     <div class="row">
                         <div class="col-md-6" style="padding:0px;">
@@ -52,15 +50,15 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                         </div>
                     </div>
                     <br/>
-                    <h4 class="msg-label">  Message</h4>
+                    <h4 class="msg-label"> Message</h4>
                     <textarea class="form-control form-input-message " rows="3"></textarea>
 
+                    <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
 
-
-                <!-- Submit button -->
-                <div class="col-md-12 text-right">
-                    <button class="btn btn-raised btn-grey btn-lg">SEND INQUIRY</button>
-                </div>
+                    <!-- Submit button -->
+                    <div class="text-right">
+                        <button class="btn btn-raised btn-grey btn-lg">SEND INQUIRY</button>
+                    </div>
                 </div>
             </form>
         </div>
