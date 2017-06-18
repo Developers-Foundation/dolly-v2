@@ -6,7 +6,7 @@
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @YELLOW: rgb(250, 216, 95);
 @RED: rgb(218, 52, 0);
-@MAINFONT: 'Arial-MT', Helvetica,Arial,sans-serif;
+@MAINFONT: 'Arial-MT', Helvetica, Arial, sans-serif;
 
 /**
 1. GLOBAL LESS
@@ -298,12 +298,13 @@ SECTION SPECIFIC LESS
   .section {
     height: 540px;
     margin-bottom: 0;
+    display: table;
 
     &.first {
-      margin-top: 15%;
+      margin-top: 16%;
     }
 
-    img {
+    .section-bg {
       position: absolute;
       z-index: -1;
     }
@@ -316,19 +317,34 @@ SECTION SPECIFIC LESS
       background: radial-gradient(circle at 23% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     }
 
-    .alternate {
-      /* TODO: Add in img tag within each section + make it auto alternative so no need to change html (Y) */
-    }
-
     .inner {
-      display: block;
+      display: table-cell;
+      vertical-align: middle;
       position: relative;
       z-index: 999;
-      padding-top: 200px;
+
+      .inner-container {
+        display: flex;
+      }
+    }
+
+    .feature-image {
+      border-radius: 13px;
+      border: solid 3px @ORANGE;
     }
 
     p {
       padding-bottom: 20px;
+    }
+  }
+
+  .alternate {
+    .feature-image {
+      order: 2;
+    }
+
+    .feature-text {
+      order: 1;
     }
   }
 }
