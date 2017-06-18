@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="html_elements/link.php?link=instagram" target="_blank " aclass="btn btn-social btn-instagram btn-simple">
+                        <a href="html_elements/link.php?link=instagram" target="_blank " class="btn btn-social btn-instagram btn-simple">
                             <i class="fa fa-social fa-2x fa-instagram"></i>Instagram
                         </a>
                     </li>
