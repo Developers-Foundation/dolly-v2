@@ -19,7 +19,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                 <div class="col-md-5 left msg-info">
                     <h3 class="msg-info">
                         E: augustine_stark@gmail.com<br/>
-                        P: +289 393 3123
+                        P: (+234) 708-739-0017
 
                     </h3>
 
