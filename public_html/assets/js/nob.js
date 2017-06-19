@@ -238,6 +238,7 @@ $(document).ready(function () {
                         submitButton.addClass("btn-danger");
                     }
                     submitButton.prop("disabled", false);
+                    grecaptcha.reset();
                 },
                 error: function (error) {
                     // console.log(sendData);
@@ -248,6 +249,7 @@ $(document).ready(function () {
                     submitButton.removeClass("btn-primary");
                     submitButton.addClass("btn-danger");
                     submitButton.prop("disabled", false);
+                    grecaptcha.reset();
                 }
             });
         }
