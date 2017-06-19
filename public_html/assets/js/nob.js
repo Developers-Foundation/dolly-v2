@@ -177,6 +177,7 @@ $(document).ready(function () {
         var nameField = thisForm.find('.form-input-name');
         var messageField = thisForm.find('.form-input-message');
         var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
+        console.log(captcha);
 
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
@@ -191,7 +192,7 @@ $(document).ready(function () {
 
                 // TODO: change to the name of the person that the message is being sent to.
                 toName = "Fakey McFakeName",
-                captcha = captcha.val();
+                captcha = captcha.value;
             console.log(captcha);
 
             var sendData = JSON.stringify({
