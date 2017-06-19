@@ -18,8 +18,6 @@ $getPost = (array)json_decode(file_get_contents('php://input'));
 // Check reCAPTCHA data FIRST
 $url = 'https://www.google.com/recaptcha/api/siteverify';
 $data = array('secret' => $_ENV['RECAPTCHA_SECRET'], 'response' => $getPost['captcha']);
-
-// use key 'http' even if you send the request to https://...
 $options = array(
     'http' => array(
         'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
@@ -41,7 +39,7 @@ try {
     exit;
 }
 
-
+// reCaptcha should be done
 $sendgrid = new SendGrid($_ENV["SENDGRID_API_KEY"]); // PUT IN REAL API INTO HEROKU ENV Variables
 $email = new SendGrid\Email();
 
