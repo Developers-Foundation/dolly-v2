@@ -15,7 +15,31 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
 require '../../vendor/autoload.php';
 $getPost = (array)json_decode(file_get_contents('php://input'));
 
+// Check reCAPTCHA data FIRST
+$url = 'https://www.google.com/recaptcha/api/siteverify';
+$data = array('secret' => $_ENV['RECAPTCHA_SECRET'], 'response' => $getPost['captcha']);
+$options = array(
+    'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data)
+    )
+);
 
+try {
+    $context = stream_context_create($options);
+    $result = json_decode(file_get_contents($url, false, $context), true);
+
+    if ($result['success'] == false) {
+        echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"));
+        exit;
+    }
+} catch (Exception $e) {
+    echo json_encode(array('success' => false, 'message' => $e));
+    exit;
+}
+
+// reCaptcha should be done
 $sendgrid = new SendGrid($_ENV["SENDGRID_API_KEY"]); // PUT IN REAL API INTO HEROKU ENV Variables
 $email = new SendGrid\Email();
 
