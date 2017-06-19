@@ -30,10 +30,9 @@ $options = array(
 
 try {
     $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
+    $result = json_decode(file_get_contents($url, false, $context));
 
-    $response = json_decode($result);
-    if ($response['success'] == false) {
+    if ($result['success'] == false) {
         echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"));
         exit;
     }
