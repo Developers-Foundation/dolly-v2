@@ -27,14 +27,20 @@ $options = array(
         'content' => http_build_query($data)
     )
 );
-$context  = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
-if ($result === FALSE) {
 
+try {
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    $response = json_decode($result);
+    if ($response['success'] == false) {
+        echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"));
+        exit;
+    }
+} catch (Exception $e) {
+    echo json_encode(array('success' => false, 'message' => $e));
+    exit;
 }
-
-echo json_encode(array('success' => false, 'message' => $result));
-exit;
 
 
 $sendgrid = new SendGrid($_ENV["SENDGRID_API_KEY"]); // PUT IN REAL API INTO HEROKU ENV Variables
