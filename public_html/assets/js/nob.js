@@ -165,6 +165,11 @@ $('.carousel.three .item').each(function () {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
+// Check email's validation
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
 $(document).ready(function () {
     $('form.form-email').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
@@ -194,17 +199,18 @@ $(document).ready(function () {
                 toName = "Fakey McFakeName",
                 captcha = captcha.value;
             console.log(captcha);
-
-            var sendData = JSON.stringify({
-                'sendFrom': sendFrom,
-                'fromName': fromName,
-                'sendTo': sendTo,
-                'toName': toName,
-                'subject': subject,
-                'msg': msg,
-                'msgHTML': msgHTML,
-                'captcha': captcha
-            });
+            if (validateEmail(sendFrom)) {
+                var sendData = JSON.stringify({
+                    'sendFrom': sendFrom,
+                    'fromName': fromName,
+                    'sendTo': sendTo,
+                    'toName': toName,
+                    'subject': subject,
+                    'msg': msg,
+                    'msgHTML': msgHTML,
+                    'captcha': captcha
+                });
+            }
 
             /* Print the current working directory. */
             // var loc = window.location.pathname;
