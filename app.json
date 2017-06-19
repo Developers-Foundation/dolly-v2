@@ -3,5 +3,8 @@
   "description": "Blank PHP Project for Quick deploy to Heroku with partial NOB API implemented",
   "repository": "https://github.com/nobodyrandom/blank-bootstrap.git",
   "logo": "https://developersfoundation.ca/assets/img/logo.png",
-  "keywords": ["php", "heroku", "blank", "template", "nob"]
+  "keywords": ["php", "heroku", "blank", "template", "nob"],
+  "addons": [
+    "papertrail:choklad"
+  ]
 }
