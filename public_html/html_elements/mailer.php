@@ -33,7 +33,7 @@ try {
     $result = json_decode(file_get_contents($url, false, $context));
 
     if ($result['success'] == false) {
-        echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"));
+        echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"), true);
         exit;
     }
 } catch (Exception $e) {
