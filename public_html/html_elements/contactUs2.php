@@ -37,7 +37,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                         <div class="col-md-6" style="padding:0px;">
                             <h4 class="msg-label"> Your Name</h4>
                             <div class="input-group">
-                                <input type="text" class="form-control form-input-name">
+                                <input type="text" class="form-control form-input-name" required>
                             </div>
                         </div>
 
@@ -45,13 +45,13 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                         <div class="col-md-6">
                             <h4 class="msg-label"> Email Address</h4>
                             <div class="input-group">
-                                <input type="text" class="form-control form-input-email">
+                                <input type="email" class="form-control form-input-email" required>
                             </div>
                         </div>
                     </div>
                     <br/>
                     <h4 class="msg-label"> Message</h4>
-                    <textarea class="form-control form-input-message " rows="3"></textarea>
+                    <textarea class="form-control form-input-message " rows="3" required></textarea>
 
                     <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
 
