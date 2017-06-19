@@ -30,10 +30,10 @@ $options = array(
 
 try {
     $context = stream_context_create($options);
-    $result = json_decode(file_get_contents($url, false, $context));
+    $result = json_decode(file_get_contents($url, false, $context), true);
 
     if ($result['success'] == false) {
-        echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"), true);
+        echo json_encode(array('success' => false, 'message' => "CAPTCHA Failed"));
         exit;
     }
 } catch (Exception $e) {
