@@ -110,6 +110,7 @@ HEADER AND FOOTER LESS
   left: 0;
   z-index: 1050;
   margin-top: 8.1%;
+  /* THE ORANGE TRIANGLE LOL */
 }
 .navtab .navtab-box {
   background-image: linear-gradient(to right, #fad85f, #f5a623 32%, #f5a623 81%, #fad85f);
@@ -120,22 +121,55 @@ HEADER AND FOOTER LESS
   margin: 0;
   display: inline-flex;
 }
+.navtab .navtab-box .space-left {
+  margin-left: 40px !important;
+}
 .navtab .navtab-box ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
+  padding-left: 0 !important;
 }
 .navtab .navtab-box ul li {
   float: left;
+  margin-left: 10px;
+  /* Does the circle as well. a tag controls the text color, not div/li */
 }
 .navtab .navtab-box ul li div {
   border-radius: 50%;
+  background-color: #f5a623;
+  border: 3px solid;
+  margin: auto;
   border-color: white;
   width: 100%;
   padding: 0 8px;
-  border: 2px solid white;
-  color: white;
   text-align: center;
+}
+.navtab .navtab-box ul li div a {
+  color: white;
+  text-decoration: none;
+}
+.navtab .navtab-box ul li div::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 0;
+  top: 19px;
+  left: -21px;
+  border-bottom: solid white 3px;
+}
+.navtab .navtab-box ul li.selected a {
+  color: #9b9b9b !important;
+}
+.navtab .navtab-box ul li.selected div {
+  border-color: #9b9b9b !important;
+}
+.navtab .navtab-box ul li.selected div::before {
+  border-bottom: solid #9b9b9b 3px !important;
+}
+.navtab .navtab-box ul #li-impact-1 {
+  margin-left: 0 !important;
 }
 .navtab::after {
   content: "";
@@ -235,11 +269,13 @@ SECTION SPECIFIC LESS
 }
 .impacts-page .section {
   height: 540px;
+  margin-bottom: 0;
+  display: table;
 }
 .impacts-page .section.first {
-  margin-top: 15%;
+  margin-top: 16%;
 }
-.impacts-page .section img {
+.impacts-page .section .section-bg {
   position: absolute;
   z-index: -1;
 }
@@ -250,17 +286,27 @@ SECTION SPECIFIC LESS
   height: 540px;
   background: radial-gradient(circle at 23% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
 }
-.impacts-page .section .alternate {
-  /* TODO: Add in img tag within each section + make it auto alternative so no need to change html (Y) */
-}
 .impacts-page .section .inner {
-  display: block;
+  display: table-cell;
+  vertical-align: middle;
   position: relative;
   z-index: 999;
-  padding-top: 300px;
+}
+.impacts-page .section .inner .inner-container {
+  display: flex;
+}
+.impacts-page .section .feature-image {
+  border-radius: 13px;
+  border: solid 3px #f5a623;
 }
 .impacts-page .section p {
   padding-bottom: 20px;
+}
+.impacts-page .alternate .feature-image {
+  order: 2;
+}
+.impacts-page .alternate .feature-text {
+  order: 1;
 }
 .about-page .section h2 {
   margin-bottom: 40px;
