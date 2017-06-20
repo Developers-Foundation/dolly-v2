@@ -138,9 +138,12 @@ HEADER AND FOOTER LESS
   color: white;
   text-decoration: none;
 }
-.navtab .navtab-box ul li div.selected {
+.navtab .navtab-box ul li div.active {
   border-color: #4a90e2 !important;
+}
+.navtab .navtab-box ul li div.active a {
   color: #4a90e2 !important;
+  text-decoration: none;
 }
 .navtab .navtab-box ul #li-impact-1 {
   margin-left: 0 !important;

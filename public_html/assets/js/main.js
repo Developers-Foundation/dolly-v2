@@ -191,3 +191,13 @@ $(function jQueryScroll (){
         });
     }
 });
+
+$(document).ready(function() {
+
+    $('ul  li > div').click(function(e) {
+        e.preventDefault();
+        $('ul  li > div').removeClass('active');
+        $(this).addClass('active');
+       // window.moveTo($(this).attr('href'));
+    });
+});
