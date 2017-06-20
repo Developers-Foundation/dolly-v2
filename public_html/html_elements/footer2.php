@@ -34,17 +34,17 @@
                 <h3>Contact With Us</h3>
                 <ul>
                     <li>
-                        <a href="html_elements/link.php?link=facebook" class="btn btn-social btn-facebook btn-simple">
+                        <a href="html_elements/link.php?link=facebook" target="_blank " class="btn btn-social btn-facebook btn-simple">
                             <i class="fa fa-social fa-2x fa-facebook"></i>Facebook
                         </a>
                     </li>
                     <li>
-                        <a href="html_elements/link.php?link=twitter" class="btn btn-social btn-twitter btn-simple">
+                        <a href="html_elements/link.php?link=twitter" target="_blank " class="btn btn-social btn-twitter btn-simple">
                             <i class="fa fa-social fa-2x fa-twitter"></i>Twitter
                         </a>
                     </li>
                     <li>
-                        <a href="html_elements/link.php?link=instagram" class="btn btn-social btn-instagram btn-simple">
+                        <a href="html_elements/link.php?link=instagram" target="_blank " class="btn btn-social btn-instagram btn-simple">
                             <i class="fa fa-social fa-2x fa-instagram"></i>Instagram
                         </a>
                     </li>

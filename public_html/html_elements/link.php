@@ -12,7 +12,7 @@ switch ($linkTo) {
         $url = "https://developersfoundation.ca/";
         break;
     case "facebook":
-        $url = "https://www.facebook.com/";
+        $url = "https://www.facebook.com/DollyChildrenFoundation";
         break;
     case "blog":
     case "rss":
@@ -22,9 +22,12 @@ switch ($linkTo) {
     case "github":
         $url = "https://github.com/";
         break;
+    case "instagram":
+        $url = "https://www.instagram.com/dollychildren/";
+        break;
     case "home":
     default:
-        $url = "https://developersfoundation.ca/";
+        $url = "http://dolly-v2.herokuapp.com/";
 }
 
 header("Location: " . $url);

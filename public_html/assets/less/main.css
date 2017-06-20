@@ -59,6 +59,19 @@ a.button-red {
 a.button-red:hover {
   color: #FFF;
 }
+.star-custom {
+  border: solid 1px #9b9b9b;
+  width: 75%;
+  text-align: center;
+}
+.star-custom::after {
+  content: url("../img/star.png");
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  background-color: white;
+}
 /**
 HEADER AND FOOTER LESS
  */
@@ -180,8 +193,8 @@ HEADER AND FOOTER LESS
   padding-left: 0 !important;
 }
 .footer .footerContainer {
-  padding: 3%;
-  padding-top: 2%;
+  padding: 3% !important;
+  padding-top: 2% !important;
 }
 .footer .footerContainer img {
   padding-top: 60px;
@@ -190,6 +203,7 @@ HEADER AND FOOTER LESS
   color: white !important;
   font-weight: 700;
   font-size: 1.2em;
+  margin: 25px 0 20px 0;
 }
 .footer .footerContainer .footer-nav li {
   padding-top: 10px !important;
@@ -391,4 +405,17 @@ SECTION SPECIFIC LESS
   clear: both;
   width: 100%;
   margin: auto;
+}
+.contact-page .container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.contact-page .msg-info {
+  text-align: left;
+  color: #4a4a4a;
+}
+.contact-page .msg-label {
+  font-size: 15px;
+  text-align: left;
+  color: #9b9b9b;
 }
