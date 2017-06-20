@@ -134,6 +134,14 @@ HEADER AND FOOTER LESS
   padding: 0 8px;
   text-align: center;
 }
+.navtab .navtab-box ul li div a {
+  color: white;
+  text-decoration: none;
+}
+.navtab .navtab-box ul li div.selected {
+  border-color: #4a90e2 !important;
+  color: #4a90e2 !important;
+}
 .navtab .navtab-box ul #li-impact-1 {
   margin-left: 0 !important;
 }
