@@ -26,7 +26,8 @@ h2 {
 }
 
 .row {
-  margin: 0 !important;
+  /* TODO: Who put this line? @minimike511 @psalv @trickly and why is this needed? it would screw with default bootstrap rows
+  /* margin: 0 !important; */
 }
 
 .orange {
@@ -331,10 +332,18 @@ SECTION SPECIFIC LESS
 }
 
 .impacts-page {
+  color: white;
+
+  hr {
+    color: @ORANGE;
+    border-color: @ORANGE;
+  }
+
   .section {
     height: 540px;
     margin-bottom: 0;
     display: table;
+    color: white;
 
     &.first {
       margin-top: 16%;
@@ -358,15 +367,19 @@ SECTION SPECIFIC LESS
       vertical-align: middle;
       position: relative;
       z-index: 999;
+      text-align: center;
 
       .inner-container {
         display: flex;
+        width: 80%;
+        margin: 0 auto;
       }
     }
 
     .feature-image {
       border-radius: 13px;
       border: solid 3px @ORANGE;
+      overflow: hidden;
     }
 
     p {

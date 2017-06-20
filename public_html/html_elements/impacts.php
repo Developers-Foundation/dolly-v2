@@ -13,8 +13,8 @@
         <img src="//via.placeholder.com/1140x540" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-4"><img src="//via.placeholder.com/316x450"/></div>
-                <div class="feature-text col-md-6 text-left">
+                <div class="feature-image col-md-5"><img src="//via.placeholder.com/350x456"/></div>
+                <div class="feature-text col-md-7 text-left">
                     <h1>Reading Clubs</h1>
                     <hr>
                     <p>
@@ -31,8 +31,8 @@
         <img src="//via.placeholder.com/1140x540/red" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-4"><img src="//via.placeholder.com/316x450"/></div>
-                <div class="feature-text col-md-6 text-left">
+                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-text col-md-7 text-left">
                     <h1>Sponsorship Programmes</h1>
                     <hr>
                     <p>Inspiring the African Child through educational aids and interventions centered on mental and
@@ -47,9 +47,10 @@
         <img src="//via.placeholder.com/1140x540/f00" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-4"><img src="//via.placeholder.com/316x450"/></div>
-                <div class="feature-text col-md-6 text-left">
+                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-text col-md-7 text-left">
                     <h1>Back to School Initiatives</h1>
+                    <hr>
                     <p>
                         Inspiring the African Child through educational aids and interventions centered on mental and
                         intellectual programs.
@@ -64,8 +65,8 @@
         <img src="//via.placeholder.com/1140x540/00f" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-4"><img src="//via.placeholder.com/316x450"/></div>
-                <div class="feature-text col-md-6 text-left">
+                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-text col-md-7 text-left">
                     <h1>Training Programs for Teachers</h1>
                     <hr>
                     <p>Inspiring the African Child through educational aids and interventions centered on mental and
@@ -80,8 +81,8 @@
         <img src="//via.placeholder.com/1140x540/green" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-4"><img src="//via.placeholder.com/316x450"/></div>
-                <div class="feature-text col-md-6 text-left">
+                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-text col-md-7 text-left">
                     <h1>After School and Summer Tutoring Programs</h1>
                     <hr>
                     <p>Inspiring the African Child through educational aids and interventions cen</p>
@@ -95,8 +96,8 @@
         <img src="//via.placeholder.com/1140x540/pink" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-4"><img src="//via.placeholder.com/316x450"/></div>
-                <div class="feature-text col-md-6 text-left">
+                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-text col-md-7 text-left">
                     <h1>School Building</h1>
                     <hr>
                     <p>
