@@ -151,15 +151,17 @@ $(function jQueryResize (){
 function bolden(num){
     for(var i = 1; i < 7; i++){
         if(i <= num){
-            $('#impact-' + i).css({
+            /*$('#impact-' + i).css({
                 'border-color': 'rgb(74, 144, 226)',
                 'color': 'rgb(74, 144, 226)'
-            });
+            });*/
+            $('#impact-' + i).addClass("selected");
         } else{
-            $('#impact-' + i).css({
+            /*$('#impact-' + i).css({
                 'border-color': 'white',
                 'color': 'white'
-            });
+            });*/
+            $('#impact-' + i).removeClass("selected");
         }
     }
 }
