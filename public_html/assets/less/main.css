@@ -97,10 +97,7 @@ HEADER AND FOOTER LESS
   left: 0;
   z-index: 1050;
   margin-top: 8.1%;
-}
-.navtab .line-behind {
-  background: linear-gradient(to top, #ffffff, #ffffff) repeat-x center;
-  background-size: 4px 4px;
+  /* THE ORANGE TRIANGLE LOL */
 }
 .navtab .navtab-box {
   background-image: linear-gradient(to right, #fad85f, #f5a623 32%, #f5a623 81%, #fad85f);
@@ -123,6 +120,7 @@ HEADER AND FOOTER LESS
 .navtab .navtab-box ul li {
   float: left;
   margin-left: 10px;
+  /* Does the circle as well. a tag controls the text color, not div/li */
 }
 .navtab .navtab-box ul li div {
   border-radius: 50%;
@@ -133,25 +131,29 @@ HEADER AND FOOTER LESS
   width: 100%;
   padding: 0 8px;
   text-align: center;
-  /*&.active {
-            border-color: rgb(74, 144, 226) !important;
-
-            a {
-              color: rgb(74, 144, 226) !important;
-              text-decoration: none;
-            }
-            testtestest
-          }*/
 }
 .navtab .navtab-box ul li div a {
   color: white;
   text-decoration: none;
+}
+.navtab .navtab-box ul li div::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 0;
+  top: 19px;
+  left: -21px;
+  border-bottom: solid white 3px;
 }
 .navtab .navtab-box ul li.selected a {
   color: #9b9b9b !important;
 }
 .navtab .navtab-box ul li.selected div {
   border-color: #9b9b9b !important;
+}
+.navtab .navtab-box ul li.selected div::before {
+  border-bottom: solid #9b9b9b 3px !important;
 }
 .navtab .navtab-box ul #li-impact-1 {
   margin-left: 0 !important;

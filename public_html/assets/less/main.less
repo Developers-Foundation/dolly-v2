@@ -128,11 +128,6 @@ HEADER AND FOOTER LESS
   z-index: 1050;
   margin-top: 8.1%;
 
-  .line-behind {
-    background: linear-gradient(to top, #ffffff, #ffffff) repeat-x center;
-    background-size: 4px 4px;
-  }
-
   //#li-impact
   .navtab-box {
     background-image: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
@@ -158,6 +153,7 @@ HEADER AND FOOTER LESS
         float: left;
         margin-left: 10px;
 
+        /* Does the circle as well. a tag controls the text color, not div/li */
         div {
           border-radius: 50%;
           //background-color: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
@@ -174,25 +170,22 @@ HEADER AND FOOTER LESS
             text-decoration: none;
           }
 
-          /*&.active {
-            border-color: rgb(74, 144, 226) !important;
-
-            a {
-              color: rgb(74, 144, 226) !important;
-              text-decoration: none;
-            }
-            testtestest
-          }*/
+          &::before {
+            content: "";
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 0;
+            top: 19px;
+            left: -21px;
+            border-bottom: solid white 3px;
+          }
         }
 
         &.selected {
-          a {
-            color: @LIGHTGREY !important;
-          }
-
-          div {
-            border-color: @LIGHTGREY !important;
-          }
+          a {color: @LIGHTGREY !important;}
+          div {border-color: @LIGHTGREY !important;}
+          div::before {border-bottom: solid @LIGHTGREY 3px !important;}
         }
       }
 
@@ -203,6 +196,7 @@ HEADER AND FOOTER LESS
 
   }
 
+  /* THE ORANGE TRIANGLE LOL */
   &::after {
     content: "";
     height: 0;
