@@ -133,17 +133,25 @@ HEADER AND FOOTER LESS
   width: 100%;
   padding: 0 8px;
   text-align: center;
+  /*&.active {
+            border-color: rgb(74, 144, 226) !important;
+
+            a {
+              color: rgb(74, 144, 226) !important;
+              text-decoration: none;
+            }
+            testtestest
+          }*/
 }
 .navtab .navtab-box ul li div a {
   color: white;
   text-decoration: none;
 }
-.navtab .navtab-box ul li div.active {
-  border-color: #4a90e2 !important;
+.navtab .navtab-box ul li.selected a {
+  color: #9b9b9b !important;
 }
-.navtab .navtab-box ul li div.active a {
-  color: #4a90e2 !important;
-  text-decoration: none;
+.navtab .navtab-box ul li.selected div {
+  border-color: #9b9b9b !important;
 }
 .navtab .navtab-box ul #li-impact-1 {
   margin-left: 0 !important;

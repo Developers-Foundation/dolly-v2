@@ -128,9 +128,9 @@ HEADER AND FOOTER LESS
   z-index: 1050;
   margin-top: 8.1%;
 
-  .line-behind{
-    background:linear-gradient(to top,#ffffff,#ffffff) repeat-x center;
-    background-size:4px 4px;
+  .line-behind {
+    background: linear-gradient(to top, #ffffff, #ffffff) repeat-x center;
+    background-size: 4px 4px;
   }
 
   //#li-impact
@@ -144,7 +144,7 @@ HEADER AND FOOTER LESS
       display: inline-flex;
     }
 
-    .space-left{
+    .space-left {
       margin-left: 40px !important;
     }
 
@@ -162,30 +162,41 @@ HEADER AND FOOTER LESS
           border-radius: 50%;
           //background-color: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
           background-color: @ORANGE;
-          border:3px solid;
-          margin:auto;
+          border: 3px solid;
+          margin: auto;
           border-color: white;
           width: 100%;
           padding: 0 8px;
           text-align: center;
 
-            a{
-              color: white;
-              text-decoration: none;
-            }
+          a {
+            color: white;
+            text-decoration: none;
+          }
 
-          &.active {
+          /*&.active {
             border-color: rgb(74, 144, 226) !important;
 
-            a{
+            a {
               color: rgb(74, 144, 226) !important;
               text-decoration: none;
             }
+            testtestest
+          }*/
+        }
+
+        &.selected {
+          a {
+            color: @LIGHTGREY !important;
+          }
+
+          div {
+            border-color: @LIGHTGREY !important;
           }
         }
       }
 
-      #li-impact-1{
+      #li-impact-1 {
         margin-left: 0 !important;
       }
     }
