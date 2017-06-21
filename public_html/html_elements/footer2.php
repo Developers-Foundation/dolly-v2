@@ -11,7 +11,7 @@
 
                 <div class="footer-info">
                     <h3>Lagos, Nigeria</h3>
-                    <p>(234) 678-263-1273<br />dollychildrenfoundation@gmail.com</p>
+                    <p>(234) 678-263-1273<br />info@dollychildren.org</p>
                 </div>
             </div>
         </div>
