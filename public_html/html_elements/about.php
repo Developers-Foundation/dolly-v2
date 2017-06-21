@@ -14,7 +14,10 @@
         <div class="row inner">
             <div class="col-md-offset-4 col-md-4 text-center">
                 <h2>Our Mission</h2>
-                <p>Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the best place to learn them.</p>
+                <p>
+                    To Inspire the African Child through educational aids and improve their socio- developmental
+                     skills through interventions centered on mental and intellectual programs.
+                </p>
             </div>
         </div>
     </div>
@@ -61,9 +64,14 @@
         <div class="row">
             <h2 class="text-center">Meet the Founder</h2>
             <div class="col-md-5">
-                <h3>Roxie Saunders</h3>
-                <p><b>Her Message:</b></p>
-                <p>“Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory compaq laptop battery compaq laptop battery charger compaq laptop computer … Large main compartment features a padded laptop computer pocket, accessory pockets, mesh disk pockets, and ample room for business papers. Right here you can find the best laptop, monitor, printer, PDA, computer component and accessory.”</p>
+                <h3>Adedolapo Osuntuyi</h3>
+                <p>
+                    <b>Her Message:</b><br>
+                    From my experiences, I believe that access to a conducive learning environment, quality
+                    educational programmes, provision of educational aids and financial support to the less -
+                    privileged children of the communities are crucial needs, and these aforementioned values remain
+                    the core of our foundation.
+                </p>
             </div>
             <div class="col-md-offset-1 col-md-6">
                 <img src="//via.placeholder.com/417x282" />
