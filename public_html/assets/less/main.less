@@ -6,7 +6,7 @@
 @LIGHTMUSTARD: darken(rgb(250, 216, 95), 5%);
 @YELLOW: rgb(250, 216, 95);
 @RED: rgb(218, 52, 0);
-@MAINFONT: 'Arial-MT', Helvetica,Arial,sans-serif;
+@MAINFONT: 'Arial-MT', Helvetica, Arial, sans-serif;
 
 /**
 1. GLOBAL LESS
@@ -26,7 +26,8 @@ h2 {
 }
 
 .row {
-  margin: 0 !important;
+  /* TODO: Who put this line? @minimike511 @psalv @trickly and why is this needed? it would screw with default bootstrap rows
+  /* margin: 0 !important; */
 }
 
 .orange {
@@ -80,6 +81,21 @@ h2 {
   }
 }
 
+.star-custom {
+  border: solid 1px @LIGHTGREY;
+  width:75%;
+  text-align: center;
+
+  &::after {
+    content: url("../img/star.png");
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    background-color: white;
+  }
+}
+
 /**
 HEADER AND FOOTER LESS
  */
@@ -128,6 +144,7 @@ HEADER AND FOOTER LESS
   z-index: 1050;
   margin-top: 8.1%;
 
+  //#li-impact
   .navtab-box {
     background-image: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
     padding: 1%;
@@ -138,29 +155,64 @@ HEADER AND FOOTER LESS
       display: inline-flex;
     }
 
+    .space-left {
+      margin-left: 40px !important;
+    }
+
     ul {
       list-style-type: none;
       margin: 0;
       overflow: hidden;
+      padding-left: 0 !important;
 
       li {
         float: left;
+        margin-left: 10px;
 
+        /* Does the circle as well. a tag controls the text color, not div/li */
         div {
           border-radius: 50%;
+          //background-color: linear-gradient(to right, @YELLOW, @ORANGE 32%, @ORANGE 81%, @YELLOW);
+          background-color: @ORANGE;
+          border: 3px solid;
+          margin: auto;
           border-color: white;
-
           width: 100%;
           padding: 0 8px;
-
-          border: 2px solid white;
-          color: white;
           text-align: center;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+
+          &::before {
+            content: "";
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 0;
+            top: 19px;
+            left: -21px;
+            border-bottom: solid white 3px;
+          }
+        }
+
+        &.selected {
+          a {color: @LIGHTGREY !important;}
+          div {border-color: @LIGHTGREY !important;}
+          div::before {border-bottom: solid @LIGHTGREY 3px !important;}
         }
       }
+
+      #li-impact-1 {
+        margin-left: 0 !important;
+      }
     }
+
   }
 
+  /* THE ORANGE TRIANGLE LOL */
   &::after {
     content: "";
     height: 0;
@@ -187,8 +239,8 @@ HEADER AND FOOTER LESS
   }
 
   .footerContainer {
-    padding: 3%;
-    padding-top: 2%;
+    padding: 3% !important;
+    padding-top: 2% !important;
 
     img {
       padding-top: 60px;
@@ -198,6 +250,7 @@ HEADER AND FOOTER LESS
       .white-text;
       font-weight: 700;
       font-size: 1.2em;
+      margin: 25px 0 20px 0;
     }
 
     .footer-nav {
@@ -268,7 +321,6 @@ SECTION SPECIFIC LESS
   }
 
   #who-we-are {
-
     .highlight-box {
       border-radius: 8px;
       background-color: @YELLOW;
@@ -276,7 +328,6 @@ SECTION SPECIFIC LESS
   }
 
   #what-we-do {
-
     .card {
       img {
         border-radius: 9px;
@@ -295,14 +346,24 @@ SECTION SPECIFIC LESS
 }
 
 .impacts-page {
+  color: white;
+
+  hr {
+    color: @ORANGE;
+    border-color: @ORANGE;
+  }
+
   .section {
     height: 540px;
+    margin-bottom: 0;
+    display: table;
+    color: white;
 
     &.first {
-      margin-top: 15%;
+      margin-top: 16%;
     }
 
-    img {
+    .section-bg {
       position: absolute;
       z-index: -1;
     }
@@ -315,19 +376,38 @@ SECTION SPECIFIC LESS
       background: radial-gradient(circle at 23% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     }
 
-    .alternate {
-      /* TODO: Add in img tag within each section + make it auto alternative so no need to change html (Y) */
-    }
-
     .inner {
-      display: block;
+      display: table-cell;
+      vertical-align: middle;
       position: relative;
       z-index: 999;
-      padding-top: 300px;
+      text-align: center;
+
+      .inner-container {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .feature-image {
+      border-radius: 13px;
+      border: solid 3px @ORANGE;
+      overflow: hidden;
     }
 
     p {
       padding-bottom: 20px;
+    }
+  }
+
+  .alternate {
+    .feature-image {
+      order: 2;
+    }
+
+    .feature-text {
+      order: 1;
     }
   }
 }
@@ -460,4 +540,26 @@ SECTION SPECIFIC LESS
       }
     }
   }
+}
+
+.contact-page{
+  .container{
+    padding-top:5%;
+    padding-bottom:5%;
+
+  }
+  .msg-info{
+    //font-family: ArialMT;
+    //ont-size: 16px;
+    text-align: left;
+    color: @DARKGREY;
+
+  }
+  .msg-label{
+   // font-family: LucidaGrande;
+    font-size: 15px;
+    text-align: left;
+    color: @LIGHTGREY;
+  }
+
 }

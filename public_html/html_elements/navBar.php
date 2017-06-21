@@ -12,7 +12,7 @@
                     <!--   TODO : How do we want this? Wouldn't a logo with the name like in the footer be better?
                              TODO: yes that would be better, but idk whether we have the non-square logo, if not then better to put text + logo
                              -->
-                    <a class="navbar-brand" href="#page-top"><img class="img img-responsive" src="//via.placeholder.com/300x75"/></a>
+                    <a class="navbar-brand" href="html_elements/link.php?link=home"><img class="img img-responsive" src="//via.placeholder.com/300x75"/></a>
 
                 </div>
             </div>
@@ -25,7 +25,7 @@
                         <ul class="list-inline text-right nav-contact-info">
                             <li><i class="fa fa-envelope-o"></i>dollychildrenfoundation@gmail.com</li>
                             <li><i class="fa fa-phone"></i>234-818-689-1611</li>
-                            <li><i class="fa fa-facebook-square"></i>Facebook</li>
+                            <li><a href="html_elements/link.php?link=facebook" target="_blank "><i class="fa fa-facebook-square"></i>Facebook</a></li>
                         </ul>
                     </li>
 
@@ -47,7 +47,7 @@
                         <a href="#">Blog</a>
                     </li>
                     <li class="">
-                        <a href="#">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                     <li class="donate-button">
                         <a href="/donate">Donate</a>

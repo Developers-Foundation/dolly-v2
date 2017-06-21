@@ -2,80 +2,148 @@
  * Created by harrisonchow on 7/10/16.
  */
 
- /* ----------------------------------------------------------- */
- /* Nob Google Map Start
+/* ----------------------------------------------------------- */
+/* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
     // if ($('body').hasClass("index-page")) {
-        // create a LatLng object containing the coordinate for the center of the map
-        var latlng = new google.maps.LatLng(-33.86455, 151.209);
+    // create a LatLng object containing the coordinate for the center of the map
+    var latlng = new google.maps.LatLng(6.593691, 3.352847);
 
-        // Find your styles here :) https://snazzymaps.com/explore
-        var styleArr = [{
-            "featureType": "landscape",
-            "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
-        }, {
-            "featureType": "poi",
-            "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
-        }, {
-            "featureType": "road.highway",
-            "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
-        }, {
-            "featureType": "road.arterial",
-            "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
-        }, {
-            "featureType": "road.local",
-            "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
-        }, {
-            "featureType": "transit",
-            "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
-        }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
-            "featureType": "water",
-            "elementType": "labels",
-            "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
-        }, {
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
-        }];
+    // Find your styles here :) https://snazzymaps.com/explore
+    var styleArr =
+        [
+            {
+                "featureType": "landscape",
+                "stylers": [
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 60
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "stylers": [
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 40
+                    },
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "stylers": [
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "visibility": "simplified"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.province",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "lightness": 30
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ef8c25"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#b6c54c"
+                    },
+                    {
+                        "lightness": 40
+                    },
+                    {
+                        "saturation": -40
+                    }
+                ]
+            },
+            {}
+        ];
 
-        // prepare the map properties
-        var options = {
-            zoom: 15,
-            center: latlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            navigationControl: true,
-            mapTypeControl: false,
-            scrollwheel: false,
-            styles: styleArr,
-            disableDoubleClickZoom: true
-        };
+    // prepare the map properties
+    var options = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        navigationControl: true,
+        mapTypeControl: false,
+        scrollwheel: true,
+        styles: styleArr,
+        disableDoubleClickZoom: true
+    };
 
-        // initialize the map object
-        var map = new google.maps.Map(document.getElementById('google_map'), options);
+    // initialize the map object
+    var map = new google.maps.Map(document.getElementById('google_map'), options);
 
-        // add Marker
-        var marker1 = new google.maps.Marker({
-            position: latlng, map: map
-        });
+    // add Marker
+    var marker1 = new google.maps.Marker({
+        position: latlng, map: map
+    });
 
-        // add listener for a click on the pin
-        google.maps.event.addListener(marker1, 'click', function () {
-            infowindow.open(map, marker1);
-        });
+    // add listener for a click on the pin
+    google.maps.event.addListener(marker1, 'click', function () {
+        infowindow.open(map, marker1);
+    });
 
-        // add information window
-        var infowindow = new google.maps.InfoWindow({
-            content: '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-        });
+    // add information window
+    var infowindow = new google.maps.InfoWindow({
+        content: '<h5 class="info"><strong>This is our HQ </strong><br><br>You can find us at<br> 32846 Sydney</h5>'
+    });
     // }
 }
- /* ----------------------------------------------------------- */
- /* Nob Google Map End
+/* ----------------------------------------------------------- */
+/* Nob Google Map End
  /* ----------------------------------------------------------- */
 
- /* ----------------------------------------------------------- */
- /* Nob Carousel Correction
+/* ----------------------------------------------------------- */
+/* Nob Carousel Correction
  /* ----------------------------------------------------------- */
 $('.carousel.three .item').each(function () {
     var next = $(this).next();
@@ -89,14 +157,19 @@ $('.carousel.three .item').each(function () {
         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
 });
- /* ----------------------------------------------------------- */
- /* Nob Three Carousel Correction END
+/* ----------------------------------------------------------- */
+/* Nob Three Carousel Correction END
  /* ----------------------------------------------------------- */
 
 
+/* ----------------------------------------------------------- */
+/* Nob Mailer START
  /* ----------------------------------------------------------- */
- /* Nob Mailer START
- /* ----------------------------------------------------------- */
+// Check email's validation
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
 $(document).ready(function () {
     $('form.form-email').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
@@ -108,6 +181,8 @@ $(document).ready(function () {
         var emailField = thisForm.find('.form-input-email');
         var nameField = thisForm.find('.form-input-name');
         var messageField = thisForm.find('.form-input-message');
+        var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
+        console.log(captcha);
 
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
@@ -121,25 +196,29 @@ $(document).ready(function () {
                 fromName = nameField.val(),
 
                 // TODO: change to the name of the person that the message is being sent to.
-                toName = "Fakey McFakeName";
+                toName = "Fakey McFakeName",
+                captcha = captcha.value;
+            console.log(captcha);
+            if (validateEmail(sendFrom)) {
+                var sendData = JSON.stringify({
+                    'sendFrom': sendFrom,
+                    'fromName': fromName,
+                    'sendTo': sendTo,
+                    'toName': toName,
+                    'subject': subject,
+                    'msg': msg,
+                    'msgHTML': msgHTML,
+                    'captcha': captcha
+                });
+            }
 
-            var sendData = JSON.stringify({
-                'sendFrom': sendFrom,
-                'fromName': fromName,
-                'sendTo': sendTo,
-                'toName': toName,
-                'subject': subject,
-                'msg': msg,
-                'msgHTML': msgHTML
-            });
-
-        /* Print the current working directory. */
+            /* Print the current working directory. */
             // var loc = window.location.pathname;
             // var dir = loc.substring(0, loc.lastIndexOf('/'));
             // console.log(dir);
 
             $.ajax({
-                url: 'html_elements/mailer.php',
+                url: '../html_elements/mailer.php', //edit this
                 crossDomain: false,
                 data: sendData,
                 method: "POST",
@@ -165,6 +244,7 @@ $(document).ready(function () {
                         submitButton.addClass("btn-danger");
                     }
                     submitButton.prop("disabled", false);
+                    grecaptcha.reset();
                 },
                 error: function (error) {
                     // console.log(sendData);
@@ -175,11 +255,12 @@ $(document).ready(function () {
                     submitButton.removeClass("btn-primary");
                     submitButton.addClass("btn-danger");
                     submitButton.prop("disabled", false);
+                    grecaptcha.reset();
                 }
             });
         }
     });
 });
- /* ----------------------------------------------------------- */
- /* Nob Mailer END
+/* ----------------------------------------------------------- */
+/* Nob Mailer END
  /* ----------------------------------------------------------- */

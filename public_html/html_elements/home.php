@@ -49,39 +49,81 @@
             <div class="col-md-4 card">
                 <img class="img-responsive" src="//via.placeholder.com/262x117">
                 <h3>Reading Clubs</h3>
-                <p>Weekly reading clubs cultivate reading cultures amongst children as young as x years old.</p>
+                <p>
+                    Weekly reading club meetings are held in the public primary schools in communities we serve.
+                    Part of Dolly’s mission is to engage the children in the activities that will improve their
+                    abilities academically and socially. We focus on providing reading material that inspire
+                    excellence, leadership, and increase their literacy abilities. Our initiatives has resulted in
+                    a marked improvement in the interest of children towards reading and their ability to express
+                    themselves.<br>
+                    Alternatively, can write: Some of our past reading projects have included _________ for ______,
+                    ___________ for ______, and ______ for _________. (+hyperlinks for those books)
+                </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="//via.placeholder.com/500x200">
                 <h3>Sponsorship Programmes</h3>
-                <p>Sponsorships allow children who lack financial resources to have a chance at education.</p>
+                <p>
+                    Sponsorships help children whose parents lack the financial backbone to support their schooling.
+                    Before Dolly’s intervention, these children were unable to access desired and quality education
+                    which greatly hindered their learning processes. Over the past ___ years, Dolly’s Children
+                    Foundation has provided $_____ in sponsorships and helped ________ children go back to school.
+                    Needless to say, the children being sponsored have improved dramatically in their academic
+                    performance (on average by ____) and inherently, their social abilities and futures.
+                </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="//via.placeholder.com/123x234">
                 <h3>Back to School Initiatives</h3>
-                <p>Textbooks, uniforms, and transportation to schools are donated to children to alleviate financial
-                    stress on their families. </p>
+                <p>
+                    Basic educational tools, school uniforms, shoes, bags, etc. are provided to children with
+                    financial needs by Dolly’s Children Foundation. The initiative has also helped in bringing
+                    out-of-school children back to school by covering tuition fees and their everyday needs.
+                    This initiative has helped over 3000 children go back to school. motivate as well as boost
+                    their confidence and participation in school activities.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 card">
                 <img class="img-responsive" src="//via.placeholder.com/500x200">
                 <h3>Training Programs for Teachers</h3>
-                <p>Programs to ensure the education provided by primary schools in Nigeria are effective and up to
-                    global standards. </p>
+                <p>
+                    Workshops and training sessions are held for teachers to bring modern education methods to them.
+                    Teaching skills are the biggest influencer to how children learn and whether the children want to
+                    learn, we have helped ______ teachers with ____ workshops with the ultimate goal of benefiting the
+                    children. These workshops include Numeracy Made Easy, 21st Century Teaching Methods, Phonics, and
+                    Understanding Your Learner.
+                </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="//via.placeholder.com/234x123">
                 <h3>After school and Summer Tutoring Programs</h3>
-                <p>Additional education programs helps to alleviate child-care stress from working parents while
-                    enhances the children’s learning experience.</p>
+                <p>
+                    Extra tutoring programs are available after school as well as during the summer to help children
+                    who are lagging behind academically. Child laborers, street children, and drop-outs are especially
+                    benefited by this program. Teachers and volunteers engage these children in academic exercises to
+                    effectively improve academic performance, reduce child labor, and child abuse.<br>
+                    Community sensitization on the importance of education and child rights is often organized in
+                    remote communities. This exercise has created a platform for counseling parents/guardians of
+                    children from impoverished backgrounds who are easy target for environmental vices and such are
+                    identified quickly. Furthermore, this program not only helps children academically, but also
+                    emotionally by giving them more individual attention - making them feel loved, wanted,
+                    and significant.
+                </p>
                 </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="//via.placeholder.com/456x123">
                 <h3>School Building</h3>
-                <p>New and upgraded school facilities provide more children with the necessary infrastructure and
-                    equipment to ensure a safe and effective learning environment. </p>
+                <p>
+                    School rebuilding is a project that we took on from 2015 where we refurbish public primary
+                    schools with dilapidated structures. Dolly Children Foundation move into these out-dated
+                    facilities to upgrade and equip them with the necessary educational material and infrastructure.
+                    Thus far, a block of four classes, a staff office, a library, and a store have been built from
+                    scratch. The project estimates to provide a healthy learning environment for over 500 children
+                    by the end of 2018.
+                </p>
             </div>
         </div>
         <div class="row">
