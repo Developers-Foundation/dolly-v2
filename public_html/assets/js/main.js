@@ -11,7 +11,7 @@ $(function jQueryResize (){
 });
 
 function fixNavTab(){
-    $('.navtab').css('top', String($('.navbar-fixed-top')[0].offsetHeight - (17 - $(window).width() /150)) + "px");
+    $('.navtab').css('top', String($('.navbar-fixed-top')[0].offsetHeight - Math.max(0, (17 - $(window).width() /150))) + "px");
 }
 
 function bolden(num){
