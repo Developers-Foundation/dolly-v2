@@ -12,7 +12,7 @@ h2 {
   background-color: #343434;
 }
 .row {
-  /* TODO: Who put this line? @minimike511 @psalv @trickly and why is this needed? it would screw with default bootstrap rows
+  /* TODO: @nobodyrandom that was me (Paul), I did it to remove the horizontal scroll that the rows give
   /* margin: 0 !important; */
 }
 .orange {
@@ -79,8 +79,8 @@ HEADER AND FOOTER LESS
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 0.5%;
-  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 .navbar a {
   color: white !important;
@@ -110,7 +110,6 @@ HEADER AND FOOTER LESS
   right: 0;
   left: 0;
   z-index: 1050;
-  margin-top: 8.1%;
   /* THE ORANGE TRIANGLE LOL */
 }
 .navtab .navtab-box {
