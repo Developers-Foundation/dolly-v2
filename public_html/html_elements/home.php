@@ -1,7 +1,7 @@
 <div class="container">
     <!-- Join our journey -->
     <div id="journey" class="section">
-        <img src="//via.placeholder.com/1140x580" class="journey-bg">
+        <img src="assets/img/home-landing.png" class="journey-bg">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>Join our Journey!</h1>

@@ -242,9 +242,13 @@ SECTION SPECIFIC LESS
  */
 .index-page #journey {
   height: 580px;
+  color: white;
 }
 .index-page #journey .journey-bg {
   position: absolute;
+  overflow: hidden;
+  height: 580px;
+  width: 1140px;
   z-index: -1;
 }
 .index-page #journey .journey-inner {
