@@ -21,11 +21,9 @@
                         Weekly reading club meetings are held in the public primary schools in communities we serve.
                         Part of Dolly’s mission is to engage the children in the activities that will improve their
                         abilities academically and socially. We focus on providing reading material that inspire
-                        excellence, leadership, and increase their literacy abilities. Our initiatives has resulted
-                        in a marked improvement in the interest of children towards reading and their ability to
-                        express themselves.
-                        Alternatively, can write: Some of our past reading projects have included _________ for
-                        ______, ___________ for ______, and ______ for _________. (+hyperlinks for those books)
+                        excellence, leadership, and increase their literacy abilities. Our initiatives has resulted in
+                        a marked improvement in the interest of children towards reading and their ability to express
+                        themselves.
                     </p>
                 </div>
             </div>
@@ -42,12 +40,12 @@
                     <h1>Sponsorship Programmes</h1>
                     <hr>
                     <p>
-                        Sponsorships help children whose parents lack the financial backbone to support their schooling.
-                        Before Dolly’s intervention, these children were unable to access desired and quality
-                        education which greatly hindered their learning processes. Over the past ___ years, Dolly’s
-                        Children Foundation has provided $_____ in sponsorships and helped ________ children go back
-                        to school. Needless to say, the children being sponsored have improved dramatically in their
-                        academic performance (on average by ____) and inherently, their social abilities and futures.
+                        Sponsorships help children whose parents lack the financial backbone to support their
+                        schooling. Before Dolly’s intervention, these children were unable to access desired and
+                        quality education which greatly hindered their learning processes. Over the past year, Dolly’s
+                        Children Foundation has provided sponsorships and helped 50 children go back to school.
+                        Needless to say, the children being sponsored have improved dramatically in their academic
+                        performance and inherently, their social abilities and futures.
                     </p>
                 </div>
             </div>
@@ -86,8 +84,8 @@
                     <hr>
                     <p>
                         Workshops and training sessions are held for teachers to bring modern education methods to
-                        them. Teaching skills are the biggest influencer to how children learn and whether the
-                        children want to learn, we have helped ______ teachers with ____ workshops with the ultimate
+                        them. Teaching skills are the biggest influencer to how children learn and whether the children
+                        want to learn, we have helped 40 teachers with workshops over the past year with the ultimate
                         goal of benefiting the children. These workshops include Numeracy Made Easy, 21st Century
                         Teaching Methods, Phonics, and Understanding Your Learner.
                     </p>
@@ -110,13 +108,13 @@
                         children who are lagging behind academically. Child laborers, street children, and drop-outs
                         are especially benefited by this program. Teachers and volunteers engage these children in
                         academic exercises to effectively improve academic performance, reduce child labor, and child
-                        abuse.
+                        abuse.<br>
                         Community sensitization on the importance of education and child rights is often organized in
                         remote communities. This exercise has created a platform for counseling parents/guardians of
-                        children from impoverished backgrounds who are easy target for environmental vices and such
-                        are identified quickly. Furthermore, this program not only helps children academically, but
-                        also emotionally by giving them more individual attention - making them feel loved, wanted,
-                        and significant.
+                        children from impoverished backgrounds who are easy target for environmental vices and such are
+                        identified quickly. Furthermore, this program not only helps children academically, but also
+                        emotionally by giving them more individual attention - making them feel loved, wanted, and
+                        significant.
                     </p>
                 </div>
             </div>
@@ -136,9 +134,9 @@
                         School rebuilding is a project that we took on from 2015 where we refurbish public primary
                         schools with dilapidated structures. Dolly Children Foundation move into these out-dated
                         facilities to upgrade and equip them with the necessary educational material and
-                        infrastructure. Thus far, a block of four classes, a staff office, a library, and a store
-                        have been built from scratch. The project estimates to provide a healthy learning environment
-                        for over 500 children by the end of 2018.
+                        infrastructure. Thus far, a block of four classes, a staff office, a library, and a store have
+                        been built from scratch. The project estimates to provide a healthy learning environment for
+                        over 500 children by the end of 2018.
                     </p>
                 </div>
             </div>
