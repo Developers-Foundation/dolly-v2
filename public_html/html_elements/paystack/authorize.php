@@ -7,6 +7,7 @@
  */
 
 require '../../../vendor/autoload.php';
+use Yabacon\Paystack;
 
 $secret = $_ENV["PAYSTACK_PRIV_KEY"];
 $email = $_POST["EMAIL"];
