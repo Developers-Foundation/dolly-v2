@@ -38,6 +38,7 @@
 $page = "donate-page";
 $pageTitle = "Donate";
 $hasGmap = false;
+$hasPayStack = true;
 include_once "html_elements/navBar.php";
 include_once "html_elements/navBarTab.php";
 include "html_elements/donate.php";
@@ -75,6 +76,12 @@ if ($hasGmap) {
             defer>
         loadedGmap();
     </script>
+    <?php
+}
+
+if ($hasPayStack) {
+    ?>
+    <script src="//js.paystack.co/v1/paystack.js"></script>
     <?php
 }
 ?>
