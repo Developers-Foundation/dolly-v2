@@ -20,6 +20,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="section">
         <div class="row">
             <div class="card col-md-offset-2 col-md-8">
                 <form class="donate-form" action="" method="post">

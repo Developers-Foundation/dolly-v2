@@ -45,16 +45,20 @@ include_once "html_elements/navBarTab.php";
 ?>
 <!-- Temp form -->
 <!-- TODO: Move this into donate.php designs -->
-<form id="nob-paystack-card-form">
-    <input type="text" data-paystack="amount" placeholder="amount" class="form-input-amount">
-    <input type="text" data-paystack="number" placeholder="card number" class="form-input-card">
-    <input type="text" data-paystack="name" placeholder="name" class="form-input-name">
-    <input type="text" data-paystack="email" placeholder="email" class="form-input-email">
-    <input type="text" data-paystack="cvv" placeholder="cvv" class="form-input-cvv">
-    <input type="text" data-paystack="expiryMonth" placeholder="month" class="form-input-exp-m">
-    <input type="text"  data-paystack="expiryYear" placeholder="year" class="form-input-exp-y">
-    <button type="submit" data-paystack="submit">Submit</button>
-</form>
+<div class="container">
+    <div class="section">
+        <form id="nob-paystack-card-form">
+            <input type="text" data-paystack="amount" placeholder="amount" class="form-input-amount">
+            <input type="text" data-paystack="number" placeholder="card number" class="form-input-card">
+            <input type="text" data-paystack="name" placeholder="name" class="form-input-name">
+            <input type="text" data-paystack="email" placeholder="email" class="form-input-email">
+            <input type="text" data-paystack="cvv" placeholder="cvv" class="form-input-cvv">
+            <input type="text" data-paystack="expiryMonth" placeholder="month" class="form-input-exp-m">
+            <input type="text" data-paystack="expiryYear" placeholder="year" class="form-input-exp-y">
+            <button type="submit" data-paystack="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
 <?php
 include_once "html_elements/footer2.php";
