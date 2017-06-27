@@ -313,13 +313,11 @@ $(document).ready(function () {
             }).then(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
-                return $.when(function () {
-                    return Paystack.init({
-                        form: "nob-paystack-card-form", // Form ID
-                        access_code: respData.access_code
-                    });
-                });
-            }).then(function (returnedObj) {
+                return $.when(Paystack.init({
+                    form: "nob-paystack-card-form", // Form ID
+                    access_code: respData.access_code
+                }));
+            }).done(function (returnedObj) {
                 paystack = returnedObj;
                 console.log(paystack);
                 return paystack.card.charge({
