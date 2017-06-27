@@ -22,4 +22,4 @@ $responseObj = $paystack->transaction->initialize([
     "email"=> $email,
 ]);
 
-echo $responseObj;
+echo json_encode($responseObj);
