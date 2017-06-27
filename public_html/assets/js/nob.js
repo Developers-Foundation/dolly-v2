@@ -3,6 +3,7 @@
  */
 
 /* ----------------------------------------------------------- */
+
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -138,6 +139,7 @@ function loadedGmap() {
     });
     // }
 }
+
 /* ----------------------------------------------------------- */
 /* Nob Google Map End
  /* ----------------------------------------------------------- */
@@ -165,11 +167,13 @@ $('.carousel.three .item').each(function () {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
+
 // Check email's validation
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
+
 $(document).ready(function () {
     $('form.form-email').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
@@ -263,4 +267,64 @@ $(document).ready(function () {
 });
 /* ----------------------------------------------------------- */
 /* Nob Mailer END
+ /* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* Nob PayStack START
+ /* ----------------------------------------------------------- */
+
+$(document).ready(function () {
+    if ($('body').hasClass('donate-page')) {
+        $('#nob-paystack-card-form').submit(function (e) {
+            if (e.preventDefault) e.preventDefault();
+            else e.returnValue = false;
+
+            var thisForm = $(this).closest('#nob-paystack-card-form');
+            var submitButton = thisForm.find('button');
+            submitButton.prop("disabled", true);
+            var cardField = thisForm.find('.form-input-card');
+            var nameField = thisForm.find('.form-input-name');
+            var amountField = thisForm.find('.form-input-amount');
+            var emailField = thisForm.find('.form-input-email');
+            var cvvField = thisForm.find('.form-input-cvv');
+            var expMField = thisForm.find('.form-input-exp-m');
+            var expYField = thisForm.find('.form-input-exp-y');
+            //var cvvField = thisForm.find('.form-input-message');
+            //var cvvField = thisForm.find('.form-input-message');
+            //var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
+            var card = cardField.val(),
+                name = nameField.val(),
+                amount = amountField.val(),
+                email = emailField.val(),
+                cvv = cvvField.val(),
+                expM = expMField.val(),
+                expY = expYField.val();
+            var sendData = {'EMAIL': email, 'AMOUNT': amount};
+
+            // Initialize paystack object
+            var paystack;
+            $.ajax({
+                // Get Access Code
+                url: "https://api.paystack.co/transaction/initialize",
+                dataType: 'JSON',
+                data: sendData
+            }).done(function (e) {
+                console.log(e);
+                return;
+
+                Paystack.init({
+                    form: "paystack-card-form", // Form ID
+                    access_code: 'd5gtr5gnex'
+                }).then(function (returnedObj) {
+                    paystack = returnedObj;
+                }).catch(function (error) {
+                    console.log("There was an error loading Paystack", error);
+                });
+            });
+        });
+    }
+});
+
+/* ----------------------------------------------------------- */
+/* Nob PayStack END
  /* ----------------------------------------------------------- */
