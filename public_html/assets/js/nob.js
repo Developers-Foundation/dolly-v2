@@ -316,12 +316,12 @@ $(document).ready(function () {
                 return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
-                });
-            }).then(function (returnedObj) {
-                console.log(returnedObj);
-                paystack = returnedObj;
-                return paystack.card.charge({
-                    //pin: readPin() // Called a function that returns the optional pin value
+                }).then(function (returnedObj) {
+                    console.log(returnedObj);
+                    paystack = returnedObj;
+                    return paystack.card.charge({
+                        //pin: readPin() // Called a function that returns the optional pin value
+                    });
                 });
             }).then(function (response) {
                 console.log(response);
