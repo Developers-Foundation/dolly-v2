@@ -313,10 +313,12 @@ $(document).ready(function () {
             }).then(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
-                return $.when(Paystack.init({
-                    form: "nob-paystack-card-form", // Form ID
-                    access_code: respData.access_code
-                }));
+                return $.when(function () {
+                    return Paystack.init({
+                        form: "nob-paystack-card-form", // Form ID
+                        access_code: respData.access_code
+                    });
+                });
             }).then(function (returnedObj) {
                 paystack = returnedObj;
                 console.log(paystack);
@@ -325,7 +327,7 @@ $(document).ready(function () {
                 });
             }).then(function (response) {
                 console.log(response);
-            }).catch(function (error) {
+            }).fail(function (error) {
                 console.log(error);
             });
         });
