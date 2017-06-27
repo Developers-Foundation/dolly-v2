@@ -310,19 +310,28 @@ $(document).ready(function () {
                 cache: false,
                 dataType: 'JSON',
                 data: sendData
-            }).done(function (e) {
-                console.log(e);
-                return;
+            }).done(function (resp) {
+                console.log(resp);
+                var respData = resp.data;
 
                 Paystack.init({
-                    form: "paystack-card-form", // Form ID
-                    access_code: 'd5gtr5gnex'
+                    form: "nob-paystack-card-form", // Form ID
+                    access_code: respData.access_code
                 }).then(function (returnedObj) {
                     paystack = returnedObj;
                 }).catch(function (error) {
                     console.log("There was an error loading Paystack", error);
                 });
-            });
+            }).then(function (e) {
+                return paystack.card.charge({
+                    //pin: readPin() // Called a function that returns the optional pin value
+                });
+            }).then(function(response){
+                    console.log(response);
+                }, function(error){
+                    console.log(error);
+                }
+            );
         });
     }
 });
