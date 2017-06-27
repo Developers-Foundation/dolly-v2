@@ -316,13 +316,10 @@ $(document).ready(function () {
                 return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
-                }).then(function (returnedObj) {
-                    paystack = returnedObj;
-                    console.log(paystack);
-                }).catch(function (error) {
-                    console.log("There was an error loading Paystack", error);
                 });
-            }).then(function (e) {
+            }).then(function (returnedObj) {
+                paystack = returnedObj;
+                console.log(paystack);
                 return paystack.card.charge({
                     //pin: readPin() // Called a function that returns the optional pin value
                 });
