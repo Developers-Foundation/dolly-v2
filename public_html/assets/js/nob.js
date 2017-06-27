@@ -322,9 +322,11 @@ $(document).ready(function () {
                     return paystack.card.charge({
                         //pin: readPin() // Called a function that returns the optional pin value
                     });
+                }).then(function (response) {
+                    console.log(response);
+                }, function (error) {
+                    console.log(error);
                 });
-            }).then(function (response) {
-                console.log(response);
             }).fail(function (error) {
                 console.log(error);
             });
