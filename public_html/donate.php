@@ -45,7 +45,7 @@ include_once "html_elements/navBarTab.php";
 ?>
 <!-- Temp form -->
 <!-- TODO: Move this into donate.php designs -->
-<div class="container">
+<div class="container" style="padding-top: 500px;">
     <div class="section">
         <form id="nob-paystack-card-form">
             <input type="text" data-paystack="amount" placeholder="amount" class="form-input-amount">

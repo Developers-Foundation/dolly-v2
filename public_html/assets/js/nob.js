@@ -305,7 +305,9 @@ $(document).ready(function () {
             var paystack;
             $.ajax({
                 // Get Access Code
-                url: "https://api.paystack.co/transaction/initialize",
+                url: "https://dolly-v2-pr-26.herokuapp.com/html_elements/paystack/authorize",
+                method: 'POST',
+                cache: false,
                 dataType: 'JSON',
                 data: sendData
             }).done(function (e) {
