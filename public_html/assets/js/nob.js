@@ -310,16 +310,14 @@ $(document).ready(function () {
                 cache: false,
                 dataType: 'JSON',
                 data: sendData
-            });
-
-            access.then(function (resp) {
+            }).done(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
                 return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
                 });
-            }).then(function (returnedObj) {
+            }).done(function (returnedObj) {
                 paystack = returnedObj;
                 console.log(paystack);
                 return paystack.card.charge({
