@@ -313,12 +313,12 @@ $(document).ready(function () {
             }).done(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
-
-                Paystack.init({
+                return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
                 }).then(function (returnedObj) {
                     paystack = returnedObj;
+                    console.log(paystack);
                 }).catch(function (error) {
                     console.log("There was an error loading Paystack", error);
                 });
