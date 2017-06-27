@@ -310,7 +310,7 @@ $(document).ready(function () {
                 cache: false,
                 dataType: 'JSON',
                 data: sendData
-            }).done(function (resp) {
+            }).then(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
                 return Paystack.init({
