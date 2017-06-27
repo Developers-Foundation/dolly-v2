@@ -300,7 +300,7 @@ $(document).ready(function () {
                 expM = expMField.val(),
                 expY = expYField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount};
-
+// TODO: Catch all errors in php and js, then put in phone number fields + OTP auth + captcha lol, so much to do .-.
             // Initialize paystack object
             var paystack;
             $.ajax({
