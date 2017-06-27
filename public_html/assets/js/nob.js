@@ -303,7 +303,7 @@ $(document).ready(function () {
 
             // Initialize paystack object
             var paystack;
-            var access = $.ajax({
+            $.ajax({
                 // Get Access Code
                 url: "https://dolly-v2-pr-26.herokuapp.com/html_elements/paystack/authorize",
                 method: 'POST',
@@ -313,13 +313,13 @@ $(document).ready(function () {
             }).then(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
-                return $.when(Paystack.init({
+                return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
-                }));
-            }).done(function (returnedObj) {
+                });
+            }).then(function (returnedObj) {
+                console.log(returnedObj);
                 paystack = returnedObj;
-                console.log(paystack);
                 return paystack.card.charge({
                     //pin: readPin() // Called a function that returns the optional pin value
                 });
