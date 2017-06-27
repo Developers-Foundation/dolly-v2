@@ -6,6 +6,7 @@
  * Time: 10:07 PM
  */
 
+$secret = $_ENV["PAYSTACK_PRIV_KEY"];
 $email = $_POST["EMAIL"];
 $amount = $_POST["AMOUNT"];
 // TODO: Make it alphanumeric and store to db
@@ -23,9 +24,8 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($postdata));  //Post Fields
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $headers = [
-    'Authorization: Bearer ' . $_ENV["PAYSTACK_PRIV_KEY"],
-    'Content-Type: application/json',
-
+    'Authorization: Bearer ' . $secret,
+    'Content-Type: application/json'
 ];
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 

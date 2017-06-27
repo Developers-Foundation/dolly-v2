@@ -281,7 +281,7 @@ $(document).ready(function () {
 
             var thisForm = $(this).closest('#nob-paystack-card-form');
             var submitButton = thisForm.find('button');
-            submitButton.prop("disabled", true);
+            //submitButton.prop("disabled", true);
             var cardField = thisForm.find('.form-input-card');
             var nameField = thisForm.find('.form-input-name');
             var amountField = thisForm.find('.form-input-amount');
