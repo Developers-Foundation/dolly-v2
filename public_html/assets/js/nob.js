@@ -303,14 +303,16 @@ $(document).ready(function () {
 
             // Initialize paystack object
             var paystack;
-            $.ajax({
+            var access = $.ajax({
                 // Get Access Code
                 url: "https://dolly-v2-pr-26.herokuapp.com/html_elements/paystack/authorize",
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
                 data: sendData
-            }).then(function (resp) {
+            });
+
+            access.then(function (resp) {
                 console.log(resp);
                 var respData = resp.data;
                 return Paystack.init({
