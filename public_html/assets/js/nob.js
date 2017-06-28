@@ -312,14 +312,28 @@ $(document).ready(function () {
                 data: sendData
             }).then(function (resp) {
                 console.log(resp);
+                if (!resp.status) {
+                    // Get authorize failed (prob priv key failed) TODO: fix this lol
+                    return this.reject({"status": false, "reason": "error-1"});
+                }
+
                 var respData = resp.data;
+
+                // TODO: Move this inner promise to outer loop
                 return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
+
+                    /* TODO: CATCH FAIL TO INIT
+                    catch(function(error){
+                        console.log("There was an error loading Paystack", error);
+                    });
+                     */
                 }).then(function (returnedObj) {
                     console.log(returnedObj);
                     paystack = returnedObj;
                     return paystack.card.charge({
+                        // TODO: OTP/PIN + Verify OTP if OTP
                         //pin: readPin() // Called a function that returns the optional pin value
                     });
                 }).then(function (response) {
