@@ -273,6 +273,22 @@ $(document).ready(function () {
 /* Nob PayStack START
  /* ----------------------------------------------------------- */
 
+/*
+TEST CARD:
+Card Number: 5078 5078 5078 5078 0 (Verve)
+50785078507850780
+Expiry Date: any date in the future
+CVV: 884
+PIN: 0000
+Phone: If less than 10 numeric characters, Transaction will fail.
+OTP: 123456
+
+Card Number: 408 408 408 408 408 1
+4084084084084081
+Expiry Date: any date in the future
+CVV: 408
+ */
+
 $(document).ready(function () {
     if ($('body').hasClass('donate-page')) {
         $('#nob-paystack-card-form').submit(function (e) {
