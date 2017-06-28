@@ -48,7 +48,7 @@ include_once "html_elements/navBarTab.php";
 <div class="container" style="padding-top: 500px;">
     <div class="section">
         <form id="nob-paystack-card-form">
-            <input type="text" data-paystack="amount" placeholder="amount" class="form-input-amount">
+            <input type="text" data-paystack="amount" placeholder="amount in cents" class="form-input-amount">
             <input type="text" data-paystack="number" placeholder="card number" class="form-input-card">
             <input type="text" data-paystack="name" placeholder="name" class="form-input-name">
             <input type="text" data-paystack="email" placeholder="email" class="form-input-email">
