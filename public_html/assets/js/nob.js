@@ -357,11 +357,16 @@ $(document).ready(function () {
                     });
                 }).then(function (response) {
                     console.log(response);
+                    // TODO: Show success + reset form
+
                 }, function (error) {
                     console.log(error);
+                    // TODO: IDK what this is lol
+
                 });
             }).fail(function (error) {
                 console.log(error);
+                // TODO: IDK what this is lol
             });
         });
     }
