@@ -300,6 +300,9 @@ $(document).ready(function () {
                 expM = expMField.val(),
                 expY = expYField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount};
+            // TODO: Do form verification on ALL fields :P
+
+
 // TODO: Catch all errors in php and js, then put in phone number fields + OTP auth + captcha lol, so much to do .-.
             // Initialize paystack object
             var paystack;
