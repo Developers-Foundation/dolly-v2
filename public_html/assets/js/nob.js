@@ -360,7 +360,15 @@ $(document).ready(function () {
                 }).then(function (response) {
                     console.log(response);
                     // TODO: Show success + reset form
-
+                    cardField.val("card number");
+                    nameField.val("name");
+                    amountField.val("amount in cents");
+                    emailField.val("email");
+                    cvvField .val("cvv");
+                    expMField.val("month");
+                    expYField.val("year");
+                    submitButton.html("Received");
+                    submitButton.addClass("btn-success");
                 }, function (error) {
                     console.log(error);
                     // TODO: IDK what this is lol
