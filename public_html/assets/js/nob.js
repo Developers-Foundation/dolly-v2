@@ -291,6 +291,7 @@ CVV: 408
 
 $(document).ready(function () {
     if ($('body').hasClass('donate-page')) {
+        //TODO: use.onchange()
         $('#nob-paystack-card-form').submit(function (e) {
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
@@ -308,6 +309,7 @@ $(document).ready(function () {
             //var cvvField = thisForm.find('.form-input-message');
             //var cvvField = thisForm.find('.form-input-message');
             //var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
+            // TODO: regex for card number space
             var card = cardField.val(),
                 name = nameField.val(),
                 amount = amountField.val(),
