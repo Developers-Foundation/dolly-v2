@@ -382,7 +382,7 @@ SECTION SPECIFIC LESS
   margin: 100px 0 20px;
 }
 .donate-page p {
-  padding: 25% 5% 0% 5%;
+  padding: 20% 5% 0% 5%;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.33;
@@ -489,4 +489,15 @@ input[type=checkbox]:checked + .ui-checkbox:before {
   color: #fff;
   text-shadow: 0 0 0 #fff;
   background-color: #f5a623;
+}
+#donate-btn {
+  background-color: #f5a623;
+}
+#donate-btn h1 {
+  padding: 2% 0 2% 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: white;
 }
