@@ -318,6 +318,7 @@ SECTION SPECIFIC LESS
   border-radius: 13px;
   border: solid 3px #f5a623;
   overflow: hidden;
+  padding: 0;
 }
 .impacts-page .section p {
   padding-bottom: 20px;

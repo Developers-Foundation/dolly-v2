@@ -10,7 +10,7 @@
 <div class="container">
     <!-- TITLE SECTION -->
     <div class="section title">
-        <img src="//via.placeholder.com/1140x482" class="section-bg">
+        <img src="assets/img/stock/about_us.jpg" class="section-bg">
         <div class="row inner">
             <div class="col-md-offset-4 col-md-4 text-center">
                 <h2>Our Mission</h2>
@@ -74,7 +74,7 @@
                 </p>
             </div>
             <div class="col-md-offset-1 col-md-6">
-                <img src="//via.placeholder.com/417x282" />
+                <img src="assets/img/stock/dolly.jpg" />
             </div>
         </div>
     </div>

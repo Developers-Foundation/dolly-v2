@@ -1,7 +1,7 @@
 <div class="container">
     <!-- Join our journey -->
     <div id="journey" class="section">
-        <img src="assets/img/home-landing.png" class="journey-bg">
+        <img src="assets/img/stock/main.jpg" class="journey-bg">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>Join our Journey!</h1>
@@ -47,7 +47,7 @@
         <h2 class="text-center">What we do</h2>
         <div class="row">
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/262x117">
+                <img class="img-responsive" src="assets/img/stock/reading_clubs.jpg">
                 <h3>Reading Clubs</h3>
                 <p>
                     Weekly reading club meetings are held in the public primary schools in communities we serve.
@@ -61,7 +61,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/500x200">
+                <img class="img-responsive" src="assets/img/stock/sponsorship.jpg">
                 <h3>Sponsorship Programmes</h3>
                 <p>
                     Sponsorships help children whose parents lack the financial backbone to support their schooling.
@@ -73,7 +73,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/123x234">
+                <img class="img-responsive" src="assets/img/stock/back_to_school.jpg">
                 <h3>Back to School Initiatives</h3>
                 <p>
                     Basic educational tools, school uniforms, shoes, bags, etc. are provided to children with
@@ -86,7 +86,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/500x200">
+                <img class="img-responsive" src="assets/img/stock/training.jpg">
                 <h3>Training Programs for Teachers</h3>
                 <p>
                     Workshops and training sessions are held for teachers to bring modern education methods to them.
@@ -97,7 +97,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/234x123">
+                <img class="img-responsive" src="assets/img/stock/afterschool.jpg">
                 <h3>After school and Summer Tutoring Programs</h3>
                 <p>
                     Extra tutoring programs are available after school as well as during the summer to help children
@@ -114,7 +114,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/456x123">
+                <img class="img-responsive" src="assets/img/stock/building.jpg">
                 <h3>School Building</h3>
                 <p>
                     School rebuilding is a project that we took on from 2015 where we refurbish public primary
@@ -137,7 +137,7 @@
         <h2 class="text-center">How to Help</h2>
         <div class="row">
             <div class="col-md-5">
-                <img class="img-responsive" src="//via.placeholder.com/338x378">
+                <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
             </div>
             <div class="col-md-7">
                 <h3>Sponsor a child</h3>
