@@ -85,7 +85,7 @@
             </h1>
         </div>
         <div class="col-md-12 text-center">
-            <button class="button-red round" type="submit" data-paystack="submit">Donate Now</button>
+            <button class="button-red round big" type="submit" data-paystack="submit">Donate Now</button>
         </div>
     </div>
 </div>

@@ -48,14 +48,18 @@ h2 {
 .button-red {
   background-color: #da3400;
   border-width: 0;
-  padding: 20px;
-  margin: 20px 0;
-  font-size: 18px;
+  padding: 15px;
+  margin: 15px 0;
   display: inline-block;
 }
 .button-red.round {
   border-radius: 50px;
   color: #ffffff;
+}
+.button-red.big {
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 18px;
 }
 a.button-red {
   color: #FFF;
