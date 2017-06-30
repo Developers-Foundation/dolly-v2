@@ -462,7 +462,7 @@ SECTION SPECIFIC LESS
 /* checkbox */
 .ui-checkbox:before,
 .ui-checkbox-after:after {
-  content: "\e610";
+  content: "\2714";
   display: inline-block;
   position: relative;
   box-sizing: border-box;
