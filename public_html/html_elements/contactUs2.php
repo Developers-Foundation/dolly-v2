@@ -17,7 +17,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
             <form class="form-email" action="" method="post" data-form-type="nob">
                 <div class="col-md-5 left msg-info">
                     <h3 class="msg-info">
-                        E: augustine_stark@gmail.com<br/>
+                        E: adedolepo@dollychildren.org<br/>
                         P: (+234) 708-739-0017
 
                     </h3>
