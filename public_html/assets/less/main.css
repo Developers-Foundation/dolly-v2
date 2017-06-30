@@ -350,7 +350,7 @@ SECTION SPECIFIC LESS
   z-index: -1;
   width: 1140px;
   height: 480px;
-  overflow: hidden;
+  object-fit: cover;
 }
 .about-page .title .inner {
   display: block;
