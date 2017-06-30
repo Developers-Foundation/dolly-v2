@@ -41,11 +41,11 @@ $hasGmap = false;
 $hasPayStack = true;
 include_once "html_elements/navBar.php";
 include_once "html_elements/navBarTab.php";
-//include "html_elements/donate.php";
+include "html_elements/donate.php";
 ?>
 <!-- Temp form -->
 <!-- TODO: Move this into donate.php designs -->
-<div class="container" style="padding-top: 500px;">
+<!-- <div class="container" style="padding-top: 500px;">
     <div class="section">
         <form id="nob-paystack-card-form">
             <input
@@ -98,8 +98,7 @@ include_once "html_elements/navBarTab.php";
             <button type="submit" data-paystack="submit">Submit</button>
         </form>
     </div>
-</div>
-
+</div> -->
 <?php
 include_once "html_elements/footer2.php";
 ?>

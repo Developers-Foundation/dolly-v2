@@ -481,12 +481,26 @@ SECTION SPECIFIC LESS
 }
 
 .donate-page {
-  .container {
+  .container-first {
     padding-top: 12.8%;
+  }
+
+  .col-md-6 {
+    padding:0;
   }
 
   h2 {
     margin: 100px 0 20px;
+  }
+  p{
+    padding: 25% 5% 0% 5%;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: left;
+  }
+  u{
+    color: @ORANGE;
   }
 
   .card {
@@ -566,5 +580,50 @@ SECTION SPECIFIC LESS
     text-align: left;
     color: @LIGHTGREY;
   }
+}
 
+// Donation check box css
+//TODO: That check doesn't work
+#checkbox (@character:"✓", @family:~"sans-serif, arial", @weight:bold) {
+  content:@character;
+  display:inline-block;
+  position:relative;
+  box-sizing:border-box;
+  border-radius:.1875em;
+  font-style:normal;
+  font-weight:@weight;
+  font-family:@family;
+  vertical-align:middle;
+  text-align:center;
+  transition:all .2s linear;
+  cursor:pointer;
+}
+
+#checkbox-color (@color:#fff, @background:#ddd) {
+  color:@color;
+  text-shadow:0 0 0 @color;
+  background-color:@background;
+}
+#checkbox-size (@width:1.125em, @height:1.125em, @size:1em) {
+  width:@width;
+  height:@height;
+  font-size:@size;
+  line-height:@height;
+}
+
+.donate-box {position:absolute; width:0; height:0; opacity:0; margin:0; padding:0; overflow:hidden;}
+/* checkbox */
+
+.ui-checkbox:before,
+.ui-checkbox-after:after {
+  #checkbox("\e610", ~"ui-checkbox", normal);
+  #checkbox-color(#fff, #ddd);
+  #checkbox-size(1.25em, 1.25em, .9em);
+}
+
+/* checkbox:checked */
+.ui-checkbox-checked:before,
+.ui-checkbox-checked-after:after,
+input[type=checkbox]:checked + .ui-checkbox:before{
+  #checkbox-color(#fff, @ORANGE);
 }
