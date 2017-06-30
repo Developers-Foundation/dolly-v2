@@ -1,6 +1,7 @@
 <div class="container">
     <!-- Join our journey -->
     <div id="journey" class="section">
+        <!--TODO: @nobodyrandom -->
         <img src="assets/img/stock/main.jpg" class="journey-bg">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
@@ -137,6 +138,7 @@
         <h2 class="text-center">How to Help</h2>
         <div class="row">
             <div class="col-md-5">
+                <!--TODO: @nobodyrandom -->
                 <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
             </div>
             <div class="col-md-7">
