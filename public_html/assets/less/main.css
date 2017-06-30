@@ -348,6 +348,9 @@ SECTION SPECIFIC LESS
 .about-page .title img {
   position: absolute;
   z-index: -1;
+  width: 1140px;
+  height: 480px;
+  overflow: hidden;
 }
 .about-page .title .inner {
   display: block;
