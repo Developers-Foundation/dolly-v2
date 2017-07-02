@@ -526,3 +526,6 @@ input[type=radio]:checked + .ui-checkbox:before {
   text-align: center;
   color: white;
 }
+.donate-form {
+  width: 100%;
+}
