@@ -214,6 +214,8 @@
                         </div>
                        <div class="col-md-12 text-center">
                            <br>
+                           <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
+                           <br>
                            <button type="submit" class="button-red round" data-paystack="submit">Submit</button>
                        </div>
                     </div>

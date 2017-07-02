@@ -145,6 +145,8 @@ if ($hasPayStack) {
     <?php
 }
 ?>
+<!-- reCaptcha -->
+<script src="//www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
