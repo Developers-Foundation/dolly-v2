@@ -101,6 +101,8 @@ include "html_elements/donate.php";
 </div> -->
 <?php
 include_once "html_elements/footer2.php";
+
+include "html_elements/donate-modal.php";
 ?>
 
 <!--=========================================== JS SCRIPTS ==========================================-->

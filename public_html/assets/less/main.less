@@ -62,6 +62,10 @@ h2 {
   margin-bottom: 40px;
 }
 
+.hidden {
+  display: none;
+}
+
 .button-red {
   background-color: @RED;
   border-width: 0;
@@ -74,10 +78,14 @@ h2 {
     color: #ffffff;
   }
 
-  &.big{
+  &.big {
     padding: 20px;
     margin: 20px 0;
     font-size: 18px;
+  }
+
+  &.small {
+    padding: 10px;
   }
 
   a& {
@@ -92,7 +100,7 @@ h2 {
 
 .star-custom {
   border: solid 1px @LIGHTGREY;
-  width:75%;
+  width: 75%;
   text-align: center;
 
   &::after {
@@ -208,9 +216,15 @@ HEADER AND FOOTER LESS
         }
 
         &.selected {
-          a {color: @LIGHTGREY !important;}
-          div {border-color: @LIGHTGREY !important;}
-          div::before {border-bottom: solid @LIGHTGREY 3px !important;}
+          a {
+            color: @LIGHTGREY !important;
+          }
+          div {
+            border-color: @LIGHTGREY !important;
+          }
+          div::before {
+            border-bottom: solid @LIGHTGREY 3px !important;
+          }
         }
       }
 
@@ -498,96 +512,112 @@ SECTION SPECIFIC LESS
   }
 
   .col-md-6 {
-    padding:0;
+    padding: 0;
   }
 
   h2 {
     margin: 100px 0 20px;
   }
-  p{
+  p {
     padding: 20% 5% 0% 5%;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.33;
     text-align: left;
   }
-  u{
+  u {
     color: @ORANGE;
+  }
+
+  // Main Donate page sections
+  .donate-section {
+    &:hover {
+      background-color: @LIGHTMUSTARD;
+
+      u {
+        color: white;
+      }
+    }
+  }
+
+  // Donate modal
+  .donate-modal {
+    .row {
+      margin: 0;
+    }
+
+    .donate-select {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      padding: inherit;
+      border-style: none none solid none;
+      width: 100%;
+      background: url("../img/arrow-down.png") no-repeat right;
+      outline: none;
+    }
+    .donate-amount {
+      .donate-amount-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .donate-amount-radio {
+        box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 7.5px;
+        padding: 20px 10px 20px 10px;
+        width: 100px;
+        float: left;
+        text-align: center;
+
+        .stretch {
+          width: 100%;
+          display: inline-block;
+          font-size: 0;
+          line-height: 0
+        }
+
+        &.selected {
+          background-color: @ORANGE;
+          color: @GREY;
+        }
+
+        &:not(.selected) {
+          background-color: @LIGHTGREY;
+          color: white;
+        }
+      }
+    }
+
+    .donate-submit {
+      clear: both;
+      width: 100%;
+      margin: auto;
+    }
   }
 
   .card {
     margin: 30px 16.666666666667% 100px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     padding: 40px 40px;
-
-    .donate-form {
-      .donate-select {
-        margin-bottom: 10px;
-        margin-top: 20px;
-        padding: inherit;
-        border-style: none none solid none;
-        width: 100%;
-        background: url("../img/arrow-down.png") no-repeat right;
-        outline: none;
-      }
-      .donate-amount {
-        .donate-amount-container {
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-        }
-
-        .donate-amount-radio {
-          box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
-          border-radius: 7.5px;
-          padding: 20px 10px 20px 10px;
-          width: 100px;
-          float: left;
-          text-align: center;
-
-          .stretch {
-            width: 100%;
-            display: inline-block;
-            font-size: 0;
-            line-height: 0
-          }
-
-          &.selected {
-            background-color: @ORANGE;
-            color: @GREY;
-          }
-
-          &:not(.selected) {
-            background-color: @LIGHTGREY;
-            color: white;
-          }
-        }
-      }
-
-      .donate-submit {
-        clear: both;
-        width: 100%;
-        margin: auto;
-      }
-    }
   }
 }
 
-.contact-page{
-  .container{
-    padding-top:5%;
-    padding-bottom:5%;
+.contact-page {
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
 
   }
-  .msg-info{
+  .msg-info {
     //font-family: ArialMT;
     //ont-size: 16px;
     text-align: left;
     color: @DARKGREY;
 
   }
-  .msg-label{
-   // font-family: LucidaGrande;
+  .msg-label {
+    // font-family: LucidaGrande;
     font-size: 15px;
     text-align: left;
     color: @LIGHTGREY;
@@ -596,33 +626,43 @@ SECTION SPECIFIC LESS
 
 // Donation check box css
 #checkbox (@character:"✓", @family:~"sans-serif, arial", @weight:bold) {
-  content:@character;
-  display:inline-block;
-  position:relative;
-  box-sizing:border-box;
-  border-radius:.1875em;
-  font-style:normal;
-  font-weight:@weight;
-  font-family:@family;
-  vertical-align:middle;
-  text-align:center;
-  transition:all .2s linear;
-  cursor:pointer;
+  content: @character;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: .1875em;
+  font-style: normal;
+  font-weight: @weight;
+  font-family: @family;
+  vertical-align: middle;
+  text-align: center;
+  transition: all .2s linear;
+  cursor: pointer;
 }
 
 #checkbox-color (@color:#fff, @background:#ddd) {
-  color:@color;
-  text-shadow:0 0 0 @color;
-  background-color:@background;
-}
-#checkbox-size (@width:1.125em, @height:1.125em, @size:1em) {
-  width:@width;
-  height:@height;
-  font-size:@size;
-  line-height:@height;
+  color: @color;
+  text-shadow: 0 0 0 @color;
+  background-color: @background;
 }
 
-.donate-box {position:absolute; width:0; height:0; opacity:0; margin:0; padding:0; overflow:hidden;}
+#checkbox-size (@width:1.125em, @height:1.125em, @size:1em) {
+  width: @width;
+  height: @height;
+  font-size: @size;
+  line-height: @height;
+}
+
+.donate-box {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 /* checkbox */
 
 .ui-checkbox:before,
@@ -635,14 +675,14 @@ SECTION SPECIFIC LESS
 /* checkbox:checked */
 .ui-checkbox-checked:before,
 .ui-checkbox-checked-after:after,
-input[type=checkbox]:checked + .ui-checkbox:before{
+input[type=checkbox]:checked + .ui-checkbox:before {
   #checkbox-color(#fff, @ORANGE);
 }
 
-#donate-btn{
+#donate-btn {
   background-color: @ORANGE;
 
-  h1{
+  h1 {
     padding: 2% 0 0 0;
     font-size: 32px;
     font-weight: bold;

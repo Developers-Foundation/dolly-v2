@@ -312,7 +312,7 @@ $(document).ready(function () {
             // TODO: regex for card number space
             var card = cardField.val(),
                 name = nameField.val(),
-                amount = amountField.val(),
+                amount = parseInt(amountField.val()) * 100, // TODO: May need to fix this as what would happen when you have half cents
                 email = emailField.val(),
                 cvv = cvvField.val(),
                 expM = expMField.val(),
@@ -364,7 +364,7 @@ $(document).ready(function () {
                     nameField.val("");
                     amountField.val("");
                     emailField.val("");
-                    cvvField .val("");
+                    cvvField.val("");
                     expMField.val("");
                     expYField.val("");
                     submitButton.html("Received");
