@@ -74,6 +74,12 @@ a.button-red {
 a.button-red:hover {
   color: #FFF;
 }
+.slider-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 .star-custom {
   border: solid 1px #9b9b9b;
   width: 75%;

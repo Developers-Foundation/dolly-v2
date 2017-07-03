@@ -21,6 +21,12 @@
                     <div class="donate-amount">
                         <h4>What type of donation would you like to make?</h4><br>
                         <div class="row">
+                            <div class="slider-switch">
+                                <div class="left selected" data-item="month">Monthly</div>
+                                <div class="right" data-item="one">One-Time</div>
+                            </div>
+                        </div>
+                        <!--<div class="row">
                             <div class="col-md-6">
                                 <label><input class="donate-box" type="radio" name="payment-type" value="once">
                                     <i class="ui-checkbox"> One time</i></label><br>
@@ -29,7 +35,7 @@
                                 <label><input class="donate-box" type="radio" name="payment-type" value="monthly">
                                     <i class="ui-checkbox"> Monthly</i></label><br>
                             </div>
-                        </div>
+                        </div>-->
                         <h4>How much would you like to donate?</h4><br>
                         <div class="donate-amount-container row">
                             <div class="col-md-2">
