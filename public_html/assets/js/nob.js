@@ -330,6 +330,8 @@ $(document).ready(function () {
                 cvv = cvvField.val(),
                 expM = expMField.val(),
                 expY = expYField.val(),
+                firstName = nameFirstField.val(),
+                lastName = nameLastField.val(),
                 pin = pinField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount};
             // TODO: Do form verification on ALL fields :P
@@ -381,6 +383,7 @@ $(document).ready(function () {
                     cvvField.val("");
                     expMField.val("");
                     expYField.val("");
+
                     nameFirstField.val("");
                     nameLastField.val("");
                     phoneField.val("");
