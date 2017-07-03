@@ -9,8 +9,9 @@ require '../../../vendor/autoload.php';
 use Parse\ParseClient;
 use Parse\ParseObject;
 use Parse\ParseException;
+$getPost = (array)json_decode(file_get_contents('php://input'));
+$data = $getPost;
 
-$data = json_decode($_POST["data"], false);
 error_log($data);
 error_log($data['firstName']);
 error_log($_POST["data"]);
