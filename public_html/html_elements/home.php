@@ -32,10 +32,10 @@
             <div class="col-md-offset-1 col-md-7">
                 <h2>Who we are</h2>
                 <p>
-                    Did you know that nearly half of the population of the developed countries like USA and Canada
-                    suffer from the disorders caused by spastic colon? It is a chronic health problem that affects
-                    a number of people which is far greater than the number of population suffering from diabetes,
-                    asthma or depression.
+                    We are a non-profit organization that is made up of a team of individuals that are passionate about
+                    bringing affordable education to the children of Nigeria. We have helped over 5000 children in our
+                    journey thus far, we look forward to having likeminded people like you to join and support us in
+                    our road ahead.
                 </p>
                 <a href class="button-red">Learn more</a>
             </div>
@@ -51,37 +51,22 @@
                 <img class="img-responsive" src="assets/img/stock/reading_clubs.jpg">
                 <h3>Reading Clubs</h3>
                 <p>
-                    Weekly reading club meetings are held in the public primary schools in communities we serve.
-                    Part of Dolly’s mission is to engage the children in the activities that will improve their
-                    abilities academically and socially. We focus on providing reading material that inspire
-                    excellence, leadership, and increase their literacy abilities. Our initiatives has resulted in
-                    a marked improvement in the interest of children towards reading and their ability to express
-                    themselves.<br>
-                    Alternatively, can write: Some of our past reading projects have included _________ for ______,
-                    ___________ for ______, and ______ for _________. (+hyperlinks for those books)
+                    Weekly reading clubs cultivate reading cultures amongst children as young as 6 years old.
                 </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/sponsorship.jpg">
                 <h3>Sponsorship Programmes</h3>
                 <p>
-                    Sponsorships help children whose parents lack the financial backbone to support their schooling.
-                    Before Dolly’s intervention, these children were unable to access desired and quality education
-                    which greatly hindered their learning processes. Over the past ___ years, Dolly’s Children
-                    Foundation has provided $_____ in sponsorships and helped ________ children go back to school.
-                    Needless to say, the children being sponsored have improved dramatically in their academic
-                    performance (on average by ____) and inherently, their social abilities and futures.
+                    Sponsorships allow children who lack financial resources to have a chance at education.
                 </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/back_to_school.jpg">
                 <h3>Back to School Initiatives</h3>
                 <p>
-                    Basic educational tools, school uniforms, shoes, bags, etc. are provided to children with
-                    financial needs by Dolly’s Children Foundation. The initiative has also helped in bringing
-                    out-of-school children back to school by covering tuition fees and their everyday needs.
-                    This initiative has helped over 3000 children go back to school. motivate as well as boost
-                    their confidence and participation in school activities.
+                    Textbooks, uniforms, and transportation to schools are donated to children to alleviate financial
+                    stress on their families.
                 </p>
             </div>
         </div>
@@ -90,27 +75,16 @@
                 <img class="img-responsive" src="assets/img/stock/training.jpg">
                 <h3>Training Programs for Teachers</h3>
                 <p>
-                    Workshops and training sessions are held for teachers to bring modern education methods to them.
-                    Teaching skills are the biggest influencer to how children learn and whether the children want to
-                    learn, we have helped ______ teachers with ____ workshops with the ultimate goal of benefiting the
-                    children. These workshops include Numeracy Made Easy, 21st Century Teaching Methods, Phonics, and
-                    Understanding Your Learner.
+                    Training programs to ensure that the education provided by primary schools in Nigeria are
+                    effective and up to global standards.
                 </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/afterschool.jpg">
                 <h3>After school and Summer Tutoring Programs</h3>
                 <p>
-                    Extra tutoring programs are available after school as well as during the summer to help children
-                    who are lagging behind academically. Child laborers, street children, and drop-outs are especially
-                    benefited by this program. Teachers and volunteers engage these children in academic exercises to
-                    effectively improve academic performance, reduce child labor, and child abuse.<br>
-                    Community sensitization on the importance of education and child rights is often organized in
-                    remote communities. This exercise has created a platform for counseling parents/guardians of
-                    children from impoverished backgrounds who are easy target for environmental vices and such are
-                    identified quickly. Furthermore, this program not only helps children academically, but also
-                    emotionally by giving them more individual attention - making them feel loved, wanted,
-                    and significant.
+                    Additional education programs helps to alleviate child-care stress from working parents while
+                    enhances the children’s learning experience.
                 </p>
                 </p>
             </div>
@@ -118,12 +92,8 @@
                 <img class="img-responsive" src="assets/img/stock/building.jpg">
                 <h3>School Building</h3>
                 <p>
-                    School rebuilding is a project that we took on from 2015 where we refurbish public primary
-                    schools with dilapidated structures. Dolly Children Foundation move into these out-dated
-                    facilities to upgrade and equip them with the necessary educational material and infrastructure.
-                    Thus far, a block of four classes, a staff office, a library, and a store have been built from
-                    scratch. The project estimates to provide a healthy learning environment for over 500 children
-                    by the end of 2018.
+                    New and upgraded school facilities provide more children with the necessary infrastructure and
+                    equipment to ensure a safe and effective learning environment.
                 </p>
             </div>
         </div>
@@ -144,30 +114,27 @@
             <div class="col-md-7">
                 <h3>Sponsor a child</h3>
                 <p>
-                    Hemorrhoids, also known as piles, are an incredibly common medical condition and yet it is
-                    something which is rarely talked about. It is believed that 50% of Americans have this condition
-                    by the time they reach the age of 50 and yet only 500,000 of these people seek medical help for the
-                    problem. Of these, between 10 and 20% require surgery to have their hemorrhoids removed...
+                    Make a direct impact on the future of a child by sponsoring their education. You will be able to
+                    communicate with the child you sponsor and we will continue to update you through monthly
+                    newsletters.
                 </p>
                 <a>
                     <a class="button-red">Donate</a>
                 </a>
                 <h3>Support a school building project</h3>
                 <p>
-                    I know how terrible it can be for you at nights and even when you wake up. The burning back pain
-                    you experience can be a terrible problem. I know that because of this burning pain, you hardly get
-                    all the sleep you need at nights. You are not alone… and thankfully there are workable solutions
-                    that you can use to not only prevent future causes, but also solve the present back pain you are..
+                    Help improve the facilities and learning environment of Nigerian children by contributing to a
+                    school building project. We will keep you in the loop in regards to the progress and hold up our
+                    commitment to transparency by providing you with frequent updates on their progress.
                 </p>
                 <a>
                     <a class="button-red">Monthly Giving</a>
                 </a>
                 <h3>Get behind an empowerment Initiative.</h3>
                 <p>
-                    If you know of a child who is having a greater degree of language impairment than other children or
-                    has diminished communication skills and also exhibits a restrictive pattern of thought and behavior,
-                    he may have Asperger’s syndrome. This condition is more or less similar to that of classic autism.
-                    The main difference between autism and Asperger’s syndrome is t..
+                    Get involved with one of our other initiatives to change the lives of children in Nigeria for the
+                    better. We can allocate your donation to exactly what you want to support. Get in touch with us
+                    today!
                 </p>
                 <a>
                     <a class="button-red">Scholarship</a>

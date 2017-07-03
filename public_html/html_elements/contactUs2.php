@@ -24,9 +24,8 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
 
                     <br/>
                     <h3>
-                        LCD screens are uniquely modern in style, and the liquid crystals that make them work have
-                        allowed humanity to create slimmer, more portable technology than we’ve ever had access to
-                        before.
+                        If you have any inquiries, suggestions, or concerns, please do not hesitate to get in touch
+                        with us. We look forward to hearing from you!
                     </h3>
                 </div>
 

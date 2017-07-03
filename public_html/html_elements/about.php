@@ -32,28 +32,28 @@
                     <img src="//via.placeholder.com/86x86" />
                 </div>
                 <h3>Integrity</h3>
-                <p>All the rumors have finally died down and many skeptics have tightened their lips</p>
+                <p>Provide transparency to all donors and offer equal chance at education to all eligible children.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
                     <img src="//via.placeholder.com/86x86" />
                 </div>
                 <h3>Commitment</h3>
-                <p>All the rumors have finally died down and many skeptics have tightened their lips</p>
+                <p>Stay committed to the interests of African children, always placing their best interests first.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
                     <img src="//via.placeholder.com/86x86" />
                 </div>
                 <h3>Accountability</h3>
-                <p>All the rumors have finally died down and many skeptics have tightened their lips</p>
+                <p>Can be held accountable for all transactions, guarantees transparency to all stakeholders.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
                     <img src="//via.placeholder.com/86x86" />
                 </div>
                 <h3>Nurturing</h3>
-                <p>All the rumors have finally died down and many skeptics have tightened their lips</p>
+                <p>Foster a safe and healthy learning environment for all.</p>
             </div>
         </div>
     </div>
