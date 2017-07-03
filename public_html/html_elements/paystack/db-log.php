@@ -8,9 +8,12 @@
 require '../../../vendor/autoload.php';
 use Parse\ParseClient;
 use Parse\ParseObject;
+use Parse\ParseException;
 
 $data = json_decode($_POST["data"],true);
-
+var_dump($data);
+$errMsg = "";
+$success = true;
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
 ParseClient::setServerURL('http://dolly-v2-db.herokuapp.com', '/database/parse');
 
