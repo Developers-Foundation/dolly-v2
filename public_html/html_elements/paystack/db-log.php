@@ -10,8 +10,10 @@ use Parse\ParseClient;
 use Parse\ParseObject;
 use Parse\ParseException;
 
-$data = json_decode($_POST["data"],true);
-var_dump($data);
+$data = json_decode($_POST["data"], false);
+error_log($data);
+error_log($data['firstName']);
+error_log($_POST["data"]);
 $errMsg = "";
 $success = true;
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
