@@ -12,7 +12,7 @@ use Parse\ParseObject;
 $data = json_decode($_POST["data"],true);
 
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
-ParseClient::setServerURL('http://dolly-v2-db.herokuapp.com/database/parse');
+ParseClient::setServerURL('http://dolly-v2-db.herokuapp.com', '/database/parse');
 
 $information = new ParseObject("Information");
 $information->set("firstName", $data['firstName']);
