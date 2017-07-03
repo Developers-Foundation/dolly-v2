@@ -306,6 +306,19 @@ $(document).ready(function () {
             var cvvField = thisForm.find('.form-input-cvv');
             var expMField = thisForm.find('.form-input-exp-m');
             var expYField = thisForm.find('.form-input-exp-y');
+            var pinField = thisForm.find('.form-input-pin');
+
+            //Donor Information
+            var nameFirstField = thisForm.find('.form-input-name-first');
+            var nameLastField = thisForm.find('.form-input-name-last');
+            var phoneField = thisForm.find('.form-input-number-phone');
+            var streetField = thisForm.find('.form-input-address');
+            var streetFieldOpt = thisForm.find('.form-input-address-opt');
+            var cityField = thisForm.find('.form-input-city');
+            var postalField = thisForm.find('.form-input-postal');
+            var countryField = thisForm.find('.form-input-country');
+            var stateField = thisForm.find('.form-input-state');
+
             //var cvvField = thisForm.find('.form-input-message');
             //var cvvField = thisForm.find('.form-input-message');
             //var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
@@ -316,7 +329,8 @@ $(document).ready(function () {
                 email = emailField.val(),
                 cvv = cvvField.val(),
                 expM = expMField.val(),
-                expY = expYField.val();
+                expY = expYField.val(),
+                pin = pinField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount};
             // TODO: Do form verification on ALL fields :P
 
@@ -367,6 +381,15 @@ $(document).ready(function () {
                     cvvField.val("");
                     expMField.val("");
                     expYField.val("");
+                    nameFirstField.val("");
+                    nameLastField.val("");
+                    phoneField.val("");
+                    streetField.val("");
+                    streetFieldOpt.val("");
+                    cityField.val("");
+                    postalField.val("");
+                    countryField.val("");
+                    stateField.val("");
                     submitButton.html("Received");
                     submitButton.addClass("btn-success");
                 }, function (error) {
