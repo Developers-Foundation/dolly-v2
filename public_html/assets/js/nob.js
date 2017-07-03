@@ -114,7 +114,7 @@ function loadedGmap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         navigationControl: true,
         mapTypeControl: false,
-        scrollwheel: true,
+        scrollwheel: false,
         styles: styleArr,
         disableDoubleClickZoom: true
     };
