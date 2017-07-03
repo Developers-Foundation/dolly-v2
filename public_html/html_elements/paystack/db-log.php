@@ -11,7 +11,6 @@ use Parse\ParseObject;
 use Parse\ParseException;
 $getPost = (array)json_decode(file_get_contents('php://input'));
 $data = $getPost['data'];
-
 $errMsg = "";
 $success = true;
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
