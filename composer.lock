@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "063d6a47a322f824f8627b7e8580c471",
+    "content-hash": "a7f1096e3877315a2e1306ecc8678415",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -101,6 +101,54 @@
             ],
             "abandoned": "guzzlehttp/guzzle",
             "time": "2015-03-18T18:23:50+00:00"
+        },
+        {
+            "name": "parse/php-sdk",
+            "version": "1.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/parse-community/parse-php-sdk.git",
+                "reference": "6fab212eeb4e64cc8cfeda911439d55c14c33cb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/parse-community/parse-php-sdk/zipball/6fab212eeb4e64cc8cfeda911439d55c14c33cb3",
+                "reference": "6fab212eeb4e64cc8cfeda911439d55c14c33cb3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "~2.5",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "^3.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Parse\\": "src/Parse/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Parse Platform License"
+            ],
+            "authors": [
+                {
+                    "name": "Parse",
+                    "homepage": "https://github.com/parse-community/parse-php-sdk/graphs/contributors"
+                }
+            ],
+            "description": "Parse PHP SDK",
+            "homepage": "https://github.com/parse-community/parse-php-sdk",
+            "keywords": [
+                "parse",
+                "sdk"
+            ],
+            "time": "2017-06-26T16:46:41+00:00"
         },
         {
             "name": "sendgrid/sendgrid",
@@ -378,8 +426,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "ext-memcached": "*"
-    },
+    "platform": [],
     "platform-dev": []
 }
