@@ -74,24 +74,8 @@ a.button-red {
 a.button-red:hover {
   color: #FFF;
 }
-.slider-switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.star-custom {
-  border: solid 1px #9b9b9b;
-  width: 75%;
-  text-align: center;
-}
-.star-custom::after {
-  content: url("../img/star.png");
-  margin: 0 auto;
-  display: inline-block;
-  position: relative;
-  top: -20px;
-  background-color: white;
+.slider-switch.switch-ios.switch-toggle a {
+  background-color: #f5a623;
 }
 /**
 HEADER AND FOOTER LESS

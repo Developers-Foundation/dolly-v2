@@ -1,3 +1,10 @@
+<?php
+$page = "donate-page";
+$pageTitle = "Donate";
+$hasGmap = false;
+$hasPayStack = true;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,6 +30,15 @@
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <?php
+    if ($page == "donate-page") {
+        ?>
+        <!-- LOL I GAVE UP ON THE SLIDER, DONT MIND ME :P -->
+        <link rel="stylesheet" type="text/css" href="assets/css/toggle-switch.min.css"/>
+        <?php
+    }
+    ?>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,10 +51,6 @@
 <body class="donate-page">
 <!--=========================================== MAIN FILES ==========================================-->
 <?php
-$page = "donate-page";
-$pageTitle = "Donate";
-$hasGmap = false;
-$hasPayStack = true;
 include_once "html_elements/navBar.php";
 include_once "html_elements/navBarTab.php";
 include "html_elements/donate.php";
