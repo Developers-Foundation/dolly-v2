@@ -10,7 +10,7 @@ use Parse\ParseClient;
 use Parse\ParseObject;
 use Parse\ParseException;
 $getPost = (array)json_decode(file_get_contents('php://input'));
-$data = $getPost;
+$data = $getPost['data'];
 
 error_log($data);
 error_log($data['firstName']);
