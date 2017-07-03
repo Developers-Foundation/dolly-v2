@@ -327,12 +327,19 @@ $(document).ready(function () {
                 name = nameField.val(),
                 amount = parseInt(amountField.val()) * 100, // TODO: May need to fix this as what would happen when you have half cents
                 email = emailField.val(),
-                cvv = cvvField.val(),
-                expM = expMField.val(),
-                expY = expYField.val(),
+                cvv = parseInt(cvvField.val()),
+                expM = parseInt(expMField.val()),
+                expY = parseInt(expYField.val()),
+                pin = parseInt(pinField.val()),
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
-                pin = pinField.val();
+                phone = parseInt(pinField.val()),
+                street = streetField.val(),
+                streetOpt = streetFieldOpt.val(),
+                city = cityField.val(),
+                postal = postalField.val(),
+                country = countryField.val(),
+                state = stateField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount};
             // TODO: Do form verification on ALL fields :P
 

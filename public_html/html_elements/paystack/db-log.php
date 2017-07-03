@@ -9,15 +9,26 @@ require '../../../vendor/autoload.php';
 use Parse\ParseClient;
 use Parse\ParseObject;
 use Parse\ParseException;
+
 $getPost = (array)json_decode(file_get_contents('php://input'), true);
 $data = $getPost['data'];
 $errMsg = "";
 $success = true;
+
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
 ParseClient::setServerURL('http://dolly-v2-db.herokuapp.com', '/database/parse');
 
 $information = new ParseObject("Information");
 $information->set("firstName", $data['firstName']);
+$information->set("lastName", $data['lastName']);
+$information->set("email", $data['email']);
+$information->set("phone", $data['phone']);
+$information->set("street", $data['street']);
+$information->set("streetOpt", $data['streetOpt']);
+$information->set("city", $data['city']);
+$information->set("postal", $data['postal']);
+$information->set("country", $data['country']);
+$information->set("state", $data['state']);
 
 try {
     $information->save();
