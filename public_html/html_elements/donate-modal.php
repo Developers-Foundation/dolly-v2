@@ -85,7 +85,7 @@
                                    data-paystack="name-first"
                                    placeholder="John"
                                    class="form-input-name-first donate-form"
-                                   pattern="[a-z]{1,25}">
+                                   pattern="[a-z]{1,25}" required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">
                             <h5>Last name:</h5>
@@ -93,7 +93,7 @@
                                    data-paystack="name-Last"
                                    placeholder="Doe"
                                    class="form-input-name-Last donate-form"
-                                   pattern="[a-z]{1,25}">
+                                   pattern="[a-z]{1,25}" required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">
                             <h5>Email:</h5>
@@ -101,7 +101,7 @@
                                    data-paystack="email"
                                    placeholder="email"
                                    class="form-input-email donate-form"
-                                   pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                                   pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">
                             <h5>Phone number:</h5>
@@ -111,7 +111,7 @@
                                     placeholder="Phone number"
                                     class="form-input-number-phone donate-form"
                                     pattern="\d*"
-                                    maxlength="19" >
+                                    required>
                         </div>
                         <div class="col-md-8">
                             <h5>Address:</h5>
@@ -119,7 +119,7 @@
                                     type="text"
                                     data-paystack="address"
                                     placeholder="123 Hello Street"
-                                    class="form-input-address donate-form">
+                                    class="form-input-address donate-form" required>
                         </div>
                         <div class="col-md-4">
                             <h5>Apt. Suite, etc:</h5>
@@ -135,14 +135,14 @@
                                    data-paystack="city"
                                    placeholder="New York"
                                    class="form-input-city donate-form"
-                                   pattern="[a-z]{1,50}">
+                                   pattern="[a-z]{1,50}" required>
                         </div>
                         <div class="col-md-4">
                             <h5>Postal Code:</h5>
                             <input type="text"
                                    data-paystack="postal"
                                    placeholder="12345678"
-                                   class="form-input-postal donate-form">
+                                   class="form-input-postal donate-form" required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">
                             <h5>Country:</h5>
@@ -150,7 +150,7 @@
                                    data-paystack="city"
                                    placeholder="Nigeria"
                                    class="form-input-country donate-form"
-                                   pattern="[a-z]{1,50}">
+                                   pattern="[a-z]{1,50}" required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">
                             <h5>State/Province:</h5>
@@ -158,7 +158,7 @@
                                    data-paystack="state"
                                    placeholder="New York"
                                    class="form-input-state donate-form"
-                                   pattern="[a-z]{1,50}">
+                                   pattern="[a-z]{1,50}" required>
                         </div>
                     </div>
                     <!-- Card info -->
@@ -172,7 +172,7 @@
                                    data-paystack="name"
                                    placeholder="name"
                                    class="form-input-name donate-form"
-                                   pattern="[a-z]{1,25}">
+                                   pattern="[a-z]{1,25}" required>
                         </div>
                         <div class="col-md-8">
                             <h5>Card Number:</h5>
@@ -180,14 +180,14 @@
                                    data-paystack="number"
                                    placeholder="card number"
                                    class="form-input-card donate-form"
-                                   pattern="\d*" maxlength="19">
+                                   pattern="\d*" maxlength="19" required>
                         </div>
                         <div class="col-md-4">
                             <h5>CVV:</h5>
                             <input type="text"
                                    data-paystack="cvv"
                                    placeholder="cvv"
-                                   class="form-input-cvv donate-form">
+                                   class="form-input-cvv donate-form" required>
                         </div>
                         <div class="col-md-4">
                             <h5>Expiry month:</h5>
@@ -197,7 +197,7 @@
                                    class="form-input-exp-m donate-form"
                                    pattern="\d*"
                                    maxlength="2"
-                                   data-valid-example="05">
+                                   data-valid-example="05" required>
                         </div>
                         <div class="col-md-4">
                             <h5>Expiry year:</h5>
@@ -208,7 +208,7 @@
                                    pattern="\d*"
                                    minlength="2"
                                    maxlength="4"
-                                   data-valid-example="18">
+                                   data-valid-example="18" required>
                         </div>
                         <div class="col-md-4">
                             <h5>Pin/Opt:</h5>
