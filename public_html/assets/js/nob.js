@@ -3,6 +3,7 @@
  */
 
 /* ----------------------------------------------------------- */
+
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -138,6 +139,7 @@ function loadedGmap() {
     });
     // }
 }
+
 /* ----------------------------------------------------------- */
 /* Nob Google Map End
  /* ----------------------------------------------------------- */
@@ -165,11 +167,13 @@ $('.carousel.three .item').each(function () {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
+
 // Check email's validation
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
+
 $(document).ready(function () {
     $('form.form-email').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
@@ -263,4 +267,144 @@ $(document).ready(function () {
 });
 /* ----------------------------------------------------------- */
 /* Nob Mailer END
+ /* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* Nob PayStack START
+ /* ----------------------------------------------------------- */
+
+/*
+TEST CARD:
+Card Number: 5078 5078 5078 5078 0 (Verve)
+50785078507850780
+Expiry Date: any date in the future
+CVV: 884
+PIN: 0000
+Phone: If less than 10 numeric characters, Transaction will fail.
+OTP: 123456
+
+Card Number: 408 408 408 408 408 1
+4084084084084081
+Expiry Date: any date in the future
+CVV: 408
+ */
+
+$(document).ready(function () {
+    if ($('body').hasClass('donate-page')) {
+        //TODO: use.onchange()
+        $('#nob-paystack-card-form').submit(function (e) {
+            if (e.preventDefault) e.preventDefault();
+            else e.returnValue = false;
+
+            var thisForm = $(this).closest('#nob-paystack-card-form');
+            var submitButton = thisForm.find('button');
+            //submitButton.prop("disabled", true);
+            var cardField = thisForm.find('.form-input-card');
+            var nameField = thisForm.find('.form-input-name');
+            var amountField = thisForm.find('.form-input-amount');
+            var emailField = thisForm.find('.form-input-email');
+            var cvvField = thisForm.find('.form-input-cvv');
+            var expMField = thisForm.find('.form-input-exp-m');
+            var expYField = thisForm.find('.form-input-exp-y');
+            var pinField = thisForm.find('.form-input-pin');
+
+            //Donor Information
+            var nameFirstField = thisForm.find('.form-input-name-first');
+            var nameLastField = thisForm.find('.form-input-name-last');
+            var phoneField = thisForm.find('.form-input-number-phone');
+            var streetField = thisForm.find('.form-input-address');
+            var streetFieldOpt = thisForm.find('.form-input-address-opt');
+            var cityField = thisForm.find('.form-input-city');
+            var postalField = thisForm.find('.form-input-postal');
+            var countryField = thisForm.find('.form-input-country');
+            var stateField = thisForm.find('.form-input-state');
+
+            //var cvvField = thisForm.find('.form-input-message');
+            //var cvvField = thisForm.find('.form-input-message');
+            //var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
+            // TODO: regex for card number space
+            var card = cardField.val(),
+                name = nameField.val(),
+                amount = parseInt(amountField.val()) * 100, // TODO: May need to fix this as what would happen when you have half cents
+                email = emailField.val(),
+                cvv = cvvField.val(),
+                expM = expMField.val(),
+                expY = expYField.val(),
+                pin = pinField.val();
+            var sendData = {'EMAIL': email, 'AMOUNT': amount};
+            // TODO: Do form verification on ALL fields :P
+
+
+// TODO: Catch all errors in php and js, then put in phone number fields + OTP auth + captcha lol, so much to do .-.
+            // Initialize paystack object
+            var paystack;
+            $.ajax({
+                // Get Access Code
+                url: "https://dolly-v2-pr-26.herokuapp.com/html_elements/paystack/authorize",
+                method: 'POST',
+                cache: false,
+                dataType: 'JSON',
+                data: sendData
+            }).then(function (resp) {
+                console.log(resp);
+                if (!resp.status) {
+                    // Get authorize failed (prob priv key failed) TODO: fix this lol
+                    return this.reject({"status": false, "reason": "error-1"});
+                }
+
+                var respData = resp.data;
+
+                // TODO: Move this inner promise to outer loop
+                return Paystack.init({
+                    form: "nob-paystack-card-form", // Form ID
+                    access_code: respData.access_code
+
+                    /* TODO: CATCH FAIL TO INIT
+                    catch(function(error){
+                        console.log("There was an error loading Paystack", error);
+                    });
+                     */
+                }).then(function (returnedObj) {
+                    console.log(returnedObj);
+                    paystack = returnedObj;
+                    return paystack.card.charge({
+                        // TODO: OTP/PIN + Verify OTP if OTP
+                        //pin: readPin() // Called a function that returns the optional pin value
+                    });
+                }).then(function (response) {
+                    console.log(response);
+                    // TODO: Show success + reset form
+                    cardField.val("");
+                    nameField.val("");
+                    amountField.val("");
+                    emailField.val("");
+                    cvvField.val("");
+                    expMField.val("");
+                    expYField.val("");
+                    nameFirstField.val("");
+                    nameLastField.val("");
+                    phoneField.val("");
+                    streetField.val("");
+                    streetFieldOpt.val("");
+                    cityField.val("");
+                    postalField.val("");
+                    countryField.val("");
+                    stateField.val("");
+                    submitButton.html("Received");
+                    submitButton.addClass("btn-success");
+                }, function (error) {
+                    console.log(error);
+                    // TODO: IDK what this is lol
+
+                });
+            }).fail(function (error) {
+                console.log(error);
+                // TODO: IDK what this is lol
+            });
+        });
+    }
+});
+
+/* ----------------------------------------------------------- */
+/* Nob PayStack END
  /* ----------------------------------------------------------- */

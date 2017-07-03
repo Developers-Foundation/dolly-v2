@@ -1,7 +1,8 @@
 <div class="container">
     <!-- Join our journey -->
     <div id="journey" class="section">
-        <img src="//via.placeholder.com/1140x580" class="journey-bg">
+        <!--TODO: @nobodyrandom -->
+        <img src="assets/img/stock/main.jpg" class="journey-bg">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>Join our Journey!</h1>
@@ -47,21 +48,21 @@
         <h2 class="text-center">What we do</h2>
         <div class="row">
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/262x117">
+                <img class="img-responsive" src="assets/img/stock/reading_clubs.jpg">
                 <h3>Reading Clubs</h3>
                 <p>
                     Weekly reading clubs cultivate reading cultures amongst children as young as 6 years old.
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/500x200">
+                <img class="img-responsive" src="assets/img/stock/sponsorship.jpg">
                 <h3>Sponsorship Programmes</h3>
                 <p>
                     Sponsorships allow children who lack financial resources to have a chance at education.
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/123x234">
+                <img class="img-responsive" src="assets/img/stock/back_to_school.jpg">
                 <h3>Back to School Initiatives</h3>
                 <p>
                     Textbooks, uniforms, and transportation to schools are donated to children to alleviate financial
@@ -71,7 +72,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/500x200">
+                <img class="img-responsive" src="assets/img/stock/training.jpg">
                 <h3>Training Programs for Teachers</h3>
                 <p>
                     Training programs to ensure that the education provided by primary schools in Nigeria are
@@ -79,7 +80,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/234x123">
+                <img class="img-responsive" src="assets/img/stock/afterschool.jpg">
                 <h3>After school and Summer Tutoring Programs</h3>
                 <p>
                     Additional education programs helps to alleviate child-care stress from working parents while
@@ -88,7 +89,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="//via.placeholder.com/456x123">
+                <img class="img-responsive" src="assets/img/stock/building.jpg">
                 <h3>School Building</h3>
                 <p>
                     New and upgraded school facilities provide more children with the necessary infrastructure and
@@ -107,7 +108,8 @@
         <h2 class="text-center">How to Help</h2>
         <div class="row">
             <div class="col-md-5">
-                <img class="img-responsive" src="//via.placeholder.com/338x378">
+                <!--TODO: @nobodyrandom -->
+                <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
             </div>
             <div class="col-md-7">
                 <h3>Sponsor a child</h3>

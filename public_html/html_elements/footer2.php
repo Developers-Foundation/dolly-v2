@@ -23,7 +23,7 @@
                     <li><a href="/about">About  <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/impacts">Impact  <i class="fa fa-chevron-right"></i></a></li>
                     <li><a>Blog  <i class="fa fa-chevron-right"></i></a></li>
-                    <li><a>Contact  <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a href="/contact">Contact  <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/donate">Donate  <i class="fa fa-chevron-right"></i></a></li>
                 </ul>
             </div>
