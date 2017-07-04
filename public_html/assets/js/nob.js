@@ -391,10 +391,10 @@ $(document).ready(function (e) {
                 console.log(rsp);
                 //TODO: finish
                 var donorInfo = {
-                    "data": {
-                        "firstName": firstName,
-                        "lastName": lastName,
-                        "referenceID": rsp.data.reference,
+                    data: {
+                        firstName: firstName,
+                        lastName: lastName,
+                        referenceID: rsp.data.reference,
                     }
                 };
                 $.ajax({
