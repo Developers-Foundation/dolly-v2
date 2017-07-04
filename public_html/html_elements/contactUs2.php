@@ -33,9 +33,9 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                 <div class="col-md-offset-1 col-md-6 right">
                     <!-- Name input -->
                     <div class="row">
-                        <div class="col-md-6" style="padding:0px;">
+                        <div class="col-md-6">
                             <h4 class="msg-label"> Your Name</h4>
-                            <div class="input-group">
+                            <div class="input-group fullWidth">
                                 <input type="text" class="form-control form-input-name" required>
                             </div>
                         </div>

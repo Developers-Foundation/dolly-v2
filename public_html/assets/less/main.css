@@ -470,6 +470,9 @@ SECTION SPECIFIC LESS
   text-align: left;
   color: #9b9b9b;
 }
+.contact-page .fullWidth {
+  width: 100%;
+}
 .donate-box {
   position: absolute;
   width: 0;
