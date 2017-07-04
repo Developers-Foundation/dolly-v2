@@ -389,7 +389,7 @@ $(document).ready(function (e) {
                 });
             }).then(function (rsp) {
                 console.log(rsp);
-                //TODO: finish
+
                 var donorInfo = {
                     data: {
                         firstName: firstName,

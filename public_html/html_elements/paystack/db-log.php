@@ -12,7 +12,7 @@ use Parse\ParseException;
 
 $getPost = (array)json_decode(file_get_contents('php://input'), true);
 
-$data = $getPost['data'];
+$data = $_POST["data"];
 $errMsg = "";
 $success = true;
 
