@@ -289,6 +289,12 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
+function promAjax(options) {
+    return new Promise(function (resolve, reject) {
+        $.ajax(options).done(resolve).fail(reject);
+    });
+}
+
 $(document).ready(function () {
     if ($('body').hasClass('donate-page')) {
         //TODO: use.onchange()
@@ -347,16 +353,13 @@ $(document).ready(function () {
 // TODO: Catch all errors in php and js, then put in phone number fields + OTP auth + captcha lol, so much to do .-.
             // Initialize paystack object
             var paystack;
-            $.ajax({
+            promAjax({
                 // Get Access Code
                 url: "https://dolly-v2-pr-26.herokuapp.com/html_elements/paystack/authorize",
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
-                data: sendData,
-                error: function (err) {
-                    console.log(err);
-                }
+                data: sendData
             }).then(function (resp) {
                 resp = JSON.parse(resp.responseText);
                 console.log(resp);
