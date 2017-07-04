@@ -353,7 +353,10 @@ $(document).ready(function () {
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
-                data: sendData
+                data: sendData,
+                error: function (err) {
+                    console.log(err);
+                }
             }).then(function (resp) {
                 console.log(resp);
                 if (!resp.status) {
