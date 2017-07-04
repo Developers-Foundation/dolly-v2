@@ -289,13 +289,13 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
-$(document).ready(function (e) {
-    function promAjax(options) {
-        return new Promise(function (resolve, reject) {
-            $.ajax(options).done(resolve).fail(reject);
-        });
-    }
+function promAjax(options) {
+    return new Promise(function (resolve, reject) {
+        $.ajax(options).done(resolve).fail(reject);
+    });
+}
 
+$(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
         //TODO: use.onchange()
         $('#nob-paystack-card-form').submit(function (e) {
