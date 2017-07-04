@@ -95,7 +95,7 @@
                             <input type="text"
                                    data-paystack="name-Last"
                                    placeholder="Doe"
-                                   class="form-input-name-Last donate-form"
+                                   class="form-input-name-last donate-form"
                                    pattern="[a-z]{1,25}"required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">

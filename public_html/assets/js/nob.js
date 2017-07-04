@@ -338,7 +338,7 @@ $(document).ready(function (e) {
                 pin = parseInt(pinField.val()),
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
-                phone = parseInt(pinField.val()),
+                phone = pinField.val(),
                 street = streetField.val(),
                 streetOpt = streetFieldOpt.val(),
                 city = cityField.val(),
