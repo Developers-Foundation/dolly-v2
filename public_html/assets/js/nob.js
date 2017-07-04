@@ -380,6 +380,21 @@ $(document).ready(function () {
                         // TODO: OTP/PIN + Verify OTP if OTP
                         //pin: readPin() // Called a function that returns the optional pin value
                     });
+                }).then(function(rsp){
+                    //TODO: finish
+                    var donorInfo = {"data":{"firstName": firstName, "lastName": lastName,"referenceID": rsp.data.reference,}};
+                    $.ajax({
+                        url: "html_elements/paystack/db-log.php",
+                        method:"POST",
+                        dataType:"JSON",
+                        data: donorInfo,
+                        success: function (rspMsg) {
+                            console.log(rspMsg);
+                        },
+                        error: function (errMsg) {
+                            console.log(errMsg);
+                        }
+                    })
                 }).then(function (response) {
                     console.log(response);
                     // TODO: Show success + reset form
