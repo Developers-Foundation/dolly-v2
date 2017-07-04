@@ -394,7 +394,15 @@ $(document).ready(function (e) {
                     data: {
                         firstName: firstName,
                         lastName: lastName,
-                        referenceID: rsp.data.reference,
+                        email: email,
+                        phone: phone,
+                        street: street,
+                        streetOpt: streetOpt,
+                        city: city,
+                        postal: postal,
+                        country: country,
+                        state: state,
+                        referenceID: rsp.data.reference
                     }
                 };
                 $.ajax({
