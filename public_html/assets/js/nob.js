@@ -361,8 +361,7 @@ $(document).ready(function (e) {
                 data: sendData
             }).then(function (resp) {
                 console.log(resp);
-                resp = JSON.parse(resp.responseText);
-                console.log(resp);
+
                 if (!resp.status) {
                     // Get authorize failed (prob priv key failed) TODO: fix this lol
                     return this.reject({"status": false, "reason": "error-1"});
