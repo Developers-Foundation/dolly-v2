@@ -31,7 +31,7 @@ $information->set("country", $data['country']);
 $information->set("state", $data['state']);
 $information->set("referenceID", $data['referenceID']);
 
-$errMsg = $errMsg . $data['firstName'] ." ". $data['lastName'] ." ". $data['referenceID'];
+$errMsg = $errMsg . $data['firstName'] . " " . $data['lastName'] . " " . $data['referenceID'];
 try {
     $information->save();
     //echo 'New object created with objectId: ' . $application->getObjectId();
