@@ -373,60 +373,67 @@ $(document).ready(function () {
                         console.log("There was an error loading Paystack", error);
                     });
                      */
-                }).then(function (returnedObj) {
-                    console.log(returnedObj);
-                    paystack = returnedObj;
-                    return paystack.card.charge({
-                        // TODO: OTP/PIN + Verify OTP if OTP
-                        //pin: readPin() // Called a function that returns the optional pin value
-                    });
-                }).then(function(rsp){
-                    //TODO: finish
-                    var donorInfo = {"data":{"firstName": firstName, "lastName": lastName,"referenceID": rsp.data.reference,}};
-                    $.ajax({
-                        url: "html_elements/paystack/db-log.php",
-                        method:"POST",
-                        dataType:"JSON",
-                        data: donorInfo,
-                        success: function (rspMsg) {
-                            console.log(rspMsg);
-                        },
-                        error: function (errMsg) {
-                            console.log(errMsg);
-                        }
-                    })
-                }).then(function (response) {
-                    console.log(response);
-                    // TODO: Show success + reset form
-                    cardField.val("");
-                    nameField.val("");
-                    amountField.val("");
-                    emailField.val("");
-                    cvvField.val("");
-                    expMField.val("");
-                    expYField.val("");
-
-                    nameFirstField.val("");
-                    nameLastField.val("");
-                    phoneField.val("");
-                    streetField.val("");
-                    streetFieldOpt.val("");
-                    cityField.val("");
-                    postalField.val("");
-                    countryField.val("");
-                    stateField.val("");
-
-                    submitButton.html("Received");
-                    submitButton.addClass("btn-success");
-                }, function (error) {
-                    console.log(error);
-                    // TODO: IDK what this is lol
-
                 });
-            }).fail(function (error) {
+            }).then(function (returnedObj) {
+                console.log(returnedObj);
+                paystack = returnedObj;
+                return paystack.card.charge({
+                    // TODO: OTP/PIN + Verify OTP if OTP
+                    //pin: readPin() // Called a function that returns the optional pin value
+                });
+            }).then(function (rsp) {
+                //TODO: finish
+                var donorInfo = {
+                    "data": {
+                        "firstName": firstName,
+                        "lastName": lastName,
+                        "referenceID": rsp.data.reference,
+                    }
+                };
+                $.ajax({
+                    url: "html_elements/paystack/db-log.php",
+                    method: "POST",
+                    dataType: "JSON",
+                    data: donorInfo,
+                    success: function (rspMsg) {
+                        console.log(rspMsg);
+                    },
+                    error: function (errMsg) {
+                        console.log(errMsg);
+                    }
+                });
+            }).then(function (response) {
+                console.log(response);
+                // TODO: Show success + reset form
+                cardField.val("");
+                nameField.val("");
+                amountField.val("");
+                emailField.val("");
+                cvvField.val("");
+                expMField.val("");
+                expYField.val("");
+
+                nameFirstField.val("");
+                nameLastField.val("");
+                phoneField.val("");
+                streetField.val("");
+                streetFieldOpt.val("");
+                cityField.val("");
+                postalField.val("");
+                countryField.val("");
+                stateField.val("");
+
+                submitButton.html("Received");
+                submitButton.addClass("btn-success");
+            }, function (error) {
                 console.log(error);
                 // TODO: IDK what this is lol
+
             });
+            /*}).fail(function (error) {
+                console.log(error);
+                // TODO: IDK what this is lol
+            });*/
         });
     }
 });
