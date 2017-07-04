@@ -382,6 +382,7 @@ $(document).ready(function () {
                     //pin: readPin() // Called a function that returns the optional pin value
                 });
             }).then(function (rsp) {
+                console.log(rsp);
                 //TODO: finish
                 var donorInfo = {
                     "data": {

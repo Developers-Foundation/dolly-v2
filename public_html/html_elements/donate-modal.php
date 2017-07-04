@@ -153,7 +153,7 @@
                                    data-paystack="city"
                                    placeholder="Nigeria"
                                    class="form-input-country donate-form"
-                                   pattern="[a-z]{1,50}"required>
+                                   required>
                         </div>
                         <div class="col-md-6" style="padding: 0 15px">
                             <h5>State/Province:</h5>
@@ -161,7 +161,7 @@
                                    data-paystack="state"
                                    placeholder="New York"
                                    class="form-input-state donate-form"
-                                   pattern="[a-z]{1,50}"required>
+                                   required>
                         </div>
                     </div>
                     <!-- Card info -->
@@ -175,7 +175,7 @@
                                    data-paystack="name"
                                    placeholder="name"
                                    class="form-input-name donate-form"
-                                   pattern="[a-z]{1,25}"required>
+                                   required>
                         </div>
                         <div class="col-md-8">
                             <h5>Card Number:</h5>
