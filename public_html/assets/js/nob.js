@@ -358,6 +358,7 @@ $(document).ready(function () {
                     console.log(err);
                 }
             }).then(function (resp) {
+                resp = JSON.parse(resp.responseText);
                 console.log(resp);
                 if (!resp.status) {
                     // Get authorize failed (prob priv key failed) TODO: fix this lol
