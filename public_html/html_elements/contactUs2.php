@@ -43,7 +43,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                         <!-- Email input -->
                         <div class="col-md-6">
                             <h4 class="msg-label"> Email Address</h4>
-                            <div class="input-group">
+                            <div class="input-group fullWidth">
                                 <input type="email" class="form-control form-input-email" required>
                             </div>
                         </div>
