@@ -294,6 +294,11 @@ SECTION SPECIFIC LESS
 .impacts-page .section .section-bg {
   position: absolute;
   z-index: -1;
+  width: 1140px;
+  height: 540px;
+}
+.impacts-page .section .inner-image {
+  height: 450px;
 }
 .impacts-page .section::before {
   content: '';

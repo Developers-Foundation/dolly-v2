@@ -10,10 +10,10 @@
 <div class="container">
     <!-- Reading Clubs -->
     <div id="impact-1" class="section first impact-1">
-        <img src="//via.placeholder.com/1140x540" class="section-bg">
+        <img src="assets/img/stock/reading_clubs.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img src="//via.placeholder.com/350x456"/></div>
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/reading_clubs.jpg"/></div>
                 <div class="feature-text col-md-7 text-left">
                     <h1>Reading Clubs</h1>
                     <hr>
@@ -32,10 +32,10 @@
 
     <!-- Sponsorship Programmes -->
     <div id="impact-2" class="section alternate">
-        <img src="//via.placeholder.com/1140x540/red" class="section-bg">
+        <img src="assets/img/stock/sponsorship.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/sponsorship.jpg"/></div>
                 <div class="feature-text col-md-7 text-left">
                     <h1>Sponsorship Programmes</h1>
                     <hr>
@@ -54,10 +54,10 @@
 
     <!-- Back to School Initiatives  -->
     <div id="impact-3" class="section">
-        <img src="//via.placeholder.com/1140x540/f00" class="section-bg">
+        <img src="assets/img/stock/back_to_school.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/back_to_school.jpg"/></div>
                 <div class="feature-text col-md-7 text-left">
                     <h1>Back to School Initiatives</h1>
                     <hr>
@@ -75,10 +75,10 @@
 
     <!-- Training Programs for Teachers  -->
     <div id="impact-4" class="section alternate">
-        <img src="//via.placeholder.com/1140x540/00f" class="section-bg">
+        <img src="assets/img/stock/training.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/training.jpg"/></div>
                 <div class="feature-text col-md-7 text-left">
                     <h1>Training Programs for Teachers</h1>
                     <hr>
@@ -96,10 +96,10 @@
 
     <!-- After School and Summer Tutoring Programs  -->
     <div id="impact-5" class="section">
-        <img src="//via.placeholder.com/1140x540/green" class="section-bg">
+        <img src="assets/img/stock/afterschool.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/afterschool.jpg"/></div>
                 <div class="feature-text col-md-7 text-left">
                     <h1>After School and Summer Tutoring Programs</h1>
                     <hr>
@@ -123,10 +123,10 @@
 
     <!-- School Building  -->
     <div id="impact-6" class="section alternate">
-        <img src="//via.placeholder.com/1140x540/pink" class="section-bg">
+        <img src="assets/img/stock/building.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img src="//via.placeholder.com/316x450"/></div>
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/building.jpg"/></div>
                 <div class="feature-text col-md-7 text-left">
                     <h1>School Building</h1>
                     <hr>
