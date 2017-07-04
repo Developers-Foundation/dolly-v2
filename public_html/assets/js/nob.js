@@ -2,8 +2,13 @@
  * Created by harrisonchow on 7/10/16.
  */
 
-/* ----------------------------------------------------------- */
+function promAjax(options) {
+    return new Promise(function (resolve, reject) {
+        $.ajax(options).done(resolve).fail(reject);
+    });
+}
 
+/* ----------------------------------------------------------- */
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -289,12 +294,6 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
-function promAjax(options) {
-    return new Promise(function (resolve, reject) {
-        $.ajax(options).done(resolve).fail(reject);
-    });
-}
-
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
         //TODO: use.onchange()
@@ -361,6 +360,7 @@ $(document).ready(function (e) {
                 dataType: 'JSON',
                 data: sendData
             }).then(function (resp) {
+                console.log(resp);
                 resp = JSON.parse(resp.responseText);
                 console.log(resp);
                 if (!resp.status) {
