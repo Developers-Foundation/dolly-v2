@@ -221,6 +221,7 @@
                                    class="form-input-pin donate-form"
                                    pattern="\d*">
                         </div>
+                        <input type="text" class="hidden form-input-amount">
                        <div class="col-md-12 text-center">
                            <br>
                            <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>

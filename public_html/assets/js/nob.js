@@ -400,6 +400,7 @@ $(document).ready(function () {
                     postalField.val("");
                     countryField.val("");
                     stateField.val("");
+
                     submitButton.html("Received");
                     submitButton.addClass("btn-success");
                 }, function (error) {
