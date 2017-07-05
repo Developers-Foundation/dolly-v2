@@ -61,7 +61,7 @@
                                         <div class="donate-amount-radio"><strong>$130</strong></div>
                                     </a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2"> <!-- TODO: CSS -->
                                     <a class="donate-amount-select" data-amount="-1">
                                         <div class="donate-amount-radio"><strong>Other</strong></div>
                                     </a>
@@ -223,7 +223,7 @@
                             </div>
                             <input type="text" class="hidden form-input-amount">
                             <div class="col-md-12 text-center">
-                                <br>
+                                <br> <!-- TODO: Must FIX THIS!!! PRIORITY -->
                                 <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
                                 <br>
                                 <button type="submit" class="button-red round" data-paystack="submit">Submit</button>

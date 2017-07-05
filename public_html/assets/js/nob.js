@@ -420,7 +420,7 @@ $(document).ready(function (e) {
                 });
             }).then(function (response) {
                 console.log(response);
-                // TODO: Show success + reset form
+                // TODO: Show success + reset form + time set
                 cardField.val("");
                 nameField.val("");
                 amountField.val("");
