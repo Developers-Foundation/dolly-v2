@@ -22,7 +22,7 @@ $information = new ParseObject("Information");
 $information->set("firstName", $data['firstName']);
 $information->set("lastName", $data['lastName']);
 $information->set("email", $data['email']);
-$information->set("phone", $data['phone']);
+$information->set("phone", (int)$data['phone']);
 $information->set("street", $data['street']);
 $information->set("streetOpt", $data['streetOpt']);
 $information->set("city", $data['city']);

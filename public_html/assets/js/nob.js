@@ -339,7 +339,7 @@ $(document).ready(function (e) {
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
                 //TODO: for some reason it won't let it parseInt, so left it as string rn
-                phone = phoneField.val(),
+                phone = parseInt(phoneField.val()),
                 street = streetField.val(),
                 streetOpt = streetFieldOpt.val(),
                 city = cityField.val(),
