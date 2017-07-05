@@ -32,6 +32,8 @@
 
   "require": {
     "ext-memcached": "*",
-    "sendgrid/sendgrid": "4.0.4"
+    "sendgrid/sendgrid": "4.0.4",
+    "yabacon/paystack-php": "v2.1.19",
+    "parse/php-sdk": "1.2.9"
   }
 }

@@ -7,77 +7,95 @@
  */
 ?>
 
-<div class="container">
-    <!-- DONATE SECTION -->
-    <div class="section">
-        <div class="text-center">
-            <h2>Always Look On The Bright Side Of Life</h2>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                    <p>From this moment on, choose not to let your past dictate your future. <br>
-                        What is gone is gone forever. Now is the time to move on, to do and become what you.
-                    </p>
+
+<!-- DONATE SECTION -->
+<div class="parallax">
+    <a href="#donate-payment" data-toggle="modal" data-amount="10" class="donate-modal-trigger">
+        <div id="donate-section-1" class="donate-section">
+            <div class="container container-first">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/img/donate/donuts.jpg">
+                    </div>
+                    <div class="col-md-6">
+
+                        <p>
+                            <label><input class="donate-box" type="radio" name="amount" value="10">
+                                <i class="ui-checkbox"></i></label><br><br>
+                            For the price of 12 donuts at Dunkin donuts, you can send <u>3 children</u> to school
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="card col-md-offset-2 col-md-8">
-                <form class="donate-form" action="" method="post">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3>Something...</h3>
-                        </div>
-                        <div class="col-md-8">
-                            <select class="donate-select">
-                                <option>The first option</option>
-                                <option>The second option</option>
-                                <option>The third option</option>
-                            </select>
-                        </div>
+    </a>
+    <a href="#donate-payment" data-toggle="modal" data-amount="30" class="donate-modal-trigger">
+        <div id="donate-section-2" class="donate-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <label><input class="donate-box" type="radio" name="amount" value="30">
+                                <i class="ui-checkbox"></i></label><br><br>
+                            For the price of Apple Earpods, you can provide books for <u>5 children</u>
+                        </p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3>Something...</h3>
-                        </div>
-                        <div class="col-md-8">
-                            <select class="donate-select">
-                                <option>The first option</option>
-                                <option>The second option</option>
-                                <option>The third option</option>
-                            </select>
-                        </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/img/donate/earbuds.jpg">
                     </div>
-                    <div class="donate-amount">
-                        <h3><strong>Amount Of</strong></h3>
-                        <div class="donate-amount-container row">
-                            <div class="col-md-3">
-                                <a>
-                                    <div class="donate-amount-radio selected"><strong>$25</strong></div>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a>
-                                    <div class="donate-amount-radio"><strong>$50</strong></div>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a>
-                                    <div class="donate-amount-radio"><strong>$100</strong></div>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a>
-                                    <div class="donate-amount-radio"><strong>Other</strong></div>
-                                </a>
-                            </div>
-                            <span class="stretch"></span>
-                        </div>
-                    </div>
-                    <div class="donate-submit text-center">
-                        <a href class="button-red round">Payment Information</a>
-                    </div>
-                </form>
+                </div>
             </div>
+        </div>
+    </a>
+    <a href="#donate-payment" data-toggle="modal" data-amount="50" class="donate-modal-trigger">
+        <div id="donate-section-3" class="donate-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/img/donate/phone_case.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <label><input class="donate-box" type="radio" name="amount" value="50">
+                                <i class="ui-checkbox"></i></label><br><br>
+                            For the price of an Apple iPhone case, you can provide uniforms for <u>5 children</u>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#donate-payment" data-toggle="modal" data-amount="130" class="donate-modal-trigger">
+        <div id="donate-section-4" class="donate-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <label><input class="donate-box" type="radio" name="amount" value="130">
+                                <i class="ui-checkbox"></i></label><br><br>
+                            For the price of new shoes at Aldo, you can send <u>5 children to school</u>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="assets/img/donate/shoes.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div id="donate-btn">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>
+                Help make the lives of these children better
+            </h1>
+        </div>
+        <!-- TODO: put it in less -->
+        <div class="col-md-12 text-center" style="padding-bottom: 15px">
+            <button class="button-red round big" type="submit" data-paystack="submit">Donate Now</button>
         </div>
     </div>
 </div>
+

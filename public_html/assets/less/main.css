@@ -12,7 +12,9 @@ h2 {
   background-color: #343434;
 }
 .row {
-  /* TODO: Who put this line? @minimike511 @psalv @trickly and why is this needed? it would screw with default bootstrap rows
+  /* TODO: @nobodyrandom that was me (Paul), I did it to remove the horizontal scroll that the rows give
+  /* TODO: @psalv Try not to override master bootstrap, just use the single case
+   */
   /* margin: 0 !important; */
 }
 .orange {
@@ -43,8 +45,12 @@ h2 {
 .section {
   margin-bottom: 40px;
 }
+.hidden {
+  display: none;
+}
 .button-red {
   background-color: #da3400;
+  border-width: 0;
   padding: 15px;
   margin: 15px 0;
   display: inline-block;
@@ -52,6 +58,14 @@ h2 {
 .button-red.round {
   border-radius: 50px;
   color: #ffffff;
+}
+.button-red.big {
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.button-red.small {
+  padding: 10px;
 }
 a.button-red {
   color: #FFF;
@@ -73,14 +87,17 @@ a.button-red:hover {
   top: -20px;
   background-color: white;
 }
+.slider-switch.switch-ios.switch-toggle a {
+  background-color: #f5a623;
+}
 /**
 HEADER AND FOOTER LESS
  */
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 0.5%;
-  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 .navbar a {
   color: white !important;
@@ -110,7 +127,6 @@ HEADER AND FOOTER LESS
   right: 0;
   left: 0;
   z-index: 1050;
-  margin-top: 8.1%;
   /* THE ORANGE TRIANGLE LOL */
 }
 .navtab .navtab-box {
@@ -143,7 +159,7 @@ HEADER AND FOOTER LESS
   margin: auto;
   border-color: white;
   width: 100%;
-  padding: 0 8px;
+  padding: 0 10px;
   text-align: center;
 }
 .navtab .navtab-box ul li div a {
@@ -154,10 +170,10 @@ HEADER AND FOOTER LESS
   content: "";
   display: block;
   position: relative;
-  width: 10px;
+  width: 12px;
   height: 0;
   top: 19px;
-  left: -21px;
+  left: -23px;
   border-bottom: solid white 3px;
 }
 .navtab .navtab-box ul li.selected a {
@@ -242,9 +258,13 @@ SECTION SPECIFIC LESS
  */
 .index-page #journey {
   height: 580px;
+  color: white;
 }
 .index-page #journey .journey-bg {
   position: absolute;
+  overflow: hidden;
+  height: 580px;
+  width: 1140px;
   z-index: -1;
 }
 .index-page #journey .journey-inner {
@@ -287,6 +307,11 @@ SECTION SPECIFIC LESS
 .impacts-page .section .section-bg {
   position: absolute;
   z-index: -1;
+  width: 1140px;
+  height: 540px;
+}
+.impacts-page .section .inner-image {
+  height: 450px;
 }
 .impacts-page .section::before {
   content: '';
@@ -311,6 +336,7 @@ SECTION SPECIFIC LESS
   border-radius: 13px;
   border: solid 3px #f5a623;
   overflow: hidden;
+  padding: 0;
 }
 .impacts-page .section p {
   padding-bottom: 20px;
@@ -336,6 +362,9 @@ SECTION SPECIFIC LESS
 .about-page .title img {
   position: absolute;
   z-index: -1;
+  width: 1140px;
+  height: 480px;
+  object-fit: cover;
 }
 .about-page .title .inner {
   display: block;
@@ -367,18 +396,35 @@ SECTION SPECIFIC LESS
 .about-page .vision {
   margin-bottom: 100px !important;
 }
-.donate-page .container {
+.donate-page .container-first {
   padding-top: 12.8%;
+}
+.donate-page .col-md-6 {
+  padding: 0;
 }
 .donate-page h2 {
   margin: 100px 0 20px;
 }
-.donate-page .card {
-  margin: 30px 16.666666666667% 100px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-  padding: 40px 40px;
+.donate-page p {
+  padding: 20% 5% 0% 5%;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+  text-align: left;
 }
-.donate-page .card .donate-form .donate-select {
+.donate-page u {
+  color: #f5a623;
+}
+.donate-page .donate-section:hover {
+  background-color: #f9d246;
+}
+.donate-page .donate-section:hover u {
+  color: white;
+}
+.donate-page .donate-modal .row {
+  margin: 0;
+}
+.donate-page .donate-modal .donate-select {
   margin-bottom: 10px;
   margin-top: 20px;
   padding: inherit;
@@ -387,12 +433,12 @@ SECTION SPECIFIC LESS
   background: url("../img/arrow-down.png") no-repeat right;
   outline: none;
 }
-.donate-page .card .donate-form .donate-amount .donate-amount-container {
+.donate-page .donate-modal .donate-amount .donate-amount-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.donate-page .card .donate-form .donate-amount .donate-amount-radio {
+.donate-page .donate-modal .donate-amount .donate-amount-radio {
   box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7.5px;
   padding: 20px 10px 20px 10px;
@@ -400,24 +446,29 @@ SECTION SPECIFIC LESS
   float: left;
   text-align: center;
 }
-.donate-page .card .donate-form .donate-amount .donate-amount-radio .stretch {
+.donate-page .donate-modal .donate-amount .donate-amount-radio .stretch {
   width: 100%;
   display: inline-block;
   font-size: 0;
   line-height: 0;
 }
-.donate-page .card .donate-form .donate-amount .donate-amount-radio.selected {
+.donate-page .donate-modal .donate-amount .donate-amount-radio.selected {
   background-color: #f5a623;
   color: #343434;
 }
-.donate-page .card .donate-form .donate-amount .donate-amount-radio:not(.selected) {
+.donate-page .donate-modal .donate-amount .donate-amount-radio:not(.selected) {
   background-color: #9b9b9b;
   color: white;
 }
-.donate-page .card .donate-form .donate-submit {
+.donate-page .donate-modal .donate-submit {
   clear: both;
   width: 100%;
   margin: auto;
+}
+.donate-page .card {
+  margin: 30px 16.666666666667% 100px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px 40px;
 }
 .contact-page .container {
   padding-top: 5%;
@@ -431,4 +482,61 @@ SECTION SPECIFIC LESS
   font-size: 15px;
   text-align: left;
   color: #9b9b9b;
+}
+.contact-page .fullWidth {
+  width: 100%;
+}
+.donate-box {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* checkbox */
+.ui-checkbox:before,
+.ui-checkbox-after:after {
+  content: "\2714";
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: .1875em;
+  font-style: normal;
+  font-weight: normal;
+  font-family: ui-checkbox;
+  vertical-align: middle;
+  text-align: center;
+  transition: all .2s linear;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 0 0 #fff;
+  background-color: #ddd;
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 0.9em;
+  line-height: 1.25em;
+}
+/* checkbox:checked */
+.ui-checkbox-checked:before,
+.ui-checkbox-checked-after:after,
+input[type=radio]:checked + .ui-checkbox:before {
+  color: #fff;
+  text-shadow: 0 0 0 #fff;
+  background-color: #f5a623;
+}
+#donate-btn {
+  background-color: #f5a623;
+}
+#donate-btn h1 {
+  padding: 2% 0 0 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: white;
+}
+.donate-form {
+  width: 100%;
 }

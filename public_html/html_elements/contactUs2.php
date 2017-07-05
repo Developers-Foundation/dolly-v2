@@ -17,7 +17,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
             <form class="form-email" action="" method="post" data-form-type="nob">
                 <div class="col-md-5 left msg-info">
                     <h3 class="msg-info">
-                        E: augustine_stark@gmail.com<br/>
+                        E: adedolepo@dollychildren.org<br/>
                         P: (+234) 708-739-0017
 
                     </h3>
@@ -33,9 +33,9 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                 <div class="col-md-offset-1 col-md-6 right">
                     <!-- Name input -->
                     <div class="row">
-                        <div class="col-md-6" style="padding:0px;">
+                        <div class="col-md-6">
                             <h4 class="msg-label"> Your Name</h4>
-                            <div class="input-group">
+                            <div class="input-group fullWidth">
                                 <input type="text" class="form-control form-input-name" required>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                         <!-- Email input -->
                         <div class="col-md-6">
                             <h4 class="msg-label"> Email Address</h4>
-                            <div class="input-group">
+                            <div class="input-group fullWidth">
                                 <input type="email" class="form-control form-input-email" required>
                             </div>
                         </div>
