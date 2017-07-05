@@ -23,7 +23,7 @@
                 <ul class="list-inline text-right">
                     <li class="li-wrapper">
                         <ul class="list-inline text-right nav-contact-info">
-                            <li><i class="fa fa-envelope-o"></i>dollychildrenfoundation@gmail.com</li>
+                            <li><i class="fa fa-envelope-o"></i>info@dollychildren.org</li>
                             <li><i class="fa fa-phone"></i>234-818-689-1611</li>
                             <li><a href="html_elements/link.php?link=facebook" target="_blank "><i class="fa fa-facebook-square"></i>Facebook</a></li>
                         </ul>
