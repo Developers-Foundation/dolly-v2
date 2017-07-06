@@ -39,6 +39,10 @@ h2 {
   margin: 0 auto;
   display: table;
 }
+.v-center {
+  margin: auto 0;
+  height: 100%;
+}
 .spacer {
   height: 15px;
 }
