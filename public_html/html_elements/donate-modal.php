@@ -216,6 +216,15 @@
                                        maxlength="4"
                                        data-valid-example="18" required>
                             </div>
+                            <div class="col-md-4">
+                                <h5>PIN Number:</h5>
+                                <input type="text"
+                                       data-paystack="pin"
+                                       placeholder="pin"
+                                       class="form-input-pin"
+                                       pattern="\d*">
+                                <button type="submit" data-paystack="submit" class="button-red">Submit</button>
+                            </div>
                             <input type="text" class="hidden form-input-amount">
                             <div class="col-md-12 text-center">
                                 <br> <!-- TODO: Must FIX THIS!!! PRIORITY -->
@@ -233,9 +242,9 @@
                                 <!-- Options are PIN/OTP/3DS/Phone -->
                                 <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:</h5>
                                 <input type="text"
-                                       data-paystack="pin"
-                                       placeholder="pin"
-                                       class="form-input-pin"
+                                       data-paystack="token"
+                                       placeholder="OTP"
+                                       class="form-input-token"
                                        pattern="\d*">
                                 <button type="submit" data-paystack="submit" class="button-red">Submit</button>
                             </div>
