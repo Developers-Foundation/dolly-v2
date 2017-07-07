@@ -345,6 +345,7 @@ SECTION SPECIFIC LESS
   order: 2;
 }
 .impacts-page .alternate .feature-text {
+  margin: auto;
   order: 1;
 }
 .about-page .section h2 {
@@ -469,6 +470,27 @@ SECTION SPECIFIC LESS
   margin: 30px 16.666666666667% 100px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   padding: 40px 40px;
+}
+.donate-page .other {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+  width: inherit;
+  margin-top: 10px;
+}
+.donate-page .other:focus {
+  border-bottom: solid 2px #969696;
+  outline: none;
+}
+.donate-page .other:active {
+  -webkit-transition: width 2s;
+  /* Safari */
+  transition: width 2s;
+  transition-timing-function: ease;
 }
 .contact-page .container {
   padding-top: 5%;

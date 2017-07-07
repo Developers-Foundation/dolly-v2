@@ -66,6 +66,9 @@
                                         <div class="donate-amount-radio"><strong>Other</strong></div>
                                     </a>
                                 </div>
+                                <div class="col-md-10">
+                                    <input type="text" class="other">
+                                </div>
                                 <span class="stretch"></span>
                             </div>
                         </div>
