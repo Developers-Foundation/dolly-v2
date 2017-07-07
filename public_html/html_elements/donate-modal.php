@@ -223,7 +223,6 @@
                                        placeholder="pin"
                                        class="form-input-pin"
                                        pattern="\d*">
-                                <button type="submit" data-paystack="submit" class="button-red">Submit</button>
                             </div>
                             <input type="text" class="hidden form-input-amount">
                             <div class="col-md-12 text-center">
