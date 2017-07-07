@@ -9,6 +9,7 @@ function promAjax(options) {
 }
 
 /* ----------------------------------------------------------- */
+
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -294,7 +295,7 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
-function validateCard (rsp) {
+function validateCard(rsp) {
     console.log("Charge response: ");
     console.log(rsp);
     $('.donate-page-3').removeClass('hidden');
@@ -330,7 +331,7 @@ function validateCard (rsp) {
         case "3DS":
             // External verification TODO: Need to verify that this works.
             return paystack.card.verify3DS();
-            //verificationForm.innerHTML = "<h5>You will be required to verify your card with securecode</h5><br><button type=\"submit\" data-paystack=\"submit\" class=\"button-red\">Submit</button>";
+        //verificationForm.innerHTML = "<h5>You will be required to verify your card with securecode</h5><br><button type=\"submit\" data-paystack=\"submit\" class=\"button-red\">Submit</button>";
         case "phone":
             // Card needs to be enrolled for online verification
             return paystack.card.validatePhone({phone: phone});
@@ -344,8 +345,77 @@ function validateCard (rsp) {
     return rsp;
 }
 
+function resetForm(rsp) {
+    console.log("Reset form now: ");
+    console.log(rsp);
+
+    $('.donate-page-3').addClass('hidden');
+    $('.donate-page-4').removeClass('hidden');
+
+    var donorInfo = {
+        data: {
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            phone: phone,
+            street: street,
+            streetOpt: streetOpt,
+            city: city,
+            postal: postal,
+            country: country,
+            state: state,
+            referenceID: rsp.data.reference
+        }
+    };
+    $.ajax({
+        url: "html_elements/paystack/db-log.php",
+        method: "POST",
+        dataType: "JSON",
+        data: donorInfo,
+        success: function (rspMsg) {
+            console.log("Log response: ");
+            console.log(rspMsg);
+        },
+        error: function (errMsg) {
+            console.log("Log error: ");
+            console.log(errMsg);
+        }
+    });
+
+    // TODO: Show success + reset form + time set
+    cardField.val("");
+    nameField.val("");
+    amountField.val("");
+    emailField.val("");
+    cvvField.val("");
+    expMField.val("");
+    expYField.val("");
+
+    nameFirstField.val("");
+    nameLastField.val("");
+    phoneField.val("");
+    streetField.val("");
+    streetFieldOpt.val("");
+    cityField.val("");
+    postalField.val("");
+    countryField.val("");
+    stateField.val("");
+
+    submitButton.html("Received");
+    submitButton.addClass("btn-success");
+}
+
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
+        $(".form-input-token").submit(function (e) {
+            e.preventDefault();
+            paystack.card.validateToken({
+                token: readToken()
+            }).then(validateCard).then(resetForm, function (err) {
+                console.log(err);
+            });
+        });
+
         //TODO: use.onchange()
         $('#nob-paystack-card-form').submit(function (e) {
             if (e.preventDefault) e.preventDefault();
@@ -440,69 +510,12 @@ $(document).ready(function (e) {
                 console.log(returnedObj);
                 paystack = returnedObj;
                 return paystack.card.charge();
-            }).then(validateCard).then(function (rsp) {
-                console.log(rsp);
+            }).then(validateCard).then(resetForm,
+                function (error) {
+                    console.log(error);
+                    // TODO: IDK what this is lol
 
-                var donorInfo = {
-                    data: {
-                        firstName: firstName,
-                        lastName: lastName,
-                        email: email,
-                        phone: phone,
-                        street: street,
-                        streetOpt: streetOpt,
-                        city: city,
-                        postal: postal,
-                        country: country,
-                        state: state,
-                        referenceID: rsp.data.reference
-                    }
-                };
-                $.ajax({
-                    url: "html_elements/paystack/db-log.php",
-                    method: "POST",
-                    dataType: "JSON",
-                    data: donorInfo,
-                    success: function (rspMsg) {
-                        console.log("Log response: ");
-                        console.log(rspMsg);
-                    },
-                    error: function (errMsg) {
-                        console.log("Log error: ");
-                        console.log(errMsg);
-                    }
                 });
-            }).then(function (response) {
-                console.log(response);
-                $('.donate-page-3').addClass('hidden');
-                $('.donate-page-4').removeClass('hidden');
-
-                // TODO: Show success + reset form + time set
-                cardField.val("");
-                nameField.val("");
-                amountField.val("");
-                emailField.val("");
-                cvvField.val("");
-                expMField.val("");
-                expYField.val("");
-
-                nameFirstField.val("");
-                nameLastField.val("");
-                phoneField.val("");
-                streetField.val("");
-                streetFieldOpt.val("");
-                cityField.val("");
-                postalField.val("");
-                countryField.val("");
-                stateField.val("");
-
-                submitButton.html("Received");
-                submitButton.addClass("btn-success");
-            }, function (error) {
-                console.log(error);
-                // TODO: IDK what this is lol
-
-            });
         });
     }
 });
