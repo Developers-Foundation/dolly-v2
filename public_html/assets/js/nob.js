@@ -406,7 +406,9 @@ function resetForm(rsp) {
 
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
-        $("form#nob-paystack-verification-form").submit(function (e) {
+        var paystack;
+
+        $("form#nob-paystack-verification-form").submit(function (e) { // TODO WHY TF IS THIS NOT BEING TRIGGERED.
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
 
@@ -476,7 +478,6 @@ $(document).ready(function (e) {
 
 // TODO: Catch all errors in php and js, then put in phone number fields + OTP auth + captcha lol, so much to do .-.
             // Initialize paystack object
-            var paystack;
             promAjax({
                 // Get Access Code
                 url: "https://dolly-v2-pr-37.herokuapp.com/html_elements/paystack/authorize",
