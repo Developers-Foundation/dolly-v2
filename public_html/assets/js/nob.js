@@ -294,12 +294,63 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
+function validateCard (rsp) {
+    console.log("Charge response: ");
+    console.log(rsp);
+    $('.donate-page-3').removeClass('hidden');
+
+    switch (rsp.status) {
+        case "success":
+            return rsp;
+        case "auth":
+            break;
+        default:
+            // TODO: Catch failed / invalid / timeout
+            return this.reject({"status": false, "reason": "error-2"}); // TODO: LOL NEED TO FIX THIS PROMISE ERROR AS WELL
+    }
+
+    // Assume anything here is to do with OTP/PIN requirements
+    // Options are PIN/OTP/3DS/Phone
+    var type = rsp.data.auth;
+    var verificationForm = $('#nob-paystack-verification-form');
+    var verificationMsgField = verificationForm.find('#donate-verification');
+    var verificationMsg = "PIN";
+
+    switch (rsp.data.auth) {
+        case "PIN":
+            break;
+        case "OTP":
+            verificationMsg = "One Time Password";
+            var field = verificationForm.find('.form-input-pin');
+            field.dataset.paystack = "otp";
+            field.placeholder = "OTP";
+            // TODO: There should be a better way to do this =,=
+
+            break;
+        case "3DS":
+            // External verification TODO: Need to verify that this works.
+            return paystack.card.verify3DS();
+            //verificationForm.innerHTML = "<h5>You will be required to verify your card with securecode</h5><br><button type=\"submit\" data-paystack=\"submit\" class=\"button-red\">Submit</button>";
+        case "phone":
+            // Card needs to be enrolled for online verification
+            return paystack.card.validatePhone({phone: phone});
+        default:
+            return this.reject({"status": false, "reason": "error-3"}); // TODO: Authentication method not supported yet
+    }
+
+    verificationMsgField.innerHTML = verificationMsg;
+    // TODO: need to leave this promise and rejoin after secondary form submits
+
+    return rsp;
+}
+
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
         //TODO: use.onchange()
         $('#nob-paystack-card-form').submit(function (e) {
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
+            $('.donate-page-2').addClass('hidden');
 
             var thisForm = $(this).closest('#nob-paystack-card-form');
             var submitButton = thisForm.find('button');
@@ -388,16 +439,8 @@ $(document).ready(function (e) {
                 console.log("Init response: ");
                 console.log(returnedObj);
                 paystack = returnedObj;
-                return paystack.card.charge({
-                    // TODO: OTP/PIN + Verify OTP if OTP
-                    //pin: readPin() // Called a function that returns the optional pin value
-                });
-            }).then(function (rsp) {
-                console.log("Charge response: ");
-                console.log(rsp);
-
-
-            }).then(function (rsp) {
+                return paystack.card.charge();
+            }).then(validateCard).then(function (rsp) {
                 console.log(rsp);
 
                 var donorInfo = {
@@ -431,6 +474,9 @@ $(document).ready(function (e) {
                 });
             }).then(function (response) {
                 console.log(response);
+                $('.donate-page-3').addClass('hidden');
+                $('.donate-page-4').removeClass('hidden');
+
                 // TODO: Show success + reset form + time set
                 cardField.val("");
                 nameField.val("");

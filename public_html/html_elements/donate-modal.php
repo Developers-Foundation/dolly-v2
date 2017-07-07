@@ -225,23 +225,26 @@
                             </div>
                         </div>
                     </div>
+                </form>
+                <form id="nob-paystack-verification-form" class="donate-form text-center"> <!-- TODO: @minimike need help styling this, thanks!! -->
                     <div class="donate-page-3 donate-page-pin row hidden">
                         <div class="row">
                             <div class="col-md-4">
                                 <!-- Options are PIN/OTP/3DS/Phone -->
                                 <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:</h5>
                                 <input type="text"
-                                       data-paystack="token"
+                                       data-paystack="pin"
                                        placeholder="pin"
                                        class="form-input-pin"
                                        pattern="\d*">
+                                <button type="submit" data-paystack="submit" class="button-red">Submit</button>
                             </div>
                         </div>
                     </div>
+                </form>
                     <div class="donate-page-4 donate-page-thanks row hidden">
 
                     </div>
-                </form>
             </div>
         </div>
     </div>
