@@ -413,7 +413,7 @@ $(document).ready(function (e) {
             else e.returnValue = false;
 
             paystack.card.validateToken({
-                token: readToken()
+                token: $('.form-input-token').val()
             }).then(validateCard).then(resetForm, function (err) {
                 console.log(err);
             });
