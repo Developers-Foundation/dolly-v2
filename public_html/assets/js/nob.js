@@ -304,6 +304,7 @@ $(document).ready(function (e) {
             var thisForm = $(this).closest('#nob-paystack-card-form');
             var submitButton = thisForm.find('button');
             //submitButton.prop("disabled", true);
+            var occurrenceField = thisForm.find('input[name=donate-occurrence]:checked');
             var cardField = thisForm.find('.form-input-card');
             var nameField = thisForm.find('.form-input-name');
             var amountField = thisForm.find('.form-input-amount');
@@ -330,6 +331,7 @@ $(document).ready(function (e) {
             // TODO: regex for card number space
             var card = cardField.val(),
                 name = nameField.val(),
+                occurrence = (occurrenceField == "monthly"), // True is monthly, false is one-time
                 amount = parseInt(amountField.val()) * 100, // TODO: May need to fix this as what would happen when you have half cents
                 email = emailField.val(),
                 cvv = parseInt(cvvField.val()),
@@ -346,7 +348,7 @@ $(document).ready(function (e) {
                 postal = postalField.val(),
                 country = countryField.val(),
                 state = stateField.val();
-            var sendData = {'EMAIL': email, 'AMOUNT': amount};
+            var sendData = {'EMAIL': email, 'AMOUNT': amount, 'OCCURRENCE': occurrence};
             // TODO: Do form verification on ALL fields :P
 
 
@@ -361,6 +363,7 @@ $(document).ready(function (e) {
                 dataType: 'JSON',
                 data: sendData
             }).then(function (resp) {
+                console.log("Authorize response: ");
                 console.log(resp);
 
                 if (!resp.status) {
@@ -382,12 +385,18 @@ $(document).ready(function (e) {
                      */
                 });
             }).then(function (returnedObj) {
+                console.log("Init response: ");
                 console.log(returnedObj);
                 paystack = returnedObj;
                 return paystack.card.charge({
                     // TODO: OTP/PIN + Verify OTP if OTP
                     //pin: readPin() // Called a function that returns the optional pin value
                 });
+            }).then(function (rsp) {
+                console.log("Charge response: ");
+                console.log(rsp);
+
+
             }).then(function (rsp) {
                 console.log(rsp);
 
@@ -412,9 +421,11 @@ $(document).ready(function (e) {
                     dataType: "JSON",
                     data: donorInfo,
                     success: function (rspMsg) {
+                        console.log("Log response: ");
                         console.log(rspMsg);
                     },
                     error: function (errMsg) {
+                        console.log("Log error: ");
                         console.log(errMsg);
                     }
                 });

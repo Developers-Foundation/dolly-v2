@@ -17,14 +17,13 @@
             <div class="modal-body">
                 <form id="nob-paystack-card-form" class="paystack-form donate-form text-center">
                     <div class="donate-page-1">
-                        <!-- TODO: What other field was here =,= totally forgot lol -->
                         <div class="donate-amount">
                             <h4>What type of donation would you like to make?</h4><br>
                             <div class="slider-switch switch-toggle switch-ios">
-                                <input id="d-month" name="donate-occurance" type="radio" checked="">
+                                <input id="d-month" name="donate-occurrence" class="donate-occurrence" type="radio" value="monthly" checked="">
                                 <label for="d-month" onclick="">Monthly</label>
 
-                                <input id="d-one" name="donate-occurance" type="radio">
+                                <input id="d-one" name="donate-occurrence" class="donate-occurrence" value="one" type="radio">
                                 <label for="d-one" onclick="">One-Time</label>
 
                                 <a></a>
@@ -78,7 +77,7 @@
                             <a id="donate-payment-info" class="button-red small round">Payment Information</a>
                         </div>
                     </div>
-                    <div class="donate-page-2 row hidden">
+                    <div class="donate-page-2 hidden">
                         <!-- TODO: @minimike Can you help style this, tyvm -->
                         <!-- TODO: Add address section (so dolly can do some tracking etc) Also add hidden meta fields like IP address lol -->
                         <!-- Donor info -->
@@ -217,14 +216,6 @@
                                        maxlength="4"
                                        data-valid-example="18" required>
                             </div>
-                            <div class="col-md-4">
-                                <h5>Pin/Opt:</h5>
-                                <input type="text"
-                                       data-paystack="pin"
-                                       placeholder="pin"
-                                       class="form-input-pin donate-form"
-                                       pattern="\d*">
-                            </div>
                             <input type="text" class="hidden form-input-amount">
                             <div class="col-md-12 text-center">
                                 <br> <!-- TODO: Must FIX THIS!!! PRIORITY -->
@@ -233,6 +224,22 @@
                                 <button type="submit" class="button-red round" data-paystack="submit">Submit</button>
                             </div>
                         </div>
+                    </div>
+                    <div class="donate-page-3 donate-page-pin row hidden">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- Options are PIN/OTP/3DS/Phone -->
+                                <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:</h5>
+                                <input type="text"
+                                       data-paystack="token"
+                                       placeholder="pin"
+                                       class="form-input-pin"
+                                       pattern="\d*">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donate-page-4 donate-page-thanks row hidden">
+
                     </div>
                 </form>
             </div>
