@@ -321,7 +321,7 @@ function validateCard (rsp) {
             break;
         case "OTP":
             verificationMsg = "One Time Password";
-            var field = verificationForm.find('.form-input-pin');
+            var field = verificationForm.find('.form-input-token');
             field.dataset.paystack = "otp";
             field.placeholder = "OTP";
             // TODO: There should be a better way to do this =,=
@@ -408,7 +408,7 @@ $(document).ready(function (e) {
             var paystack;
             promAjax({
                 // Get Access Code
-                url: "https://dolly-v2-pr-26.herokuapp.com/html_elements/paystack/authorize",
+                url: "https://dolly-v2-pr-37.herokuapp.com/html_elements/paystack/authorize",
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
@@ -503,10 +503,6 @@ $(document).ready(function (e) {
                 // TODO: IDK what this is lol
 
             });
-            /*}).fail(function (error) {
-                console.log(error);
-                // TODO: IDK what this is lol
-            });*/
         });
     }
 });
