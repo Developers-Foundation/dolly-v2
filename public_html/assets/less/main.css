@@ -349,7 +349,6 @@ SECTION SPECIFIC LESS
   order: 2;
 }
 .impacts-page .alternate .feature-text {
-  margin: auto;
   order: 1;
 }
 .about-page .section h2 {
@@ -377,6 +376,12 @@ SECTION SPECIFIC LESS
   z-index: 999;
   padding-top: 250px;
 }
+.about-page .title h2 {
+  color: white;
+}
+.about-page .title p {
+  color: white;
+}
 .about-page .values .icon {
   border-radius: 50%;
   border-color: white;
@@ -397,6 +402,9 @@ SECTION SPECIFIC LESS
   left: -25px;
   top: 70px;
   border-top: 4px solid #f5a623;
+}
+.about-page .founder img {
+  border-radius: 6px;
 }
 .about-page .vision {
   margin-bottom: 100px !important;
