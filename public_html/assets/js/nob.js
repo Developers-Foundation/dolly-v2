@@ -9,7 +9,6 @@ function promAjax(options) {
 }
 
 /* ----------------------------------------------------------- */
-
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -407,7 +406,7 @@ function resetForm(rsp) {
 
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
-        $(".form-input-token").submit(function (e) {
+        $("form.nob-paystack-verification-form").submit(function (e) {
             e.preventDefault();
             paystack.card.validateToken({
                 token: readToken()

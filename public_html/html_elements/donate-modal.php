@@ -245,7 +245,7 @@
                                        placeholder="OTP"
                                        class="form-input-token"
                                        pattern="\d*">
-                                <button type="submit" data-paystack="submit" class="button-red">Submit</button>
+                                <button type="submit" data-paystack="submit" class="button-red white-text">Submit</button>
                             </div>
                         </div>
                     </div>
