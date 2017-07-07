@@ -406,8 +406,10 @@ function resetForm(rsp) {
 
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
-        $("form.nob-paystack-verification-form").submit(function (e) {
-            e.preventDefault();
+        $("form#nob-paystack-verification-form").submit(function (e) {
+            if (e.preventDefault) e.preventDefault();
+            else e.returnValue = false;
+
             paystack.card.validateToken({
                 token: readToken()
             }).then(validateCard).then(resetForm, function (err) {
