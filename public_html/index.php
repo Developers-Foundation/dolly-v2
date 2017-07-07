@@ -9,12 +9,9 @@
     -->
 
     <!--=========================================== WEBPAGE METADATA ====================================-->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Dolly Children Foundation</title>
+    <?php
+    include_once "html_elements/header-meta.php";
+    ?>
 
     <!--=========================================== CSS FILES ===========================================-->
     <!-- Bootstrap Core CSS -->
