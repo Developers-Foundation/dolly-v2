@@ -306,7 +306,7 @@ function validateCard(rsp) {
             break;
         default:
             // TODO: Catch failed / invalid / timeout
-            return this.reject({"status": false, "reason": "error-2"}); // TODO: LOL NEED TO FIX THIS PROMISE ERROR AS WELL
+            throw {"status": false, "reason": "error-2"}; // TODO: LOL NEED TO FIX THIS PROMISE ERROR AS WELL
     }
 
     // Assume anything here is to do with OTP/PIN requirements
@@ -335,7 +335,7 @@ function validateCard(rsp) {
             // Card needs to be enrolled for online verification
             return paystack.card.validatePhone({phone: phone});
         default:
-            return this.reject({"status": false, "reason": "error-3"}); // TODO: Authentication method not supported yet
+            throw {"status": false, "reason": "error-3"}; // TODO: Authentication method not supported yet
     }
 
     verificationMsgField.innerHTML = verificationMsg;
@@ -491,7 +491,7 @@ $(document).ready(function (e) {
 
                 if (!resp.status) {
                     // Get authorize failed (prob priv key failed) TODO: fix this lol
-                    return this.reject({"status": false, "reason": "error-1"});
+                    throw {"status": false, "reason": "error-1"};
                 }
 
                 var respData = resp.data;
