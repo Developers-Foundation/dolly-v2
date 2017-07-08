@@ -505,6 +505,7 @@ $(document).ready(function (e) {
                 console.log(returnedObj);
                 paystack = returnedObj;
                 var pinObj = {};
+                console.log("PIN: " + pin);
                 if (pin != "" && pin != 0 && pin != -1) {
                     pinObj = {pin: pin}
                 }
