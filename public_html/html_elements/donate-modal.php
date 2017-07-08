@@ -240,7 +240,7 @@
                     <!-- TODO: @minimike need help styling this, thanks!! -->
                     <div class="donate-page-3 donate-page-pin row hidden">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-12">
                                 <!-- Options are PIN/OTP/3DS/Phone -->
                                 <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:
                                 </h5>
