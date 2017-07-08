@@ -54,6 +54,11 @@ h2 {
   display: table;
 }
 
+.v-center {
+  margin: auto 0;
+  height: 100%;
+}
+
 .spacer {
   height: 15px;
 }
@@ -483,6 +488,12 @@ SECTION SPECIFIC LESS
       z-index: 999;
       padding-top: 250px;
     }
+    h2{
+      color: white;
+    }
+    p{
+      color: white;
+    }
   }
 
   .values {
@@ -511,7 +522,11 @@ SECTION SPECIFIC LESS
       }
     }
   }
-
+  .founder{
+    img{
+      border-radius: 6px;
+    }
+  }
   .vision {
     margin-bottom: 100px !important;
   }
@@ -611,6 +626,30 @@ SECTION SPECIFIC LESS
     margin: 30px 16.666666666667% 100px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     padding: 40px 40px;
+  }
+
+  .other{
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+    width: inherit;
+    margin-top: 10px;
+  }
+
+  .other:focus{
+    border-bottom: solid 2px #969696;
+    outline: none;
+  }
+
+  .other:active{
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: ease
+
   }
 }
 

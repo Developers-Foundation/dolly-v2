@@ -62,8 +62,11 @@
     <div class="section founder">
         <hr class="star-custom">
         <div class="row">
-            <h2 class="text-center">Meet the Founder</h2>
-            <div class="col-md-5">
+            <div class="col-md-12">
+                <h2 class="text-center">Meet the Founder</h2>
+            </div>
+            <!-- TODO: Need to fix this @nobodyrandom -->
+            <div class="col-md-6" style="padding-top: 200px">
                 <h3>Adedolapo Osuntuyi</h3>
                 <p>
                     <b>Her Message:</b><br>
@@ -73,7 +76,7 @@
                     the core of our foundation.
                 </p>
             </div>
-            <div class="col-md-offset-1 col-md-6">
+            <div class="col-md-offset-1 col-md-5">
                 <img src="assets/img/stock/dolly.jpg" />
             </div>
         </div>

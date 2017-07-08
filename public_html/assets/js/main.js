@@ -83,6 +83,9 @@ $(document).ready(function () {
 
             if (amountSelected != -1)
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
+            else{
+                $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
+            }
         });
         // Add evt lstnr to amount selection in 1st page of modal box
         $('.donate-amount-select').click(function (e) {
@@ -93,6 +96,13 @@ $(document).ready(function () {
 
             if (amountSelected != -1)
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
+            else{
+                $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
+                $('.donate-amount-select[data-amount= 10] div').addClass('hide');
+                $('.donate-amount-select[data-amount= 30] div').addClass('hide');
+                $('.donate-amount-select[data-amount= 50] div').addClass('hide');
+                $('.donate-amount-select[data-amount= 130] div').addClass('hide');
+            }
         });
         // Add evt lstnr to amount selection in 1st page of modal box
         $('#donate-payment-info').click(function (e) {

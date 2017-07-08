@@ -39,6 +39,10 @@ h2 {
   margin: 0 auto;
   display: table;
 }
+.v-center {
+  margin: auto 0;
+  height: 100%;
+}
 .spacer {
   height: 15px;
 }
@@ -372,6 +376,12 @@ SECTION SPECIFIC LESS
   z-index: 999;
   padding-top: 250px;
 }
+.about-page .title h2 {
+  color: white;
+}
+.about-page .title p {
+  color: white;
+}
 .about-page .values .icon {
   border-radius: 50%;
   border-color: white;
@@ -392,6 +402,9 @@ SECTION SPECIFIC LESS
   left: -25px;
   top: 70px;
   border-top: 4px solid #f5a623;
+}
+.about-page .founder img {
+  border-radius: 6px;
 }
 .about-page .vision {
   margin-bottom: 100px !important;
@@ -469,6 +482,27 @@ SECTION SPECIFIC LESS
   margin: 30px 16.666666666667% 100px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   padding: 40px 40px;
+}
+.donate-page .other {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+  width: inherit;
+  margin-top: 10px;
+}
+.donate-page .other:focus {
+  border-bottom: solid 2px #969696;
+  outline: none;
+}
+.donate-page .other:active {
+  -webkit-transition: width 2s;
+  /* Safari */
+  transition: width 2s;
+  transition-timing-function: ease;
 }
 .contact-page .container {
   padding-top: 5%;

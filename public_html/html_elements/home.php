@@ -10,7 +10,7 @@
                     Inspiring the African Child through educational aids and interventions centered on mental and
                     intellectual programs.
                 </p>
-                <a href class="button-red round">Find out more</a>
+                <a href="impacts.php" class="button-red round">Find out more</a>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
                     HELPS OVER<br>
                     <strong>5,000 CHILDREN</strong>
                 </h2>
-                <a class="button-red">Learn more</a>
+                <a href="impacts.php" class="button-red">Learn more</a>
             </div>
             <div class="col-md-offset-1 col-md-7">
                 <h2>Who we are</h2>
@@ -37,7 +37,7 @@
                     journey thus far, we look forward to having likeminded people like you to join and support us in
                     our road ahead.
                 </p>
-                <a href class="button-red">Learn more</a>
+                <a href="impacts.php" class="button-red">Learn more</a>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center"><a href class="button-red">Learn more</a></div>
+            <div class="col-md-12 text-center"><a href="impacts.php" class="button-red">Learn more</a></div>
         </div>
     </div>
 

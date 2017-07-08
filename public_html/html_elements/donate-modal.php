@@ -17,14 +17,13 @@
             <div class="modal-body">
                 <form id="nob-paystack-card-form" class="paystack-form donate-form text-center">
                     <div class="donate-page-1">
-                        <!-- TODO: What other field was here =,= totally forgot lol -->
                         <div class="donate-amount">
                             <h4>What type of donation would you like to make?</h4><br>
                             <div class="slider-switch switch-toggle switch-ios">
-                                <input id="d-month" name="donate-occurance" type="radio" checked="">
+                                <input id="d-month" name="donate-occurrence" class="donate-occurrence" type="radio" value="monthly" checked="">
                                 <label for="d-month" onclick="">Monthly</label>
 
-                                <input id="d-one" name="donate-occurance" type="radio">
+                                <input id="d-one" name="donate-occurrence" class="donate-occurrence" value="one" type="radio">
                                 <label for="d-one" onclick="">One-Time</label>
 
                                 <a></a>
@@ -40,6 +39,7 @@
                                 </div>
                             </div>-->
                             <h4>How much would you like to donate?</h4><br>
+                            <!-- TODO: Need help @Harrison @ nobodyrandom -->
                             <div class="donate-amount-container row">
                                 <div class="col-md-2">
                                     <a class="donate-amount-select" data-amount="10">
@@ -66,6 +66,9 @@
                                         <div class="donate-amount-radio"><strong>Other</strong></div>
                                     </a>
                                 </div>
+                                <div class="col-md-10">
+                                    <input type="text" class="other">
+                                </div>
                                 <span class="stretch"></span>
                             </div>
                         </div>
@@ -74,7 +77,7 @@
                             <a id="donate-payment-info" class="button-red small round">Payment Information</a>
                         </div>
                     </div>
-                    <div class="donate-page-2 row hidden">
+                    <div class="donate-page-2 hidden">
                         <!-- TODO: @minimike Can you help style this, tyvm -->
                         <!-- TODO: Add address section (so dolly can do some tracking etc) Also add hidden meta fields like IP address lol -->
                         <!-- Donor info -->
@@ -214,11 +217,11 @@
                                        data-valid-example="18" required>
                             </div>
                             <div class="col-md-4">
-                                <h5>Pin/Opt:</h5>
+                                <h5>PIN Number:</h5>
                                 <input type="text"
                                        data-paystack="pin"
                                        placeholder="pin"
-                                       class="form-input-pin donate-form"
+                                       class="form-input-pin"
                                        pattern="\d*">
                             </div>
                             <input type="text" class="hidden form-input-amount">
@@ -231,6 +234,25 @@
                         </div>
                     </div>
                 </form>
+                <form id="nob-paystack-verification-form" class="donate-form text-center"> <!-- TODO: @minimike need help styling this, thanks!! -->
+                    <div class="donate-page-3 donate-page-pin row hidden">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- Options are PIN/OTP/3DS/Phone -->
+                                <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:</h5>
+                                <input type="text"
+                                       data-paystack="token"
+                                       placeholder="OTP"
+                                       class="form-input-token"
+                                       pattern="\d*">
+                                <button type="submit" data-paystack="submit" class="button-red white-text">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                    <div class="donate-page-4 donate-page-thanks row hidden">
+
+                    </div>
             </div>
         </div>
     </div>

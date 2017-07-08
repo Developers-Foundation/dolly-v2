@@ -13,8 +13,8 @@
         <img src="assets/img/stock/reading_clubs.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/reading_clubs.jpg"/></div>
-                <div class="feature-text col-md-7 text-left">
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/reading_clubs.jpg" style="margin: 0 0 0 -150px"/></div>
+                <div class="feature-text col-md-7 text-left v-center">
                     <h1>Reading Clubs</h1>
                     <hr>
                     <p>
@@ -36,7 +36,7 @@
         <div class="inner">
             <div class="row inner-container">
                 <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/sponsorship.jpg"/></div>
-                <div class="feature-text col-md-7 text-left">
+                <div class="feature-text col-md-7 text-left v-center">
                     <h1>Sponsorship Programmes</h1>
                     <hr>
                     <p>
@@ -57,8 +57,8 @@
         <img src="assets/img/stock/back_to_school.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/back_to_school.jpg"/></div>
-                <div class="feature-text col-md-7 text-left">
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/back_to_school.jpg" style="margin: 0 0 0 -300px"/></div>
+                <div class="feature-text col-md-7 text-left v-center">
                     <h1>Back to School Initiatives</h1>
                     <hr>
                     <p>
@@ -78,8 +78,8 @@
         <img src="assets/img/stock/training.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
-                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/training.jpg"/></div>
-                <div class="feature-text col-md-7 text-left">
+                <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/training.jpg" style="margin: 0 0 0 -100px"/></div>
+                <div class="feature-text col-md-7 text-left v-center">
                     <h1>Training Programs for Teachers</h1>
                     <hr>
                     <p>
@@ -100,7 +100,7 @@
         <div class="inner">
             <div class="row inner-container">
                 <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/afterschool.jpg"/></div>
-                <div class="feature-text col-md-7 text-left">
+                <div class="feature-text col-md-7 text-left v-center">
                     <h1>After School and Summer Tutoring Programs</h1>
                     <hr>
                     <p>
@@ -127,7 +127,7 @@
         <div class="inner">
             <div class="row inner-container">
                 <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/building.jpg"/></div>
-                <div class="feature-text col-md-7 text-left">
+                <div class="feature-text col-md-7 text-left v-center">
                     <h1>School Building</h1>
                     <hr>
                     <p>
