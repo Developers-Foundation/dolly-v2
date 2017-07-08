@@ -237,7 +237,7 @@
                     </div>
                 </form>
                 <form id="nob-paystack-verification-form" class="donate-form text-center">
-                    <!-- TODO: @minimike need help styling this, thanks!! -->
+                    <!-- TODO: @minimike511 need help styling this, thanks!! -->
                     <div class="donate-page-3 donate-page-pin row hidden">
                         <div class="row">
                             <div class="col-md-12">
@@ -249,17 +249,16 @@
                                        placeholder="OTP"
                                        class="form-input-token"
                                        pattern="\d*">
-                                <button type="submit" data-paystack="submit" class="button-red white-text">Submit
-                                </button>
+                                <button type="submit" data-paystack="submit" class="button-red white-text">Submit</button>
                             </div>
                         </div>
                     </div>
                 </form>
                 <div class="donate-page-4 donate-page-thanks row hidden">
-
+                    Thanks! <!-- TODO: @minimike511 need help on this -->
                 </div>
                 <div class="donate-page-0 donate-page-error row hidden">
-
+                    Sorry an error occurred. Your card was not charged. <!-- TODO: @minimike511 need help on this -->
                 </div>
             </div>
         </div>

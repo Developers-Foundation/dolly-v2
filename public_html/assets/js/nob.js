@@ -404,6 +404,11 @@ function resetForm(rsp, paystack, backupData) {
 
     backupData.submitButton.html("Received");
     backupData.submitButton.addClass("btn-success");
+
+    $('.donate-page-1').addClass("hidden");
+    $('.donate-page-2').addClass("hidden");
+    $('.donate-page-3').addClass("hidden");
+    $('.donate-page-thanks').removeClass('hidden');
 }
 
 $(document).ready(function (e) {
