@@ -20,10 +20,12 @@
                         <div class="donate-amount">
                             <h4>What type of donation would you like to make?</h4><br>
                             <div class="slider-switch switch-toggle switch-ios">
-                                <input id="d-month" name="donate-occurrence" class="donate-occurrence" type="radio" value="monthly" checked="">
+                                <input id="d-month" name="donate-occurrence" class="donate-occurrence" type="radio"
+                                       value="monthly" checked="">
                                 <label for="d-month" onclick="">Monthly</label>
 
-                                <input id="d-one" name="donate-occurrence" class="donate-occurrence" value="one" type="radio">
+                                <input id="d-one" name="donate-occurrence" class="donate-occurrence" value="one"
+                                       type="radio">
                                 <label for="d-one" onclick="">One-Time</label>
 
                                 <a></a>
@@ -234,25 +236,31 @@
                         </div>
                     </div>
                 </form>
-                <form id="nob-paystack-verification-form" class="donate-form text-center"> <!-- TODO: @minimike need help styling this, thanks!! -->
+                <form id="nob-paystack-verification-form" class="donate-form text-center">
+                    <!-- TODO: @minimike need help styling this, thanks!! -->
                     <div class="donate-page-3 donate-page-pin row hidden">
                         <div class="row">
                             <div class="col-md-4">
                                 <!-- Options are PIN/OTP/3DS/Phone -->
-                                <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:</h5>
+                                <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:
+                                </h5>
                                 <input type="text"
                                        data-paystack="token"
                                        placeholder="OTP"
                                        class="form-input-token"
                                        pattern="\d*">
-                                <button type="submit" data-paystack="submit" class="button-red white-text">Submit</button>
+                                <button type="submit" data-paystack="submit" class="button-red white-text">Submit
+                                </button>
                             </div>
                         </div>
                     </div>
                 </form>
-                    <div class="donate-page-4 donate-page-thanks row hidden">
+                <div class="donate-page-4 donate-page-thanks row hidden">
 
-                    </div>
+                </div>
+                <div class="donate-page-0 donate-page-error row hidden">
+
+                </div>
             </div>
         </div>
     </div>
