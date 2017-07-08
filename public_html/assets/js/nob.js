@@ -9,6 +9,7 @@ function promAjax(options) {
 }
 
 /* ----------------------------------------------------------- */
+
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -294,7 +295,7 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
-function validateCard(rsp) {
+function validateCard(rsp, paystack, data) {
     console.log("Charge response: ");
     console.log(rsp);
     $('.donate-page-3').removeClass('hidden');
@@ -344,7 +345,7 @@ function validateCard(rsp) {
     return rsp;
 }
 
-function resetForm(rsp) {
+function resetForm(rsp, paystack, data) {
     console.log("Reset form now: ");
     console.log(rsp);
 
@@ -414,7 +415,11 @@ $(document).ready(function (e) {
 
             paystack.card.validateToken({
                 token: $('.form-input-token').val()
-            }).then(validateCard).then(resetForm, function (err) {
+            }).then(function (rsp) {
+                return validateCard(rsp, paystack, {})
+            }).then(function (rsp) {
+                return resetForm(rsp, paystack, {});
+            }, function (err) {
                 console.log(err);
             });
         });
@@ -510,7 +515,11 @@ $(document).ready(function (e) {
                     pinObj = {pin: pin}
                 }
                 return paystack.card.charge(pinObj);
-            }).then(validateCard).then(resetForm,
+            }).then(function (rsp) {
+                return validateCard(rsp, paystack, {})
+            }).then(function (rsp) {
+                    return resetForm(rsp, paystack, {});
+                },
                 function (error) {
                     console.log(error);
                     // TODO: IDK what this is lol
