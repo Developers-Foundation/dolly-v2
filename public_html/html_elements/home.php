@@ -1,6 +1,6 @@
 <div class="container">
     <!-- Join our journey -->
-    <div id="journey" class="section">
+    <div id="journey" class="section journey-bg-outer">
         <!--TODO: @nobodyrandom -->
         <img src="assets/img/stock/main.jpg" class="journey-bg">
         <div class="row journey-inner">
@@ -10,7 +10,7 @@
                     Inspiring the African Child through educational aids and interventions centered on mental and
                     intellectual programs.
                 </p>
-                <a href="impacts.php" class="button-red round">Find out more</a>
+                <a href="impacts.php" class="button-red round text-uppercase">Find out more</a>
             </div>
         </div>
     </div>
