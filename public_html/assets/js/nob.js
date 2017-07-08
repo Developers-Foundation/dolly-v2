@@ -319,8 +319,9 @@ function validateCard(rsp, paystack, data) {
 
     switch (rsp.data.auth) {
         case "PIN":
+            // Still need this? maybe reroute to page 2
             break;
-        case "OTP":
+        case "otp":
             verificationMsg = "One Time Password";
             var field = verificationForm.find('.form-input-token');
             field.dataset.paystack = "otp";
