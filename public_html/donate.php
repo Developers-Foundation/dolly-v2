@@ -132,9 +132,9 @@ include "html_elements/donate-modal.php";
 <!-- <script src="js/contact_me.js"></script>-->
 
 <!-- Theme JavaScript -->
-<script src="assets/js/freelancer.js"></script>
+<script src="assets/js/freelancer.min.js"></script>
 <script src="assets/js/material.min.js"></script>
-<script src="assets/js/material-kit.js" type="text/javascript"></script>
+<script src="assets/js/material-kit.min.js" type="text/javascript"></script>
 
 <!-- Additional JS Files-->
 <script src="assets/js/nob.js" type="text/javascript"></script>
