@@ -307,7 +307,7 @@ function validateCard(rsp, paystack, data) {
             break;
         default:
             // TODO: Catch failed / invalid / timeout
-            throw {"status": false, "reason": "error-2"}; // TODO: LOL NEED TO FIX THIS PROMISE ERROR AS WELL
+            throw {"status": false, "reason": "error-2"};
     }
 
     // Assume anything here is to do with OTP/PIN requirements
@@ -336,37 +336,37 @@ function validateCard(rsp, paystack, data) {
             // Card needs to be enrolled for online verification
             return paystack.card.validatePhone({phone: phone});
         default:
-            throw {"status": false, "reason": "error-3"}; // TODO: Authentication method not supported yet
+            throw {"status": false, "reason": "Sorry, your credit card is not supported."}; // TODO: Authentication method not supported yet
     }
 
     verificationMsgField.innerHTML = verificationMsg;
-    // TODO: need to leave this promise and rejoin after secondary form submits
+    // TODO: need to leave this promise and rejoin after secondary form submits PROPERLY
 
     return rsp;
 }
 
-function resetForm(rsp, paystack, data) {
+function resetForm(rsp, paystack, backupData) {
     console.log("Reset form now: ");
     console.log(rsp);
-
     $('.donate-page-3').addClass('hidden');
     $('.donate-page-4').removeClass('hidden');
 
     var donorInfo = {
         data: {
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            phone: phone,
-            street: street,
-            streetOpt: streetOpt,
-            city: city,
-            postal: postal,
-            country: country,
-            state: state,
+            firstName: backupData.firstName,
+            lastName: backupData.lastName,
+            email: backupData.email,
+            phone: backupData.phone,
+            street: backupData.street,
+            streetOpt: backupData.streetOpt,
+            city: backupData.city,
+            postal: backupData.postal,
+            country: backupData.country,
+            state: backupData.state,
             referenceID: rsp.data.reference
         }
     };
+
     $.ajax({
         url: "html_elements/paystack/db-log.php",
         method: "POST",
@@ -383,26 +383,26 @@ function resetForm(rsp, paystack, data) {
     });
 
     // TODO: Show success + reset form + time set
-    cardField.val("");
-    nameField.val("");
-    amountField.val("");
-    emailField.val("");
-    cvvField.val("");
-    expMField.val("");
-    expYField.val("");
+    backupData.cardField.val("");
+    backupData.nameField.val("");
+    backupData.amountField.val("");
+    backupData.emailField.val("");
+    backupData.cvvField.val("");
+    backupData.expMField.val("");
+    backupData.expYField.val("");
 
-    nameFirstField.val("");
-    nameLastField.val("");
-    phoneField.val("");
-    streetField.val("");
-    streetFieldOpt.val("");
-    cityField.val("");
-    postalField.val("");
-    countryField.val("");
-    stateField.val("");
+    backupData.nameFirstField.val("");
+    backupData.nameLastField.val("");
+    backupData.phoneField.val("");
+    backupData.streetField.val("");
+    backupData.streetFieldOpt.val("");
+    backupData.cityField.val("");
+    backupData.postalField.val("");
+    backupData.countryField.val("");
+    backupData.stateField.val("");
 
-    submitButton.html("Received");
-    submitButton.addClass("btn-success");
+    backupData.submitButton.html("Received");
+    backupData.submitButton.addClass("btn-success");
 }
 
 $(document).ready(function (e) {
@@ -417,9 +417,9 @@ $(document).ready(function (e) {
             paystack.card.validateToken({
                 token: $('.form-input-token').val()
             }).then(function (rsp) {
-                return validateCard(rsp, paystack, {})
+                return validateCard(rsp, paystack, backupData)
             }).then(function (rsp) {
-                return resetForm(rsp, paystack, {});
+                return resetForm(rsp, paystack, backupData);
             }, function (err) {
                 console.log(err);
             });
