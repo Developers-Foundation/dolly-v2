@@ -490,22 +490,15 @@ $(document).ready(function (e) {
                 console.log(resp);
 
                 if (!resp.status) {
-                    // Get authorize failed (prob priv key failed) TODO: fix this lol
+                    // Get authorize failed (prob priv key failed)
                     throw {"status": false, "reason": "error-1"};
                 }
 
                 var respData = resp.data;
 
-                // TODO: Move this inner promise to outer loop
                 return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
-
-                    /* TODO: CATCH FAIL TO INIT
-                    catch(function(error){
-                        console.log("There was an error loading Paystack", error);
-                    });
-                     */
                 });
             }).then(function (returnedObj) {
                 console.log("Init response: ");
