@@ -408,6 +408,7 @@ function resetForm(rsp, paystack, data) {
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
         var paystack;
+        var backupData;
 
         $("form#nob-paystack-verification-form").submit(function (e) { // TODO WHY TF IS THIS NOT BEING TRIGGERED.
             if (e.preventDefault) e.preventDefault();
@@ -466,7 +467,7 @@ $(document).ready(function (e) {
                 cvv = parseInt(cvvField.val()),
                 expM = parseInt(expMField.val()),
                 expY = parseInt(expYField.val()),
-                pin = parseInt(pinField.val()),
+                pin = pinField.val(),
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
                 //TODO: for some reason it won't let it parseInt, so left it as string rn
@@ -478,6 +479,35 @@ $(document).ready(function (e) {
                 country = countryField.val(),
                 state = stateField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount, 'OCCURRENCE': occurrence};
+            backupData = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                phone: phone,
+                street: street,
+                streetOpt: streetOpt,
+                city: city,
+                postal: postal,
+                country: country,
+                state: state,
+                cardField: cardField,
+                nameField: nameField,
+                amountField: amountField,
+                emailField: emailField,
+                cvvField: cvvField,
+                expMField: expMField,
+                expYField: expYField,
+                nameFirstField: nameFirstField,
+                nameLastField: nameLastField,
+                phoneField: phoneField,
+                streetField: streetField,
+                streetFieldOpt: streetFieldOpt,
+                cityField: cityField,
+                postalField: postalField,
+                countryField: countryField,
+                stateField: stateField,
+                submitButton: submitButton
+            };
             // TODO: Do form verification on ALL fields :P
 
 
@@ -516,9 +546,9 @@ $(document).ready(function (e) {
                 }
                 return paystack.card.charge(pinObj);
             }).then(function (rsp) {
-                return validateCard(rsp, paystack, {})
+                return validateCard(rsp, paystack, backupData)
             }).then(function (rsp) {
-                    return resetForm(rsp, paystack, {});
+                    return resetForm(rsp, paystack, backupData);
                 },
                 function (error) {
                     console.log(error);
