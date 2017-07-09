@@ -46,7 +46,7 @@
     <!-- What we do -->
     <div id="what-we-do" class="section">
         <hr class="star-custom">
-        <h2 class="text-center">What we do</h2>
+        <h2 class="text-center text-uppercase">What we do</h2>
         <div class="row">
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/reading_clubs.jpg">
@@ -106,7 +106,7 @@
     <!-- How to help -->
     <div id="how-to-help" class="section">
         <hr class="star-custom">
-        <h2 class="text-center">How to Help</h2>
+        <h2 class="text-center text-uppercase">How to Help</h2>
         <div class="row">
             <div class="col-md-5">
                 <!--TODO: @nobodyrandom -->
