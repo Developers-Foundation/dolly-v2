@@ -9,6 +9,7 @@ function promAjax(options) {
 }
 
 /* ----------------------------------------------------------- */
+
 /* Nob Google Map Start
  /* ----------------------------------------------------------- */
 function loadedGmap() {
@@ -294,7 +295,7 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
-function validateCard(rsp) {
+function validateCard(rsp, paystack, data) {
     console.log("Charge response: ");
     console.log(rsp);
     $('.donate-page-3').removeClass('hidden');
@@ -306,7 +307,7 @@ function validateCard(rsp) {
             break;
         default:
             // TODO: Catch failed / invalid / timeout
-            throw {"status": false, "reason": "error-2"}; // TODO: LOL NEED TO FIX THIS PROMISE ERROR AS WELL
+            throw {"status": false, "reason": "error-2"};
     }
 
     // Assume anything here is to do with OTP/PIN requirements
@@ -318,8 +319,9 @@ function validateCard(rsp) {
 
     switch (rsp.data.auth) {
         case "PIN":
+            // Still need this? maybe reroute to page 2
             break;
-        case "OTP":
+        case "otp":
             verificationMsg = "One Time Password";
             var field = verificationForm.find('.form-input-token');
             field.dataset.paystack = "otp";
@@ -335,37 +337,37 @@ function validateCard(rsp) {
             // Card needs to be enrolled for online verification
             return paystack.card.validatePhone({phone: phone});
         default:
-            throw {"status": false, "reason": "error-3"}; // TODO: Authentication method not supported yet
+            throw {"status": false, "reason": "Sorry, your credit card is not supported."}; // TODO: Authentication method not supported yet
     }
 
     verificationMsgField.innerHTML = verificationMsg;
-    // TODO: need to leave this promise and rejoin after secondary form submits
+    // TODO: need to leave this promise and rejoin after secondary form submits PROPERLY
 
     return rsp;
 }
 
-function resetForm(rsp) {
+function resetForm(rsp, paystack, backupData) {
     console.log("Reset form now: ");
     console.log(rsp);
-
     $('.donate-page-3').addClass('hidden');
     $('.donate-page-4').removeClass('hidden');
 
     var donorInfo = {
         data: {
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            phone: phone,
-            street: street,
-            streetOpt: streetOpt,
-            city: city,
-            postal: postal,
-            country: country,
-            state: state,
+            firstName: backupData.firstName,
+            lastName: backupData.lastName,
+            email: backupData.email,
+            phone: backupData.phone,
+            street: backupData.street,
+            streetOpt: backupData.streetOpt,
+            city: backupData.city,
+            postal: backupData.postal,
+            country: backupData.country,
+            state: backupData.state,
             referenceID: rsp.data.reference
         }
     };
+
     $.ajax({
         url: "html_elements/paystack/db-log.php",
         method: "POST",
@@ -382,31 +384,37 @@ function resetForm(rsp) {
     });
 
     // TODO: Show success + reset form + time set
-    cardField.val("");
-    nameField.val("");
-    amountField.val("");
-    emailField.val("");
-    cvvField.val("");
-    expMField.val("");
-    expYField.val("");
+    backupData.cardField.val("");
+    backupData.nameField.val("");
+    backupData.amountField.val("");
+    backupData.emailField.val("");
+    backupData.cvvField.val("");
+    backupData.expMField.val("");
+    backupData.expYField.val("");
 
-    nameFirstField.val("");
-    nameLastField.val("");
-    phoneField.val("");
-    streetField.val("");
-    streetFieldOpt.val("");
-    cityField.val("");
-    postalField.val("");
-    countryField.val("");
-    stateField.val("");
+    backupData.nameFirstField.val("");
+    backupData.nameLastField.val("");
+    backupData.phoneField.val("");
+    backupData.streetField.val("");
+    backupData.streetFieldOpt.val("");
+    backupData.cityField.val("");
+    backupData.postalField.val("");
+    backupData.countryField.val("");
+    backupData.stateField.val("");
 
-    submitButton.html("Received");
-    submitButton.addClass("btn-success");
+    backupData.submitButton.html("Received");
+    backupData.submitButton.addClass("btn-success");
+
+    $('.donate-page-1').addClass("hidden");
+    $('.donate-page-2').addClass("hidden");
+    $('.donate-page-3').addClass("hidden");
+    $('.donate-page-thanks').removeClass('hidden');
 }
 
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
         var paystack;
+        var backupData;
 
         $("form#nob-paystack-verification-form").submit(function (e) { // TODO WHY TF IS THIS NOT BEING TRIGGERED.
             if (e.preventDefault) e.preventDefault();
@@ -414,7 +422,11 @@ $(document).ready(function (e) {
 
             paystack.card.validateToken({
                 token: $('.form-input-token').val()
-            }).then(validateCard).then(resetForm, function (err) {
+            }).then(function (rsp) {
+                return validateCard(rsp, paystack, backupData)
+            }).then(function (rsp) {
+                return resetForm(rsp, paystack, backupData);
+            }, function (err) {
                 console.log(err);
             });
         });
@@ -461,7 +473,7 @@ $(document).ready(function (e) {
                 cvv = parseInt(cvvField.val()),
                 expM = parseInt(expMField.val()),
                 expY = parseInt(expYField.val()),
-                pin = parseInt(pinField.val()),
+                pin = pinField.val(),
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
                 //TODO: for some reason it won't let it parseInt, so left it as string rn
@@ -473,6 +485,35 @@ $(document).ready(function (e) {
                 country = countryField.val(),
                 state = stateField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount, 'OCCURRENCE': occurrence};
+            backupData = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                phone: phone,
+                street: street,
+                streetOpt: streetOpt,
+                city: city,
+                postal: postal,
+                country: country,
+                state: state,
+                cardField: cardField,
+                nameField: nameField,
+                amountField: amountField,
+                emailField: emailField,
+                cvvField: cvvField,
+                expMField: expMField,
+                expYField: expYField,
+                nameFirstField: nameFirstField,
+                nameLastField: nameLastField,
+                phoneField: phoneField,
+                streetField: streetField,
+                streetFieldOpt: streetFieldOpt,
+                cityField: cityField,
+                postalField: postalField,
+                countryField: countryField,
+                stateField: stateField,
+                submitButton: submitButton
+            };
             // TODO: Do form verification on ALL fields :P
 
 
@@ -480,7 +521,7 @@ $(document).ready(function (e) {
             // Initialize paystack object
             promAjax({
                 // Get Access Code
-                url: "https://dolly-v2-pr-37.herokuapp.com/html_elements/paystack/authorize",
+                url: "https://dolly-v2.herokuapp.com/html_elements/paystack/authorize",
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
@@ -490,29 +531,31 @@ $(document).ready(function (e) {
                 console.log(resp);
 
                 if (!resp.status) {
-                    // Get authorize failed (prob priv key failed) TODO: fix this lol
+                    // Get authorize failed (prob priv key failed)
                     throw {"status": false, "reason": "error-1"};
                 }
 
                 var respData = resp.data;
 
-                // TODO: Move this inner promise to outer loop
                 return Paystack.init({
                     form: "nob-paystack-card-form", // Form ID
                     access_code: respData.access_code
-
-                    /* TODO: CATCH FAIL TO INIT
-                    catch(function(error){
-                        console.log("There was an error loading Paystack", error);
-                    });
-                     */
                 });
             }).then(function (returnedObj) {
                 console.log("Init response: ");
                 console.log(returnedObj);
                 paystack = returnedObj;
-                return paystack.card.charge();
-            }).then(validateCard).then(resetForm,
+                var pinObj = {};
+                console.log("PIN: " + pin);
+                if (pin != "" && pin != 0 && pin != -1) {
+                    pinObj = {pin: pin}
+                }
+                return paystack.card.charge(pinObj);
+            }).then(function (rsp) {
+                return validateCard(rsp, paystack, backupData)
+            }).then(function (rsp) {
+                    return resetForm(rsp, paystack, backupData);
+                },
                 function (error) {
                     console.log(error);
                     // TODO: IDK what this is lol

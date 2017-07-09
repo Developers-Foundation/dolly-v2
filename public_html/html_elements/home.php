@@ -1,7 +1,8 @@
 <div class="container">
     <!-- Join our journey -->
-    <div id="journey" class="section">
+    <div id="journey" class="section journey-bg-outer">
         <!--TODO: @nobodyrandom -->
+        <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
         <img src="assets/img/stock/main.jpg" class="journey-bg">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
@@ -10,7 +11,7 @@
                     Inspiring the African Child through educational aids and interventions centered on mental and
                     intellectual programs.
                 </p>
-                <a href="impacts.php" class="button-red round">Find out more</a>
+                <a href="impacts.php" class="button-red round text-uppercase">Find out more</a>
             </div>
         </div>
     </div>
@@ -37,7 +38,7 @@
                     journey thus far, we look forward to having likeminded people like you to join and support us in
                     our road ahead.
                 </p>
-                <a href="impacts.php" class="button-red">Learn more</a>
+                <a href="about.php" class="button-red">Learn more</a>
             </div>
         </div>
     </div>
@@ -109,6 +110,8 @@
         <div class="row">
             <div class="col-md-5">
                 <!--TODO: @nobodyrandom -->
+                <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
+                <!-- TODO: @nobodyrandom No idea I forgot as well lol -->
                 <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
             </div>
             <div class="col-md-7">

@@ -12,8 +12,7 @@
                     <!--   TODO : How do we want this? Wouldn't a logo with the name like in the footer be better?
                              TODO: yes that would be better, but idk whether we have the non-square logo, if not then better to put text + logo
                              -->
-                    <a class="navbar-brand" href="html_elements/link.php?link=home"><img class="img img-responsive" src="//via.placeholder.com/300x75"/></a>
-
+                    <a class="navbar-brand" href="html_elements/link.php?link=home"><img class="img img-responsive" src="assets/img/dolly-logo-380x85.png"/></a>
                 </div>
             </div>
         </div>

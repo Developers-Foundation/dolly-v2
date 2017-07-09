@@ -20,10 +20,12 @@
                         <div class="donate-amount">
                             <h4>What type of donation would you like to make?</h4><br>
                             <div class="slider-switch switch-toggle switch-ios">
-                                <input id="d-month" name="donate-occurrence" class="donate-occurrence" type="radio" value="monthly" checked="">
+                                <input id="d-month" name="donate-occurrence" class="donate-occurrence" type="radio"
+                                       value="monthly" checked="">
                                 <label for="d-month" onclick="">Monthly</label>
 
-                                <input id="d-one" name="donate-occurrence" class="donate-occurrence" value="one" type="radio">
+                                <input id="d-one" name="donate-occurrence" class="donate-occurrence" value="one"
+                                       type="radio">
                                 <label for="d-one" onclick="">One-Time</label>
 
                                 <a></a>
@@ -234,12 +236,14 @@
                         </div>
                     </div>
                 </form>
-                <form id="nob-paystack-verification-form" class="donate-form text-center"> <!-- TODO: @minimike need help styling this, thanks!! -->
+                <form id="nob-paystack-verification-form" class="donate-form text-center">
+                    <!-- TODO: @minimike511 need help styling this, thanks!! -->
                     <div class="donate-page-3 donate-page-pin row hidden">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-12">
                                 <!-- Options are PIN/OTP/3DS/Phone -->
-                                <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:</h5>
+                                <h5>Please Enter your Verification <span id="donate-verification">PIN/OTP (One Time Password)</span>:
+                                </h5>
                                 <input type="text"
                                        data-paystack="token"
                                        placeholder="OTP"
@@ -250,9 +254,12 @@
                         </div>
                     </div>
                 </form>
-                    <div class="donate-page-4 donate-page-thanks row hidden">
-
-                    </div>
+                <div class="donate-page-4 donate-page-thanks row hidden">
+                    Thanks! <!-- TODO: @minimike511 need help on this -->
+                </div>
+                <div class="donate-page-0 donate-page-error row hidden">
+                    Sorry an error occurred. Your card was not charged. <!-- TODO: @minimike511 need help on this -->
+                </div>
             </div>
         </div>
     </div>

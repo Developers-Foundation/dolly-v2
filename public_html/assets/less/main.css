@@ -11,12 +11,6 @@ h2 {
 .grey {
   background-color: #343434;
 }
-.row {
-  /* TODO: @nobodyrandom that was me (Paul), I did it to remove the horizontal scroll that the rows give
-  /* TODO: @psalv Try not to override master bootstrap, just use the single case
-   */
-  /* margin: 0 !important; */
-}
 .orange {
   background: #f9d246;
   /* For browsers that do not support gradients */
@@ -91,6 +85,12 @@ a.button-red:hover {
   top: -20px;
   background-color: white;
 }
+div.section-bg-overlay::before {
+  content: '';
+  position: absolute;
+  width: 1140px;
+  background: radial-gradient(circle at 23% 50%, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
 .slider-switch.switch-ios.switch-toggle a {
   background-color: #f5a623;
 }
@@ -101,7 +101,7 @@ HEADER AND FOOTER LESS
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 1%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 .navbar a {
   color: white !important;
@@ -260,6 +260,16 @@ HEADER AND FOOTER LESS
 /**
 SECTION SPECIFIC LESS
  */
+.index-page .journey-bg-outer {
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  /* Standard syntax (must be last)*/
+}
 .index-page #journey {
   height: 580px;
   color: white;
@@ -287,10 +297,12 @@ SECTION SPECIFIC LESS
 .index-page #what-we-do .card img {
   border-radius: 9px;
   box-shadow: 7.5px 7.5px 25px 0 rgba(0, 0, 0, 0.2);
+  height: 240px;
 }
 .index-page #how-to-help img {
   border-radius: 11px;
   box-shadow: 7.5px 7.5px 30px 0 rgba(0, 0, 0, 0.2);
+  height: 240px;
 }
 .impacts-page {
   color: white;
@@ -307,6 +319,18 @@ SECTION SPECIFIC LESS
 }
 .impacts-page .section.first {
   margin-top: 16%;
+}
+.impacts-page .section.alternate .feature-image {
+  order: 2;
+}
+.impacts-page .section.alternate .feature-text {
+  order: 1;
+}
+.impacts-page .section .relative-anchor {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
 }
 .impacts-page .section .section-bg {
   position: absolute;
@@ -345,12 +369,6 @@ SECTION SPECIFIC LESS
 .impacts-page .section p {
   padding-bottom: 20px;
 }
-.impacts-page .alternate .feature-image {
-  order: 2;
-}
-.impacts-page .alternate .feature-text {
-  order: 1;
-}
 .about-page .section h2 {
   margin-bottom: 40px;
 }
@@ -359,6 +377,9 @@ SECTION SPECIFIC LESS
 }
 .about-page .section:not(.title) h2 {
   margin-top: 60px;
+}
+.about-page .section-bg-overlay::before {
+  height: 480px;
 }
 .about-page .title {
   height: 482px;

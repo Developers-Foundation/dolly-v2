@@ -25,13 +25,6 @@ h2 {
   background-color: @GREY;
 }
 
-.row {
-  /* TODO: @nobodyrandom that was me (Paul), I did it to remove the horizontal scroll that the rows give
-  /* TODO: @psalv Try not to override master bootstrap, just use the single case
-   */
-  /* margin: 0 !important; */
-}
-
 .orange {
   //background-color: orange !important;
   background: @LIGHTMUSTARD; /* For browsers that do not support gradients */
@@ -118,6 +111,17 @@ h2 {
   }
 }
 
+// This can be used to make bg img overlays automatically. Apply this class to the parent div and try make sure first element is the child img, and second-inf element is the inner content, might also need position absolutes to work
+// Need to define height
+div.section-bg-overlay {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1140px;
+    background: radial-gradient(circle at 23% 50%, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  }
+}
+
 .slider-switch.switch-ios.switch-toggle {
   a {
     background-color: @ORANGE;
@@ -132,7 +136,7 @@ HEADER AND FOOTER LESS
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 1%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 
   a {
     color: white !important;
@@ -334,6 +338,12 @@ SECTION SPECIFIC LESS
 
 // Home.php section
 .index-page {
+  .journey-bg-outer{
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* Standard syntax (must be last)*/
+  }
   #journey {
     height: 580px;
     color: white;
@@ -370,6 +380,7 @@ SECTION SPECIFIC LESS
       img {
         border-radius: 9px;
         box-shadow: 7.5px 7.5px 25px 0 rgba(0, 0, 0, 0.2);
+        height: 240px;
       }
     }
   }
@@ -378,6 +389,7 @@ SECTION SPECIFIC LESS
     img {
       border-radius: 11px;
       box-shadow: 7.5px 7.5px 30px 0 rgba(0, 0, 0, 0.2);
+      height: 240px;
     }
   }
 }
@@ -398,6 +410,23 @@ SECTION SPECIFIC LESS
 
     &.first {
       margin-top: 16%;
+    }
+
+    &.alternate {
+      .feature-image {
+        order: 2;
+      }
+
+      .feature-text {
+        order: 1;
+      }
+    }
+
+    .relative-anchor {
+      display: block;
+      position: relative;
+      top: -200px;
+      visibility: hidden;
     }
 
     .section-bg {
@@ -443,16 +472,6 @@ SECTION SPECIFIC LESS
       padding-bottom: 20px;
     }
   }
-
-  .alternate {
-    .feature-image {
-      order: 2;
-    }
-
-    .feature-text {
-      order: 1;
-    }
-  }
 }
 
 .about-page {
@@ -470,10 +489,14 @@ SECTION SPECIFIC LESS
     }
   }
 
+  .section-bg-overlay::before {
+    height: 480px;
+  }
+
   .title {
     height: 482px;
 
-    //TODO: @nobodyrandom
+    //TODO: @minimike511
     img {
       position: absolute;
       z-index: -1;

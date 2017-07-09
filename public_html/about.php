@@ -52,16 +52,16 @@ include_once "html_elements/footer2.php";
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!-- Plugin JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
 
 <!-- Contact Form JavaScript -->
 <!-- <script src="js/jqBootstrapValidation.js"></script>-->
 <!-- <script src="js/contact_me.js"></script>-->
 
 <!-- Theme JavaScript -->
-<script src="assets/js/freelancer.js"></script>
+<script src="assets/js/freelancer.min.js"></script>
 <script src="assets/js/material.min.js"></script>
-<script src="assets/js/material-kit.js" type="text/javascript"></script>
+<script src="assets/js/material-kit.min.js" type="text/javascript"></script>
 
 <!-- Additional JS Files-->
 <script src="assets/js/nob.js" type="text/javascript"></script>

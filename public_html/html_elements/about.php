@@ -9,7 +9,7 @@
 
 <div class="container">
     <!-- TITLE SECTION -->
-    <div class="section title">
+    <div class="section title section-bg-overlay">
         <img src="assets/img/stock/about_us.jpg" class="section-bg">
         <div class="row inner">
             <div class="col-md-offset-4 col-md-4 text-center">
@@ -66,6 +66,8 @@
                 <h2 class="text-center">Meet the Founder</h2>
             </div>
             <!-- TODO: Need to fix this @nobodyrandom -->
+            <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
+            <!-- TODO: @nobodyrandom vertical center the context -->
             <div class="col-md-6" style="padding-top: 200px">
                 <h3>Adedolapo Osuntuyi</h3>
                 <p>
