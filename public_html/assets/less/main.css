@@ -85,6 +85,12 @@ a.button-red:hover {
   top: -20px;
   background-color: white;
 }
+div.section-bg-overlay::before {
+  content: '';
+  position: absolute;
+  width: 1140px;
+  background: radial-gradient(circle at 23% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
 .slider-switch.switch-ios.switch-toggle a {
   background-color: #f5a623;
 }
@@ -371,6 +377,9 @@ SECTION SPECIFIC LESS
 }
 .about-page .section:not(.title) h2 {
   margin-top: 60px;
+}
+.about-page .section-bg-overlay::before {
+  height: 480px;
 }
 .about-page .title {
   height: 482px;

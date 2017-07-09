@@ -111,6 +111,17 @@ h2 {
   }
 }
 
+// This can be used to make bg img overlays automatically. Apply this class to the parent div and try make sure first element is the child img, and second-inf element is the inner content, might also need position absolutes to work
+// Need to define height
+div.section-bg-overlay {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1140px;
+    background: radial-gradient(circle at 23% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  }
+}
+
 .slider-switch.switch-ios.switch-toggle {
   a {
     background-color: @ORANGE;
@@ -476,6 +487,10 @@ SECTION SPECIFIC LESS
         margin-top: 60px;
       }
     }
+  }
+
+  .section-bg-overlay::before {
+    height: 480px;
   }
 
   .title {
