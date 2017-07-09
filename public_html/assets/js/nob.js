@@ -521,7 +521,7 @@ $(document).ready(function (e) {
             // Initialize paystack object
             promAjax({
                 // Get Access Code
-                url: "https://dolly-v2-pr-38.herokuapp.com/html_elements/paystack/authorize",
+                url: "https://dolly-v2.herokuapp.com/html_elements/paystack/authorize",
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
