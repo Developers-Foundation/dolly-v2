@@ -6,7 +6,7 @@
         <div class="col-sm-4 white-text">
             <div class="centerer">
                 <div class="footer-logo">
-                    <img class="img img-responsive" src="//via.placeholder.com/250x75"/>
+                    <img class="img img-responsive" src="assets/img/dolly-logo-250x56.png"/>
                 </div>
 
                 <div class="footer-info">
@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="/about">About  <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/impacts">Impact  <i class="fa fa-chevron-right"></i></a></li>
-                    <li><a>Blog  <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a>Blog  <i class="fa fa-chevron-right"></i></a></li> <!-- TODO: Link to it :) -->
                     <li><a href="/contact">Contact  <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/donate">Donate  <i class="fa fa-chevron-right"></i></a></li>
                 </ul>
