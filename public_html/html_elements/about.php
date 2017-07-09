@@ -67,6 +67,7 @@
             </div>
             <!-- TODO: Need to fix this @nobodyrandom -->
             <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
+            <!-- TODO: @nobodyrandom vertical center the context -->
             <div class="col-md-6" style="padding-top: 200px">
                 <h3>Adedolapo Osuntuyi</h3>
                 <p>

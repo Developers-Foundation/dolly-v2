@@ -38,7 +38,7 @@
                     journey thus far, we look forward to having likeminded people like you to join and support us in
                     our road ahead.
                 </p>
-                <a href="impacts.php" class="button-red">Learn more</a>
+                <a href="about.php" class="button-red">Learn more</a>
             </div>
         </div>
     </div>
@@ -111,6 +111,7 @@
             <div class="col-md-5">
                 <!--TODO: @nobodyrandom -->
                 <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
+                <!-- TODO: @nobodyrandom No idea I forgot as well lol -->
                 <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
             </div>
             <div class="col-md-7">
