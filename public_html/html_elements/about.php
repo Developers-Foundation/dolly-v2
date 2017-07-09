@@ -66,6 +66,7 @@
                 <h2 class="text-center">Meet the Founder</h2>
             </div>
             <!-- TODO: Need to fix this @nobodyrandom -->
+            <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
             <div class="col-md-6" style="padding-top: 200px">
                 <h3>Adedolapo Osuntuyi</h3>
                 <p>
