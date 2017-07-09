@@ -21,7 +21,7 @@ if (!isset($pageTitle)) {
             if ($pageTitle == "Impacts") {
                 echo '<div class="space-left"><ul id="nav" class="line-behind">';
                 for($i = 1; $i < 7; $i++){
-                    echo '<li id="li-impact-' .$i .'"><div class="impact-circle"><a href="#impact-' . $i . '">' . $i .'</a></div></li>';
+                    echo '<li id="li-impact-' .$i .'"><div class="impact-circle"><a href="#impact-' . $i . '-anchor">' . $i .'</a></div></li>';
                 }
                 echo '</ul></div>';
 

@@ -320,6 +320,18 @@ SECTION SPECIFIC LESS
 .impacts-page .section.first {
   margin-top: 16%;
 }
+.impacts-page .section.alternate .feature-image {
+  order: 2;
+}
+.impacts-page .section.alternate .feature-text {
+  order: 1;
+}
+.impacts-page .section .relative-anchor {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
+}
 .impacts-page .section .section-bg {
   position: absolute;
   z-index: -1;
@@ -356,12 +368,6 @@ SECTION SPECIFIC LESS
 }
 .impacts-page .section p {
   padding-bottom: 20px;
-}
-.impacts-page .alternate .feature-image {
-  order: 2;
-}
-.impacts-page .alternate .feature-text {
-  order: 1;
 }
 .about-page .section h2 {
   margin-bottom: 40px;

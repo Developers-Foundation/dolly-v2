@@ -408,6 +408,23 @@ SECTION SPECIFIC LESS
       margin-top: 16%;
     }
 
+    &.alternate {
+      .feature-image {
+        order: 2;
+      }
+
+      .feature-text {
+        order: 1;
+      }
+    }
+
+    .relative-anchor {
+      display: block;
+      position: relative;
+      top: -200px;
+      visibility: hidden;
+    }
+
     .section-bg {
       position: absolute;
       z-index: -1;
@@ -449,16 +466,6 @@ SECTION SPECIFIC LESS
 
     p {
       padding-bottom: 20px;
-    }
-  }
-
-  .alternate {
-    .feature-image {
-      order: 2;
-    }
-
-    .feature-text {
-      order: 1;
     }
   }
 }

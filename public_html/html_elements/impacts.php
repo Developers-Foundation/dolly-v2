@@ -10,6 +10,7 @@
 <div class="container">
     <!-- Reading Clubs -->
     <div id="impact-1" class="section first impact-1">
+        <a id="impact-1-anchor" class="relative-anchor"></a>
         <img src="assets/img/stock/reading_clubs.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
@@ -32,6 +33,7 @@
 
     <!-- Sponsorship Programmes -->
     <div id="impact-2" class="section alternate">
+        <a id="impact-2-anchor" class="relative-anchor"></a>
         <img src="assets/img/stock/sponsorship.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
@@ -54,6 +56,7 @@
 
     <!-- Back to School Initiatives  -->
     <div id="impact-3" class="section">
+        <a id="impact-3-anchor" class="relative-anchor"></a>
         <img src="assets/img/stock/back_to_school.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
@@ -75,6 +78,7 @@
 
     <!-- Training Programs for Teachers  -->
     <div id="impact-4" class="section alternate">
+        <a id="impact-4-anchor" class="relative-anchor"></a>
         <img src="assets/img/stock/training.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
@@ -96,6 +100,7 @@
 
     <!-- After School and Summer Tutoring Programs  -->
     <div id="impact-5" class="section">
+        <a id="impact-5-anchor" class="relative-anchor"></a>
         <img src="assets/img/stock/afterschool.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
@@ -123,6 +128,7 @@
 
     <!-- School Building  -->
     <div id="impact-6" class="section alternate">
+        <a id="impact-6-anchor" class="relative-anchor"></a>
         <img src="assets/img/stock/building.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">

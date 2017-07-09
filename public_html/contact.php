@@ -55,7 +55,7 @@ include_once "html_elements/footer2.php";
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!-- Plugin JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
 
 <!-- Contact Form JavaScript -->
 <!-- <script src="js/jqBootstrapValidation.js"></script>-->
