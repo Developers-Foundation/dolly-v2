@@ -39,7 +39,7 @@
             <div class="row inner-container">
                 <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/sponsorship.jpg" style="margin: 0 0 0 -275px;"/></div>
                 <div class="feature-text col-md-7 text-left v-center">
-                    <h1>Sponsorship Programs</h1>
+                    <h1>Sponsorship Programmes</h1>
                     <hr>
                     <p>
                         Sponsorships help children whose parents lack the financial backbone to support their
