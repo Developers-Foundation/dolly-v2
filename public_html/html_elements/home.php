@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/afterschool.jpg">
-                <h3>After school and Summer Tutoring Programs</h3>
+                <h3>After School and Summer Tutoring Programs</h3>
                 <p>
                     Additional education programs helps to alleviate child-care stress from working parents while
                     enhances the children’s learning experience.
@@ -115,7 +115,7 @@
                 <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
             </div>
             <div class="col-md-7">
-                <h3>Sponsor a child</h3>
+                <h3>Sponsor a Child</h3>
                 <p>
                     Make a direct impact on the future of a child by sponsoring their education. You will be able to
                     communicate with the child you sponsor and we will continue to update you through monthly
@@ -124,7 +124,7 @@
                 <a>
                     <a class="button-red text-uppercase">Donate</a>
                 </a>
-                <h3>Support a school building project</h3>
+                <h3>Support a School Building Project</h3>
                 <p>
                     Help improve the facilities and learning environment of Nigerian children by contributing to a
                     school building project. We will keep you in the loop in regards to the progress and hold up our
@@ -133,7 +133,7 @@
                 <a>
                     <a class="button-red text-uppercase">Monthly Giving</a>
                 </a>
-                <h3>Get behind an empowerment Initiative.</h3>
+                <h3>Get Behind an Empowerment Initiative.</h3>
                 <p>
                     Get involved with one of our other initiatives to change the lives of children in Nigeria for the
                     better. We can allocate your donation to exactly what you want to support. Get in touch with us
