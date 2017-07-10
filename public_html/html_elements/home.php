@@ -31,7 +31,7 @@
                 <a href="impacts.php" class="button-red text-uppercase">Learn more</a>
             </div>
             <div class="col-md-offset-1 col-md-7">
-                <h2>Who we are</h2>
+                <h2 class="text-uppercase"><strong>Who we are</strong></h2>
                 <p>
                     We are a non-profit organization that is made up of a team of individuals that are passionate about
                     bringing affordable education to the children of Nigeria. We have helped over 5000 children in our
@@ -46,25 +46,25 @@
     <!-- What we do -->
     <div id="what-we-do" class="section">
         <hr class="star-custom">
-        <h2 class="text-center text-uppercase">What we do</h2>
+        <h2 class="text-center text-uppercase"><strong>What we do</strong></h2>
         <div class="row">
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/reading_clubs.jpg">
-                <h3>Reading Clubs</h3>
+                <h3><strong>Reading Clubs</strong></h3>
                 <p>
                     Weekly reading clubs cultivate reading cultures amongst children as young as 6 years old.
                 </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/sponsorship.jpg">
-                <h3>Sponsorship Programmes</h3>
+                <h3><strong>Sponsorship Programmes</strong></h3>
                 <p>
                     Sponsorships allow children who lack financial resources to have a chance at education.
                 </p>
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/back_to_school.jpg">
-                <h3>Back to School Initiatives</h3>
+                <h3><strong>Back to School Initiatives</strong></h3>
                 <p>
                     Textbooks, uniforms, and transportation to schools are donated to children to alleviate financial
                     stress on their families.
@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/training.jpg">
-                <h3>Training Programs for Teachers</h3>
+                <h3><strong>Training Programs for Teachers</strong></h3>
                 <p>
                     Training programs to ensure that the education provided by primary schools in Nigeria are
                     effective and up to global standards.
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/afterschool.jpg">
-                <h3>After School and Summer Tutoring Programs</h3>
+                <h3><strong>After School and Summer Tutoring Programs</strong></h3>
                 <p>
                     Additional education programs helps to alleviate child-care stress from working parents while
                     enhances the children’s learning experience.
@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-4 card">
                 <img class="img-responsive" src="assets/img/stock/building.jpg">
-                <h3>School Building</h3>
+                <h3><strong>School Building</strong></h3>
                 <p>
                     New and upgraded school facilities provide more children with the necessary infrastructure and
                     equipment to ensure a safe and effective learning environment.
@@ -106,16 +106,11 @@
     <!-- How to help -->
     <div id="how-to-help" class="section">
         <hr class="star-custom">
-        <h2 class="text-center text-uppercase">How to Help</h2>
+        <h2 class="text-center text-uppercase"><strong>How to Help</strong></h2>
         <div class="row">
-            <div class="col-md-5">
-                <!--TODO: @nobodyrandom -->
-                <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
-                <!-- TODO: @nobodyrandom No idea I forgot as well lol -->
-                <img class="img-responsive" src="assets/img/stock/how_to_help.jpg">
-            </div>
-            <div class="col-md-7">
-                <h3>Sponsor a Child</h3>
+            <div class="col-md-6 image-section"></div>
+            <div class="col-md-6">
+                <h3><strong>Sponsor a Child</strong></h3>
                 <p>
                     Make a direct impact on the future of a child by sponsoring their education. You will be able to
                     communicate with the child you sponsor and we will continue to update you through monthly
@@ -124,7 +119,7 @@
                 <a>
                     <a class="button-red text-uppercase">Donate</a>
                 </a>
-                <h3>Support a School Building Project</h3>
+                <h3><strong>Support a School Building Project</strong></h3>
                 <p>
                     Help improve the facilities and learning environment of Nigerian children by contributing to a
                     school building project. We will keep you in the loop in regards to the progress and hold up our
@@ -133,7 +128,7 @@
                 <a>
                     <a class="button-red text-uppercase">Monthly Giving</a>
                 </a>
-                <h3>Get Behind an Empowerment Initiative.</h3>
+                <h3><strong>Get Behind an Empowerment Initiative</strong></h3>
                 <p>
                     Get involved with one of our other initiatives to change the lives of children in Nigeria for the
                     better. We can allocate your donation to exactly what you want to support. Get in touch with us
