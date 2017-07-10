@@ -384,7 +384,7 @@ SECTION SPECIFIC LESS
   margin-top: 60px;
 }
 .about-page .section-bg-overlay::before {
-  height: 480px;
+  height: 500px;
 }
 .about-page .title {
   height: 482px;
@@ -393,8 +393,9 @@ SECTION SPECIFIC LESS
   position: absolute;
   z-index: -1;
   width: 1140px;
-  height: 480px;
+  height: 325px;
   object-fit: cover;
+  margin-top: 175px;
 }
 .about-page .title .inner {
   display: block;
