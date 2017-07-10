@@ -16,17 +16,17 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
             <!-- The form for the mailer -->
             <form class="form-email" action="" method="post" data-form-type="nob">
                 <div class="col-md-5 left msg-info">
-                    <h3 class="msg-info">
+                    <p class="msg-info">
                         E: info@dollychildren.org<br/>
                         P: (+234) 708-739-0017
 
-                    </h3>
+                    </p>
 
                     <br/>
-                    <h3>
+                    <p>
                         If you have any inquiries, suggestions, or concerns, please do not hesitate to get in touch
                         with us. We look forward to hearing from you!
-                    </h3>
+                    </p>
                 </div>
 
                 <!-- Message input -->
