@@ -28,7 +28,7 @@
                     HELPS OVER<br>
                     <strong>5,000 CHILDREN</strong>
                 </h2>
-                <a href="impacts.php" class="button-red">Learn more</a>
+                <a href="impacts.php" class="button-red text-uppercase">Learn more</a>
             </div>
             <div class="col-md-offset-1 col-md-7">
                 <h2>Who we are</h2>
@@ -38,7 +38,7 @@
                     journey thus far, we look forward to having likeminded people like you to join and support us in
                     our road ahead.
                 </p>
-                <a href="about.php" class="button-red">Learn more</a>
+                <a href="about.php" class="button-red text-uppercase">Learn more</a>
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center"><a href="impacts.php" class="button-red">Learn more</a></div>
+            <div class="col-md-12 text-center"><a href="impacts.php" class="button-red text-uppercase">Learn more</a></div>
         </div>
     </div>
 
@@ -122,7 +122,7 @@
                     newsletters.
                 </p>
                 <a>
-                    <a class="button-red">Donate</a>
+                    <a class="button-red text-uppercase">Donate</a>
                 </a>
                 <h3>Support a school building project</h3>
                 <p>
@@ -131,7 +131,7 @@
                     commitment to transparency by providing you with frequent updates on their progress.
                 </p>
                 <a>
-                    <a class="button-red">Monthly Giving</a>
+                    <a class="button-red text-uppercase">Monthly Giving</a>
                 </a>
                 <h3>Get behind an empowerment Initiative.</h3>
                 <p>
@@ -140,7 +140,7 @@
                     today!
                 </p>
                 <a>
-                    <a class="button-red">Scholarship</a>
+                    <a class="button-red text-uppercase">Scholarship</a>
                 </a>
             </div>
         </div>
