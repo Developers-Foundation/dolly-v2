@@ -19,9 +19,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                     <p class="msg-info" style="padding-top: 100px">
                         E: info@dollychildren.org<br/>
                         P: (+234) 708-739-0017
-
                     </p>
-
                     <br/>
                     <p>
                         If you have any inquiries, suggestions, or concerns, please do not hesitate to get in touch

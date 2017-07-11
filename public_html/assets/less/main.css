@@ -307,7 +307,7 @@ SECTION SPECIFIC LESS
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("../img/stock/how_to_help.jpg");
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .impacts-page {
   color: white;
@@ -446,7 +446,7 @@ SECTION SPECIFIC LESS
   margin: 100px 0 20px;
 }
 .donate-page p {
-  padding: 20% 5% 0% 5%;
+  padding: 15% 5% 0% 5%;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.33;
@@ -460,6 +460,24 @@ SECTION SPECIFIC LESS
 }
 .donate-page .donate-section:hover u {
   color: white;
+}
+.donate-page .donate-section .img-donate {
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.donate-page .donate-section .img-donut {
+  background-image: url("../img/donate/donuts.jpg");
+}
+.donate-page .donate-section .img-earbuds {
+  background-image: url("../img/donate/earbuds.jpg");
+}
+.donate-page .donate-section .img-phone {
+  background-image: url("../img/donate/phone_case.jpg");
+}
+.donate-page .donate-section .img-shoes {
+  background-image: url("../img/donate/shoes.jpg");
 }
 .donate-page .donate-modal .row {
   margin: 0;

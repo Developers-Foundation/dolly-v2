@@ -6,7 +6,7 @@
         <div class="col-sm-4 white-text">
             <div class="centerer">
                 <div class="footer-logo">
-                    <img class="img img-responsive" src="assets/img/dolly-logo-250x56.png"/>
+                    <img class="img img-responsive" src="assets/img/dolly-logo-white-250x56.png"/>
                 </div>
 
                 <div class="footer-info">

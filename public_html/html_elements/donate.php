@@ -14,11 +14,9 @@
         <div id="donate-section-1" class="donate-section">
             <div class="container container-first">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/img/donate/donuts.jpg">
+                    <div class="col-md-6 img-donate img-donut">
                     </div>
                     <div class="col-md-6">
-
                         <p>
                             <label><input class="donate-box" type="radio" name="amount" value="10">
                                 <i class="ui-checkbox"></i></label><br><br>
@@ -40,8 +38,7 @@
                             For the price of Apple Earpods, you can provide books for <u>5 children</u>
                         </p>
                     </div>
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/img/donate/earbuds.jpg">
+                    <div class="col-md-6 img-donate img-earbuds">
                     </div>
                 </div>
             </div>
@@ -51,8 +48,7 @@
         <div id="donate-section-3" class="donate-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/img/donate/phone_case.jpg">
+                    <div class="col-md-6 img-donate img-phone">
                     </div>
                     <div class="col-md-6">
                         <p>
@@ -76,8 +72,7 @@
                             For the price of new shoes at Aldo, you can send <u>5 children to school</u>
                         </p>
                     </div>
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="assets/img/donate/shoes.jpg">
+                    <div class="col-md-6 img-donate img-shoes">
                     </div>
                 </div>
             </div>
