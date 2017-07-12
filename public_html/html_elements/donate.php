@@ -18,8 +18,6 @@
                     </div>
                     <div class="col-md-6">
                         <p>
-                            <label><input class="donate-box" type="radio" name="amount" value="10">
-                                <i class="ui-checkbox"></i></label><br><br>
                             For the price of 12 donuts at Dunkin donuts, you can send <u>3 children</u> to school
                         </p>
                     </div>
@@ -33,8 +31,6 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p>
-                            <label><input class="donate-box" type="radio" name="amount" value="30">
-                                <i class="ui-checkbox"></i></label><br><br>
                             For the price of Apple Earpods, you can provide books for <u>5 children</u>
                         </p>
                     </div>
@@ -52,8 +48,6 @@
                     </div>
                     <div class="col-md-6">
                         <p>
-                            <label><input class="donate-box" type="radio" name="amount" value="50">
-                                <i class="ui-checkbox"></i></label><br><br>
                             For the price of an Apple iPhone case, you can provide uniforms for <u>5 children</u>
                         </p>
                     </div>
@@ -67,8 +61,6 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p>
-                            <label><input class="donate-box" type="radio" name="amount" value="130">
-                                <i class="ui-checkbox"></i></label><br><br>
                             For the price of new shoes at Aldo, you can send <u>5 children to school</u>
                         </p>
                     </div>
