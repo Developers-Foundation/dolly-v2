@@ -17,8 +17,10 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
             <form class="form-email" action="" method="post" data-form-type="nob">
                 <div class="col-md-5 left msg-info">
                     <p class="msg-info" style="padding-top: 100px">
-                        E: info@dollychildren.org<br/>
-                        P: (+234) 708-739-0017
+                        E:
+                        <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a><br/>
+                        P:
+                        <a data-rel="external" href="tel:2347087390017">(+234) 708-739-0017</a>
                     </p>
                     <br/>
                     <p>
@@ -54,7 +56,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
 
                     <!-- Submit button -->
                     <div class="text-right">
-                        <button class="btn btn-raised button-red  button-white-font btn-lg">SEND INQUIRY</button>
+                        <button class="btn btn-raised button-red  white-text btn-lg">SEND INQUIRY</button>
                     </div>
                 </div>
             </form>
