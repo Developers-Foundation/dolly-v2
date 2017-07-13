@@ -476,7 +476,6 @@ $(document).ready(function (e) {
                 pin = pinField.val(),
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
-                //TODO: for some reason it won't let it parseInt, so left it as string rn
                 phone = parseInt(phoneField.val()),
                 street = streetField.val(),
                 streetOpt = streetFieldOpt.val(),

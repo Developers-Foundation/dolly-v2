@@ -54,7 +54,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
 
                     <!-- Submit button -->
                     <div class="text-right">
-                        <button class="btn btn-raised btn-grey btn-lg">SEND INQUIRY</button>
+                        <button class="btn btn-raised button-red  button-white-font btn-lg">SEND INQUIRY</button>
                     </div>
                 </div>
             </form>
