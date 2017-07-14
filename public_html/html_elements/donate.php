@@ -47,7 +47,7 @@
                     <div class="col-md-6 img-donate img-phone">
                     </div>
                     <div class="col-md-6">
-                        <p class="donate-p>
+                        <p class="donate-p">
                             For the price of an Apple iPhone case, you can provide uniforms for <u>5 children</u>
                         </p>
                     </div>
