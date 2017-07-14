@@ -60,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="donate-p>
+                        <p class="donate-p">
                             For the price of new shoes at Aldo, you can send <u>5 children to school</u>
                         </p>
                     </div>
