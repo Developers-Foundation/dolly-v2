@@ -17,7 +17,7 @@
                     <div class="col-md-6 img-donate img-donut">
                     </div>
                     <div class="col-md-6">
-                        <p>
+                        <p class="donate-p">
                             For the price of 12 donuts at Dunkin donuts, you can send <u>3 children</u> to school
                         </p>
                     </div>
@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>
+                        <p class="donate-p">
                             For the price of Apple Earpods, you can provide books for <u>5 children</u>
                         </p>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="col-md-6 img-donate img-phone">
                     </div>
                     <div class="col-md-6">
-                        <p>
+                        <p class="donate-p>
                             For the price of an Apple iPhone case, you can provide uniforms for <u>5 children</u>
                         </p>
                     </div>
@@ -60,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>
+                        <p class="donate-p>
                             For the price of new shoes at Aldo, you can send <u>5 children to school</u>
                         </p>
                     </div>

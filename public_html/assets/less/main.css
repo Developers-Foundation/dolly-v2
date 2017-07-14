@@ -445,7 +445,7 @@ SECTION SPECIFIC LESS
 .donate-page h2 {
   margin: 100px 0 20px;
 }
-.donate-page p {
+.donate-page .donate-p {
   padding: 25% 5% 0% 5%;
   font-size: 24px;
   font-weight: bold;
