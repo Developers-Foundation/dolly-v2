@@ -52,11 +52,14 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                     <h4 class="msg-label"> Message</h4>
                     <textarea class="form-control form-input-message " rows="3" required></textarea>
 
-                    <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
-
-                    <!-- Submit button -->
-                    <div class="text-right">
-                        <button class="btn btn-raised button-red  white-text btn-lg">SEND INQUIRY</button>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Submit button -->
+                            <button class="btn btn-raised button-red  white-text btn-lg">SEND INQUIRY</button>
+                        </div>
                     </div>
                 </div>
             </form>
