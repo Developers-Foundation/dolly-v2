@@ -62,6 +62,9 @@
             </div>
         </div>
         <div class="col-xs-8">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile-collapse">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
             <!--<div class="row">
                 <ul class="list-inline text-right">
                     <li class="li-wrapper">
@@ -97,6 +100,29 @@
                     </li>
                 </ul>
             </div>-->
+        </div>
+
+        <div id="navbar-mobile-collapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right text-uppercase nav-options">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="">
+                    <a href="/about">About</a>
+                </li>
+                <li class="">
+                    <a href="/impacts">Impacts</a>
+                </li>
+                <li class="">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="">
+                    <a href="/contact">Contact</a>
+                </li>
+                <li class="donate-button">
+                    <a href="/donate">Donate</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

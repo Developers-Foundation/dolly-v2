@@ -111,7 +111,7 @@ HEADER AND FOOTER LESS
   font-weight: 800;
 }
 .navbar .nav-options li {
-  margin-right: 35px !important;
+  margin-right: 35px;
 }
 .navbar .li-wrapper {
   padding-bottom: 8px !important;
@@ -136,6 +136,12 @@ HEADER AND FOOTER LESS
 .navbar .mobile .navbar-brand {
   padding-right: 0;
   padding-left: 10px;
+}
+.navbar .mobile .navbar-nav li {
+  margin-right: 0;
+}
+.navbar .mobile .navbar-nav li:hover {
+  background: #f5a623;
 }
 .navtab {
   position: fixed;
