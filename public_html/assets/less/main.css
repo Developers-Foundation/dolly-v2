@@ -275,6 +275,7 @@ SECTION SPECIFIC LESS
   color: white;
 }
 .index-page #journey .journey-bg {
+  object-fit: cover;
   position: absolute;
   overflow: hidden;
   height: 580px;
