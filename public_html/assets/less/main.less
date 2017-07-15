@@ -272,13 +272,13 @@ HEADER AND FOOTER LESS
   }
 
   ul {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .footerContainer {
-    padding: 3% !important;
-    padding-top: 2% !important;
+    padding: 3%;
+    padding-top: 2%;
 
     img {
       padding-top: 60px;
@@ -291,40 +291,47 @@ HEADER AND FOOTER LESS
       margin: 25px 0 20px 0;
     }
 
+    .footer-info a {
+      .white-text;
+    }
+
     .footer-nav {
       li {
-        padding-top: 10px !important;
+        padding-top: 10px;
+      }
+      a {
+        .orange-text;
       }
     }
 
-    .fa-social {
-      height: 34px;
-      width: 34px;
-      border: 2px solid darken(grey, 21%);
-      background-color: darken(grey, 21%);
-      font-size: 20px;
-      padding: 5px 6px;
-      border-radius: 50%;
-      color: white;
-      transition: all 0.5s;
-      margin-right: 15px;
+    .social-area {
+      a {
+        .orange-text;
+      }
+
+      .fa-social {
+        height: 34px;
+        width: 34px;
+        border: 2px solid darken(grey, 21%);
+        background-color: darken(grey, 21%);
+        font-size: 20px;
+        padding: 5px 6px;
+        border-radius: 50%;
+        color: white;
+        transition: all 0.5s;
+        margin-right: 15px;
+      }
     }
 
     .fa-chevron-right {
       font-size: 0.6em;
       margin-left: 10px;
     }
-
-    a {
-      .orange-text;
-    }
-
   }
 
   .madeWithLove {
     font-size: 1.2em;
-    padding: 5px !important;
-    padding-top: 10px !important;
+    padding-top: 10px;
     .white-text;
     a {
       .white-text
@@ -338,11 +345,11 @@ SECTION SPECIFIC LESS
 
 // Home.php section
 .index-page {
-  .journey-bg-outer{
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)); /* Standard syntax (must be last)*/
+  .journey-bg-outer {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* Standard syntax (must be last)*/
   }
   #journey {
     height: 580px;
@@ -387,7 +394,7 @@ SECTION SPECIFIC LESS
   }
 
   #how-to-help {
-    .image-section{
+    .image-section {
       margin: 50px;
       height: 550px;
       width: 450px;
@@ -517,10 +524,10 @@ SECTION SPECIFIC LESS
       z-index: 999;
       padding-top: 250px;
     }
-    h2{
+    h2 {
       color: white;
     }
-    p{
+    p {
       color: white;
     }
   }
@@ -551,8 +558,8 @@ SECTION SPECIFIC LESS
       }
     }
   }
-  .founder{
-    img{
+  .founder {
+    img {
       border-radius: 6px;
     }
   }
@@ -592,26 +599,26 @@ SECTION SPECIFIC LESS
         color: white;
       }
     }
-    .img-donate{
+    .img-donate {
       height: 350px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
 
-    .img-donut{
+    .img-donut {
       background-image: url("../img/donate/donuts.jpg");
     }
 
-    .img-earbuds{
+    .img-earbuds {
       background-image: url("../img/donate/earbuds.jpg");
     }
 
-    .img-phone{
+    .img-phone {
       background-image: url("../img/donate/phone_case.jpg");
     }
 
-    .img-shoes{
+    .img-shoes {
       background-image: url("../img/donate/shoes.jpg");
     }
 
@@ -706,7 +713,7 @@ SECTION SPECIFIC LESS
     padding: 40px 40px;
   }
 
-  .donate-other-amount{
+  .donate-other-amount {
     padding: 10px;
     border: none;
     border-bottom: solid 2px #c9c9c9;
@@ -718,12 +725,12 @@ SECTION SPECIFIC LESS
     margin-top: 10px;
   }
 
-  .donate-other-amount:focus{
+  .donate-other-amount:focus {
     border-bottom: solid 2px #969696;
     outline: none;
   }
 
-  .donate-other-amount:active{
+  .donate-other-amount:active {
     -webkit-transition: width 2s; /* Safari */
     transition: width 2s;
     transition-timing-function: ease

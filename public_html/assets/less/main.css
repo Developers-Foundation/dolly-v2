@@ -210,12 +210,12 @@ HEADER AND FOOTER LESS
   list-style: none;
 }
 .footer ul {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
+  margin-left: 0;
+  padding-left: 0;
 }
 .footer .footerContainer {
-  padding: 3% !important;
-  padding-top: 2% !important;
+  padding: 3%;
+  padding-top: 2%;
 }
 .footer .footerContainer img {
   padding-top: 60px;
@@ -226,10 +226,19 @@ HEADER AND FOOTER LESS
   font-size: 1.2em;
   margin: 25px 0 20px 0;
 }
-.footer .footerContainer .footer-nav li {
-  padding-top: 10px !important;
+.footer .footerContainer .footer-info a {
+  color: white !important;
 }
-.footer .footerContainer .fa-social {
+.footer .footerContainer .footer-nav li {
+  padding-top: 10px;
+}
+.footer .footerContainer .footer-nav a {
+  color: #f39c0b !important;
+}
+.footer .footerContainer .social-area a {
+  color: #f39c0b !important;
+}
+.footer .footerContainer .social-area .fa-social {
   height: 34px;
   width: 34px;
   border: 2px solid #4a4a4a;
@@ -245,13 +254,9 @@ HEADER AND FOOTER LESS
   font-size: 0.6em;
   margin-left: 10px;
 }
-.footer .footerContainer a {
-  color: #f39c0b !important;
-}
 .footer .madeWithLove {
   font-size: 1.2em;
-  padding: 5px !important;
-  padding-top: 10px !important;
+  padding-top: 10px;
   color: white !important;
 }
 .footer .madeWithLove a {

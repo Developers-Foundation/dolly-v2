@@ -9,11 +9,11 @@
                     <img class="img img-responsive" src="assets/img/dolly-logo-white-250x56.png"/>
                 </div>
 
-                <div class="footer-info">
+                <div class="footer-info white-text">
                     <h3>Lagos, Nigeria</h3>
                     <p>
                         (234) 678-263-1273<br/>
-                        <a style="color: white !important;" data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
+                        <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
                     </p>
                 </div>
             </div>
