@@ -56,6 +56,6 @@
         </div>
     </div>
     <div class="row text-center orange">
-        <p class="madeWithLove">Copyright &copy; 2017. All rights reserved. Made with <3 <3 at <a href="html_elements/link.php?link=dev">Developers' Foundation</a></p>
+        <p class="madeWithLove">Copyright &copy; 2017 <a href="html_elements/link.php?link=dev">Developers' Foundation</a>. Made with &#9829; &#9829;</p>
     </div>
 </footer>
