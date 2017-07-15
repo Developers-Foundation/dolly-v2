@@ -12,7 +12,7 @@ switch ($linkTo) {
     case "mobilePrint":
         $url = "(234) 678-263-1273";
         echo $url;
-        exit();
+        exit;
     case "emailPrint":
         $url = "mailto:info@dollychildren.org";
         break;
@@ -47,3 +47,4 @@ switch ($linkTo) {
 
 header("Location: " . $url);
 exit;
+?>
