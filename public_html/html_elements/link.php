@@ -8,14 +8,6 @@
 
 $linkTo = $_GET['link'];
 switch ($linkTo) {
-    case "phonePrint":
-    case "mobilePrint":
-        $url = "(234) 678-263-1273";
-        echo $url;
-        exit;
-    case "emailPrint":
-        $url = "mailto:info@dollychildren.org";
-        break;
     case "phone":
     case "mobile":
         $url = "tel:+2346782631273";

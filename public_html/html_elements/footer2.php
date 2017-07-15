@@ -10,10 +10,9 @@
 
                 <div class="footer-info white-text">
                     <h3>Lagos, Nigeria</h3>
-                    <p><a data-rel="external" href="html_elements/link.php?link=phone">
-                            <?php echo file_get_contents("html_elements/link.php", false, stream_context_create(array('http' => array('method' => 'GET','header'  => 'Content-type: application/x-www-form-urlencoded', 'content' => http_build_query(array('link' => 'phonePrint')))))); ?>
-                        </a><br/>
-                        <a data-rel="external" href="html_elements/link.php?link=email">info@dollychildren.org</a>
+                    <?php include_once "linkPrint.php"; ?>
+                    <p><a data-rel="external" href="html_elements/link.php?link=phone"><?php echo $link["phonePrint"] ?></a><br/>
+                        <a data-rel="external" href="html_elements/link.php?link=email"><?php echo $link["emailPrint"] ?></a>
                     </p>
                 </div>
             </div>
