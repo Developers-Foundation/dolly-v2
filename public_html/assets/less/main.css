@@ -126,6 +126,17 @@ HEADER AND FOOTER LESS
   border-radius: 800px;
   background-color: #da3400;
 }
+.navbar .mobile .col-xs-4,
+.navbar .mobile .col-xs-5,
+.navbar .mobile .col-xs-7,
+.navbar .mobile .col-xs-8 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .mobile .navbar-brand {
+  padding-right: 0;
+  padding-left: 10px;
+}
 .navtab {
   position: fixed;
   right: 0;

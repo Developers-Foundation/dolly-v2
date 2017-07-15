@@ -3,7 +3,7 @@
     <div id="journey" class="section journey-bg-outer">
         <!--TODO: @nobodyrandom -->
         <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
-        <img src="assets/img/stock/main.jpg" class="journey-bg">
+        <img src="assets/img/stock/main.jpg" class="journey-bg hidden-xs">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>Join our Journey!</h1>
@@ -108,7 +108,7 @@
         <hr class="star-custom">
         <h2 class="text-center text-uppercase"><strong>How to Help</strong></h2>
         <div class="row">
-            <div class="col-md-6 image-section"></div>
+            <div class="col-md-6 image-section hidden-xs"></div>
             <div class="col-md-6">
                 <h3><strong>Sponsor a Child</strong></h3>
                 <p>
