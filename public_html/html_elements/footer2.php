@@ -59,6 +59,10 @@
 
     </div>
     <div class="row text-center orange">
-        <p class="madeWithLove">Copyright &copy; 2017 <a href="html_elements/link.php?link=dev">Developers' Foundation</a>. Made with &#9829; &#9829;</p>
+        <p class="madeWithLove">
+            Copyright &copy; 2017 <a href="html_elements/link.php?link=dev">Developers' Foundation</a><span class="hidden-xs">. </span>
+            <span class="visible-xs hidden-md half-line-break"></span>
+            Made with &#9829; &#9829;
+        </p>
     </div>
 </footer>

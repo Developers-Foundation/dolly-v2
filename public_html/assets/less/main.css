@@ -47,6 +47,9 @@ h2 {
 .hidden {
   display: none;
 }
+.half-line-break {
+  display: block;
+}
 .button-red {
   background-color: #da3400;
   border-width: 0;
