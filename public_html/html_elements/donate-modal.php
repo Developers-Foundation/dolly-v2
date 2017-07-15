@@ -43,35 +43,36 @@
                             <h4>How much would you like to donate?</h4><br>
                             <!-- TODO: Need help @Harrison @ nobodyrandom -->
                             <div class="donate-amount-container row">
-                                <div class="col-md-2">
+                                <div class="smooth col-md-2">
                                     <a class="donate-amount-select" data-amount="10">
                                         <div class="donate-amount-radio"><strong>$10</strong></div>
                                     </a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="smooth col-md-2">
                                     <a class="donate-amount-select" data-amount="30">
                                         <div class="donate-amount-radio"><strong>$30</strong></div>
                                     </a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="smooth col-md-2">
                                     <a class="donate-amount-select" data-amount="50">
                                         <div class="donate-amount-radio"><strong>$50</strong></div>
                                     </a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="smooth col-md-2">
                                     <a class="donate-amount-select" data-amount="130">
                                         <div class="donate-amount-radio"><strong>$130</strong></div>
                                     </a>
                                 </div>
-                                <div class="col-md-2"> <!-- TODO: CSS -->
+                                <div class="smooth col-md-2"> <!-- TODO: CSS -->
                                     <a class="donate-amount-select" data-amount="-1">
                                         <div class="donate-amount-radio"><strong>Other</strong></div>
                                     </a>
                                 </div>
-                                <div class="col-md-10">
-                                    <input type="text" class="other">
+                                <div class="smooth col-md-10 hidden">
+                                    <input type="text" class="donate-other-amount">
                                 </div>
-                                <span class="stretch"></span>
+                                <!--<span class="stretch"></span>-->
+                                <!-- TODO: @minimike511 what is the stretch for? -->
                             </div>
                         </div>
                         <br>

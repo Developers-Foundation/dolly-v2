@@ -478,42 +478,66 @@ SECTION SPECIFIC LESS
 .donate-page .donate-section .img-shoes {
   background-image: url("../img/donate/shoes.jpg");
 }
+.donate-page .donate-modal {
+  /*.donate-select {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      padding: inherit;
+      border-style: none none solid none;
+      width: 100%;
+      background: url("../img/arrow-down.png") no-repeat right;
+      outline: none;
+    }*/
+}
 .donate-page .donate-modal .row {
   margin: 0;
-}
-.donate-page .donate-modal .donate-select {
-  margin-bottom: 10px;
-  margin-top: 20px;
-  padding: inherit;
-  border-style: none none solid none;
-  width: 100%;
-  background: url("../img/arrow-down.png") no-repeat right;
-  outline: none;
 }
 .donate-page .donate-modal .donate-amount .donate-amount-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.donate-page .donate-modal .donate-amount .donate-amount-radio {
+.donate-page .donate-modal .donate-amount .donate-amount-container .smooth {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.donate-page .donate-modal .donate-amount .donate-amount-container .smooth.hidden {
+  width: 0;
+  display: block !important;
+  opacity: 0;
+}
+.donate-page .donate-modal .donate-amount .donate-amount-container .col-md-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.donate-page .donate-modal .donate-amount .donate-amount-container .donate-amount-radio {
   box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7.5px;
   padding: 20px 10px 20px 10px;
   width: 100px;
   float: left;
   text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.donate-page .donate-modal .donate-amount .donate-amount-radio .stretch {
+.donate-page .donate-modal .donate-amount .donate-amount-container .donate-amount-radio .stretch {
   width: 100%;
   display: inline-block;
   font-size: 0;
   line-height: 0;
 }
-.donate-page .donate-modal .donate-amount .donate-amount-radio.selected {
+.donate-page .donate-modal .donate-amount .donate-amount-container .donate-amount-radio.selected {
   background-color: #f5a623;
   color: #343434;
 }
-.donate-page .donate-modal .donate-amount .donate-amount-radio:not(.selected) {
+.donate-page .donate-modal .donate-amount .donate-amount-container .donate-amount-radio:not(.selected) {
   background-color: #9b9b9b;
   color: white;
 }
@@ -527,7 +551,7 @@ SECTION SPECIFIC LESS
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   padding: 40px 40px;
 }
-.donate-page .other {
+.donate-page .donate-other-amount {
   padding: 10px;
   border: none;
   border-bottom: solid 2px #c9c9c9;
@@ -538,11 +562,11 @@ SECTION SPECIFIC LESS
   width: inherit;
   margin-top: 10px;
 }
-.donate-page .other:focus {
+.donate-page .donate-other-amount:focus {
   border-bottom: solid 2px #969696;
   outline: none;
 }
-.donate-page .other:active {
+.donate-page .donate-other-amount:active {
   -webkit-transition: width 2s;
   /* Safari */
   transition: width 2s;
