@@ -56,7 +56,35 @@
         </div>
     </div>
     <div class="container footerContainer visible-xs mobile">
-
+        <div class="row">
+        <div class="col-xs-6 v-center">
+            <h3>Lagos, Nigeria</h3>
+            <p>
+                (234) 678-263-1273<br/>
+                <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
+            </p>
+        </div>
+        <div class="col-xs-6 text-right">
+        <h3>Connect With Us</h3>
+        <ul>
+            <li>
+                <a href="html_elements/link.php?link=facebook" target="_blank " class="btn btn-social btn-facebook btn-simple">
+                    Facebook<i class="fa fa-social fa-2x fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="html_elements/link.php?link=twitter" target="_blank " class="btn btn-social btn-twitter btn-simple">
+                    Twitter<i class="fa fa-social fa-2x fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="html_elements/link.php?link=instagram" target="_blank " class="btn btn-social btn-instagram btn-simple">
+                    Instagram<i class="fa fa-social fa-2x fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        </div>
+        </div>
     </div>
     <div class="row text-center orange">
         <p class="madeWithLove">

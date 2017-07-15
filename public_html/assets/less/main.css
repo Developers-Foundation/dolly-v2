@@ -234,7 +234,6 @@ HEADER AND FOOTER LESS
   list-style: none;
 }
 .footer ul {
-  margin-left: 0 !important;
   padding-left: 0 !important;
 }
 .footer .footerContainer {
@@ -271,6 +270,12 @@ HEADER AND FOOTER LESS
 }
 .footer .footerContainer a {
   color: #f39c0b !important;
+}
+.footer .footerContainer.mobile .btn {
+  padding: 6px 0;
+}
+.footer .footerContainer.mobile .fa-social {
+  margin-right: 0;
 }
 .footer .madeWithLove {
   font-size: 1.2em;
