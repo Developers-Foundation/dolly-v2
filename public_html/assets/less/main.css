@@ -4,6 +4,7 @@
 body {
   font-family: 'Arial-MT', Helvetica, Arial, sans-serif;
   color: #4a4a4a;
+  width: 100%;
 }
 h2 {
   margin: 31px 0 25px 0;
@@ -142,6 +143,9 @@ HEADER AND FOOTER LESS
 }
 .navbar .mobile .navbar-nav li:hover {
   background: #f5a623;
+}
+.navbar .mobile .navbar-toggle {
+  margin-right: 30px;
 }
 .navtab {
   position: fixed;
@@ -286,12 +290,10 @@ SECTION SPECIFIC LESS
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   /* Standard syntax (must be last)*/
-}
-.index-page #journey {
   height: 580px;
   color: white;
 }
-.index-page #journey .journey-bg {
+.index-page .journey-bg-outer .journey-bg {
   object-fit: cover;
   position: absolute;
   overflow: hidden;
@@ -299,14 +301,26 @@ SECTION SPECIFIC LESS
   width: 1140px;
   z-index: -1;
 }
-.index-page #journey .journey-inner {
+.index-page .journey-bg-outer .journey-inner {
   display: block;
   position: relative;
   z-index: 999;
   padding-top: 300px;
 }
-.index-page #journey p {
+.index-page .journey-bg-outer p {
   padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .index-page .journey-bg-outer {
+    margin: 0 -15px 40px -15px;
+  }
+  .index-page .journey-bg-outer .journey-bg {
+    max-width: 375px;
+  }
+  .index-page .journey-bg-outer .journey-inner {
+    padding-top: 80%;
+    margin: 0;
+  }
 }
 .index-page #who-we-are .highlight-box {
   border-radius: 8px;
