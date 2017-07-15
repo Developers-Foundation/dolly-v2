@@ -15,6 +15,7 @@
 body {
   font-family: @MAINFONT;
   color: @DARKGREY;
+  width: 100%;
 }
 
 h2 {
@@ -62,6 +63,10 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+.half-line-break {
+  display: block;
 }
 
 .button-red {
@@ -146,7 +151,7 @@ HEADER AND FOOTER LESS
     font-size: 1.24em;
     font-weight: 800;
     li {
-      margin-right: 35px !important;
+      margin-right: 35px;
     }
   }
 
@@ -166,6 +171,30 @@ HEADER AND FOOTER LESS
   .donate-button {
     border-radius: 800px;
     background-color: @RED;
+  }
+
+  .mobile {
+    .col-xs-4, .col-xs-5, .col-xs-7, .col-xs-8 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .navbar-brand {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+
+    .navbar-nav li {
+      margin-right: 0;
+
+      &:hover {
+        background: @ORANGE;
+      }
+    }
+
+    .navbar-toggle {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -272,7 +301,6 @@ HEADER AND FOOTER LESS
   }
 
   ul {
-    margin-left: 0;
     padding-left: 0;
   }
 
@@ -327,6 +355,15 @@ HEADER AND FOOTER LESS
       font-size: 0.6em;
       margin-left: 10px;
     }
+
+    &.mobile {
+      .btn {
+        padding: 6px 0;
+      }
+      .fa-social {
+        margin-right: 0;
+      }
+    }
   }
 
   .madeWithLove {
@@ -350,8 +387,6 @@ SECTION SPECIFIC LESS
     background: -o-linear-gradient(right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)); /* Standard syntax (must be last)*/
-  }
-  #journey {
     height: 580px;
     color: white;
 
@@ -373,6 +408,19 @@ SECTION SPECIFIC LESS
 
     p {
       padding-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 -15px 40px -15px;
+
+      .journey-bg {
+        max-width: 375px;
+      }
+
+      .journey-inner {
+        padding-top: 80%;
+        margin: 0;
+      }
     }
   }
 
