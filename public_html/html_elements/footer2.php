@@ -34,7 +34,7 @@
 
         <div class="col-sm-4 ">
             <div class="social-area pull-right centerer">
-                <h3>Contact With Us</h3>
+                <h3>Connect With Us</h3>
                 <ul>
                     <li>
                         <a href="html_elements/link.php?link=facebook" target="_blank " class="btn btn-social btn-facebook btn-simple">
