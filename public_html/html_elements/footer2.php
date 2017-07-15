@@ -2,7 +2,7 @@
 <div class="grey spacer">
 </div>
 <footer class="footer grey orange-text">
-    <div class="container footerContainer">
+    <div class="container footerContainer hidden-xs">
         <div class="col-sm-4 white-text">
             <div class="centerer">
                 <div class="footer-logo">
@@ -54,6 +54,9 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="container footerContainer visible-xs mobile">
+
     </div>
     <div class="row text-center orange">
         <p class="madeWithLove">Copyright &copy; 2017. All rights reserved. Made with <3 <3 at <a href="html_elements/link.php?link=dev">Developers' Foundation</a></p>
