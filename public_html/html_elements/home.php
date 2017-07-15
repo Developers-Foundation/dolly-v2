@@ -1,9 +1,7 @@
 <div class="container">
     <!-- Join our journey -->
     <div id="journey" class="section journey-bg-outer">
-        <!--TODO: @nobodyrandom -->
-        <!-- TODO: @minimike511 what needs to be fixed again? I forgot soz -->
-        <img src="assets/img/stock/main.jpg" class="journey-bg hidden-xs">
+        <img src="assets/img/stock/main.jpg" class="img-responsive journey-bg hidden-xs">
         <div class="row journey-inner">
             <div class="col-md-offset-2 col-md-4 text-left">
                 <h1>Join our Journey!</h1>
