@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p class="donate-p">
-                            For the price of new shoes at Aldo, you can send <u>5 children to school</u>
+                            For the price of new shoes at Aldo, you can send <u>5 children</u> to school
                         </p>
                     </div>
                     <div class="col-md-6 img-donate img-shoes">
