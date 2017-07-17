@@ -18,7 +18,8 @@
                     </div>
                     <div class="col-md-6">
                         <p class="donate-p">
-                            For the price of 12 donuts at Dunkin donuts, you can send <u>3 children</u> to school
+                            For the price of a dozen donuts, you can help <u>1 children</u> participate in the after
+                            school program.
                         </p>
                     </div>
                 </div>
