@@ -61,7 +61,8 @@
         <div class="row">
             <div class="col-xs-6 v-center">
                 <h3>Lagos, Nigeria</h3>
-                <p><a data-rel="external" href="html_elements/link.php?link=phone">(234) 678-263-1273</a><br/>
+                <p><a data-rel="external" href="tel:2348186891611">(+234) 818-689-1611</a>
+                    <!--<a data-rel="external" href="html_elements/link.php?link=phone">(234) 818-689-1611</a>--><br/>
                     <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
                 </p>
             </div>
