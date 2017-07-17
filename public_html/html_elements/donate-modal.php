@@ -69,6 +69,7 @@
                                     </a>
                                 </div>
                                 <div class="smooth col-md-10 hidden">
+                                    <label>$</label>
                                     <input type="text" class="donate-other-amount">
                                 </div>
                                 <!--<span class="stretch"></span>-->
