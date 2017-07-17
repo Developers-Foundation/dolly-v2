@@ -19,7 +19,7 @@
                     <div class="col-md-6">
                         <p class="donate-p">
                             For the price of a dozen donuts, you can help <u>1 children</u> participate in the after
-                            school program.
+                            school program
                         </p>
                     </div>
                 </div>
