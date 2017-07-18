@@ -19,7 +19,7 @@
                                                                    href="mailto:info@dollychildren.org">info@dollychildren.org</a>
                             </li>
                             <li><i class="fa fa-phone"></i><a data-rel="external"
-                                                              href="tel:2348186891611">(+234) 818-689-1611</a></li>
+                                                              href="html_elements/link.php?link=phone">(234) 818-689-1611</a></li>
                             <li><a href="html_elements/link.php?link=facebook" target="_blank "><i
                                             class="fa fa-facebook-square"></i>Facebook</a></li>
                         </ul>

@@ -20,7 +20,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
                         E:
                         <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a><br/>
                         P:
-                        <a data-rel="external" href="tel:2348186891611">(+234) 818-689-1611</a>
+                        <a data-rel="external" href="html_elements/link.php?link=phone">(234) 818-689-1611</a>
                     </p>
                     <br/>
                     <p>
