@@ -115,7 +115,7 @@
                     newsletters.
                 </p>
                 <a>
-                    <a class="button-red text-uppercase">Donate</a>
+                    <a class="button-red text-uppercase" href="donate.php">Donate</a>
                 </a>
                 <h3><strong>Support a School Building Project</strong></h3>
                 <p>
@@ -124,7 +124,7 @@
                     commitment to transparency by providing you with frequent updates on their progress.
                 </p>
                 <a>
-                    <a class="button-red text-uppercase">Monthly Giving</a>
+                    <a class="button-red text-uppercase" href="donate.php">Monthly Giving</a>
                 </a>
                 <h3><strong>Get Behind an Empowerment Initiative</strong></h3>
                 <p>
@@ -133,7 +133,7 @@
                     today!
                 </p>
                 <a>
-                    <a class="button-red text-uppercase">Scholarship</a>
+                    <a class="button-red text-uppercase" href="donate.php">Scholarship</a>
                 </a>
             </div>
         </div>
