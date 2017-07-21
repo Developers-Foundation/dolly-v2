@@ -95,7 +95,7 @@
                                        data-paystack="name-first"
                                        placeholder="John"
                                        class="form-input-name-first donate-form"
-                                       pattern="[a-z]{1,25}" required>
+                                       pattern="[a-zA-Z]{1,30}" required>
                             </div>
                             <div class="col-md-6" style="padding: 0 15px">
                                 <h5>Last name:</h5>
@@ -103,7 +103,7 @@
                                        data-paystack="name-Last"
                                        placeholder="Doe"
                                        class="form-input-name-last donate-form"
-                                       pattern="[a-z]{1,25}" required>
+                                       pattern="[a-zA-Z]{1,30}" required>
                             </div>
                             <div class="col-md-6" style="padding: 0 15px">
                                 <h5>Email:</h5>
@@ -117,11 +117,10 @@
                                 <h5>Phone number:</h5>
                                 <input
                                         type="text"
+                                        id="phone"
                                         data-paystack="number-phone"
-                                        placeholder="Phone number"
-                                        class="form-input-number-phone donate-form"
-                                        pattern="\d*"
-                                        required>
+                                        placeholder="(123) 123-456-789"
+                                        class="form-input-number-phone donate-form" required>
                             </div>
                             <div class="col-md-8">
                                 <h5>Address:</h5>
@@ -145,7 +144,7 @@
                                        data-paystack="city"
                                        placeholder="New York"
                                        class="form-input-city donate-form"
-                                       pattern="[a-z]{1,50}" required>
+                                       pattern="[a-zA-Z]{1,50}" required>
                             </div>
                             <div class="col-md-4">
                                 <h5>Postal Code:</h5>
@@ -182,6 +181,7 @@
                                        data-paystack="name"
                                        placeholder="name"
                                        class="form-input-name donate-form"
+                                       pattern="[a-zA-Z]{1,50}"
                                        required>
                             </div>
                             <div class="col-md-8">
@@ -257,10 +257,17 @@
                     </div>
                 </form>
                 <div class="donate-page-4 donate-page-thanks row hidden">
-                    Thanks! <!-- TODO: @minimike511 need help on this -->
+                    <h3>
+                        <b>Thank you!</b><br>
+                        Your card has been successfully charged!
+                    </h3>
                 </div>
                 <div class="donate-page-0 donate-page-error row hidden">
-                    Sorry an error occurred. Your card was not charged. <!-- TODO: @minimike511 need help on this -->
+                    <h3>
+                        <b>Sorry!</b><br>
+                        There has been an error occured!<br>
+                        Your card was not charged!
+                    </h3>
                 </div>
             </div>
         </div>

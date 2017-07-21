@@ -557,6 +557,7 @@ $(document).ready(function (e) {
                 },
                 function (error) {
                     console.log(error);
+                    $('.donate-page-error').removeClass('hidden');
                     // TODO: IDK what this is lol
 
                 });
@@ -567,3 +568,6 @@ $(document).ready(function (e) {
 /* ----------------------------------------------------------- */
 /* Nob PayStack END
  /* ----------------------------------------------------------- */
+
+$(":input").inputmask();
+$("#phone").inputmask({"mask": "(999) 999-999-9999"});

@@ -54,66 +54,7 @@ $hasPayStack = true;
 include_once "html_elements/navBar.php";
 include_once "html_elements/navBarTab.php";
 include "html_elements/donate.php";
-?>
-<!-- Temp form -->
-<!-- TODO: Move this into donate.php designs -->
-<!-- <div class="container" style="padding-top: 500px;">
-    <div class="section">
-        <form id="nob-paystack-card-form">
-            <input
-                    type="text"
-                    data-paystack="amount"
-                    placeholder="amount in cents"
-                    class="form-input-amount"
-                    pattern="\d*" >
-            <input
-                    type="text"
-                    data-paystack="number"
-                    placeholder="card number"
-                    class="form-input-card"
-                    pattern="\d*"
-                    maxlength="19" >
-            <input
-                    type="text"
-                    data-paystack="name"
-                    placeholder="name"
-                    class="form-input-name"
-                    pattern="[a-z]{1,25}">
-            <input
-                    type="text"
-                    data-paystack="email"
-                    placeholder="email"
-                    class="form-input-email"
-                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-            <input
-                    type="text"
-                    data-paystack="cvv"
-                    placeholder="cvv"
-                    class="form-input-cvv">
-            <input
-                    type="text"
-                    data-paystack="expiryMonth"
-                    placeholder="month"
-                    class="form-input-exp-m"
-                    pattern="\d*"
-                    maxlength="2"
-                    data-valid-example="05">
-            <input
-                    type="text"
-                    data-paystack="expiryYear"
-                    placeholder="year"
-                    class="form-input-exp-y"
-                    pattern="\d*"
-                    minlength="2"
-                    maxlength="4"
-                    data-valid-example="18">
-            <button type="submit" data-paystack="submit">Submit</button>
-        </form>
-    </div>
-</div> -->
-<?php
 include_once "html_elements/footer2.php";
-
 include "html_elements/donate-modal.php";
 ?>
 
