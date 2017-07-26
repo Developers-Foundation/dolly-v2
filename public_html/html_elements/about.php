@@ -29,28 +29,28 @@
             <h2>Values</h2>
             <div class="col-md-3 card">
                 <div class="icon first">
-                    <img class="img-responsive" src="assets/img/icons/backpack_grey.png"/>
+                    <img class="img-responsive" src="assets/img/icons/backpack.png"/>
                 </div>
                 <h3>Integrity</h3>
                 <p>Provide transparency to all donors and offer equal chance at education to all eligible children.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
-                    <img class="img-responsive" src="assets/img/icons/kids_grey.png"/>
+                    <img class="img-responsive" src="assets/img/icons/kids.png"/>
                 </div>
                 <h3>Commitment</h3>
                 <p>Stay committed to the interests of African children, always placing their best interests first.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
-                    <img class="img-responsive" src="assets/img/icons/people_grey.png"/>
+                    <img class="img-responsive" src="assets/img/icons/people.png"/>
                 </div>
                 <h3>Accountability</h3>
                 <p>Can be held accountable for all transactions, guarantees transparency to all stakeholders.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
-                    <img class="img-responsive" src="assets/img/icons/hammer_grey.png"/>
+                    <img class="img-responsive" src="assets/img/icons/hammer.png"/>
                 </div>
                 <h3>Nurturing</h3>
                 <p>Foster a safe and healthy learning environment for all.</p>
@@ -90,7 +90,11 @@
         <div class="row text-center">
             <h2>Our Vision</h2>
             <div class="col-md-offset-3 col-md-6">
-            <p>Many people were hoping that if the Democrats won control of Congress they would reverse the online gambling ban, but experts doubt they will even try or that if they do that the will be successful. Once the bill was passed and signed into law by the president, it became much harder to reverse the law.</p>
+            <p>
+                We, at Dolly Children Foundation believe that quality education is the quickest way to bring prosperity
+                to all. Through providing educational aids and fostering a healthy learning environment, Dolly Children
+                Foundation aims to ultimately improve the quality of life for children in Africa.
+            </p>
             </div>
         </div>
     </div>

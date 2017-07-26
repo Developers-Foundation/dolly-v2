@@ -455,15 +455,9 @@ SECTION SPECIFIC LESS
   color: white;
 }
 .about-page .values .icon {
-  border-radius: 50%;
-  border-color: white;
   width: 150px;
   height: 150px;
-  padding: 30px;
   margin: auto;
-  border: 2px solid #f5a623;
-  color: #f5a623;
-  text-align: center;
 }
 .about-page .values .icon:not(.first)::before {
   content: '';
