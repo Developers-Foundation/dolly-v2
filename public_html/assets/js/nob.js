@@ -436,6 +436,7 @@ $(document).ready(function (e) {
             $('.donate-page-1').removeClass('hidden');
             $('.donate-page-thanks').addClass("hidden");
             $('.donate-page-error').addClass("hidden");
+            grecaptcha.reset();
         })
 
         //TODO: use.onchange()
