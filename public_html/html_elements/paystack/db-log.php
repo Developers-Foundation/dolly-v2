@@ -18,7 +18,7 @@ $success = true;
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
 ParseClient::setServerURL('http://dolly-v2-db.herokuapp.com', '/database/parse');
 error_log($_POST['status']);
-if($_POST['status'] == true || $_POST['status'] == "true") {
+if( $_POST['status'] === "true") {
     $information = new ParseObject("Information");
     $information->set("firstName", $data['firstName']);
     $information->set("lastName", $data['lastName']);
