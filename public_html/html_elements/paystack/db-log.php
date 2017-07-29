@@ -18,20 +18,25 @@ $success = true;
 ParseClient::initialize('dolly-v2-db', 'YOUR_CLIENT_KEY', 'thisismymasterkey');
 ParseClient::setServerURL('http://dolly-v2-db.herokuapp.com', '/database/parse');
 
-$information = new ParseObject("Information");
-$information->set("firstName", $data['firstName']);
-$information->set("lastName", $data['lastName']);
-$information->set("email", $data['email']);
-$information->set("phone", (int)$data['phone']);
-$information->set("street", $data['street']);
-$information->set("streetOpt", $data['streetOpt']);
-$information->set("city", $data['city']);
-$information->set("postal", $data['postal']);
-$information->set("country", $data['country']);
-$information->set("state", $data['state']);
-$information->set("referenceID", $data['referenceID']);
-
-$errMsg = $errMsg . $data['firstName'] . " " . $data['lastName'] . " " . $data['referenceID'];
+if($_POST['status']== true) {
+    $information = new ParseObject("Information");
+    $information->set("firstName", $data['firstName']);
+    $information->set("lastName", $data['lastName']);
+    $information->set("email", $data['email']);
+    $information->set("phone", (int)$data['phone']);
+    $information->set("street", $data['street']);
+    $information->set("streetOpt", $data['streetOpt']);
+    $information->set("city", $data['city']);
+    $information->set("postal", $data['postal']);
+    $information->set("country", $data['country']);
+    $information->set("state", $data['state']);
+    $information->set("referenceID", $data['referenceID']);
+    $errMsg = $errMsg . $data['firstName'] . " " . $data['lastName'] . " " . $data['referenceID'];
+}else{
+    $information = new ParseObject("ErrorLog");
+    $information->set('error', $data);
+    $errMsg = $errMsg . " Successfully logged";
+}
 try {
     $information->save();
     //echo 'New object created with objectId: ' . $application->getObjectId();

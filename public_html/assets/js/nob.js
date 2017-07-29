@@ -353,6 +353,7 @@ function resetForm(rsp, paystack, backupData) {
     $('.donate-page-4').removeClass('hidden');
 
     var donorInfo = {
+        status:true,
         data: {
             firstName: backupData.firstName,
             lastName: backupData.lastName,
@@ -430,6 +431,11 @@ $(document).ready(function (e) {
                 console.log(err);
             });
         });
+        //TODO: @minimike511
+        $('#donate-payment').on('hidden.bs.modal', function () {
+            $('.donate-page-1').removeClass('hidden');
+            $('.donate-page-thanks').addClass("hidden");
+        })
 
         //TODO: use.onchange()
         $('#nob-paystack-card-form').submit(function (e) {
@@ -557,9 +563,22 @@ $(document).ready(function (e) {
                 },
                 function (error) {
                     console.log(error);
+                    $.ajax({
+                        url: "html_elements/paystack/db-log.php",
+                        method: "POST",
+                        dataType: "JSON",
+                        data: {status:false, data:JSON.stringify(error)},
+                        success: function (rspMsg) {
+                            console.log("Log response: ");
+                            console.log(rspMsg);
+                        },
+                        error: function (errMsg) {
+                            console.log("Log error: ");
+                            console.log(errMsg);
+                        }
+                    });
                     $('.donate-page-error').removeClass('hidden');
                     // TODO: IDK what this is lol
-
                 });
         });
     }
