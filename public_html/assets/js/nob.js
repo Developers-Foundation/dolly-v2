@@ -435,6 +435,7 @@ $(document).ready(function (e) {
         $('#donate-payment').on('hidden.bs.modal', function () {
             $('.donate-page-1').removeClass('hidden');
             $('.donate-page-thanks').addClass("hidden");
+            $('.donate-page-error').addClass("hidden");
         })
 
         //TODO: use.onchange()
