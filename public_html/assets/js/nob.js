@@ -433,7 +433,7 @@ $(document).ready(function (e) {
         });
 
         if($('.donate-page-2').hasClass('hidden')){
-            $('.donate-amount-value').text('Amount ' + thisForm.find('.form-input-amount'));
+            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
         }
         //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
