@@ -434,7 +434,7 @@ $(document).ready(function (e) {
         });
 
         $('#donate-payment-info').click(function(){
-            $('.donate-amount-value').text('Amount ' + getElementsByClassName('form-input-amount').val());
+            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
         })
 
         //TODO: @minimike511
