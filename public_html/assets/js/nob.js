@@ -431,6 +431,10 @@ $(document).ready(function (e) {
                 console.log(err);
             });
         });
+
+        if(!$('.donate-page-2').hasClass('hidden')){
+            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
+        }
         //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
             $('.donate-page-1').removeClass('hidden');

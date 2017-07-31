@@ -57,6 +57,9 @@ h2 {
   margin: 15px 0;
   display: inline-block;
 }
+.button-red.button-fixed-size {
+  width: 175px;
+}
 .button-red.round {
   border-radius: 50px;
   color: #ffffff;
@@ -326,9 +329,6 @@ SECTION SPECIFIC LESS
 @media (max-width: 767px) {
   .index-page .journey-bg-outer {
     margin: 0 -15px 40px -15px;
-  }
-  .index-page .journey-bg-outer .journey-bg {
-    max-width: 375px;
   }
   .index-page .journey-bg-outer .journey-inner {
     padding-top: 80%;

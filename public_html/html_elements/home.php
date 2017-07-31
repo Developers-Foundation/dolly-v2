@@ -26,7 +26,7 @@
                     HELPS OVER<br>
                     <strong>5,000 CHILDREN</strong>
                 </h2>
-                <a href="impacts.php" class="button-red text-uppercase">Learn more</a>
+                <a href="impacts.php" class="button-red text-uppercase  button-fixed-size text-center">Learn more</a>
             </div>
             <div class="col-md-offset-1 col-md-7">
                 <h2 class="text-uppercase"><strong>Who we are</strong></h2>
@@ -36,7 +36,7 @@
                     journey thus far, we look forward to having likeminded people like you to join and support us in
                     our road ahead.
                 </p>
-                <a href="about.php" class="button-red text-uppercase">Learn more</a>
+                <a href="about.php" class="button-red text-uppercase button-fixed-size text-center">Learn more</a>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center"><a href="impacts.php" class="button-red text-uppercase">Learn more</a></div>
+            <div class="col-md-12 text-center"><a href="impacts.php" class="button-red text-uppercase  button-fixed-size text-center">Learn more</a></div>
         </div>
     </div>
 
@@ -115,7 +115,7 @@
                     newsletters.
                 </p>
                 <a>
-                    <a class="button-red text-uppercase" href="donate.php">Donate</a>
+                    <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Donate</a>
                 </a>
                 <h3><strong>Support a School Building Project</strong></h3>
                 <p>
@@ -124,7 +124,7 @@
                     commitment to transparency by providing you with frequent updates on their progress.
                 </p>
                 <a>
-                    <a class="button-red text-uppercase" href="donate.php">Monthly Giving</a>
+                    <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Monthly Giving</a>
                 </a>
                 <h3><strong>Get Behind an Empowerment Initiative</strong></h3>
                 <p>
@@ -133,7 +133,7 @@
                     today!
                 </p>
                 <a>
-                    <a class="button-red text-uppercase" href="donate.php">Scholarship</a>
+                    <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Scholarship</a>
                 </a>
             </div>
         </div>

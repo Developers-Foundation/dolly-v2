@@ -72,8 +72,6 @@
                                     <label>$</label>
                                     <input type="text" class="donate-other-amount">
                                 </div>
-                                <!--<span class="stretch"></span>-->
-                                <!-- TODO: @minimike511 what is the stretch for? -->
                             </div>
                         </div>
                         <br>
@@ -86,6 +84,9 @@
                         <!-- TODO: Add address section (so dolly can do some tracking etc) Also add hidden meta fields like IP address lol -->
                         <!-- Donor info -->
                         <div class="row text-left">
+                            <div class="col-md-12">
+                                <h4 class="donate-amount-value"></h4>
+                            </div>
                             <div class="col-md-12">
                                 <h3>Donor Information:</h3>
                             </div>
