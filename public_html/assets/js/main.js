@@ -72,7 +72,7 @@ $(document).ready(function () {
     START DONATE PAGE STUFF
      */
     if ($('body').hasClass('donate-page')) {
-        var amountSelected = 0;
+        var amountSelected = 10;
 
         // Add evt lstnr to check marks to trigger correct modal
         $('.donate-modal-trigger').click(function (e) {
@@ -80,7 +80,7 @@ $(document).ready(function () {
             console.log("Selected: " + amountSelected);
 
             $('.donate-amount-select div').removeClass('selected');
-
+            // TODO: @nobodyrandom huh??!?! doing same thing? vvvvvv
             if (amountSelected != -1)
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
             else{
@@ -97,13 +97,13 @@ $(document).ready(function () {
             // TODO: @minimike511 your error is here for the hide thing, you shouldnt add it to the child, but hte parent
             if (amountSelected == 10 || amountSelected == 30 || amountSelected == 50 || amountSelected == 130){
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
-                $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
+                $('.donate-amount-value').text('Amount ' + amountSelected);
             } else{
                 $('.donate-amount-select').parent().addClass('hidden');
                 $('.donate-amount-select[data-amount="-1"]').parent().removeClass('hidden');
                 $('.donate-amount-select[data-amount="-1"] div').addClass('selected');
                 $('.donate-other-amount').parent().removeClass('hidden');
-                $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
+                $('.donate-amount-value').text('Amount ' + amountSelected);
             }
         });
         // Add evt lstnr to amount selection in 1st page of modal box
