@@ -97,13 +97,13 @@ $(document).ready(function () {
             // TODO: @minimike511 your error is here for the hide thing, you shouldnt add it to the child, but hte parent
             if (amountSelected == 10 || amountSelected == 30 || amountSelected == 50 || amountSelected == 130){
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
-                $('.donate-amount-value').text('Amount ' + amountSelected);
+                $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
             } else{
                 $('.donate-amount-select').parent().addClass('hidden');
                 $('.donate-amount-select[data-amount="-1"]').parent().removeClass('hidden');
                 $('.donate-amount-select[data-amount="-1"] div').addClass('selected');
                 $('.donate-other-amount').parent().removeClass('hidden');
-                $('.donate-amount-value').text('Amount ' + amountSelected);
+                $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
             }
         });
         // Add evt lstnr to amount selection in 1st page of modal box
