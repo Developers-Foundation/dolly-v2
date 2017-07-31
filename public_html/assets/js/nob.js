@@ -433,10 +433,6 @@ $(document).ready(function (e) {
             });
         });
 
-        $('#donate-payment-info').click(function(){
-            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
-        })
-
         //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
             $('.donate-page-1').removeClass('hidden');
