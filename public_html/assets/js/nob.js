@@ -442,7 +442,7 @@ $(document).ready(function (e) {
             $('.donate-page-1').removeClass('hidden');
             $('.donate-amount-select').parent().removeClass('hidden');
             $('.donate-other-amount').parent().addClass('hidden');
-            $('.donate-amount-select[data-amount="-1"]').parent().addClass('hidden');
+            $('.donate-amount-select[data-amount="-1"]').parent().removeClass('hidden');
             $('.donate-amount-select[data-amount="-1"] div').removeClass('selected');
             $('.donate-page-2').addClass("hidden");
             $('.donate-page-thanks').addClass("hidden");
