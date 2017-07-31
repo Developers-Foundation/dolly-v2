@@ -412,9 +412,6 @@ function resetForm(rsp, paystack, backupData) {
     $('.donate-page-thanks').removeClass('hidden');
 }
 
-$('#donate-payment-info').click(function(){
-    $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
-})
 
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
@@ -435,6 +432,10 @@ $(document).ready(function (e) {
                 console.log(err);
             });
         });
+
+        $('#donate-payment-info').click(function(){
+            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
+        })
 
         //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
