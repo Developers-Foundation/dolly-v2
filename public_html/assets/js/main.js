@@ -72,7 +72,7 @@ $(document).ready(function () {
     START DONATE PAGE STUFF
      */
     if ($('body').hasClass('donate-page')) {
-        var amountSelected = 10;
+        var amountSelected = 0;
 
         // Add evt lstnr to check marks to trigger correct modal
         $('.donate-modal-trigger').click(function (e) {
