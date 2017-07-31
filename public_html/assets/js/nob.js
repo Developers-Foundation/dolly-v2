@@ -412,6 +412,10 @@ function resetForm(rsp, paystack, backupData) {
     $('.donate-page-thanks').removeClass('hidden');
 }
 
+$('#donate-payment-info').click(function(){
+    $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
+})
+
 $(document).ready(function (e) {
     if ($('body').hasClass('donate-page')) {
         var paystack;
@@ -432,9 +436,6 @@ $(document).ready(function (e) {
             });
         });
 
-        if($('.donate-page-2').hasClass('hidden')){
-            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
-        }
         //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
             $('.donate-page-1').removeClass('hidden');
