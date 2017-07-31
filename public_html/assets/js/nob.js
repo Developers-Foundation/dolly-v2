@@ -432,12 +432,13 @@ $(document).ready(function (e) {
             });
         });
 
-        if(!$('.donate-page-2').hasClass('hidden')){
-            $('.donate-amount-value').text('Amount ' + $('.form-input-amount').val());
+        if($('.donate-page-2').hasClass('hidden')){
+            $('.donate-amount-value').text('Amount ' + thisForm.find('.form-input-amount'));
         }
         //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
             $('.donate-page-1').removeClass('hidden');
+            $('.donate-page-2').addClass("hidden");
             $('.donate-page-thanks').addClass("hidden");
             $('.donate-page-error').addClass("hidden");
             grecaptcha.reset();
