@@ -97,7 +97,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center"><a href="impacts.php" class="button-red text-uppercase  button-fixed-size text-center">Learn more</a></div>
+            <div class="col-md-12 text-center"><a href="impacts.php"
+                                                  class="button-red text-uppercase  button-fixed-size text-center">Learn
+                    more</a></div>
         </div>
     </div>
 
@@ -114,27 +116,30 @@
                     communicate with the child you sponsor and we will continue to update you through monthly
                     newsletters.
                 </p>
-                <a>
+                <div class="text-xs-center text-md-left">
                     <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Donate</a>
-                </a>
+                </div>
+
                 <h3><strong>Support a School Building Project</strong></h3>
                 <p>
                     Help improve the facilities and learning environment of Nigerian children by contributing to a
                     school building project. We will keep you in the loop in regards to the progress and hold up our
                     commitment to transparency by providing you with frequent updates on their progress.
                 </p>
-                <a>
-                    <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Monthly Giving</a>
-                </a>
+                <div class="text-xs-center text-md-left">
+                    <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Monthly
+                        Giving</a>
+                </div>
                 <h3><strong>Get Behind an Empowerment Initiative</strong></h3>
                 <p>
                     Get involved with one of our other initiatives to change the lives of children in Nigeria for the
                     better. We can allocate your donation to exactly what you want to support. Get in touch with us
                     today!
                 </p>
-                <a>
-                    <a class="button-red text-uppercase  button-fixed-size text-center" href="donate.php">Scholarship</a>
-                </a>
+                <div class="text-xs-center text-md-left">
+                    <a class="button-red text-uppercase  button-fixed-size text-center"
+                       href="donate.php">Scholarship</a>
+                </div>
             </div>
         </div>
     </div>
