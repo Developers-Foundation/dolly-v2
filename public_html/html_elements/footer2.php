@@ -42,12 +42,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="html_elements/link.php?link=twitter" target="_blank "
-                           class="btn btn-social btn-twitter btn-simple">
-                            <i class="fa fa-social fa-2x fa-twitter"></i>Twitter
-                        </a>
-                    </li>
-                    <li>
                         <a href="html_elements/link.php?link=instagram" target="_blank "
                            class="btn btn-social btn-instagram btn-simple">
                             <i class="fa fa-social fa-2x fa-instagram"></i>Instagram
@@ -62,8 +56,8 @@
             <div class="col-xs-6 v-center">
                 <h3>Lagos, Nigeria</h3>
                 <p>
-                    <a data-rel="external" href="html_elements/link.php?link=phone">(234) 818-689-1611</a><br/>
-                    <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
+                    <a style="color: white" data-rel="external" href="html_elements/link.php?link=phone">(234) 818-689-1611</a><br/>
+                    <a style="color: white" data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
                 </p>
             </div>
             <div class="col-xs-6 text-right">
@@ -72,19 +66,13 @@
                     <li>
                         <a href="html_elements/link.php?link=facebook" target="_blank "
                            class="btn btn-social btn-facebook btn-simple">
-                            Facebook<i class="fa fa-social fa-2x fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="html_elements/link.php?link=twitter" target="_blank "
-                           class="btn btn-social btn-twitter btn-simple">
-                            Twitter<i class="fa fa-social fa-2x fa-twitter"></i>
+                            Facebook <i class="fa fa-social fa-2x fa-facebook"></i>
                         </a>
                     </li>
                     <li>
                         <a href="html_elements/link.php?link=instagram" target="_blank "
                            class="btn btn-social btn-instagram btn-simple">
-                            Instagram<i class="fa fa-social fa-2x fa-instagram"></i>
+                            Instagram <i class="fa fa-social fa-2x fa-instagram"></i>
                         </a>
                     </li>
                 </ul>
