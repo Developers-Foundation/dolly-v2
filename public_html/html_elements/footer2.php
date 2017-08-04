@@ -20,7 +20,6 @@
 
         <div class="col-sm-4">
             <div class="footer-nav centerer">
-                <h3>Navigate</h3>
                 <ul>
                     <li><a href="/about">About <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/impacts">Impact <i class="fa fa-chevron-right"></i></a></li>
@@ -33,7 +32,6 @@
 
         <div class="col-sm-4 ">
             <div class="social-area pull-right centerer">
-                <h3>Connect With Us</h3>
                 <ul>
                     <li>
                         <a href="html_elements/link.php?link=facebook" target="_blank "
@@ -61,7 +59,6 @@
                 </p>
             </div>
             <div class="col-xs-6 text-right">
-                <h3>Connect With Us</h3>
                 <ul>
                     <li>
                         <a href="html_elements/link.php?link=facebook" target="_blank "
