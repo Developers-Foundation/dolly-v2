@@ -29,28 +29,28 @@
             <h2>Values</h2>
             <div class="col-md-3 card">
                 <div class="icon first">
-                    <img class="img-responsive" src="assets/img/icons/backpack.png"/>
+                    <img class="img-responsive img-center" src="assets/img/icons/backpack.png"/>
                 </div>
                 <h3>Integrity</h3>
                 <p>Provide transparency to all donors and offer equal chance at education to all eligible children.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
-                    <img class="img-responsive" src="assets/img/icons/kids.png"/>
+                    <img class="img-responsive img-center" src="assets/img/icons/kids.png"/>
                 </div>
                 <h3>Commitment</h3>
                 <p>Stay committed to the interests of African children, always placing their best interests first.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
-                    <img class="img-responsive" src="assets/img/icons/people.png"/>
+                    <img class="img-responsive img-center" src="assets/img/icons/people.png"/>
                 </div>
                 <h3>Accountability</h3>
                 <p>Can be held accountable for all transactions, guarantees transparency to all stakeholders.</p>
             </div>
             <div class="col-md-3 card center-line">
                 <div class="icon">
-                    <img class="img-responsive" src="assets/img/icons/hammer.png"/>
+                    <img class="img-responsive img-center" src="assets/img/icons/hammer.png"/>
                 </div>
                 <h3>Nurturing</h3>
                 <p>Foster a safe and healthy learning environment for all.</p>

@@ -480,6 +480,9 @@ SECTION SPECIFIC LESS
 .impacts-page .section p {
   padding-bottom: 20px;
 }
+.about-page .img-center {
+  margin: auto;
+}
 .about-page .section h2 {
   margin-bottom: 40px;
 }
