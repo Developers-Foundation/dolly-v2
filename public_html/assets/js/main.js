@@ -123,7 +123,7 @@ $(document).ready(function () {
             $('.donate-page-2').removeClass('hidden');
 
             $('.form-input-amount')[0].value = amountSelected;
-            $('.donate-amount-value').text('Amount ' + amountSelected);
+            $('.donate-amount-value').text('Amount ' + amountSelected + ' USD');
         });
     }
     /*
