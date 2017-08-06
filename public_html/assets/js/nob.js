@@ -479,6 +479,8 @@ $(document).ready(function (e) {
             //var cvvField = thisForm.find('.form-input-message');
             //var cvvField = thisForm.find('.form-input-message');
             //var captcha = thisForm.find('[name=g-recaptcha-response]')[0];
+            // TODO: @minimike511 is it just me, or is the captcha field being ignored LOL
+
             // TODO: regex for card number space
             var card = cardField.val(),
                 name = nameField.val(),
@@ -526,6 +528,7 @@ $(document).ready(function (e) {
                 postalField: postalField,
                 countryField: countryField,
                 stateField: stateField,
+                captchaField: null,
                 submitButton: submitButton
             };
             // TODO: Do form verification on ALL fields :P
