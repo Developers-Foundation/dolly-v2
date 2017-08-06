@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "a8bcf729956f3e96704a754ce26a3a3b",
     "content-hash": "0b886a9312e3533a3b10ea564a026cbf",
     "packages": [
         {
@@ -100,7 +101,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2015-03-18T18:23:50+00:00"
+            "time": "2015-03-18 18:23:50"
         },
         {
             "name": "parse/php-sdk",
@@ -148,7 +149,7 @@
                 "parse",
                 "sdk"
             ],
-            "time": "2017-06-26T16:46:41+00:00"
+            "time": "2017-06-26 16:46:41"
         },
         {
             "name": "sendgrid/sendgrid",
@@ -195,30 +196,33 @@
                 "send",
                 "sendgrid"
             ],
-            "time": "2016-02-18T21:40:14+00:00"
+            "time": "2016-02-18 21:40:14"
         },
         {
             "name": "sendgrid/smtpapi",
-            "version": "0.5.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/smtpapi-php.git",
-                "reference": "05ccf57bad5d1524e479b6dc0a2dfade88b3fbe5"
+                "reference": "1c835388c11dc5e792260ae3e9662d6a661ace30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/smtpapi-php/zipball/05ccf57bad5d1524e479b6dc0a2dfade88b3fbe5",
-                "reference": "05ccf57bad5d1524e479b6dc0a2dfade88b3fbe5",
+                "url": "https://api.github.com/repos/sendgrid/smtpapi-php/zipball/1c835388c11dc5e792260ae3e9662d6a661ace30",
+                "reference": "1c835388c11dc5e792260ae3e9662d6a661ace30",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.6"
             },
             "replace": {
                 "sendgrid/smtpapi-php": "*"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "swiftmailer/swiftmailer": "^5.4 - Needed to run the example scripts"
             },
             "type": "library",
             "autoload": {
@@ -243,11 +247,11 @@
                 "smtpapi",
                 "xsmtp"
             ],
-            "time": "2015-04-14T02:37:45+00:00"
+            "time": "2017-07-06 22:11:41"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.23",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -303,7 +307,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02T07:47:27+00:00"
+            "time": "2017-06-02 07:47:27"
         },
         {
             "name": "yabacon/paystack-php",
@@ -372,22 +376,22 @@
                 "verify",
                 "yabacon"
             ],
-            "time": "2017-05-10T10:12:51+00:00"
+            "time": "2017-05-10 10:12:51"
         }
     ],
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v121",
+            "version": "v122",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "727aa850a02a7af94c9225237464be8e8c8ff6db"
+                "reference": "82b6fbf8d6a9693ec2f01ccf993202bfc1bc528a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/727aa850a02a7af94c9225237464be8e8c8ff6db",
-                "reference": "727aa850a02a7af94c9225237464be8e8c8ff6db",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/82b6fbf8d6a9693ec2f01ccf993202bfc1bc528a",
+                "reference": "82b6fbf8d6a9693ec2f01ccf993202bfc1bc528a",
                 "shasum": ""
             },
             "bin": [
@@ -418,7 +422,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2017-03-27T23:33:27+00:00"
+            "time": "2017-08-03 22:13:11"
         }
     ],
     "aliases": [],

@@ -129,3 +129,8 @@
 </nav>
 
 <!-- END NAV BAR -->
+
+<!--
+TODO: @minimike511 we need to fix how the first element of each page is displayed.
+TODO: Some use margin, some use padding, and some have an additional div =,= it makes it hard to do mobile when we have all 3
+-->
