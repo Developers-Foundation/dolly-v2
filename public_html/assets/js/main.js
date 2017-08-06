@@ -113,10 +113,17 @@ $(document).ready(function () {
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
 
-            $('.donate-page-1').addClass('hidden');
-            $('.donate-page-2').removeClass('hidden');
             if (amountSelected != 10 && amountSelected != 30 && amountSelected != 50 && amountSelected != 130)
                 amountSelected = $('.donate-other-amount').val();
+
+            if (amountSelected == 0 || amountSelected == "" || amountSelected == -1) {
+                console.log("Invalid amount!");
+                return;
+            }
+
+            $('.donate-page-1').addClass('hidden');
+            $('.donate-page-2').removeClass('hidden');
+
             $('.form-input-amount')[0].value = amountSelected;
         });
     }
