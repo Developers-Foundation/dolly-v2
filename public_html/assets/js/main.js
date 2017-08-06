@@ -108,13 +108,15 @@ $(document).ready(function () {
                 $('.donate-amount-value').text('Amount ' + amountSelected);
             }
         });
-        // Add evt lstnr to amount selection in 1st page of modal box
+        // Add evt lstnr to amount selection confirm in 1st page of modal box
         $('#donate-payment-info').click(function (e) {
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
 
             $('.donate-page-1').addClass('hidden');
             $('.donate-page-2').removeClass('hidden');
+            if (amountSelected != 10 && amountSelected != 30 && amountSelected != 50 && amountSelected != 130)
+                amountSelected = $('.donate-other-amount').val();
             $('.form-input-amount')[0].value = amountSelected;
         });
     }
