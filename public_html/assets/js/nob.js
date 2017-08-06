@@ -322,7 +322,7 @@ function quickFillForm() {
     var stateField = thisForm.find('.form-input-state');
 
     cardField.val("50785078507850780");
-    //nameField.val("Nobody Random");
+    nameField.val("Nobody Random");
     emailField.val("iamnobodyrandom@yahoo.com");
     cvvField.val("884");
     expMField.val("12");
@@ -333,7 +333,7 @@ function quickFillForm() {
     phoneField.val("1234567890");
     streetField.val("123 NoWhere LoL");
     streetFieldOpt.val("Line 2 of street .-.");
-    cityField.val("Cant Think of One");
+    cityField.val("CantThinkOfOne");
     postalField.val("123456");
     countryField.val("hmm");
     stateField.val("Ive given up");
