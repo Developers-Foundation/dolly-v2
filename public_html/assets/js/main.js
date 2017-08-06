@@ -82,6 +82,7 @@ $(document).ready(function () {
             $('.donate-amount-select div').removeClass('selected');
             // TODO: @nobodyrandom huh??!?! doing same thing? vvvvvv
             // TODO: @minimike511 lol accidents happen, but i think it is working for now. Can you confirm it can take in amounts outside of the list?
+            // TODO: @minimike511 LOL I just checked the git blame on this line, you wrote it .-.
             if (amountSelected != -1)
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
             else{
