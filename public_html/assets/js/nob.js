@@ -295,6 +295,50 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
+function quickFillForm() {
+    // TODO: @minimike511 you know if you just write the function, itd save us all so much time :P
+
+    var thisForm = $('#nob-paystack-card-form');
+    var submitButton = thisForm.find('button');
+    var occurrenceField = thisForm.find('input[name=donate-occurrence]:checked');
+    var cardField = thisForm.find('.form-input-card');
+    var nameField = thisForm.find('.form-input-name');
+    var amountField = thisForm.find('.form-input-amount');
+    var emailField = thisForm.find('.form-input-email');
+    var cvvField = thisForm.find('.form-input-cvv');
+    var expMField = thisForm.find('.form-input-exp-m');
+    var expYField = thisForm.find('.form-input-exp-y');
+    var pinField = thisForm.find('.form-input-pin');
+
+    //Donor Information
+    var nameFirstField = thisForm.find('.form-input-name-first');
+    var nameLastField = thisForm.find('.form-input-name-last');
+    var phoneField = thisForm.find('.form-input-number-phone');
+    var streetField = thisForm.find('.form-input-address');
+    var streetFieldOpt = thisForm.find('.form-input-address-opt');
+    var cityField = thisForm.find('.form-input-city');
+    var postalField = thisForm.find('.form-input-postal');
+    var countryField = thisForm.find('.form-input-country');
+    var stateField = thisForm.find('.form-input-state');
+
+    cardField.val("50785078507850780");
+    //nameField.val("Nobody Random");
+    emailField.val("iamnobodyrandom@yahoo.com");
+    cvvField.val("884");
+    expMField.val("12");
+    expYField.val("20");
+    pinField.val("0000");
+    nameFirstField.val("Nobody");
+    nameLastField.val("Random");
+    phoneField.val("1234567890");
+    streetField.val("123 NoWhere LoL");
+    streetFieldOpt.val("Line 2 of street .-.");
+    cityField.val("Cant Think of One");
+    postalField.val("123456");
+    countryField.val("hmm");
+    stateField.val("Ive given up");
+}
+
 function validateCard(rsp, paystack, data) {
     console.log("Charge response: ");
     console.log(rsp);
