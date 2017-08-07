@@ -124,6 +124,7 @@ $(document).ready(function () {
 
             $('.form-input-amount')[0].value = amountSelected;
             $('.donate-amount-value').text('Amount ' + amountSelected + ' USD');
+
         });
     }
     /*
