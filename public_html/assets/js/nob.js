@@ -477,7 +477,6 @@ $(document).ready(function (e) {
             });
         });
 
-        //TODO: @minimike511
         $('#donate-payment').on('hidden.bs.modal', function () {
             $('.donate-page-1').removeClass('hidden');
             $('.donate-amount-select').parent().removeClass('hidden');
@@ -487,6 +486,7 @@ $(document).ready(function (e) {
             $('.donate-page-2').addClass("hidden");
             $('.donate-page-thanks').addClass("hidden");
             $('.donate-page-error').addClass("hidden");
+            $('.donate-other-amount').val("");
             grecaptcha.reset();
         })
 
@@ -613,7 +613,7 @@ $(document).ready(function (e) {
                 }
                 return paystack.card.charge(pinObj);
             }).then(function (rsp) {
-                return validateCard(rsp, paystack, backupData)
+                return validateCard(rsp, paystack, backupData);
             }).then(function (rsp) {
                     return resetForm(rsp, paystack, backupData);
                 },

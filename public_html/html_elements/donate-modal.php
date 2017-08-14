@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="smooth col-md-10 hidden">
                                     <label>$</label>
-                                    <input type="text" class="donate-other-amount">
+                                    <input type="number" class="donate-other-amount">
                                 </div>
                             </div>
                         </div>

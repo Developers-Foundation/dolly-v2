@@ -108,7 +108,7 @@
                 <div class="feature-text col-md-7 text-left v-center">
                     <h1>After School and Summer Tutoring Programs</h1>
                     <hr>
-                    <p style="font-size: 14px">
+                    <p>
                         Extra tutoring programs are available after school as well as during the summer to help
                         children who are lagging behind academically. Child laborers, street children, and drop-outs
                         are especially benefited by this program. Teachers and volunteers engage these children in
