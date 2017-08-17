@@ -321,6 +321,9 @@ HEADER AND FOOTER LESS
 .footer .footerContainer .footer-nav a {
   color: #f39c0b !important;
 }
+.footer .footerContainer .footer-margin {
+  margin-top: 50px;
+}
 .footer .footerContainer .social-area a {
   color: #f39c0b !important;
 }
@@ -346,6 +349,9 @@ HEADER AND FOOTER LESS
 }
 .footer .footerContainer.mobile .fa-social {
   margin-right: 0;
+}
+.footer .footerContainer.mobile .mobile-margin {
+  margin-top: 15px;
 }
 .footer .madeWithLove {
   font-size: 1.2em;
@@ -663,6 +669,9 @@ SECTION SPECIFIC LESS
   clear: both;
   width: 100%;
   margin: auto;
+}
+.donate-page .donate-modal .donate-modal-padding {
+  padding: 0 15px;
 }
 .donate-page .card {
   margin: 30px 16.666666666667% 100px;

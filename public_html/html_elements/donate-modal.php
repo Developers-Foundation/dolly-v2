@@ -90,7 +90,7 @@
                             <div class="col-md-12">
                                 <h3>Donor Information:</h3>
                             </div>
-                            <div class="col-md-6" style="padding: 0 15px">
+                            <div class="col-md-6 donate-modal-padding">
                                 <h5>First name:</h5>
                                 <input type="text"
                                        data-paystack="name-first"
@@ -98,7 +98,7 @@
                                        class="form-input-name-first donate-form"
                                        pattern="[a-zA-Z]{1,30}" required>
                             </div>
-                            <div class="col-md-6" style="padding: 0 15px">
+                            <div class="col-md-6 donate-modal-padding">
                                 <h5>Last name:</h5>
                                 <input type="text"
                                        data-paystack="name-Last"
@@ -106,7 +106,7 @@
                                        class="form-input-name-last donate-form"
                                        pattern="[a-zA-Z]{1,30}" required>
                             </div>
-                            <div class="col-md-6" style="padding: 0 15px">
+                            <div class="col-md-6 donate-modal-padding">
                                 <h5>Email:</h5>
                                 <input type="text"
                                        data-paystack="email"
@@ -114,7 +114,7 @@
                                        class="form-input-email donate-form"
                                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
                             </div>
-                            <div class="col-md-6" style="padding: 0 15px">
+                            <div class="col-md-6 donate-modal-padding">
                                 <h5>Phone number:</h5>
                                 <input
                                         type="text"
@@ -154,7 +154,7 @@
                                        placeholder="12345678"
                                        class="form-input-postal donate-form" required>
                             </div>
-                            <div class="col-md-6" style="padding: 0 15px">
+                            <div class="col-md-6 donate-modal-padding">
                                 <h5>Country:</h5>
                                 <input type="text"
                                        data-paystack="city"
@@ -162,7 +162,7 @@
                                        class="form-input-country donate-form"
                                        required>
                             </div>
-                            <div class="col-md-6" style="padding: 0 15px">
+                            <div class="col-md-6 donate-modal-padding">
                                 <h5>State/Province:</h5>
                                 <input type="text"
                                        data-paystack="state"

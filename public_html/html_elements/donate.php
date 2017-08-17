@@ -81,7 +81,7 @@
             </h1>
         </div>
         <!-- TODO: put it in less -->
-        <div class="col-md-12 text-center" style="padding-bottom: 15px">
+        <div class="col-md-12 text-center">
             <button class="button-red round big" type="submit" data-paystack="submit">Donate Now</button>
         </div>
     </div>

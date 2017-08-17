@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-sm-4">
-            <div class="footer-nav centerer" style="margin-top: 50px">
+            <div class="footer-nav centerer footer-margin">
                 <ul>
                     <li><a href="/about">About <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/impacts">Impact <i class="fa fa-chevron-right"></i></a></li>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="col-sm-4 ">
-            <div class="social-area pull-right centerer" style="margin-top: 50px">
+            <div class="social-area pull-right centerer footer-margin">
                 <ul>
                     <li>
                         <a href="html_elements/link.php?link=facebook" target="_blank "
@@ -58,7 +58,7 @@
                     <a class="white-text" data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
                 </p>
             </div>
-            <div class="col-xs-6 text-right" style="margin-top: 10px">
+            <div class="col-xs-6 text-right mobile-margin">
                 <ul>
                     <li>
                         <a href="html_elements/link.php?link=facebook" target="_blank "
