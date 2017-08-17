@@ -54,8 +54,8 @@
             <div class="col-xs-6 v-center">
                 <h3>Lagos, Nigeria</h3>
                 <p>
-                    <a style="color: white" data-rel="external" href="html_elements/link.php?link=phone">(234) 818-689-1611</a><br/>
-                    <a style="color: white" data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
+                    <a class="white-text" data-rel="external" href="html_elements/link.php?link=phone">(234) 818-689-1611</a><br/>
+                    <a class="white-text" data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a>
                 </p>
             </div>
             <div class="col-xs-6 text-right" style="margin-top: 10px">
