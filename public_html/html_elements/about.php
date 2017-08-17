@@ -12,7 +12,7 @@
     <div class="section title section-bg-overlay">
         <img src="assets/img/stock/about_us.jpg" class="section-bg">
         <div class="row inner">
-            <div class="col-md-offset-4 col-md-4 text-center">
+            <div class="col-md-offset-3 col-md-6 text-center">
                 <h2>Our Mission</h2>
                 <p>
                     To Inspire the African Child through educational aids and improve their socio- developmental
