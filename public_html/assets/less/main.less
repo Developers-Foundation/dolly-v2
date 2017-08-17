@@ -14,30 +14,74 @@
 /*
 responsive text align
 */
-.text-xs-left { text-align: left; }
-.text-xs-right { text-align: right; }
-.text-xs-center { text-align: center; }
-.text-xs-justify { text-align: justify; }
+.text-xs-left {
+  text-align: left;
+}
+
+.text-xs-right {
+  text-align: right;
+}
+
+.text-xs-center {
+  text-align: center;
+}
+
+.text-xs-justify {
+  text-align: justify;
+}
 
 @media (min-width: 768px) {
-  .text-sm-left { text-align: left; }
-  .text-sm-right { text-align: right; }
-  .text-sm-center { text-align: center; }
-  .text-sm-justify { text-align: justify; }
+  .text-sm-left {
+    text-align: left;
+  }
+
+  .text-sm-right {
+    text-align: right;
+  }
+
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .text-sm-justify {
+    text-align: justify;
+  }
 }
 
 @media (min-width: 992px) {
-  .text-md-left { text-align: left; }
-  .text-md-right { text-align: right; }
-  .text-md-center { text-align: center; }
-  .text-md-justify { text-align: justify; }
+  .text-md-left {
+    text-align: left;
+  }
+
+  .text-md-right {
+    text-align: right;
+  }
+
+  .text-md-center {
+    text-align: center;
+  }
+
+  .text-md-justify {
+    text-align: justify;
+  }
 }
 
 @media (min-width: 1200px) {
-  .text-lg-left { text-align: left; }
-  .text-lg-right { text-align: right; }
-  .text-lg-center { text-align: center; }
-  .text-lg-justify { text-align: justify; }
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-justify {
+    text-align: justify;
+  }
 }
 
 body {
@@ -47,7 +91,7 @@ body {
 }
 
 //default font size
-p{
+p {
   font-size: 18px;
 }
 
@@ -109,8 +153,8 @@ h2 {
   margin: 15px 0;
   display: inline-block;
 
-  &.button-fixed-size{
-    width:175px;
+  &.button-fixed-size {
+    width: 175px;
   }
 
   &.round {
@@ -572,7 +616,7 @@ SECTION SPECIFIC LESS
 }
 
 .about-page {
-  .img-center{
+  .img-center {
     margin: auto;
   }
   .section {
@@ -634,12 +678,23 @@ SECTION SPECIFIC LESS
         left: -25px;
         top: 70px;
         border-top: 4px solid @ORANGE;
+
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
     }
   }
   .founder {
     img {
       border-radius: 6px;
+    }
+
+    .founder-message {
+      padding-top: 0;
+      @media (min-width: 992px) {
+        padding-top: 10%;
+      }
     }
   }
   .vision {

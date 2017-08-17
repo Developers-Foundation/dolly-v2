@@ -535,8 +535,21 @@ SECTION SPECIFIC LESS
   top: 70px;
   border-top: 4px solid #f5a623;
 }
+@media (max-width: 991px) {
+  .about-page .values .icon:not(.first)::before {
+    display: none;
+  }
+}
 .about-page .founder img {
   border-radius: 6px;
+}
+.about-page .founder .founder-message {
+  padding-top: 0;
+}
+@media (min-width: 992px) {
+  .about-page .founder .founder-message {
+    padding-top: 10%;
+  }
 }
 .about-page .vision {
   margin-bottom: 100px !important;
