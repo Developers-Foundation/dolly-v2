@@ -16,7 +16,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
             <!-- The form for the mailer -->
             <form class="form-email" action="" method="post" data-form-type="nob">
                 <div class="col-md-5 left msg-info">
-                    <p class="msg-info" style="padding-top: 100px">
+                    <p class="msg-info msg-info-padding">
                         E:
                         <a data-rel="external" href="mailto:info@dollychildren.org">info@dollychildren.org</a><br/>
                         P:

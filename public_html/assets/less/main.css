@@ -707,6 +707,9 @@ SECTION SPECIFIC LESS
   text-align: left;
   color: #4a4a4a;
 }
+.contact-page .msg-info-padding {
+  padding-top: 100px;
+}
 .contact-page .msg-label {
   font-size: 15px;
   text-align: left;
