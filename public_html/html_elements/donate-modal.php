@@ -145,7 +145,7 @@
                                        data-paystack="city"
                                        placeholder="New York"
                                        class="form-input-city donate-form"
-                                       pattern="[a-zA-Z]{1,50}" required>
+                                       <!-- pattern="[a-zA-Z]{1,50}"--> required>
                             </div>
                             <div class="col-md-4">
                                 <h5>Postal Code:</h5>
@@ -182,7 +182,7 @@
                                        data-paystack="name"
                                        placeholder="name"
                                        class="form-input-name donate-form"
-                                       pattern="[a-zA-Z]{1,50}"
+                                       <!-- pattern="[a-zA-Z]{1,50}" -->
                                        required>
                             </div>
                             <div class="col-md-8">
@@ -234,7 +234,7 @@
                                 <br> <!-- TODO: Must FIX THIS!!! PRIORITY -->
                                 <div class="g-recaptcha" data-sitekey="6Lc26iUUAAAAAIfNogCJ6XOd1vOLEX_sbjZ5ORr_"></div>
                                 <br>
-                                <button type="submit" class="button-red round" data-paystack="submit">Submit</button>
+                                <button type="submit" class="button-red round donate-button-submit" data-paystack="submit">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -258,12 +258,22 @@
                     </div>
                 </form>
                 <div class="donate-page-4 donate-page-thanks row hidden">
+                    <div class="text-center">
+                        <span class="donate-confirm">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                    </div>
                     <h3>
                         <b>Thank you!</b><br>
                         Your card has been successfully charged!
                     </h3>
                 </div>
                 <div class="donate-page-0 donate-page-error row hidden">
+                    <div class="text-center">
+                        <span class="donate-fail">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        </span>
+                    </div>
                     <h3>
                         <b>Sorry!</b><br>
                         There has been an error occured!<br>

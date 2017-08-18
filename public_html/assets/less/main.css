@@ -699,6 +699,14 @@ SECTION SPECIFIC LESS
   transition: width 2s;
   transition-timing-function: ease;
 }
+.donate-page .donate-confirm {
+  font-size: 75px;
+  color: #90EE90;
+}
+.donate-page .donate-fail {
+  font-size: 75px;
+  color: #da3400;
+}
 .contact-page .container {
   padding-top: 5%;
   padding-bottom: 5%;
