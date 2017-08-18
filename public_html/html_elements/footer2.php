@@ -48,7 +48,7 @@
                     <li>
                         <a href="html_elements/link.php?link=twitter" target="_blank "
                            class="btn btn-social btn-twitter btn-simple">
-                            Twitter <i class="fa fa-social fa-2x fa-twitter"></i>
+                             <i class="fa fa-social fa-2x fa-twitter"></i> Twitter
                         </a>
                     </li>
                 </ul>
