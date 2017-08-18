@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="/about">About <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/impacts">Impact <i class="fa fa-chevron-right"></i></a></li>
-                    <li><ahref="html_elements/link.php?link=blog">Blog <i class="fa fa-chevron-right"></i></a></li> <!-- TODO: Link to it :) -->
+                    <li><a href="html_elements/link.php?link=blog">Blog <i class="fa fa-chevron-right"></i></a></li> <!-- TODO: Link to it :) -->
                     <li><a href="/contact">Contact <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/donate">Donate <i class="fa fa-chevron-right"></i></a></li>
                 </ul>
