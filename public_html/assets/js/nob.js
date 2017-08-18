@@ -197,7 +197,6 @@ $(document).ready(function () {
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
             var sendFrom = emailField.val(),
-
                 // TODO: this field does not matter, the to address needs to be an environment variable on heroku
                 sendTo = "",
                 subject = "Message from " + nameField.val(),
@@ -206,7 +205,7 @@ $(document).ready(function () {
                 fromName = nameField.val(),
 
                 // TODO: change to the name of the person that the message is being sent to.
-                toName = "Fakey McFakeName",
+                toName = "Dolly Children Foundation",
                 captcha = captcha.value;
             console.log(captcha);
             if (validateEmail(sendFrom)) {
@@ -488,9 +487,9 @@ $(document).ready(function (e) {
             $('.donate-page-error').addClass("hidden");
             $('.donate-other-amount').val("");
             $('.donate-button-submit').text("Submit");
-            $('.donate-button-submit').removeClass('btn-success");
+            $('.donate-button-submit').removeClass("btn-success");
             grecaptcha.reset();
-        })
+        });
 
         //TODO: use.onchange()
         $('#nob-paystack-card-form').submit(function (e) {
