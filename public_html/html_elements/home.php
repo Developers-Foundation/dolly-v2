@@ -21,7 +21,7 @@
             <div class="highlight-box col-md-4 hidden-xs">
                 <h2>
                     WE HAVE CONSTRUCTED<br>
-                    <strong>50 SCHOOLS</strong><br>
+                    <strong>5 SCHOOLS</strong><br>
                     &<br>
                     HELPS OVER<br>
                     <strong>5,000 CHILDREN</strong>
@@ -33,7 +33,7 @@
                 <p>
                     We are a non-profit organization that is made up of a team of individuals that are passionate about
                     bringing affordable education to the children of Nigeria. We have helped over 5000 children in our
-                    journey thus far, we look forward to having likeminded people like you to join and support us in
+                    journey thus far, we look forward to having like-minded people like you to join and support us in
                     our road ahead.
                 </p>
                 <a href="about.php" class="button-red text-uppercase button-fixed-size text-center">Learn more</a>
