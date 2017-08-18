@@ -20,7 +20,7 @@
         <div class="row">
             <div class="highlight-box col-md-4 hidden-xs">
                 <h2>
-                    WE HAVE CONTRUCTED<br>
+                    WE HAVE CONSTRUCTED<br>
                     <strong>50 SCHOOLS</strong><br>
                     &<br>
                     HELPS OVER<br>
