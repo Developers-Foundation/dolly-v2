@@ -22,7 +22,7 @@ switch ($linkTo) {
         $url = "https://www.facebook.com/DollyChildrenFoundation";
         break;
     case "blog":
-        $url = "dollychildren.wordpress.com";
+        $url = "https://dollychildren.wordpress.com";
         break;
     case "twitter":
         $url = "https://twitter.com/DollyChildren";
