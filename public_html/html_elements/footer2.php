@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="/about">About <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/impacts">Impact <i class="fa fa-chevron-right"></i></a></li>
-                    <li><a>Blog <i class="fa fa-chevron-right"></i></a></li> <!-- TODO: Link to it :) -->
+                    <li><ahref="html_elements/link.php?link=blog">Blog <i class="fa fa-chevron-right"></i></a></li> <!-- TODO: Link to it :) -->
                     <li><a href="/contact">Contact <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="/donate">Donate <i class="fa fa-chevron-right"></i></a></li>
                 </ul>
@@ -43,6 +43,12 @@
                         <a href="html_elements/link.php?link=instagram" target="_blank "
                            class="btn btn-social btn-instagram btn-simple">
                             <i class="fa fa-social fa-2x fa-instagram"></i>Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="html_elements/link.php?link=twitter" target="_blank "
+                           class="btn btn-social btn-twitter btn-simple">
+                             <i class="fa fa-social fa-2x fa-twitter"></i> Twitter
                         </a>
                     </li>
                 </ul>
@@ -70,6 +76,12 @@
                         <a href="html_elements/link.php?link=instagram" target="_blank "
                            class="btn btn-social btn-instagram btn-simple">
                             Instagram <i class="fa fa-social fa-2x fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="html_elements/link.php?link=twitter" target="_blank "
+                           class="btn btn-social btn-twitter btn-simple">
+                            Twitter <i class="fa fa-social fa-2x fa-twitter"></i>
                         </a>
                     </li>
                 </ul>

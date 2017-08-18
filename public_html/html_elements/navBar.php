@@ -40,7 +40,7 @@
                         <a href="/impacts">Impacts</a>
                     </li>
                     <li class="">
-                        <a href="#">Blog</a>
+                        <a href="html_elements/link.php?link=blog">Blog</a>
                     </li>
                     <li class="">
                         <a href="/contact">Contact</a>
@@ -115,7 +115,7 @@
                     <a href="/impacts">Impacts</a>
                 </li>
                 <li class="">
-                    <a href="#">Blog</a>
+                    <a href="html_elements/link.php?link=blog">Blog</a>
                 </li>
                 <li class="">
                     <a href="/contact">Contact</a>
