@@ -48,7 +48,7 @@
                     <li>
                         <a href="html_elements/link.php?link=twitter" target="_blank "
                            class="btn btn-social btn-twitter btn-simple">
-                            Instagram <i class="fa fa-social fa-2x fa-twitter"></i>
+                            Twitter <i class="fa fa-social fa-2x fa-twitter"></i>
                         </a>
                     </li>
                 </ul>
@@ -81,7 +81,7 @@
                     <li>
                         <a href="html_elements/link.php?link=twitter" target="_blank "
                            class="btn btn-social btn-twitter btn-simple">
-                            Instagram <i class="fa fa-social fa-2x fa-twitter"></i>
+                            Twitter <i class="fa fa-social fa-2x fa-twitter"></i>
                         </a>
                     </li>
                 </ul>
