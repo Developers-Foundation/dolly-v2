@@ -487,8 +487,8 @@ $(document).ready(function (e) {
             $('.donate-page-thanks').addClass("hidden");
             $('.donate-page-error').addClass("hidden");
             $('.donate-other-amount').val("");
-            $('.donate-button-submit').val("Submit");
-            $('.donate-button-submit').removeClass('btn-success"');
+            $('.donate-button-submit').text("Submit");
+            $('.donate-button-submit').removeClass('btn-success");
             grecaptcha.reset();
         })
 
