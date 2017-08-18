@@ -396,7 +396,7 @@ function resetForm(rsp, paystack, backupData) {
     $('.donate-page-4').removeClass('hidden');
 
     var donorInfo = {
-        status:true,
+        status: true,
         data: {
             firstName: backupData.firstName,
             lastName: backupData.lastName,
@@ -624,7 +624,7 @@ $(document).ready(function (e) {
                         url: "html_elements/paystack/db-log.php",
                         method: "POST",
                         dataType: "JSON",
-                        data: {status:false, data:JSON.stringify(error)},
+                        data: {status: false, data: JSON.stringify(error)},
                         success: function (rspMsg) {
                             console.log("Log response: ");
                             console.log(rspMsg);
