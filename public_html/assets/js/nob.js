@@ -293,6 +293,8 @@ Expiry Date: any date in the future
 CVV: 408
  */
 
+var pinEnabled = false;
+
 function quickFillForm() {
     // TODO: @minimike511 you know if you just write the function, itd save us all so much time :P
 
@@ -306,7 +308,7 @@ function quickFillForm() {
     var cvvField = thisForm.find('.form-input-cvv');
     var expMField = thisForm.find('.form-input-exp-m');
     var expYField = thisForm.find('.form-input-exp-y');
-    var pinField = thisForm.find('.form-input-pin');
+    if (pinEnabled) var pinField = thisForm.find('.form-input-pin');
 
     //Donor Information
     var nameFirstField = thisForm.find('.form-input-name-first');
@@ -325,7 +327,7 @@ function quickFillForm() {
     cvvField.val("884");
     expMField.val("12");
     expYField.val("20");
-    pinField.val("0000");
+    if (pinEnabled) pinField.val("0000");
     nameFirstField.val("Nobody");
     nameLastField.val("Random");
     phoneField.val("1234567890");
@@ -507,7 +509,7 @@ $(document).ready(function (e) {
             var cvvField = thisForm.find('.form-input-cvv');
             var expMField = thisForm.find('.form-input-exp-m');
             var expYField = thisForm.find('.form-input-exp-y');
-            var pinField = thisForm.find('.form-input-pin');
+            if (pinEnabled) var pinField = thisForm.find('.form-input-pin');
 
             //Donor Information
             var nameFirstField = thisForm.find('.form-input-name-first');
@@ -533,8 +535,7 @@ $(document).ready(function (e) {
                 email = emailField.val(),
                 cvv = parseInt(cvvField.val()),
                 expM = parseInt(expMField.val()),
-                expY = parseInt(expYField.val()),
-                pin = pinField.val(),
+                expY = parseInt(expYField.val());
                 firstName = nameFirstField.val(),
                 lastName = nameLastField.val(),
                 phone = parseInt(phoneField.val()),
@@ -544,6 +545,7 @@ $(document).ready(function (e) {
                 postal = postalField.val(),
                 country = countryField.val(),
                 state = stateField.val();
+            if (pinEnabled) var pin = pinField.val();
             var sendData = {'EMAIL': email, 'AMOUNT': amount, 'OCCURRENCE': occurrence};
             backupData = {
                 firstName: firstName,
@@ -606,6 +608,10 @@ $(document).ready(function (e) {
                 console.log("Init response: ");
                 console.log(returnedObj);
                 paystack = returnedObj;
+                if (!pinEnabled) {
+                    throw {"status": false, "reason": "Your credit card requires pin verification."};
+                }
+
                 var pinObj = {};
                 console.log("PIN: " + pin);
                 if (pin != "" && pin != 0 && pin != -1) {

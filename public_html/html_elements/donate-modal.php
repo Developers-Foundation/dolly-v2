@@ -73,7 +73,7 @@
                                     <input type="number" class="donate-other-amount">
                                 </div>
                             </div>
-                        </div>
+                        </div>pin
                         <br>
                         <div class="donate-payment-info text-center">
                             <a id="donate-payment-info" class="button-red small round">Payment Information</a>
@@ -221,14 +221,14 @@
                                        maxlength="4"
                                        data-valid-example="18" required>
                             </div>
-                            <div class="col-md-4">
+                            <!--<div class="col-md-4">
                                 <h5>PIN Number:</h5>
                                 <input type="text"
                                        data-paystack="pin"
                                        placeholder="pin"
                                        class="form-input-pin"
                                        pattern="\d*">
-                            </div>
+                            </div>-->
                             <input type="text" class="hidden form-input-amount">
                             <div class="col-md-12 text-center">
                                 <br> <!-- TODO: Must FIX THIS!!! PRIORITY -->
