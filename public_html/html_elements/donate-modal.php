@@ -73,7 +73,7 @@
                                     <input type="number" class="donate-other-amount">
                                 </div>
                             </div>
-                        </div>pin
+                        </div>
                         <br>
                         <div class="donate-payment-info text-center">
                             <a id="donate-payment-info" class="button-red small round">Payment Information</a>
