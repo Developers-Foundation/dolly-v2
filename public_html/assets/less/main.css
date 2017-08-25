@@ -299,7 +299,7 @@ HEADER AND FOOTER LESS
 .footer ul {
   padding-left: 0;
 }
-.footer .row {
+.footer .row.made-with-love-container {
   margin-left: 0;
   margin-right: 0;
 }
@@ -357,12 +357,12 @@ HEADER AND FOOTER LESS
 .footer .footerContainer.mobile .mobile-margin {
   margin-top: 15px;
 }
-.footer .madeWithLove {
+.footer .made-with-love {
   font-size: 1.2em;
   padding-top: 10px;
   color: white !important;
 }
-.footer .madeWithLove a {
+.footer .made-with-love a {
   color: white !important;
 }
 /**

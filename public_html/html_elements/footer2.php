@@ -88,8 +88,8 @@
             </div>
         </div>
     </div>
-    <div class="row text-center orange">
-        <p class="madeWithLove">
+    <div class="row text-center made-with-love-container orange">
+        <p class="made-with-love">
             Copyright &copy; 2017 <a href="html_elements/link.php?link=dev">Developers' Foundation</a><span
                     class="hidden-xs">. </span>
             <span class="visible-xs hidden-md half-line-break"></span>
