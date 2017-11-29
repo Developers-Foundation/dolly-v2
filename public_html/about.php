@@ -7,7 +7,7 @@
     NOTE: All stylesheet and scripts should be included in this file, since paths will not point
     to the correct locations once php includes your designated module.
     -->
-    <!-- Testing -->
+
     <!--=========================================== WEBPAGE METADATA ====================================-->
     <?php
     include_once "html_elements/header-meta.php"
