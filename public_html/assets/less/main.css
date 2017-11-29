@@ -552,6 +552,8 @@ SECTION SPECIFIC LESS
 }
 .about-page .founder img {
   border-radius: 6px;
+  min-height:400px;
+
 }
 .about-page .founder .founder-message {
   padding-top: 0;
