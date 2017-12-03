@@ -60,7 +60,7 @@
                 </p>
             </div>
             <div class="col-md-4 card">
-                <img class="img-responsive" src="assets/img/stock/back_to_school.jpg">
+                <img class="img-responsive" src="assets/img/stock/backToSchool.jpg">
                 <h3><strong>Back to School Initiatives</strong></h3>
                 <p>
                     Textbooks, uniforms, and school supplies are donated to children from low – income
