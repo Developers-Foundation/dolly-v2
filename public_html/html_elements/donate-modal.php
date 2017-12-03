@@ -145,7 +145,7 @@
                                        data-paystack="city"
                                        placeholder="New York"
                                        class="form-input-city donate-form"
-                                       <!-- pattern="[a-zA-Z]{1,50}"--> required>
+                                       required>
                             </div>
                             <div class="col-md-4">
                                 <h5>Postal Code:</h5>
@@ -182,7 +182,6 @@
                                        data-paystack="name"
                                        placeholder="name"
                                        class="form-input-name donate-form"
-                                       <!-- pattern="[a-zA-Z]{1,50}" -->
                                        required>
                             </div>
                             <div class="col-md-8">
