@@ -584,7 +584,7 @@ $(document).ready(function (e) {
             // Initialize paystack object
             promAjax({
                 // Get Access Code
-                url: "https://dollychildren.org/html_elements/paystack/authorize",
+                url: "https://dollychildren.org/html_elements/paystack/authorize.php",
                 method: 'POST',
                 cache: false,
                 dataType: 'JSON',
