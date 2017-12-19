@@ -220,14 +220,14 @@
                                        maxlength="4"
                                        data-valid-example="18" required>
                             </div>
-                            <!--<div class="col-md-4">
+                            <div class="col-md-4">
                                 <h5>PIN Number:</h5>
                                 <input type="text"
                                        data-paystack="pin"
                                        placeholder="pin"
                                        class="form-input-pin"
                                        pattern="\d*">
-                            </div>-->
+                            </div>
                             <input type="text" class="hidden form-input-amount">
                             <div class="col-md-12 text-center">
                                 <br> <!-- TODO: Must FIX THIS!!! PRIORITY -->
@@ -279,6 +279,12 @@
                         Your card was not charged!
                     </h3>
                 </div>
+
+                <form id="3ds-form" style="display:none">
+                    <div id="3ds-message"></div>
+                    <button type="submit" data-paystack="submit">Continue</button>
+                </form>
+
             </div>
         </div>
     </div>
