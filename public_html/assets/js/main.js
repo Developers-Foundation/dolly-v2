@@ -57,16 +57,6 @@ $(function jQueryScroll() {
     }
 });
 
-/*$(document).ready(function() {
-
-    $('ul  li > div').click(function(e) {
-        e.preventDefault();
-        $('ul  li > div').removeClass('active');
-        $(this).addClass('active');
-       // window.moveTo($(this).attr('href'));
-    });
-});*/
-
 $(document).ready(function () {
     /*
     START DONATE PAGE STUFF
@@ -76,26 +66,25 @@ $(document).ready(function () {
 
         // Add evt lstnr to check marks to trigger correct modal
         $('.donate-modal-trigger').click(function (e) {
+
             amountSelected = parseInt(this.dataset.amount);
-            console.log("Selected (donate-modal-trigger): " + amountSelected);
+            console.log(".donate-modal-trigger", amountSelected);
+
 
             $('.donate-amount-select div').removeClass('selected');
-            // TODO: @nobodyrandom huh??!?! doing same thing? vvvvvv
-            // TODO: @minimike511 lol accidents happen, but i think it is working for now. Can you confirm it can take in amounts outside of the list?
-            // TODO: @minimike511 LOL I just checked the git blame on this line, you wrote it .-.
+
             if (amountSelected != -1){
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
                 console.log("Selected from modal: ", amountSelected);
             }
-
             else {
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
             }
         });
         // Add evt lstnr to amount selection in 1st page of modal box
         $('.donate-amount-select').click(function (e) {
+            console.log('donate-amount-select');
             amountSelected = parseInt(this.dataset.amount);
-            console.log("Selected: " + amountSelected);
 
             $('.donate-amount-select div').removeClass('selected');
 
@@ -106,11 +95,12 @@ $(document).ready(function () {
         });
         // Add evt lstnr to amount selection confirm in 1st page of modal box
         $('#donate-payment-info').click(function (e) {
+            console.log("#donate-payment-info");
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
 
 
-            if (amountSelected == 0 || amountSelected == "" || amountSelected == -1) {
+            if (amountSelected == 0 || amountSelected == "") {
                 console.log("Invalid amount!");
                 return;
             }
@@ -123,7 +113,6 @@ $(document).ready(function () {
         });
 
         $('#3ds-form-button').click(function(e){
-            console.log("button clicked!");
             if(amountSelected == 10){
                 window.open('https://paystack.com/pay/uaqpydp3lj');
             }

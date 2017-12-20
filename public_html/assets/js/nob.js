@@ -478,6 +478,7 @@ $(document).ready(function (e) {
         });
 
         $('#donate-payment').on('hidden.bs.modal', function () {
+            console.log("#donate-payment")
             $('.donate-page-1').removeClass('hidden');
             $('.donate-amount-select').parent().removeClass('hidden');
             $('.donate-other-amount').parent().addClass('hidden');

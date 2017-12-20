@@ -80,9 +80,10 @@
                 Help make the lives of these children better
             </h1>
         </div>
-        <!-- TODO: put it in less -->
-        <div class="col-md-12 text-center">
-            <button class="button-red round big" type="submit" data-paystack="submit">Donate Now</button>
+        <div class="col-md-12 text-center" >
+            <a class="donate-amount-select" data-toggle="modal" href="#donate-payment" data-amount="-1">
+                <button class="button-red round big" type="submit" data-paystack="submit">Donate Now</button>
+            </a>
         </div>
     </div>
 </div>
