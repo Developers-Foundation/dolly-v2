@@ -72,19 +72,22 @@ $(document).ready(function () {
     START DONATE PAGE STUFF
      */
     if ($('body').hasClass('donate-page')) {
-        var amountSelected = 0;
+        var amountSelected = 10; // Default
 
         // Add evt lstnr to check marks to trigger correct modal
         $('.donate-modal-trigger').click(function (e) {
             amountSelected = parseInt(this.dataset.amount);
-            console.log("Selected: " + amountSelected);
+            console.log("Selected (donate-modal-trigger): " + amountSelected);
 
             $('.donate-amount-select div').removeClass('selected');
             // TODO: @nobodyrandom huh??!?! doing same thing? vvvvvv
             // TODO: @minimike511 lol accidents happen, but i think it is working for now. Can you confirm it can take in amounts outside of the list?
             // TODO: @minimike511 LOL I just checked the git blame on this line, you wrote it .-.
-            if (amountSelected != -1)
+            if (amountSelected != -1){
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
+                console.log("Selected from modal: ", amountSelected);
+            }
+
             else {
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
             }
@@ -97,13 +100,8 @@ $(document).ready(function () {
             $('.donate-amount-select div').removeClass('selected');
 
             // TODO: @minimike511 your error is here for the hide thing, you shouldnt add it to the child, but hte parent
-            if (amountSelected == 10 || amountSelected == 30 || amountSelected == 50 || amountSelected == 130) {
+            if (amountSelected == 10 || amountSelected == 30 || amountSelected == 50 || amountSelected == 130 || amountSelected == -1) {
                 $('.donate-amount-select[data-amount=' + amountSelected + '] div').addClass('selected');
-            } else {
-                $('.donate-amount-select').parent().addClass('hidden');
-                $('.donate-amount-select[data-amount="-1"]').parent().removeClass('hidden');
-                $('.donate-amount-select[data-amount="-1"] div').addClass('selected');
-                $('.donate-other-amount').parent().removeClass('hidden');
             }
         });
         // Add evt lstnr to amount selection confirm in 1st page of modal box
@@ -111,8 +109,6 @@ $(document).ready(function () {
             if (e.preventDefault) e.preventDefault();
             else e.returnValue = false;
 
-            if (amountSelected != 10 && amountSelected != 30 && amountSelected != 50 && amountSelected != 130)
-                amountSelected = $('.donate-other-amount').val();
 
             if (amountSelected == 0 || amountSelected == "" || amountSelected == -1) {
                 console.log("Invalid amount!");
@@ -122,9 +118,28 @@ $(document).ready(function () {
             $('.donate-page-1').addClass('hidden');
             $('.donate-page-2').removeClass('hidden');
 
-            $('.form-input-amount')[0].value = amountSelected;
+
             $('.donate-amount-value').text('Amount ' + amountSelected + ' USD');
         });
+
+        $('#3ds-form-button').click(function(e){
+            console.log("button clicked!");
+            if(amountSelected == 10){
+                window.open('https://paystack.com/pay/uaqpydp3lj');
+            }
+            else if(amountSelected == 30){
+                window.open('https://paystack.com/pay/ayg5j2dyl0');
+            }
+            else if (amountSelected == 50){
+                window.open('https://paystack.com/pay/rrtdah07yp');
+            }
+            else if (amountSelected == 130){
+                window.open('https://paystack.com/pay/eipbmgz7kd');
+            }
+            else {
+                window.open('https://paystack.com/pay/o1s5mpymru');
+            }
+        })
     }
     /*
     END DONATE PAGE STUFF

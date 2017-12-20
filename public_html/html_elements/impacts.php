@@ -58,7 +58,7 @@
     <!-- Back to School Initiatives  -->
     <div id="impact-3" class="section">
         <a id="impact-3-anchor" class="relative-anchor"></a>
-        <img src="assets/img/stock/back_to_school.jpg" class="section-bg">
+        <img src="assets/img/stock/backtoschool.jpg" class="section-bg">
         <div class="inner">
             <div class="row inner-container">
                 <div class="feature-image col-md-5"><img class="inner-image" src="assets/img/stock/back_to_school.jpg" style="margin: 0 0 0 -300px"/></div>

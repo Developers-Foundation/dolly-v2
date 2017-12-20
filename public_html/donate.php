@@ -78,7 +78,6 @@ include "html_elements/donate-modal.php";
 <script src="assets/js/material-kit.min.js" type="text/javascript"></script>
 
 <!-- Additional JS Files-->
-<script src="assets/js/nob.js" type="text/javascript"></script>
 <script src="assets/js/main.js" type="text/javascript"></script>
 
 <!-- Google Maps API File -->
@@ -92,14 +91,7 @@ if ($hasGmap) {
     <?php
 }
 
-if ($hasPayStack) {
-    ?>
-    <script src="//js.paystack.co/v1/paystack.js"></script>
-    <?php
-}
 ?>
-<!-- reCaptcha -->
-<script src="//www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
