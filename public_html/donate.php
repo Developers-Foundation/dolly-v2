@@ -78,7 +78,8 @@ include "html_elements/donate-modal.php";
 <script src="assets/js/material-kit.min.js" type="text/javascript"></script>
 
 <!-- Additional JS Files-->
-<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/js/donate.js" type="text/javascript"></script>
+
 
 <!-- Google Maps API File -->
 <?php
