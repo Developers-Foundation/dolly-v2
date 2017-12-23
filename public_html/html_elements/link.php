@@ -39,7 +39,7 @@ switch ($linkTo) {
         break;
     case "home":
     default:
-        $url = "https://dollychildren.org/";
+        $url = "http://dolly-v2.herokuapp.com/";
 }
 
 header("Location: " . $url);
