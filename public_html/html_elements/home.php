@@ -20,10 +20,7 @@
         <div class="row">
             <div class="highlight-box col-md-4 hidden-xs">
                 <h2>
-                    WE HAVE CONSTRUCTED<br>
-                    <strong>5 SCHOOLS</strong><br>
-                    &<br>
-                    HELPS OVER<br>
+                    WE HAVE HELPED OVER<br>
                     <strong>5,000 CHILDREN</strong>
                 </h2>
                 <a href="impacts.php" class="button-red text-uppercase  button-fixed-size text-center">Learn more</a>
